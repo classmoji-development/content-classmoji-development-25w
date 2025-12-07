@@ -6,10 +6,12 @@
   <title>TEst 1</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css">
 </head>
 <body>
-  <div class="reveal">
+  <div class="reveal" data-code-theme="github-dark">
     <div class="slides">
+
 
 
 
@@ -24,10 +26,10 @@
         <p>kahoot-api-short</p>
       </section>
 
-      <section style="top: 198px; display: block;" class="">
+      <section style="top: 89.5px; display: block;" class="" hidden="" aria-hidden="true">
         <h2>Slide 2</h2><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/kahoot-api-short/slides/test-1/images/1765100836715-8195d95af419c8c2e029db867e5cccc8.gif" alt="Slide image" style="max-height: 400px;"></section>
 
-      <section style="top: 229px; display: block;" hidden="" aria-hidden="true" class="">
+      <section style="top: 229px; display: block;" class="">
         <h2>Code Example</h2>
         <pre><code class="language-javascript">// Your code here
 function example() {
@@ -47,16 +49,19 @@ function example() {
     
     
     
+    
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
   <script>
     Reveal.initialize({
       hash: true,
       controls: true,
       progress: true,
       center: true,
-      transition: 'slide'
+      transition: 'slide',
+      plugins: [RevealHighlight]
     });
   </script>
 </body>
