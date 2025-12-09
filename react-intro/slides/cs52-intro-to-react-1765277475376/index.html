@@ -5,23 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CS52 Intro to React</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
-  <!-- Light mode slide theme -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" media="(prefers-color-scheme: light)">
-  <!-- Dark mode slide theme -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" media="(prefers-color-scheme: dark)">
-  <!-- Fallback for browsers without prefers-color-scheme support -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" media="not all and (prefers-color-scheme)">
-  <!-- Light mode code syntax highlighting -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css" media="(prefers-color-scheme: light)">
-  <!-- Dark mode code syntax highlighting -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css" media="(prefers-color-scheme: dark)">
-  <!-- Fallback code theme for browsers without prefers-color-scheme support -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css" media="not all and (prefers-color-scheme)">
+  <!-- Shared theme lib CSS (fonts, base styles) -->
+  <link rel="stylesheet" href="/content/classmoji-development/content-classmoji-development-25w/.slidesthemes/cs52-slides-theme/lib/offline-v2.css">
+  <!-- Shared theme custom CSS -->
+  <link rel="stylesheet" href="/content/classmoji-development/content-classmoji-development-25w/.slidesthemes/cs52-slides-theme/custom-theme.css">
+  <style>
+    /* Override slides.com animation system - make all elements visible */
+    .sl-block-content,
+    .sl-block-content[data-animation-type],
+    .sl-block-content[data-animation-type="fade-in"],
+    .sl-block-content[data-animation-type="fade-out"] {
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+    }
+  </style>
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css">
 </head>
-<body>
-  <div class="reveal" data-theme-light="white" data-theme-dark="black" data-code-theme-light="github-dark" data-code-theme-dark="github-dark">
+<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+  <div class="reveal" data-theme="shared:cs52-slides-theme" data-code-theme="github-dark">
     <div class="slides">
-<section class="stack editing-mode" data-id="3adb623df8ba0e03e8cd0fb56bce45f6" style="top: 0px; display: block;"><section data-id="e279cc49462850d03c6212e7d27efef2" style="top: 89.5px; display: block;" class="editing-mode"><div class="sl-block" data-block-type="snippet" data-name="snippet-31e5c6" style="width: 800px; height: 341.955px; left: 80px; top: 179.023px;" data-block-id="ec842b9d5a1ee9f1f2b0371deed90ed6" data-column-label="Column 1"><div class="sl-block-content tim" data-has-custom-html="" style="z-index: 10;">
+<section class="stack editing-mode" data-id="3adb623df8ba0e03e8cd0fb56bce45f6" style="top: 0px; display: block;"><section data-id="e279cc49462850d03c6212e7d27efef2" style="top: 0px; display: block;" class="editing-mode"><div class="sl-block" data-block-type="snippet" data-name="snippet-31e5c6" style="width: 800px; height: 341.955px; left: 80px; top: 179.023px;" data-block-id="ec842b9d5a1ee9f1f2b0371deed90ed6" data-column-label="Column 1"><div class="sl-block-content tim" data-has-custom-html="" style="z-index: 10;">
 <div id="box-title">
 <div class="top">
 <div class="logo">&nbsp;</div>
@@ -41,7 +46,7 @@
 
 <div class="sl-block" data-block-type="image" data-name="image-2aab79" data-block-id="a2b8aed35d462481fe6028481d910e95" style="width: 960px; height: 352.941px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="952" data-natural-height="350" src="https://classmoji-development.github.io/content-classmoji-development-25w/react-intro/slides/cs52-intro-to-react-1765277475376/images/a140ac1fecdf9280195b6d9f451c5c10.gif"></div></div>
 <div class="sl-block" data-block-type="image" data-name="image-ef8d21" data-block-id="b3a86603611fdb4aff9355569bb4631c" style="width: 960px; height: 480.962px; left: 0px; top: 309.92px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="499" data-natural-height="250" src="https://classmoji-development.github.io/content-classmoji-development-25w/react-intro/slides/cs52-intro-to-react-1765277475376/images/bb31859d3846a4bed2f5a22f6d70b73e.gif"></div></div>
-</section><section data-id="2c2ad668ba682290763ae5099400a4c2" class="editing-mode" aria-hidden="true" style="top: 11px; display: block;" hidden="">
+</section><section data-id="2c2ad668ba682290763ae5099400a4c2" class="editing-mode" aria-hidden="true" style="top: 0px; display: block;" hidden="">
 <div class="sl-block" data-block-type="image" data-name="image-de6769" data-block-id="95d1ab0e940d6349ff4151d853da9104" style="width: 756.991px; height: 600px; left: 101.505px; top: 78px; min-width: 1px; min-height: 1px;"><div class="sl-block-content plain" style="z-index: 10;"><img style="" data-natural-width="1543" data-natural-height="1223" src="https://classmoji-development.github.io/content-classmoji-development-25w/react-intro/slides/cs52-intro-to-react-1765277475376/images/d3fa64dad077199c5a0e62ea157143a2.png"></div></div>
 <div class="sl-block" data-block-type="snippet" style="width: 960px; height: 70px; left: 0px; top: 0px;" data-name="snippet-890bde" data-block-id="422a0b109b032dc17634a2f4fd19296e"><div class="sl-block-content tim" data-has-custom-html="" style="z-index: 11;">
 <div id="header-title">
@@ -54,7 +59,7 @@
 <div class="spacer">&nbsp;</div>
 </div>
 </div></div></section></section>
-<section class="stack editing-mode" data-id="24b57c9b0e507b589a17d69f86484b68" style="top: 0px; display: block;" hidden="" aria-hidden="true"><section data-id="59be86943fe59ea696864156f64d2f96" style="top: 100px; display: block;" class="editing-mode">
+<section class="stack editing-mode" data-id="24b57c9b0e507b589a17d69f86484b68" style="top: 0px; display: block;" hidden="" aria-hidden="true"><section data-id="59be86943fe59ea696864156f64d2f96" style="top: 0px; display: block;" class="editing-mode">
 
 <div class="sl-block" data-block-type="text" data-name="text-7b4f9a" data-block-id="8080f5f7ff76e44457c2e2dc6a52bcaa" style="height: auto; width: 800px; left: 80px; top: 388px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><ul style="color:rgb(58, 62, 64)">
 	<li>too many heavyweight confusing frameworks!</li>
@@ -76,7 +81,7 @@
 <div class="spacer">&nbsp;</div>
 </div>
 </div></div>
-<div class="sl-block" data-block-type="image" data-name="image-971664" data-block-id="00e7f6492ec369839133048bb4426980" style="width: 297px; height: 297px; left: 343px; top: 80.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="250" data-natural-height="250" src="https://classmoji-development.github.io/content-classmoji-development-25w/react-intro/slides/cs52-intro-to-react-1765277475376/images/990acac7c0da124883b1553b5b253225.gif"></div></div></section><section data-id="ea792076c36fb19e100e08f01e1c75f4" class="editing-mode" aria-hidden="true" style="top: 67px; display: block;">
+<div class="sl-block" data-block-type="image" data-name="image-971664" data-block-id="00e7f6492ec369839133048bb4426980" style="width: 297px; height: 297px; left: 343px; top: 80.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="250" data-natural-height="250" src="https://classmoji-development.github.io/content-classmoji-development-25w/react-intro/slides/cs52-intro-to-react-1765277475376/images/990acac7c0da124883b1553b5b253225.gif"></div></div></section><section data-id="ea792076c36fb19e100e08f01e1c75f4" class="editing-mode" aria-hidden="true" style="top: 0px; display: block;">
 <div class="sl-block" data-block-type="image" data-name="image-7c0e8d" data-block-id="cf0859bb9fb0e4a8bb7bf43dd1aff797" style="width: 440.089px; height: 330.067px; left: 259.956px; top: 131.381px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="1920" data-natural-height="1440" src="https://classmoji-development.github.io/content-classmoji-development-25w/react-intro/slides/cs52-intro-to-react-1765277475376/images/841c7450d19c47f6d113d82d3642c121.jpg"></div></div>
 <div class="sl-block" data-block-type="text" data-name="text-98a6e5" data-block-id="d085ff493d78106aeb3214efe187e70e" style="height: auto; width: 960px; left: 0px; top: 502.323px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><ul style="color:rgb(58, 62, 64)">
 	<li>V in MVC</li>
@@ -146,7 +151,7 @@
 
 <p>hooks over classes</p>
 </div></div></section></section>
-<section data-id="52c63ac230021b2811c4bcb007243b2a" style="top: 132.5px; display: block;" hidden="" aria-hidden="true" class="editing-mode"><div class="sl-block" data-block-type="snippet" data-name="snippet-31e5c6" style="width: 800px; height: 170.977px; left: 80px; top: 264.512px;" data-block-id="857f59f6637796cab54f97395a405693"><div class="sl-block-content tim" data-has-custom-html="" style="z-index: 10;">
+<section data-id="52c63ac230021b2811c4bcb007243b2a" style="top: 0px; display: block;" hidden="" aria-hidden="true" class="editing-mode"><div class="sl-block" data-block-type="snippet" data-name="snippet-31e5c6" style="width: 800px; height: 170.977px; left: 80px; top: 264.512px;" data-block-id="857f59f6637796cab54f97395a405693"><div class="sl-block-content tim" data-has-custom-html="" style="z-index: 10;">
 <div id="box-title">
 <div class="top">
 <div class="logo">&nbsp;</div>
