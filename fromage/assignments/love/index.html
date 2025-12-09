@@ -5,7 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="text/markdown" id="source-markdown"># Love
 
-Maybe this will be saved correctly</script>
+Maybe this will be saved correctly
+
+```
+class Car {
+  constructor(make, model, year, color) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.color = color;
+    this.isRunning = false;
+    this.speed = 0;
+  }
+
+  start() {
+    this.isRunning = true;
+    console.log(`${this.year} ${this.make} ${this.model} is now running.`);
+  }
+
+  stop() {
+    this.isRunning = false;
+    this.speed = 0;
+    console.log(`${this.make} ${this.model} has stopped.`);
+  }
+
+  accelerate(amount) {
+    if (this.isRunning) {
+      this.speed += amount;
+      console.log(`Speed increased to ${this.speed} mph.`);
+    } else {
+      console.log('Car is not running. Start the car first.');
+    }
+  }
+
+  brake(amount) {
+    if (this.speed &gt; 0) {
+      this.speed = Math.max(0, this.speed - amount);
+      console.log(`Speed reduced to ${this.speed} mph.`);
+    }
+  }
+
+  getInfo() {
+    return `${this.year} ${this.color} ${this.make} ${this.model}`;
+  }
+}
+
+// Usage example
+const myCar = new Car('Toyota', 'Camry', 2023, 'blue');
+myCar.start();
+myCar.accelerate(30);
+myCar.brake(10);
+myCar.stop();
+console.log(myCar.getInfo());
+```</script>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -81,6 +133,56 @@ Maybe this will be saved correctly</script>
 <body>
 <h1>Love</h1>
 <p>Maybe this will be saved correctly</p>
+<pre><code>class Car {
+  constructor(make, model, year, color) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.color = color;
+    this.isRunning = false;
+    this.speed = 0;
+  }
+
+  start() {
+    this.isRunning = true;
+    console.log(`${this.year} ${this.make} ${this.model} is now running.`);
+  }
+
+  stop() {
+    this.isRunning = false;
+    this.speed = 0;
+    console.log(`${this.make} ${this.model} has stopped.`);
+  }
+
+  accelerate(amount) {
+    if (this.isRunning) {
+      this.speed += amount;
+      console.log(`Speed increased to ${this.speed} mph.`);
+    } else {
+      console.log(&#39;Car is not running. Start the car first.&#39;);
+    }
+  }
+
+  brake(amount) {
+    if (this.speed &gt; 0) {
+      this.speed = Math.max(0, this.speed - amount);
+      console.log(`Speed reduced to ${this.speed} mph.`);
+    }
+  }
+
+  getInfo() {
+    return `${this.year} ${this.color} ${this.make} ${this.model}`;
+  }
+}
+
+// Usage example
+const myCar = new Car(&#39;Toyota&#39;, &#39;Camry&#39;, 2023, &#39;blue&#39;);
+myCar.start();
+myCar.accelerate(30);
+myCar.brake(10);
+myCar.stop();
+console.log(myCar.getInfo());
+</code></pre>
 
 </body>
 </html>
