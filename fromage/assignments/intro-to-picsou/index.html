@@ -5,9 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="text/markdown" id="source-markdown"># Intro to Picsou 🎉
 
+Now let's add some python code!
+
+```python
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+        self.speed = 0
+
+    def accelerate(self, amount):
+        self.speed += amount
+
+    def brake(self, amount):
+        self.speed = max(0, self.speed - amount)
+
+    def get_info(self):
+        return f"{self.make} {self.model} - {self.speed} mph"
+
+car = Car('Toyota', 'Camry')
+car.accelerate(50)
+car.brake(10)
+print(car.get_info())
+```
+
 I hope this works fine
 
-```
+```javascript
 class Car {
   constructor(make, model) {
     this.make = make;
@@ -107,8 +131,29 @@ console.log(car.getInfo());
 </head>
 <body>
 <h1>Intro to Picsou 🎉</h1>
+<p>Now let&#39;s add some python code!</p>
+<pre><code class="language-python">class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+        self.speed = 0
+
+    def accelerate(self, amount):
+        self.speed += amount
+
+    def brake(self, amount):
+        self.speed = max(0, self.speed - amount)
+
+    def get_info(self):
+        return f&quot;{self.make} {self.model} - {self.speed} mph&quot;
+
+car = Car(&#39;Toyota&#39;, &#39;Camry&#39;)
+car.accelerate(50)
+car.brake(10)
+print(car.get_info())
+</code></pre>
 <p>I hope this works fine</p>
-<pre><code>class Car {
+<pre><code class="language-javascript">class Car {
   constructor(make, model) {
     this.make = make;
     this.model = model;
