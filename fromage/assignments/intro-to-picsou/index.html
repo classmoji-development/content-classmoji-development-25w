@@ -5,6 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="text/markdown" id="source-markdown"># Intro to Picsou 🎉
 
+Time to study about programming languages
+
+### Programming Languages
+
+```cpp
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;algorithm&gt;
+using namespace std;
+
+class Car {
+private:
+    string make, model;
+    int speed;
+
+public:
+    Car(string make, string model) : make(make), model(model), speed(0) {}
+
+    void accelerate(int amount) {
+        speed += amount;
+    }
+
+    void brake(int amount) {
+        speed = max(0, speed - amount);
+    }
+
+    string getInfo() {
+        return make + " " + model + " - " + to_string(speed) + " mph";
+    }
+};
+
+int main() {
+    Car car("Toyota", "Camry");
+    car.accelerate(50);
+    car.brake(10);
+    cout &lt;&lt; car.getInfo() &lt;&lt; endl;
+    return 0;
+}
+```
+
 Now let's add some python code!
 
 ```python
@@ -131,6 +171,42 @@ console.log(car.getInfo());
 </head>
 <body>
 <h1>Intro to Picsou 🎉</h1>
+<p>Time to study about programming languages</p>
+<h3>Programming Languages</h3>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;algorithm&gt;
+using namespace std;
+
+class Car {
+private:
+    string make, model;
+    int speed;
+
+public:
+    Car(string make, string model) : make(make), model(model), speed(0) {}
+
+    void accelerate(int amount) {
+        speed += amount;
+    }
+
+    void brake(int amount) {
+        speed = max(0, speed - amount);
+    }
+
+    string getInfo() {
+        return make + &quot; &quot; + model + &quot; - &quot; + to_string(speed) + &quot; mph&quot;;
+    }
+};
+
+int main() {
+    Car car(&quot;Toyota&quot;, &quot;Camry&quot;);
+    car.accelerate(50);
+    car.brake(10);
+    cout &lt;&lt; car.getInfo() &lt;&lt; endl;
+    return 0;
+}
+</code></pre>
 <p>Now let&#39;s add some python code!</p>
 <pre><code class="language-python">class Car:
     def __init__(self, make, model):
