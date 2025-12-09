@@ -185,7 +185,6 @@
   </style>
 </head>
 <body>
-<h1>Short 1: Terminal, Git, Render</h1>
 <p>Module: Foundation<br>Prerequisite Videos: 4<br>Assignment: Short<br>Serial: 1</p>
 <h1><strong>Hello World &amp; Local Dev Environment</strong></h1>
 <p>First things first. You need a local development environment.</p>
@@ -197,26 +196,20 @@
 <div class="callout"><span class="callout-emoji">🚀</span><span>First, pick a Terminal program.  I like to recommend <a href="https://tabby.sh/">Tabby</a>.</span></div>
 <p><img src="Short%201%20Terminal,%20Git,%20Render/image.png" alt="image.png"></p>
 <p>There are lots of other options:</p>
-<ul>
-<li><a href="https://www.warp.dev/">Warp</a> - is AI enabled</li>
-<li><a href="https://iterm2.com/">iTerm2</a> classic Mac Terminal replacement</li>
-</ul>
+<ul><li><a href="https://www.warp.dev/">Warp</a> - is AI enabled</li></ul>
+<ul><li><a href="https://iterm2.com/">iTerm2</a> classic Mac Terminal replacement</li></ul>
 <p>What I don’t recommend is using the default Terminal on MacOS or CMD/Powershell on Windows. </p>
 <p>Here’s some commandline basics:</p>
-<ul>
-<li><code>ls -la</code> will list files in current directory</li>
-<li><code>pwd</code> will show current directory</li>
-<li><code>cd somedirectory</code> will change directory to <em>somedirectory</em></li>
-<li><code>cp source target</code> will copy files</li>
-<li><code>mv source target</code> will move</li>
-<li><code>rm somefile</code> will remove that file (permanently, bypassing trash)</li>
-<li><code>mkdir somedirectory</code> will create a folder (directory)</li>
-</ul>
+<ul><li><code class="inline-code">s -la </code>will list files in current directory</li></ul>
+<ul><li><code>pwd</code> will show current directory</li></ul>
+<ul><li><code>cd somedirectory</code> will change directory to <em>somedirectory</em></li></ul>
+<ul><li><code>cp source target</code> will copy files</li></ul>
+<ul><li><code>mv source target</code> will move</li></ul>
+<ul><li><code>rm somefile</code> will remove that file (permanently, bypassing trash)</li></ul>
+<ul><li><code>mkdir somedirectory</code> will create a folder (directory)</li></ul>
 <p>On OSX:</p>
-<ul>
-<li><code>open somefile</code> will open the file in the default app associated with it</li>
-<li><code>open somedirectory</code> will open that folder in Finder</li>
-</ul>
+<ul><li><code>open somefile</code> will open the file in the default app associated with it</li></ul>
+<ul><li><code>open somedirectory</code> will open that folder in Finder</li></ul>
 <h2>Tools!</h2>
 <div class="callout"><span class="callout-emoji">🚀</span><span>Install <a href="https://code.visualstudio.com/download">VSCode</a>. VSCode is a code editor. VSCode is an open source, made by Microsoft web technology written in html+css+javascript using a platform called <a href="https://electronjs.org/">Electron</a>. Using Electron to create a desktop app is an option for the final project. We’ll be using VSCode for coding and utilizing a lot of its plugins. After installing and starting up VSCode, run: <em>cmd + shift + p -&gt; Shell Command: Install ‘code’ command in PATH</em> to be able to run <code>code</code> from the command line. <em>You are welcome to use another editor like <a href="https://www.cursor.com/">Cursor</a> instead if you want more AI power!</em></span></div>
 <div class="callout"><span class="callout-emoji">🚀</span><span>If you don’t have it, install <a href="https://www.google.com/chrome/browser/desktop/">Google Chrome</a>. Why? Because we’ll be using <a href="https://developers.google.com/web/tools/chrome-devtools/">Chrome Developer Tools</a> for debugging — more on that later. Also because all the other browsers support slightly different standards, and Chrome simply displays pages more correctly and sticks to the actual standards so we can all be on the same page. To re-iterate: you are required to use a Chrome based browser for this class. <em>You are welcome to use <a href="https://brave.com/">Brave</a> or <a href="https://arc.net/">Arc</a> instead as both are chromium based.</em></span></div>
@@ -252,7 +245,7 @@
 <p><strong>Note:</strong> the following are transcripts of MY terminal session while setting up <strong>cs52.me</strong> with my github URL. You should replace anything with cs52.me with your repo name and your github URL instead.</p>
 <h3>Clone Repo</h3>
 <pre><code class="language-bash">💻 git clone git@github.com:dartmouth-cs52/cs52.me.git
-Cloning into &#39;cs52.me&#39;...
+Cloning into 'cs52.me'...
 warning: You appear to have cloned an empty repository.
 Checking connectivity... done.
 💻 cd cs52.me/
@@ -267,7 +260,7 @@ Checking connectivity... done.
 <h3>Test Locally</h3>
 <pre><code class="language-bash">💻 python -m http.server 9000
 Serving HTTP on 0.0.0.0 port 9000 ...
-127.0.0.1 - - [09/Jun/2016 18:25:18] &quot;GET / HTTP/1.1&quot; 200 -
+127.0.0.1 - - [09/Jun/2016 18:25:18] "GET / HTTP/1.1" 200 -
 </code></pre>
 <p><em>If you are running python2.7 try: <code>python -m SimpleHTTPServer 9000</code> instead</em></p>
 <div class="callout"><span class="callout-emoji">❓</span><span>does anybody know what <code>127.0.0.1</code> is the address for?</span></div>
@@ -281,23 +274,23 @@ On branch main
 Initial commit
 
 Untracked files:
-(use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+(use "git add &lt;file&gt;..." to include in what will be committed)
 
 index.html
 
-nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+nothing added to commit but untracked files present (use "git add" to track)
 💻 git add index.html  #lets track index.html
-💻 git status  #check again -- I&#39;m OCD with this
+💻 git status  #check again -- I'm OCD with this
 On branch main
 
 Initial commit
 
 Changes to be committed:
-(use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+(use "git rm --cached &lt;file&gt;..." to unstage)
 
 new file:   index.html
 
-💻 git commit -am &quot;its hideous&quot;   #please make yours prettier 😃
+💻 git commit -am "its hideous"   #please make yours prettier 😃
 [main (root-commit) 93a5c69] its hideous
 1 file changed, 10 insertions(+)
 create mode 100644 index.html
@@ -338,16 +331,15 @@ To git@github.com:dartmouth-cs52/cs52.me.git
 <p><img src="Short%201%20Terminal,%20Git,%20Render/done.png" alt=""></p>
 <h3>Add in some HTML if you haven’t played much with HTML before.</h3>
 <p>Try some of these:</p>
-<ul>
-<li><code>&lt;h1&gt;</code></li>
-<li><code>&lt;p&gt;</code></li>
-<li><code>&lt;img src=&quot;http://someimageurl&quot;/&gt;</code></li>
-<li><code>&lt;a href=&quot;http://somelink&quot;&gt;</code></li>
-<li><code>&lt;ul&gt;</code><ul>
+<ul><li><code>&lt;h1&gt;</code></li></ul>
+<ul><li><code>&lt;p&gt;</code></li></ul>
+<ul><li><code>&lt;img src="http://someimageurl"/&gt;</code></li></ul>
+<ul><li><code>&lt;a href="http://somelink"&gt;</code></li></ul>
+<ul><li><code>&lt;ul&gt;</code><ul>
 <li><code>&lt;li&gt;</code></li>
 </ul>
-</li>
-</ul>
+</li></ul>
+<ul><li><code>&lt;li&gt;</code></li></ul>
 <h3>What if it still doesn’t work?</h3>
 <p>You may need to wait a few minutes.  If it still doesn’t work lets check that Namecheap actually did things right.</p>
 <p>You didn’t actually have to do any DNS setup, what happened?</p>
@@ -363,29 +355,27 @@ Host 153.108.199.185.in-addr.arpa. not found: 3(NXDOMAIN)
 <p>Wait, so it doesn’t even have a DNS entry? But how does github know what page to show? Does that machine serve lots of addresses?</p>
 <p>Yes, those IPs point to load balancers that direct requests based on the transport packet which happens to have the domain name requested in it. This is where that magical <code>CNAME</code> file comes in. That tells GitHub Pages that your repository should be served when requests come in for that domain.</p>
 <h3>To Turn In:</h3>
-<ul>
-<li>We’ll be a using a new platform developed specifically for this class for all of our submissions and feedback. Please accept your invitation to <a href="http://classmoji.brunchlabs.com">classmoji.brunchlabs.com</a> to proceed and find the assignment there.</li>
-<li>👉 The GitHub assignment Issue you will find there, will be considered your submission! <strong>To officially turn it in, please comment on the Issue on GitHub named <code>Hello World and Local Dev Environment</code> when you have completed the assignment and close it.</strong></li>
-<li><strong>🙏 In your comment on the assignment github issue please include:</strong><ol>
+<ul><li>We’ll be a using a new platform developed specifically for this class for all of our submissions and feedback. Please accept your invitation to <a href="http://classmoji.brunchlabs.com">classmoji.brunchlabs.com</a> to proceed and find the assignment there.</li></ul>
+<ul><li>👉&nbsp;The GitHub assignment Issue you will find there, will be considered your submission! <strong>To officially turn it in, please comment on the Issue on GitHub named <code>Hello World and Local Dev Environment</code> when you have completed the assignment and close it.</strong></li></ul>
+<ul><li><strong>🙏&nbsp;In your comment on the assignment github issue please include:</strong><ol>
 <li>link to deployed hosted version of the page</li>
 <li>url of the repository in your personal github that is connected to this domain</li>
 <li>brief summary of what worked and what didn’t</li>
 <li>was this a new domain or did you already have this set up? (totally ok either way) </li>
 <li>do you think personal websites are more or less interesting than using a social media profile?  any differences?</li>
 </ol>
-</li>
-<li>remember you must cite external sources when you include other people’s code, chatGPT, etc</li>
-</ul>
+</li></ul>
+<ul><li>link to deployed hosted version of the page</li></ul>
+<ul><li>url of the repository in your personal github that is connected to this domain</li></ul>
+<ul><li>brief summary of what worked and what didn’t</li></ul>
+<ul><li>was this a new domain or did you already have this set up? (totally ok either way) </li></ul>
+<ul><li>do you think personal websites are more or less interesting than using a social media profile?  any differences?</li></ul>
+<ul><li>remember you must cite external sources when you include other people’s code, chatGPT, etc</li></ul>
 <h2>Resources:</h2>
-<ul>
-<li><a href="https://share.descript.com/view/HlqzpXWwPMq">Local Environment and Simple Bash with Ijemma</a></li>
-<li><a href="https://share.descript.com/view/1xtv65odJTV">HTML with Ijemma</a></li>
-<li><a href="http://www.w3schools.com/">http://www.w3schools.com</a></li>
-</ul>
+<ul><li><a href="https://share.descript.com/view/HlqzpXWwPMq">Local Environment and Simple Bash with Ijemma</a></li></ul>
+<ul><li><a href="https://share.descript.com/view/1xtv65odJTV">HTML with Ijemma</a></li></ul>
+<ul><li><a href="http://www.w3schools.com/">http://www.w3schools.com</a></li></ul>
 <p>Extra Credit</p>
-<ul>
-<li>🍰 You can also download a git command prompt to make life easier when we work with git later on. You can find a cool one <a href="https://github.com/jimeh/git-aware-prompt">here</a>. Follow the instructions on the README at that link to install it!</li>
-</ul>
-
+<ul><li>🍰&nbsp;You can also download a git command prompt to make life easier when we work with git later on. You can find a cool one <a href="https://github.com/jimeh/git-aware-prompt">here</a>. Follow the instructions on the README at that link to install it!</li></ul>
 </body>
 </html>
