@@ -9,6 +9,36 @@ Time to study about programming languages
 
 ### Programming Languages
 
+```bash
+#!/bin/bash
+
+Car_accelerate() {
+    local -n car=$1
+    car[speed]=$((${car[speed]} + $2))
+}
+
+Car_brake() {
+    local -n car=$1
+    car[speed]=$(( ${car[speed]} - $2 &lt; 0 ? 0 : ${car[speed]} - $2 ))
+}
+
+Car_getInfo() {
+    local -n car=$1
+    echo "${car[make]} ${car[model]} - ${car[speed]} mph"
+}
+
+# Create car
+declare -A car
+car[make]="Toyota"
+car[model]="Camry"
+car[speed]=0
+
+# Use car
+Car_accelerate car 50
+Car_brake car 10
+Car_getInfo car
+```
+
 ```cpp
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -173,6 +203,34 @@ console.log(car.getInfo());
 <h1>Intro to Picsou 🎉</h1>
 <p>Time to study about programming languages</p>
 <h3>Programming Languages</h3>
+<pre><code class="language-bash">#!/bin/bash
+
+Car_accelerate() {
+    local -n car=$1
+    car[speed]=$((${car[speed]} + $2))
+}
+
+Car_brake() {
+    local -n car=$1
+    car[speed]=$(( ${car[speed]} - $2 &lt; 0 ? 0 : ${car[speed]} - $2 ))
+}
+
+Car_getInfo() {
+    local -n car=$1
+    echo &quot;${car[make]} ${car[model]} - ${car[speed]} mph&quot;
+}
+
+# Create car
+declare -A car
+car[make]=&quot;Toyota&quot;
+car[model]=&quot;Camry&quot;
+car[speed]=0
+
+# Use car
+Car_accelerate car 50
+Car_brake car 10
+Car_getInfo car
+</code></pre>
 <pre><code class="language-cpp">#include &lt;iostream&gt;
 #include &lt;string&gt;
 #include &lt;algorithm&gt;
