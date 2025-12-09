@@ -7,7 +7,7 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
       line-height: 1.6;
-      max-width: 80%;
+      max-width: 85%;
       margin: 0 auto;
       padding: 2rem;
       color: #333;
@@ -117,25 +117,32 @@
       content: '📎';
     }
     .page-link-block {
-      background: #f6f8fa;
-      border: 1px solid #e1e4e8;
-      border-radius: 6px;
-      padding: 0.75em 1em;
-      margin-bottom: 1em;
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0 -0.5rem 1em -0.5rem;
+      border-radius: 0.25rem;
+      transition: background-color 0.15s;
+      cursor: pointer;
+    }
+    .page-link-block:hover {
+      background-color: #f3f4f6;
     }
     .page-link-block a {
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      gap: 0.5em;
+      gap: 0.5rem;
       color: #111827;
       font-weight: 600;
-      text-decoration: none;
+      text-decoration: underline;
     }
     .page-link-block a:hover {
       text-decoration: underline;
     }
     .page-link-block a::before {
       content: '📄';
+      font-size: 1rem;
+      flex-shrink: 0;
     }
     .embed-container {
       position: relative;
@@ -178,7 +185,8 @@
   </style>
 </head>
 <body>
-<p><span style="font-size: 15.1875px;">It is a long <code class="inline-code">established</code> fact that a reader will be distracted by the readable content of a page when looking at its layout.</span></p>
-<div class="page-link-block"><a href="/admin/classmoji-development/pages/03dbd859-b733-4ee4-a67a-1dbf8641f149" data-page-id="03dbd859-b733-4ee4-a67a-1dbf8641f149">Syllabus Pape</a></div>
+<p><span style="font-size: 15.1875px;">It is a long <code class="inline-code">established</code> fact that a reader will be distracted by the readable content of a page when looking at its layout</span></p>
+<p><span style="font-size: 15.1875px;">It is a long <code class="inline-code">established</code> fact that a reader will be distracted by the readable content of a page when looking at its layout</span></p>
+<p><span style="font-size: 15.1875px;">It is a long <code class="inline-code">established</code> fact that a reader will be distracted by the readable content of a page when looking at its layout</span></p>
 </body>
 </html>
