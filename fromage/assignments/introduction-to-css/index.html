@@ -99,10 +99,26 @@
       width: 100%;
       height: 100%;
     }
+    .file-download {
+      background: #f6f8fa;
+      border: 1px solid #e1e4e8;
+      border-radius: 6px;
+      padding: 1em;
+      margin-bottom: 1em;
+    }
+    .file-download a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5em;
+      color: #0969da;
+      font-weight: 500;
+    }
+    .file-download a::before {
+      content: '📎';
+    }
   </style>
 </head>
 <body>
 <p>You can link to an image in a repository on GitHub by copying the URL in your browser and using that as the path to the image. For example, embedding an image in your wiki using Markdown might look like this.</p>
-<div class="video-embed"><iframe src="https://www.youtube.com/embed/1EMSuiSpN20" frameborder="0" allowfullscreen></iframe></div>
 </body>
 </html>
