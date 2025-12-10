@@ -205,6 +205,9 @@
   </style>
 </head>
 <body>
+<p>Module: Frontend<br>Assignment: Short<br>Serial: 8</p>
+<p>: State Management</p>
+<div class="heading-block h1-block"><h1>State Management — Short Assignment</h1></div>
 <p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/untitled-1765381510155.png" alt="Untitled"></p>
 <div class="heading-block h2-block"><h2>Overview</h2></div>
 <p>React StarterPack + <a href="https://zustand-demo.pmnd.rs/">Zustand</a></p>
@@ -287,11 +290,16 @@ export default useStore;</code></pre>
 import useStore from '../store';
 
 function Counter(props) {
-  const count = useStore((state) =&gt; state.count);
-  return &lt;div&gt;Current Count: {count}&lt;/div&gt;;
+const count = useStore((state) =&gt; state.count);
+return (
+&lt;div&gt;
+Current Count: {count}
+&lt;/div&gt;
+);
 }
 
-export default Counter;</code></pre>
+export default Counter;
+</code></pre>
 <p>Some things to note about this component:</p>
 <ol start="1">
 <li><code>useStore</code>. It turns out that the Zustand store is really just a hook! This hook gives you access to the store and from there either the state or the action functions. In this case, we only want the count.</li>
@@ -305,22 +313,19 @@ export default Counter;</code></pre>
 import useStore from '../store';
 
 function Controls(props) {
-  const increment = useStore((state) =&gt; state.increment);
-  const decrement = useStore((state) =&gt; state.decrement);
+const increment = useStore((state) =&gt; state.increment);
+const decrement = useStore((state) =&gt; state.decrement);
 
-  return (
-    &lt;div&gt;
-      &lt;button type="button" onClick={increment}&gt;
-        +
-      &lt;/button&gt;
-      &lt;button type="button" onClick={decrement}&gt;
-        -
-      &lt;/button&gt;
-    &lt;/div&gt;
-  );
+return (
+&lt;div&gt;
+&lt;button type="button" onClick={increment}&gt;+&lt;/button&gt;
+&lt;button type="button" onClick={decrement}&gt;-&lt;/button&gt;
+&lt;/div&gt;
+);
 }
 
-export default Controls;</code></pre>
+export default Controls;
+</code></pre>
 <p>Some things to note about the this component:</p>
 <ol start="1">
 <li><code>useStore</code>  we use the <code>useStore</code> hook (that we created!) again here to pull out the two action functions. </li>
@@ -357,34 +362,17 @@ decrement: () =&gt; set((state) =&gt; ({ count: state.count - 1 }), false, 'coun
 import { devtools } from 'zustand/middleware';
 import { immer } from 'zustand/middleware/immer';
 
-const useStore = create(
-  devtools(
-    immer((set) =&gt; {
-      return {
-        count: 0,
-        // careful with this syntax if 2nd arg is true it will replace all state rather than merge
-        increment: () =&gt;
-          set(
-            (draftState) =&gt; {
-              draftState.count += 1;
-            },
-            false,
-            'count/increment'
-          ),
-        decrement: () =&gt;
-          set(
-            (draftState) =&gt; {
-              draftState.count -= 1;
-            },
-            false,
-            'count/decrement'
-          ),
-      };
-    })
-  )
-);
+const useStore = create(devtools(immer((set) =&gt; {
+return {
+count: 0,
+// careful with this syntax if 2nd arg is true it will replace all state rather than merge
+increment: () =&gt; set((draftState) =&gt; { draftState.count += 1; }, false, 'count/increment'),
+decrement: () =&gt; set((draftState) =&gt; { draftState.count -= 1; }, false, 'count/decrement'),
+};
+})));
 
-export default useStore;</code></pre>
+export default useStore;
+</code></pre>
 <p>❗Shoot, I’m getting a nasty <code>eslint</code> error about reassigning a parameter!  </p>
 <p>Well technically, you are assigning to a property of a parameter, so that isn’t as bad.  </p>
 <p>🚀&nbsp;Add the following to your <code>.eslintrc.json</code> file to make it go away. </p>
@@ -395,8 +383,7 @@ export default useStore;</code></pre>
 <p>✔️&nbsp;Sure!  With the Immer middleware (notice how we now have <code>devtools</code> and <code>immer</code> middleware in our <code>create</code>) instead of passing in the current store state to our action functions, we instead get passed in a draftState which immer then creates a new state out of.  SO!  We can now simply mutate draftState and are always guaranteed that our actual store state won’t be mutated because Immer is great. AND we didn’t even need the Immer <code>produce</code> function, as essentially our entire store is automatically wrapped in Immer with this middleware.  Nifty keen! </p>
 <p>🧪&nbsp;Ok test it all out, still works great?  Great!  Release it. </p>
 <div class="heading-block h2-block"><h2>PR it!</h2></div>
-<pre><code class="language-bash">
-git commit
+<pre><code class="language-bash">git commit
 git push origin add_state_management
 # then make a PR and merge it in to your main branch!
 </code></pre>
@@ -449,15 +436,13 @@ import YouTube from './components/youtube';
 <p><em>NOTE: If you are adding zustand to some other existing project and don’t want to merge in the starter repo, you can go through the steps in part 1 to set up the dependencies and store.</em> </p>
 <div class="heading-block h2-block"><h2>Store</h2></div>
 <p>Ok,  let’s think about the data that we want now.  Let’s summarize what data we want:</p>
-<pre><code class="language-javascript">countStore: {
-  count: 0;
-}
+<pre><code class="language-javascript">countStore:  { count: 0 }
 
 videoStore: {
-  list: [];
-  selected: {
-  }
-}</code></pre>
+list: []
+selected: {}
+}
+</code></pre>
 <p>So we could have:</p>
 <ul>
 <li>one big store just like we did in Part 1.  Easy but over time will get confusing.</li>
@@ -475,65 +460,40 @@ import createVideoSlice from './video-slice';
 import createCountSlice from './count-slice';
 
 // folks can use slices or multiple stores if they want
-const useStore = create(
-  devtools(
-    immer((...args) =&gt; ({
-      videoSlice: createVideoSlice(...args),
-      countSlice: createCountSlice(...args),
-    }))
-  )
-);
+const useStore = create(devtools(immer((...args) =&gt; ({
+videoSlice: createVideoSlice(...args),
+countSlice: createCountSlice(...args),
+}))));
 
-export default useStore;</code></pre>
+export default useStore;
+</code></pre>
 <p><em>EC question:  what is <code>...args</code> up above?</em> </p>
 <p>2️⃣&nbsp;Recreate our count store as a slice! <code>store/count-slice.js</code></p>
 <pre><code class="language-javascript">export default function createCountSlice(set) {
-  return {
-    count: 0,
-    increment: () =&gt;
-      set(
-        ({ countSlice: draftState }) =&gt; {
-          draftState.count += 1;
-        },
-        false,
-        'counter/increment'
-      ),
-    decrement: () =&gt;
-      set(
-        ({ countSlice: draftState }) =&gt; {
-          draftState.count -= 1;
-        },
-        false,
-        'counter/decrement'
-      ),
-  };
-}</code></pre>
+return {
+count: 0,
+increment: () =&gt; set(({ countSlice: draftState }) =&gt; { draftState.count += 1; }, false, 'counter/increment'),
+decrement: () =&gt; set(({ countSlice: draftState }) =&gt; { draftState.count -= 1; }, false, 'counter/decrement'),
+};
+}
+</code></pre>
 <p>Note some peculiarities.. We essentially have just taken part of the store creation out into a separate file, yes. BUT we have also used some <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">destructuring syntax</a> to help us only operate on the count slice key we defined in the store. We called our slice <code>countSlice</code> so here we pull that key out AND rename it:  <code>{countSlice: draftState}</code> deconstructs our global state object and pulls out only the <code>countSlice</code> key and renames it to be <code>draftState</code>.  </p>
 <p>WHY!??   For clarity! This is so you don’t forget that we are working with Immer on a draft.  If you forget, you may do things that don’t work.  So we remind ourselves by writing clear code! </p>
 <p>3️⃣&nbsp;Create our videoStore <code>store/video-slice.js</code></p>
 <pre><code class="language-javascript">export default function createVideoSlice(set) {
-  return {
-    selected: null,
-    list: [],
-    selectVideo: (video) =&gt;
-      set(
-        ({ videoSlice: draftState }) =&gt; {
-          draftState.selected = video;
-        },
-        false,
-        'video/selectVideo'
-      ),
-    setVideos: (videos) =&gt;
-      set(
-        ({ videoSlice: draftState }) =&gt; {
-          draftState.selected = videos[0];
-          draftState.list = videos;
-        },
-        false,
-        'video/setVideos'
-      ),
-  };
-}</code></pre>
+return {
+selected: null,
+list: [],
+selectVideo: (video) =&gt; set(({ videoSlice: draftState }) =&gt; {
+draftState.selected = video;
+}, false, 'video/selectVideo'),
+setVideos: (videos) =&gt; set(({ videoSlice: draftState }) =&gt; {
+draftState.selected = videos[0];
+draftState.list = videos;
+}, false, 'video/setVideos'),
+};
+}
+</code></pre>
 <div class="heading-block h2-block"><h2>Connected Components</h2></div>
 <p>Let’s see what you remember!</p>
 <div class="heading-block h3-block"><h3>VideoListItem</h3></div>
