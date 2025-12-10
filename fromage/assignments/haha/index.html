@@ -571,8 +571,13 @@ import VideoList from './video_list';
 import VideoDetail from './video_detail';
 import useStore from '../store';</code></pre></div></details></li>
 </ol>
-<p>
-</p>
+<pre><code>import React, { useCallback, useEffect } from 'react';
+import debounce from 'lodash.debounce';
+import SearchBar from './search_bar';
+import youtubeSearch from '../services/youtube-api';
+import VideoList from './video_list';
+import VideoDetail from './video_detail';
+import useStore from '../store';</code></pre>
 <p>function YouTube(props) {<br>  const setVideos = useStore(({ videoSlice }) =&gt; videoSlice.setVideos);</p>
 <p>  const search = (text) =&gt; {<br>    youtubeSearch(text).then((videos) =&gt; {<br>      setVideos(videos);<br>    });<br>  };</p>
 <p>  const debouncedSearch = useCallback(debounce(search, 500), []);</p>
@@ -587,7 +592,7 @@ import useStore from '../store';</code></pre></div></details></li>
 <p>🤪&nbsp;Sure thing!  There are many ways to do stuff.  <code>({videoSlice})</code> is an example of destructuring assignment, but here I wanted to show that you can also just dig through the global state object to get at the videoSlice data.  Your preference how you do it. I like the destructuring because I feel it makes things clearer, but you may prefer to always just think of the global state.  Your preference!</p>
 <div class="heading-block h2-block"><h2>Debugging</h2></div>
 <p>Last thing! Try opening up the Redux Chrome DevTools and play with the timeline to move the state forward and back.</p>
-<p>Play with the <em>slider</em> and note how you can export and import state. Imagine how powerful that would be if we could just save the whole state of a very complex app!</p>
+<p>Play i the <em>slider</em> and note how you can export and import state. Imagine how powerful that would be if we could just save the whole state of a very complex app!</p>
 <div class="heading-block h2-block"><h2>Release it!</h2></div>
 <p><strong>Commit</strong> and <strong>push</strong> your changes to your new state management branch  <code>git push origin statemanagement-sa</code>. No need to merge into main! </p>
 <p>🚀&nbsp;You should create a new render site and then select the <code>statemanagement-sa</code> branch instead of <code>main</code> so you can have multiple sites running off of different versions of your code.</p>
