@@ -448,13 +448,12 @@ post.title = postFields.title;
 </code></pre>
 <p>🚀 All our fields are available in <code>req.body</code> and we should have passed them into our controller as <code>postFields</code> (or however you want to name the argument), so let’s set them on the new Post object. You know how to do this.</p>
 <p>Now we just have to save the object (so far we’ve been working with a new instance purely in memory). Most save and query methods in Mongoose can return promises — which we know can also be used with async/await notation, so let’s practice that a bit here.</p>
-<pre><code class="language-javascript">  try {
-const savedpost = await post.save();
-return savedpost;
+<pre><code class="language-javascript">try {
+  const savedpost = await post.save();
+  return savedpost;
 } catch (error) {
-throw new Error(`create post error: ${error}`);
-}
-</code></pre>
+  throw new Error(`create post error: ${error}`);
+}</code></pre>
 <p>It is common practice to return the modified object in a API call as confirmation, but often API’s will just return various success codes also to indicate success or failure. Why might you want to return the entire updated object though? </p>
 <p>⚠️ Double check your route handler, are you <code>await</code>ing the controller function <code>Posts.createPost(req.body)</code> and then <code>res.json</code> responding with the results?</p>
 <p>🚀 Let’s test that this worked:</p>
