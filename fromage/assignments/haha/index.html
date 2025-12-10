@@ -357,17 +357,34 @@ decrement: () =&gt; set((state) =&gt; ({ count: state.count - 1 }), false, 'coun
 import { devtools } from 'zustand/middleware';
 import { immer } from 'zustand/middleware/immer';
 
-const useStore = create(devtools(immer((set) =&gt; {
-return {
-count: 0,
-// careful with this syntax if 2nd arg is true it will replace all state rather than merge
-increment: () =&gt; set((draftState) =&gt; { draftState.count += 1; }, false, 'count/increment'),
-decrement: () =&gt; set((draftState) =&gt; { draftState.count -= 1; }, false, 'count/decrement'),
-};
-})));
+const useStore = create(
+  devtools(
+    immer((set) =&gt; {
+      return {
+        count: 0,
+        // careful with this syntax if 2nd arg is true it will replace all state rather than merge
+        increment: () =&gt;
+          set(
+            (draftState) =&gt; {
+              draftState.count += 1;
+            },
+            false,
+            'count/increment'
+          ),
+        decrement: () =&gt;
+          set(
+            (draftState) =&gt; {
+              draftState.count -= 1;
+            },
+            false,
+            'count/decrement'
+          ),
+      };
+    })
+  )
+);
 
-export default useStore;
-</code></pre>
+export default useStore;</code></pre>
 <p>❗Shoot, I’m getting a nasty <code>eslint</code> error about reassigning a parameter!  </p>
 <p>Well technically, you are assigning to a property of a parameter, so that isn’t as bad.  </p>
 <p>🚀&nbsp;Add the following to your <code>.eslintrc.json</code> file to make it go away. </p>
@@ -414,8 +431,7 @@ import debounce from 'lodash.debounce';
 import YouTube from './youtube';
 
 // and then display the component
-&lt;YouTube /&gt;
-</code></pre>
+&lt;YouTube /&gt;;</code></pre>
 <p>⚠️ You may need to do a little bit of cleanup, for instance in <code>app.jsx</code> get rid of the counter and controls components, you won’t need them. This is a good exercise in going through your code and doing some refactoring. Your linter will help you here, it will tell you things that are undefined or need importing etc.</p>
 <details><summary>Essentially, all we are doing is making our index.jsx file simply load up the YouTube component — you could also have index render app render youtube.</summary><div><pre><code class="language-jsx">import React from 'react';
 import { createRoot } from 'react-dom/client';
@@ -431,13 +447,15 @@ import YouTube from './components/youtube';
 <p><em>NOTE: If you are adding zustand to some other existing project and don’t want to merge in the starter repo, you can go through the steps in part 1 to set up the dependencies and store.</em> </p>
 <div class="heading-block h2-block"><h2>Store</h2></div>
 <p>Ok,  let’s think about the data that we want now.  Let’s summarize what data we want:</p>
-<pre><code class="language-javascript">countStore:  { count: 0 }
+<pre><code class="language-javascript">countStore: {
+  count: 0;
+}
 
 videoStore: {
-list: []
-selected: {}
-}
-</code></pre>
+  list: [];
+  selected: {
+  }
+}</code></pre>
 <p>So we could have:</p>
 <ul>
 <li>one big store just like we did in Part 1.  Easy but over time will get confusing.</li>
@@ -455,40 +473,65 @@ import createVideoSlice from './video-slice';
 import createCountSlice from './count-slice';
 
 // folks can use slices or multiple stores if they want
-const useStore = create(devtools(immer((...args) =&gt; ({
-videoSlice: createVideoSlice(...args),
-countSlice: createCountSlice(...args),
-}))));
+const useStore = create(
+  devtools(
+    immer((...args) =&gt; ({
+      videoSlice: createVideoSlice(...args),
+      countSlice: createCountSlice(...args),
+    }))
+  )
+);
 
-export default useStore;
-</code></pre>
+export default useStore;</code></pre>
 <p><em>EC question:  what is <code>...args</code> up above?</em> </p>
 <p>2️⃣&nbsp;Recreate our count store as a slice! <code>store/count-slice.js</code></p>
 <pre><code class="language-javascript">export default function createCountSlice(set) {
-return {
-count: 0,
-increment: () =&gt; set(({ countSlice: draftState }) =&gt; { draftState.count += 1; }, false, 'counter/increment'),
-decrement: () =&gt; set(({ countSlice: draftState }) =&gt; { draftState.count -= 1; }, false, 'counter/decrement'),
-};
-}
-</code></pre>
+  return {
+    count: 0,
+    increment: () =&gt;
+      set(
+        ({ countSlice: draftState }) =&gt; {
+          draftState.count += 1;
+        },
+        false,
+        'counter/increment'
+      ),
+    decrement: () =&gt;
+      set(
+        ({ countSlice: draftState }) =&gt; {
+          draftState.count -= 1;
+        },
+        false,
+        'counter/decrement'
+      ),
+  };
+}</code></pre>
 <p>Note some peculiarities.. We essentially have just taken part of the store creation out into a separate file, yes. BUT we have also used some <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">destructuring syntax</a> to help us only operate on the count slice key we defined in the store. We called our slice <code>countSlice</code> so here we pull that key out AND rename it:  <code>{countSlice: draftState}</code> deconstructs our global state object and pulls out only the <code>countSlice</code> key and renames it to be <code>draftState</code>.  </p>
 <p>WHY!??   For clarity! This is so you don’t forget that we are working with Immer on a draft.  If you forget, you may do things that don’t work.  So we remind ourselves by writing clear code! </p>
 <p>3️⃣&nbsp;Create our videoStore <code>store/video-slice.js</code></p>
 <pre><code class="language-javascript">export default function createVideoSlice(set) {
-return {
-selected: null,
-list: [],
-selectVideo: (video) =&gt; set(({ videoSlice: draftState }) =&gt; {
-draftState.selected = video;
-}, false, 'video/selectVideo'),
-setVideos: (videos) =&gt; set(({ videoSlice: draftState }) =&gt; {
-draftState.selected = videos[0];
-draftState.list = videos;
-}, false, 'video/setVideos'),
-};
-}
-</code></pre>
+  return {
+    selected: null,
+    list: [],
+    selectVideo: (video) =&gt;
+      set(
+        ({ videoSlice: draftState }) =&gt; {
+          draftState.selected = video;
+        },
+        false,
+        'video/selectVideo'
+      ),
+    setVideos: (videos) =&gt;
+      set(
+        ({ videoSlice: draftState }) =&gt; {
+          draftState.selected = videos[0];
+          draftState.list = videos;
+        },
+        false,
+        'video/setVideos'
+      ),
+  };
+}</code></pre>
 <div class="heading-block h2-block"><h2>Connected Components</h2></div>
 <p>Let’s see what you remember!</p>
 <div class="heading-block h3-block"><h3>VideoListItem</h3></div>
