@@ -506,8 +506,7 @@ import useStore from '../store';
 <div class="heading-block h3-block"><h3>VideoList</h3></div>
 <p>🚀 In <code>components/video_list.jsx</code> remove <code>onVideoSelect={props.onVideoSelect}</code>  from <code>VideoListItem</code>. Yay! We no longer need to pass this function around it lives directly in our store.</p>
 <p>🚀 We can also upgrade <em>VideoList</em> to connect to the entire list of videos. Edit <code>video_list.jsx</code> to include the following:</p>
-<pre><code class="language-javascript">  const videos = useStore(({ videoSlice }) =&gt; (videoSlice.list));
-</code></pre>
+<pre><code class="language-javascript">const videos = useStore(({ videoSlice }) =&gt; videoSlice.list);</code></pre>
 <p><em>Note we don’t have to edit that we map over props.videos… cause we’re just naming it the same thing!</em></p>
 <details><summary>Whole thing in case, but you should really not need this.</summary><div><pre><code class="language-jsx">import React from 'react';
 import useStore from '../store';
