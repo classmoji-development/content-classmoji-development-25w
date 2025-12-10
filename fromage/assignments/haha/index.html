@@ -205,428 +205,633 @@
   </style>
 </head>
 <body>
-<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/untitled-1765381510155.png" alt="Untitled"></p>
-<div class="heading-block h2-block"><h2>Overview</h2></div>
-<p>React StarterPack + <a href="https://zustand-demo.pmnd.rs/">Zustand</a></p>
-<p>For this workshop we’re just going to add Zustand to our starter pack and our YouTube video Short Assignment!</p>
-<p>Zustand is a fancy state management system that we’ll be using to build our various next assignments. It will allow us to simplify our code and have a global state in our app with fewer callbacks!  It is a successor to Redux, which is a popular state management tool you may have heard of. Zustand follows the same <a href="https://docs.pmnd.rs/zustand/guides/flux-inspired-practice">Flux pattern</a> but simplifies it significantly.  Instead of Actions, ActionCreators, Dispatch, Reducers, createAsyncThunk, createSlice, etc,  we have a store, and action functions, well and a bit of slices. </p>
-<div class="callout"><span class="callout-emoji">💻</span><span>run in Terminal<br> 🚀 : a step to not forget</span></div>
-<div class="heading-block h2-block"><h2>Part 1:  starterpack update</h2></div>
-<p>🚀 We’re going to keep working on your <strong>frontend-starterpack</strong> for this assignment. </p>
-<p>So just dig up that repo and work there! At this point you should have a starterpack that has vite+babel+eslint+sass+react+reactrouter. Remember to just push your new stuff to this. For grading we’ll know which commits to look at. You want to keep building this up.</p>
-<p>Now we’re going to add in Zustand to your personal starter repository so now you’ll have vite+babel+eslint+sass+react+reactrouter+zustand! Wow.</p>
-<div class="heading-block h2-block"><h2>Branch it</h2></div>
-<pre><code class="language-bash">git checkout -b add_state_management
+
+<p>Module: Frontend<br>Assignment: Short<br>Serial: 6</p>
+<h1>Intro React — SA3</h1>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/react-logo-1765382859433.png" alt=""></p>
+<h2 style="margin-top: 1.5em;">Overview</h2>
+<p>Today we’ll be learning about <a href="https://facebook.github.io/react/">React</a>! So far you’ve been using html and css to build static sites. Sites that do not have much going on in terms of content that changes. React is a javascript frontend framework for making dynamic sites. In this workshop we will build a video chooser. We will also work with the vite+babel+eslint starter code that you worked on in the previous short assignment.</p>
+<h1>StarterPack React Update</h1>
+<p>First we are going to update our starterpack</p>
+<p>🚀 reclone or simply <code>cd</code> into the directory with your previous starterpack</p>
+<p>🚀 Create &amp; checkout a new <code>add_react</code> feature branch</p>
+<pre><code class="language-bash">git checkout -b add_react
 </code></pre>
-<div class="heading-block h2-block"><h2>Zustand</h2></div>
-<p>🚀 Install zustand node module</p>
-<pre><code class="language-bash">npm install zustand
+<h2 style="margin-top: 1.5em;">Setup</h2>
+<p>We’re going to need to add a few things to our project to get it ready for React.</p>
+<h3 style="margin-top: 1.25em;">babel</h3>
+<p>All set - Vite takes care of us.</p>
+<h3 style="margin-top: 1.25em;">eslint</h3>
+<p>Let’s modify your <code>.eslintrc.json</code> to add in some React support.</p>
+<p>🚀 Change your <code>.eslintrc.json</code> file. Here we only show the things to <strong>add</strong> or <strong>update</strong>. Do not delete any existing lines just add the following in the right locations:</p>
+<pre><code class="language-json">{
+&quot;rules&quot;: {
+&quot;react/jsx-uses-react&quot;: 2,
+&quot;react/jsx-uses-vars&quot;: 2,
+&quot;react/react-in-jsx-scope&quot;: 2,
+&quot;react/prop-types&quot;: 0,
+&quot;react/destructuring-assignment&quot;: 0,
+&quot;react/jsx-first-prop-new-line&quot;: 0,
+&quot;react/jsx-filename-extension&quot;: 0,
+&quot;jsx-a11y/click-events-have-key-events&quot;: 0,
+&quot;jsx-a11y/no-noninteractive-element-interactions&quot;: 0,
+&quot;react/jsx-one-expression-per-line&quot;:0
+},
+&quot;plugins&quot;: [
+&quot;react&quot;
+]
 </code></pre>
-<p>Zustand is a general state management paradigm that does not necessarily need to be tied to React. But together they are an unstoppable force for clean web development. </p>
-<div class="heading-block h2-block"><h2>What is Zustand?</h2></div>
-<blockquote>
-<p>Zustand is a predictable state container for JavaScript apps that is small, fast, and scalable. It is based on simplified flux principles and has a hook-based API, and involves a lot less boilerplate code than Redux and similar libraries for managing React states.</p>
-</blockquote>
-<p>Zustand has a few main concepts that we will tackle.</p>
+<h3 style="margin-top: 1.25em;">Get at those Dependencies</h3>
+<p>🚀 Let’s just take care of all our dependencies up front so we can just dig into all of the codes without distraction. </p>
+<pre><code class="language-bash">npm install lodash.debounce @vitejs/plugin-react react react-dom react-router axios
+</code></pre>
+<pre><code class="language-bash">npm uninstall jquery
+</code></pre>
+<p>oooh, no more jquery…</p>
+<p>🚀 Start up your Vite dev server:</p>
+<pre><code class="language-bash">npm run dev
+</code></pre>
+<p>If there are no errors we can move on! Leave the server running as now we have everything necessary to just jump into the codes.</p>
+<p><em>One common cause of errors can be dependency version mismatches in the various npm packages. This is because by default when you <code>npm install</code> something it will attempt to install the most recent thing. One way to attempt to fix this is to update all the versions to the most recent using <a href="https://www.npmjs.com/package/npm-check-updates">npm-check-updates</a>.</em></p>
+<h2 style="margin-top: 1.5em;">Our First React View</h2>
+<p>Let’s make our first React view. React operates on a concept of components – there are a few different kinds of components with the most simple being just a function (sometimes called a function or dumb component). Lets start with that.</p>
+<p>🚀 Rename your <code>index.js</code> file to <code>src/index.jsx!</code></p>
+<p>🚀 Then change it’s contents to:  (bye jQuery!) </p>
+<pre><code class="language-jsx">import React from &#39;react&#39;;
+import { createRoot } from &#39;react-dom/client&#39;;
+import &#39;./style.scss&#39;;
+
+const App = () =&gt; &lt;div className=&quot;test&quot;&gt;All the REACT are belong to us!&lt;/div&gt;;
+
+const root = createRoot(document.getElementById(&#39;main&#39;));
+root.render(&lt;App /&gt;);
+</code></pre>
+<p>Wait!  What is the <code>.jsx</code> extension we just used?  This tells Vite that this isn’t just any javascript file, this file has react jsx code syntax.  It is a react component! </p>
+<p>Hold on though,  we used to have an <code>index.js</code> file what should we do with that?  You can leave it, BUT we’ll need to update our <code>index.html</code> file to point to <code>index.jsx</code> instead of <code>index.js</code>. </p>
+<p>🚀 Go do that now, update your <code>index.html</code> to point to your new jsx entry point. </p>
+<p>🚀 Create, now go look at the wonderful page you have just rendered with react. </p>
+<p>Our first React app! Ok we’re done. Kidding!  But do notice what we are doing here, we are instantiating a React Root instance and attaching it to our <code>#main</code> element and then rendering it.  It is that simple.  You can see here that react just takes control of a part of the DOM, doesn’t have to be the entire page.  You could have react only control part of your if you wanted.</p>
+<p>⚠️ <em>If you get an error about createRoot then you are running a version of React older than 18. We’ll be using React ≥18 in this course so you should upgrade your versions of npm and node to make sure you are up to date.</em></p>
+<h2 style="margin-top: 1.5em;"><a href="https://reactjs.org/docs/introducing-jsx.html">JSX</a></h2>
+<p>Did you notice how there seems to be html like stuff in the above? What is <code>&lt;App /&gt;</code>? It is a function that seems to return html? In fact all the <code>&lt;tags&gt;</code> you see when working in react that are inside of javascript code are actually in <a href="https://reactjs.org/docs/introducing-jsx.html">JSX</a>. When we did <code>&lt;div&gt;&lt;/div&gt;</code> in the above what we are actually doing is <code>React.createElement(&quot;div&quot;, { className: &quot;test&quot; }, &quot;All the React are belong to us!&quot;);</code>. JSX happens to provide all the standard html elements for you so it feels like html while actually being cool react components, but there are some subtle differences: <code>class</code> is now <code>className</code> for instance because class is already a reserved keyword in javascript!</p>
+<h2 style="margin-top: 1.5em;">Pull Request ⚠️</h2>
+<p>At this point you will want to push these changes to your starter pack! This will add React support to your starterpack. </p>
+<p>🚀 Git <code>add</code>, <code>commit</code> and <code>push</code> to create an <code>add_react</code> branch on github:</p>
+<pre><code class="language-bash">git push origin add_react
+</code></pre>
+<p>You may see a message like this after pushing:</p>
+<pre><code class="language-bash">remote: remote: Create a pull request for &#39;add_react&#39; on GitHub by visiting:
+remote: https://github.com/dartmouth-cs52-TERM/GITUSERNAME-starterpack/pull/new/add_react1
+</code></pre>
+<p>This is GitHub recongnizing that you pushed a new branch and that may be because you want to create a PR. </p>
+<p>🚀 Let’s create a Pull Request!   Go to the repo on <a href="http://github.com">github.com</a> (you can use the link in classmoji to help you find the repo). Then create a pull request into <code>main</code> from <code>add_react</code> and merge it in! </p>
+<p>🎉 Now your <code>main</code> branch for your starterpack has React support!</p>
+<p>We’ll be adding more stuff to it over time so make sure your personal starterpack is in good shape. If you have questions come to office hours!</p>
+<h1>Video Search App</h1>
+<p>Let’s build something a little more complicated with multiple components.</p>
+<p>Here’s a mockup of our soon to be amazing app:</p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/app-design-1765382859434.png" alt=""></p>
+<p>This web app will search the YouTube api and list the top results as well as have one select video from the list highlighted with a video embed as well as some of the description and more data about the video.</p>
+<p>What components do you think compose this app?</p>
+<h3 style="margin-top: 1.25em;">Components</h3>
+<p>A component is a logical unit that packages up some functionality or some part of the display that can potentially be reused. React is basically just a tree of components. 🌴</p>
+<p>Let’s break up our app into some components.</p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/app-components-1765382859434.png" alt=""></p>
+<p>Here we have identified a few components:</p>
 <ul>
-<li><strong>Store</strong>: the entire state of your app is stored in an object tree inside a single store.</li>
-<li><strong>Action Functions</strong>: the only way to change the state tree 🌳&nbsp;is to run a set function that lives in the store.</li>
+<li>Main App: this is the top level component. In the future we might call such a component a <strong>container</strong>, as it only has custom child components in it, not html components.</li>
+<li>Search Bar: this is the search bar at the top</li>
+<li>Video Detail: the highlight larger video display</li>
+<li>Video List: the list of videos found</li>
+<li>Video List Item: an item in the list of videos</li>
 </ul>
-<p>This is a simplification of the flux pattern we have discussed, and a welcome one at that!</p>
-<div class="heading-block h3-block"><h3>Actions</h3></div>
-<p>Remember how our state should be treated as if it is immutable (read-only)? Actions are the way to trigger new states. In plain React we would run a <code>setState</code> based on events passed up through callbacks. With Zustand,  we can still use local react component state for certain things, but whenever we need a far reaching state change we will use store actions instead.</p>
-<p>For instance an action could look like the following.</p>
-<pre><code class="language-javascript">(someActionPayload) =&gt; set((state) =&gt; ({ someKey: someActionPayload }))
+<h2 style="margin-top: 1.5em;">To Start</h2>
+<p>⚠️ We’re going to use a new repository for this part! </p>
+<p>🚀 To start grab the assignment repository <code>react-intro</code> <a href="http://classmoji.brunchlabs.com">classmoji.brunchlabs.com</a> and <code>cd</code> into it. </p>
+<p>🚀 Double check with <code>pwd</code> in the terminal, if not <code>cd</code> into the repository you just cloned! </p>
+<p>🚀 Then we’re going to do something a bit odd, we’re going to add a new git remote and pull in the newly updated react starter code! </p>
+<pre><code class="language-bash">
+git remote add starter git@github.com:dartmouth-cs52-CURRENT_TERM/frontend-starterpack-YOUR-GITHUB-USERNAME.git
+# might be easiest to grab the git url from github directly :-)
+git pull starter main *--allow-unrelated-histories*
 </code></pre>
-<p>Actions ensure that the state is set properly.</p>
-<div class="heading-block h3-block"><h3>Store</h3></div>
-<p>The Store is a way to store the global state for your app. So far for the React apps that we have built we have had local component state for a few of our smart components, and often have had a top level state inside of our App component. Having your app state in a single state tree has lots of positive benefits. The store is initialized in your top level <code>index.jsx</code> file.</p>
-<div class="heading-block h2-block"><h2>Code</h2></div>
-<p>Let’s wire this all together, it may seem a bit tricky at first but we’ll work though it!</p>
-<div class="heading-block h3-block"><h3>File Structure</h3></div>
-<p>🚀 Create a file structure to store our actions and reducers.</p>
-<pre><code>mkdir src/store src/components
+<p>What just happened? You merged in the git tree from another repo (the remote we named starter) into your own! Hopefully you’ll build on your starter repo and use it for lots of projects.</p>
+<p>⚠️  <em>What are you doing here is a bit unorthodox, we are merging two unrelated git repositories together.  Without the <code>--allow-unrelated-histories</code> flag you would get an error about unrelated histories.  If it complains about un-merged files but there aren’t any conflicts you may need to: <code>git add</code> those files and then <code>git commit</code>. What is cool here is that we’re avoiding copy/pasting all those files in and in theory could update the starter and then pull in the changes here later as well.</em></p>
+<p>❗ If you get merge conflicts during any of this and you may, now is a good chance to <a href="https://www.freecodecamp.org/news/resolve-merge-conflicts-in-git-a-practical-guide/">learn to resolve them</a>.  </p>
+<p>🚀 Let’s make a folder and start empty files for these:</p>
+<pre><code class="language-bash">mkdir src/components
+cd src/components
+touch search_bar.jsx video_detail.jsx video_list.jsx video_list_item.jsx
 </code></pre>
-<p>We’re going to create an extensible structure so there might be a little bit extra boilerplate, but not to worry it’ll all make sense.</p>
-<div class="heading-block h3-block"><h3>Store</h3></div>
-<p>The Zustand store is the main module responsible for bringing it all together. The store contains our state data and contains the functions that generate new state all in one neat package. </p>
-<p>With Javascript if you have a directory with multiple files and an <code>index.js</code> file you can import it by the directory name: <code>import ./store</code> we’ll use this to create a module store with potentially multiple files in it. </p>
-<p>For this simple example we’re going to have 1 global store. When a store gets too large folks will sometimes split it up either into multiple stores (when no actions need to change data across stores, or into a slices pattern when they are more interconnected. We’ll use and learn about slices later but for now let’s just set up on simple store. </p>
-<p>🚀&nbsp;Create a super simple store <code>store/index.js</code>:</p>
-<pre><code class="language-javascript">import { create } from 'zustand';
-import { devtools } from 'zustand/middleware';
+<p><em>Look at you go, so much terminal! <code>touch</code> simply creates empty files.</em></p>
+<h2 style="margin-top: 1.5em;">SearchBar Attempt</h2>
+<p>🚀 Let’s work on the <code>search_bar.jsx</code>. That seems to be the first component we would need to get any functionality.</p>
+<pre><code class="language-jsx">import React from &#39;react&#39;;
 
-const useStore = create(
-  devtools((set) =&gt; {
-    return {
-      count: 0,
-      increment: () =&gt; set((state) =&gt; ({ count: state.count + 1 })),
-      decrement: () =&gt; set((state) =&gt; ({ count: state.count - 1 })),
-    };
-  })
+const SearchBar = () =&gt; {
+return &lt;input /&gt;;
+};
+
+export default SearchBar;
+</code></pre>
+<p><em>Note: we still need to import <code>React</code> in each file that will contain any JSX, this is needed as JSX is transpiled into javascript that uses React functions.</em> </p>
+<p>All we are doing here is exporting a function that returns an input component.</p>
+<p>🚀 Lets add it into our main page.  But first, let’s refactor App into it’s own file - create <code>src/components/app.jsx</code></p>
+<pre><code class="language-jsx">import React from &#39;react&#39;;
+
+// import our new SearchBar componenbt
+import SearchBar from &#39;./components/search_bar&#39;;
+
+function App(props) {
+return (
+&lt;div&gt;
+&lt;SearchBar /&gt;
+&lt;/div&gt;
 );
+};
 
-export default useStore;</code></pre>
-<p>Ok, what did we just?   We’re using Zustand’s <code>create</code> function and we pass in a function that takes <code>set</code> as an argument and returns an object with multiple keys.  This is our store!  We have <code>count</code> which is a value and two functions which we will call actions.  Super simple. </p>
-<div class="heading-block h3-block"><h3>DevTools</h3></div>
-<p>Wait, before we go on, it would be really lovely to have some devtools that can show us the state of the store, right?  </p>
-<p>Notice in our store we have a small bit of middleware we snuck in there. A function called devtools.  This function makes our store accessible to some devtools! </p>
-<p>Great, let’s all download and install <a href="https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd">ReduxDevtools</a>!  </p>
-<blockquote>
-<p>“Wait Redux? You promised we wouldn’t be doing Redux anymore?!”</p>
-</blockquote>
-<p>True, but Zustand maintains a store that turns out to be compatible with Redux and the Redux devtools work pretty seamlessly with it, so we’ll do that. </p>
-<p>✔️ Now you can open redux dev tools in your browser and confirm that the redux store is initialized:</p>
-<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/confirm-store-1765381510155.jpg" alt=""></p>
-<div class="heading-block h2-block"><h2>Connected components</h2></div>
-<p>Now we have the basics done, we should create some connected components. A connected component is one that is literally connected to the store for some bit of state.</p>
-<p>Let’s create some components that make use of our setup! These will be toy examples, and don’t particularly need app state management. But they’ll demonstrate the various wirings needed for setting up a much more complicated app.</p>
-<div class="heading-block h3-block"><h3>Counter</h3></div>
-<p>🚀 Let’s create a component for displaying our state. Create a new file <code>counter.jsx</code></p>
-<pre><code class="language-javascript">import React from 'react';
-import useStore from '../store';
-
-function Counter(props) {
-  const count = useStore((state) =&gt; state.count);
-  return &lt;div&gt;Current Count: {count}&lt;/div&gt;;
-}
-
-export default Counter;</code></pre>
-<p>Some things to note about this component:</p>
-<ol start="1">
-<li><code>useStore</code>. It turns out that the Zustand store is really just a hook! This hook gives you access to the store and from there either the state or the action functions. In this case, we only want the count.</li>
-<li><code>count</code>. Check it, what we are doing is selecting a small bit of the data, not the whole thing. This means that this component will be rerendered when the store <code>state.count</code> state is updated, but it will ignore any other data that wasn’t specified in this <em>selector</em> function.</li>
-</ol>
-<p>🚀 Add <code>&lt;Counter /&gt;</code> to the render method of one of the components that are currently displaying like <em>Welcome</em></p>
-<p>You should now see it rendering with a value of 0. This value is coming from the default value in our reducer!</p>
-<div class="heading-block h3-block"><h3>Controls</h3></div>
-<p>🚀 Let’s create one more component. Oof! This time it’ll just be a couple of buttons to call some actions. Make one last file: <code>controls.jsx</code>.</p>
-<pre><code class="language-javascript">import React from 'react';
-import useStore from '../store';
-
-function Controls(props) {
-  const increment = useStore((state) =&gt; state.increment);
-  const decrement = useStore((state) =&gt; state.decrement);
-
-  return (
-    &lt;div&gt;
-      &lt;button type="button" onClick={increment}&gt;
-        +
-      &lt;/button&gt;
-      &lt;button type="button" onClick={decrement}&gt;
-        -
-      &lt;/button&gt;
-    &lt;/div&gt;
-  );
-}
-
-export default Controls;</code></pre>
-<p>Some things to note about the this component:</p>
-<ol start="1">
-<li><code>useStore</code>  we use the <code>useStore</code> hook (that we created!) again here to pull out the two action functions. </li>
-<li><code>increment/decrement</code> are the two action functions that we created in the store, here we grab references to them and can then pass them in as onClick handlers.</li>
-</ol>
-<p>🚀 Add <code>&lt;Controls /&gt;</code> to the render method of one of the components that are currently displaying like <em>Welcome</em></p>
-<p>Note that these two components <strong>don’t need to have a common parent</strong>, and you <strong>don’t have to pass around functions in callbacks</strong>. In a simple example like this it might not make much of a difference, we could have put the counter into the local component state of the parent. However if you had multiple levels of components the callback tracking would get difficult.</p>
-<p>🧘&nbsp;We’ll do much more of this type of app state management, so if this is a little confusing now don’t worry!</p>
-<div class="heading-block h2-block"><h2>Debugging</h2></div>
-<p>Last thing! Try opening up the Redux Chrome DevTools and play with the timeline to move the state forward and back.</p>
-<p>Play with the <em>slider</em> and note how you can export and import state. Imagine how powerful that would be if we could just save the whole state of a very complex app!</p>
-<p>❓But there is a question here.  Why are all the actions showing up as “anonymous”?!?</p>
-<p>✔️&nbsp;Yeah, that is because the redux devtools want a specific String name for the action. We can add that in like so:</p>
-<pre><code class="language-javascript">    // careful with this syntax - if 2nd arg is true it will replace all state rather than merge
-increment: () =&gt; set((state) =&gt; ({ count: state.count + 1 }), false, 'count/increment'),
-decrement: () =&gt; set((state) =&gt; ({ count: state.count - 1 }), false, 'count/decrement'),
+export default App;
 </code></pre>
-<p>The zustand <code>set</code> function takes some extra arguments! </p>
-<ol start="1">
-<li>Argument 1 (what we have used so far) is the state updater function that returns new state. </li>
-<li>Argument 2 is a boolean that determines whether the state should be merged (false is default and almost always desired) or if it should be replaced (useful for resetting everything). Leave this false unless you know what you are doing.</li>
-<li>Argument 3 is a String name for the action.</li>
-</ol>
-<p>Replace the lines you have in your <code>store/index.js</code>, refresh the page, and now in devtools you should see the names of the actions!</p>
-<p>❓&nbsp;Should you always name your actions?  Yes! You’ll thank yourself later. </p>
-<div class="heading-block h2-block"><h2>Immer</h2></div>
-<p>❓&nbsp;Ok, this is all fine, but what if we have complex state, we’ve heard tell that immutability of state is important, but in the above examples what is preventing us from mutating state?  </p>
-<p>Well nothing,  if you did <code>set((state) =&gt; { state.count++; }</code> you would get some eslint warnings, but it would, at this stage, work.  However, that is only because count is a primitive, if count was an object and you were then modifying some property inside it, then the page may not update predictably or rerender as you desire, especially if there are lots of changes. </p>
-<p>❓How might we guarantee that we don’t make an assignment mistake and always treat state as immutable?  </p>
-<p>GREAT QUESTION!  Easy!  We can use <a href="https://immerjs.github.io/immer/">Immer</a>!  Turns out Zustand supports it out of the box. 🎁&nbsp; Just have to: </p>
-<p><code>npm install immer</code></p>
-<p>🚀&nbsp; Add Immer to your store like so:</p>
-<pre><code class="language-javascript">import { create } from 'zustand';
-import { devtools } from 'zustand/middleware';
-import { immer } from 'zustand/middleware/immer';
+<p>and in our <code>index.jsx</code> file, delete the the App function and instead import App from the new file:</p>
+<pre><code class="language-jsx">import App from &#39;./components/app&#39;;
+</code></pre>
+<p>We defined a new React component <code>SearchBar</code> and imported and added it to the main App render function. Note for multiline JSX we put it all in <code>()</code> for easier legibility.</p>
+<p>Remember that this is a tree — React expects a component to be <strong>one</strong> top level element. You can also return an array of elements/components but not in your top level React App container.</p>
+<p>This is the tree that we are growing:</p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/video-tree-1765382859434.png" alt=""></p>
+<p>Great, now you should see a search bar on your page.</p>
+<h2 style="margin-top: 1.5em;">Functional + Hooks vs Class Components</h2>
+<p>So far we’ve made 2 components and they have both been very simple, just a simple function that returns some <em>JSX</em>.  Earlier React best practice was to use Class components in cases when a component started to get complicated with state.  However, there has been an attempt to simplify with a concept called hooks.  Here we will show a Class component based structure but we will do our implementation with hooks. </p>
+<details><summary>Here is a full Class based component. You can see how we use a constructor to initialize, create an instance method to handle events, and a render function that does all the work of showing the component.  The nice thing about class components is how straightforward the lifecycle is. You know when something happens fairly easily.</summary><div><pre><code class="language-jsx">import React, { Component } from &#39;react&#39;;
 
-const useStore = create(
-  devtools(
-    immer((set) =&gt; {
-      return {
-        count: 0,
-        // careful with this syntax if 2nd arg is true it will replace all state rather than merge
-        increment: () =&gt;
-          set(
-            (draftState) =&gt; {
-              draftState.count += 1;
-            },
-            false,
-            'count/increment'
-          ),
-        decrement: () =&gt;
-          set(
-            (draftState) =&gt; {
-              draftState.count -= 1;
-            },
-            false,
-            'count/decrement'
-          ),
-      };
-    })
-  )
+<p>class SearchBar extends Component {<br>    // initializing our component<br>  constructor(props) {<br>    super(props);</p>
+<pre><code>this.state = { searchterm: &amp;#39;&amp;#39; };
+
+this.onInputChange = this.onInputChange.bind(this);
+</code></pre>
+<p>  }</p>
+<pre><code>// event handler instance method
+</code></pre>
+<p>  onInputChange(event) {<br>    this.setState({ searchterm: event.target.value });<br>    this.props.onSearchChange(event.target.value);<br>  }</p>
+<pre><code>// function that runs to display the component
+</code></pre>
+<p>  render() {<br>    return (<br>      &lt;div id=&quot;search-bar&quot;&gt;<br>        &lt;input onChange={this.onInputChange} value={this.state.searchterm} placeholder=&quot;search&quot; /&gt;<br>      &lt;/div&gt;<br>    );<br>  }<br>}</p>
+<p>export default SearchBar;<br></code></pre></p>
+</div></details>
+
+<p><em>This is purely for educational purposes, please do not use the class based component.</em> </p>
+<h2 style="margin-top: 1.5em;">Events in React</h2>
+<p>What we need to do is handle some events. The browser emits events on things like mouse move, click, keypress, and other forms of input. For our <em>SearchBar</em> we want to hand the <a href="http://www.w3schools.com/jsref/event_onchange.asp">onChange</a> event. This event gets triggered whenever anything in the input textfield changes.</p>
+<p>🚀 So let’s add a function to handle input changes:</p>
+<pre><code class="language-jsx">
+// add this above your return
+const onInputChange = (event) =&gt; {
+console.log(event.target.value);
+}
+</code></pre>
+<pre><code class="language-jsx">// in return (which is our render):
+return (
+&lt;input onChange={onInputChange} /&gt;;
 );
-
-export default useStore;</code></pre>
-<p>❗Shoot, I’m getting a nasty <code>eslint</code> error about reassigning a parameter!  </p>
-<p>Well technically, you are assigning to a property of a parameter, so that isn’t as bad.  </p>
-<p>🚀&nbsp;Add the following to your <code>.eslintrc.json</code> file to make it go away. </p>
-<p>This says that we should still error if we were to reassign the parameter completely like <code>function foo(param) { param = somethingesle }</code> but it won’t error if it is a property of the parameter like ``function foo(param) { param.property = soemthing }` </p>
-<pre><code class="language-javascript">"no-param-reassign": [ "error", { "props": false } ],
 </code></pre>
-<p>❓&nbsp;Ok, but can you explain?  What happened with <code>draftState</code> and what did we change?!</p>
-<p>✔️&nbsp;Sure!  With the Immer middleware (notice how we now have <code>devtools</code> and <code>immer</code> middleware in our <code>create</code>) instead of passing in the current store state to our action functions, we instead get passed in a draftState which immer then creates a new state out of.  SO!  We can now simply mutate draftState and are always guaranteed that our actual store state won’t be mutated because Immer is great. AND we didn’t even need the Immer <code>produce</code> function, as essentially our entire store is automatically wrapped in Immer with this middleware.  Nifty keen! </p>
-<p>🧪&nbsp;Ok test it all out, still works great?  Great!  Release it. </p>
-<div class="heading-block h2-block"><h2>PR it!</h2></div>
-<pre><code class="language-bash">git commit
-git push origin add_state_management
-# then make a PR and merge it in to your main branch!
+<p>We’ve created a function <code>onInputChange</code> which we are registering as a callback for the builtin <code>onChange</code> event on the input element.</p>
+<p>🚀 Try it out</p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/oninput-1765382859434.png" alt=""></p>
+<p>Great, it works. 🙌</p>
+<h2 style="margin-top: 1.5em;">useState Hook</h2>
+<p>Each React component can have it’s own internal state which is used to react to and track events. Whenever this state changes React re-renders the component! </p>
+<p>This is the basis of React, and why it is so cool. It is all about that <strong>state → render one way data flow.</strong></p>
+<h3 style="margin-top: 1.25em;">Setup State</h3>
+<p>What are some state bit that could be used to keep track of things?   Let’s put it at the top of our function for now and dive in to how this works. </p>
+<p>🚀 At the top of our SearchBar function add in:</p>
+<pre><code class="language-jsx">const [searchterm, setSearchTerm] = useState(&#39;&#39;);
 </code></pre>
-<div class="heading-block h1-block"><h1>Part 2: YouTube!</h1></div>
-<p>Currently our React YouTube search app works great, but maybe we can learn some state management and refactor it! If you remember, we had to pass props down multiple levels, can we now use our new State Management Skills to select the video to show in Detail View without having to pass properties down multiple levels and to keep our state beautifully coherent?</p>
-<p><a href="http://res.cloudinary.com/dali-lab/video/upload/ac_none,w_800,h_762/v1546203223/cs52/videos-redux.webm">videos-redux.webm</a></p>
-<div class="heading-block h2-block"><h2>Prepare the Repo</h2></div>
-<p>😱 The next part may be a bit scary - we’re going to merge in your new starterpack changes into this repo and it’ll create a bit of confusion. <strong>You can either do the merge and practice fixing merge conflicts, or you can manually try to copy over changes.</strong> The merge conflict way works surprisingly well, but can be a bit scary at first as you’ll have some broken code and you’ll need to pay attention to linting errors and merge conflict markers to fix it. If you need a refresher about git merge resolution see the <a href="https://www.notion.so/ECSA-Git-Map-029087af71764896a7246445074002c0?pvs=21">git-map ec short</a>. You got this, breathe and read the codes. 👏&nbsp;This is a great exercise as to merge successfully you’ll need to read the codes and understand which lines to pick — but I believe in you, you are ready. </p>
-<p>🚀 To begin, we’ll create a new branch <code>statemanagement-sa</code> in your react-videos short assignment repo.</p>
-<p>Navigate to your repository on the command line and pull in the updates you’ve just made to your starterpack:</p>
-<pre><code class="language-bash">cd react-videos-short-assignment-directory
-git pull origin main #just in case to make sure you have the latest
-git checkout -b statemanagement-sa #create a new branch statemanagement-sa
-git pull starter main  #pull in your updated starter code! (this will only work AFTER you have merged in your changes in P1!
-</code></pre>
-<p>Hopefully, you should only have major conflicts in your <code>src/index.jsx</code> file. Let’s handle them now!</p>
-<p>⚠️ If you have conflicts in your <code>package-lock.json</code> do: <code>git checkout --theirs -- package-lock.json</code>. This will choose the entire file from your starterpack.</p>
-<p>⚠️ If you have conflicts in your <code>package.json</code>, merge them in manually, you will most likely want the union of the two.</p>
-<p>🚀 Copy all the code from the HEAD (Current Change) of <code>src/index.jsx</code> or (<code>app.jsx</code> if you had chosen to put it in there) and paste it into its own new file <code>src/components/youtube.jsx</code>. Now go ahead and accept the incoming change.</p>
-<details><summary>Don’t worry if you lost your HEAD, it’s right here!</summary><div><pre><code class="language-jsx">import React, { useCallback, useEffect, useState } from 'react';
-import debounce from 'lodash.debounce';
+<p>Whaaat…is happening here? </p>
+<ol>
+<li><p>We are initializing a bit of state with the <a href="https://react.dev/reference/react/useState">useState hook</a>, setting it to be an empty string. </p>
+</li>
+<li><p>Then we are using destructuring to declare and name 2 elements in a returned array from useState.  useState returns <code>[stateVariable, stateSetter]</code></p>
+<h3 style="margin-top: 1.25em;">learn about destructuring</h3>
+<p> If you have an object or array in javascript you can extract contents from it using object literal notation:</p>
+<pre><code class="language-jsx">// with array
 
-<p>import SearchBar from './search_bar';<br>import youtubeSearch from '../../services/youtube-api';<br>import VideoList from './video_list';<br>import VideoDetail from './video_detail';</p>
-<p>function YouTubeHooks(props) {<br>  const [videos, setVideos] = useState([]);<br>  const [selectedVideo, setSelected] = useState(null);</p>
-<p>  const search = (text) =&gt; {<br>    youtubeSearch(text).then((result) =&gt; {<br>      setVideos(result);<br>      setSelected(result[0]);<br>    });<br>  };</p>
-<p>  const debouncedSearch = useCallback(debounce(search, 500), []);</p>
-<p>  useEffect(() =&gt; {<br>    debouncedSearch('pixar');<br>  }, []);</p>
-<p>  return (<br>    &lt;div&gt;<br>      &lt;SearchBar onSearchChange={debouncedSearch} /&gt;<br>      &lt;div id="video-section"&gt;<br>        &lt;VideoDetail video={selectedVideo} /&gt;<br>        &lt;VideoList onVideoSelect={(selection) =&gt; setSelected(selection)} videos={videos} /&gt;<br>      &lt;/div&gt;<br>    &lt;/div&gt;<br>  );<br>}</p>
-</code><p><code class="language-jsx">export default YouTubeHooks;<br></code></p></pre><p></p>
-</div></details>
-<p>🚀 To finish off our merge:</p>
-<pre><code class="language-javascript">// you'll need to import the YouTube component in index.jsx (or app.jsx)
-import YouTube from './youtube';
+const vehicles = [&#39;mustang&#39;, &#39;f-150&#39;, &#39;expedition&#39;];
+const [car, truck, suv] = vehicles;
 
-// and then display the component
-&lt;YouTube /&gt;;</code></pre>
-<p>⚠️ You may need to do a little bit of cleanup, for instance in <code>app.jsx</code> get rid of the counter and controls components, you won’t need them. This is a good exercise in going through your code and doing some refactoring. Your linter will help you here, it will tell you things that are undefined or need importing etc.</p>
-<details><summary>Essentially, all we are doing is making our index.jsx file simply load up the YouTube component — you could also have index render app render youtube.</summary><div><pre><code class="language-jsx">import React from 'react';
-import { createRoot } from 'react-dom/client';
-import YouTube from './components/youtube';
+// with objects
 
-<p>import './style.scss';</p>
-<p>const root = createRoot(document.getElementById('main'));</p>
-</code><p><code class="language-jsx">root.render(<br>  &lt;YouTube /&gt;,<br>);<br></code></p></pre><p></p>
-</div></details>
-<p>🚀 Your linter should tell you that <code>youtube.jsx</code> has a lot of errors. Notice that we moved that code into the component directory so a lot of the import paths are wrong. You’ll want to fix the paths in those import statements. Remember <code>../</code> is up one directory and <code>./</code> is in the current directory. At this point you should be able to get it to a point where it will build and you can get the main page up and running.</p>
-<p>🚀 Don’t forget to run <code>npm install</code> to install any of the new dependencies that were merged into <code>package.json</code>.</p>
-<p>🚀 Finish the Merge! Once you have finished handling the conflicts, go ahead and <code>git add</code> and <code>git commit</code> the changes to resolve the conflicts and finish the merge.</p>
-<p><em>NOTE: If you are adding zustand to some other existing project and don’t want to merge in the starter repo, you can go through the steps in part 1 to set up the dependencies and store.</em> </p>
-<div class="heading-block h2-block"><h2>Store</h2></div>
-<p>Ok,  let’s think about the data that we want now.  Let’s summarize what data we want:</p>
-<pre><code class="language-javascript">countStore: {
-  count: 0;
+const foo = {
+a: 100,
+b: 5,
+c: &#39;a string&#39;
 }
 
-videoStore: {
-  list: [];
-  selected: {
-  }
-}</code></pre>
-<p>So we could have:</p>
+let { a: x, c: y } = foo;
+console.log(x, y); // → 100 &quot;a string&quot;
+
+// or with the more commonly used shorthand if named the same
+let { a, c } = foo;
+console.log(a, c); // → 100 &quot;a string&quot;
+</code></pre>
+<p> More <a href="http://exploringjs.com/es6/ch_destructuring.html">here</a></p>
+<h3 style="margin-top: 1.25em;">learn about useState</h3>
+<p> useState is one of the most central hooks that you will use in React. It lets you “remember” information like user input in between render calls.  <a href="https://react.dev/learn/state-a-components-memory">State is a components memory</a>.  <a href="https://react.dev/reference/react/useState">The official docs are great.</a> </p>
+<p> Normally, when you think of a function, especially a pure function, each time it is executed it only knows the information passed to it via arguments.  However, hooks allow a function to have instance variables.  Remember how we did this previously where a function could have a property that remembered how many times the function was called?  <code>useState</code> does something similar under the hood.  </p>
+<p> <a href="https://codepen.io/timofei/embed/b17abb9733304966bf1fa0cc5514df5b?height=300&theme-id=24117&default-tab=babel&editable=true">https://codepen.io/timofei/embed/b17abb9733304966bf1fa0cc5514df5b?height=300&amp;theme-id=24117&amp;default-tab=babel&amp;editable=true</a></p>
+</li>
+</ol>
+<h3 style="margin-top: 1.25em;">Update state</h3>
+<p>Ok, so now we should probably update the state as we type into the input.</p>
+<p>🚀 Let’s try that. We will use our our setState setter to update the state whenever the onChange event is triggered.</p>
+<pre><code class="language-jsx">// in your onInputChange method add:
+setSearchTerm(event.target.value);
+</code></pre>
+<p>🚀 And we should add some way to visualize this so let’s add an element to your <code>render</code> method:</p>
+<pre><code class="language-jsx">return (
+&lt;div id=&quot;search-bar&quot;&gt;
+&lt;input onChange={onInputChange} /&gt;
+&lt;p&gt; State value: {searchterm} &lt;/p&gt;
+&lt;/div&gt;
+);
+</code></pre>
+<p>Now you have something like this:</p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/state-value-1765382859434.png" alt=""></p>
+<p>Nice! 🌟</p>
+<h2 style="margin-top: 1.5em;">Controlled/Driven Input Field</h2>
+<p>Great, we’re now updating some random text on the page.</p>
+<p>Let’s take this a step further and make the <code>&lt;input&gt;</code> field <em><strong>driven</strong> by state or <strong>controlled</strong> by state</em>. What this means is that instead of the field showing the text that is being input directly and as a side effect updating state, we will make the field display the actual state value instead. This is an important distinction, it is cleaner to have controlled or driven components because then you always know that your state is in control at every moment. </p>
+<p>🚀 Change <code>&lt;input&gt;</code>:</p>
+<pre><code class="language-html">&lt;input onChange={onInputChange} value=&quot;hi&quot; /&gt;
+</code></pre>
+<p>Now when you try the page, weird stuff happens. The field is now driven by the constant value of ‘hi’. Not very helpful. <em>Driven</em> means the values inside the component are given to it. In this case we are setting the <em>value</em> to always be <code>hi</code>. </p>
+<details><summary>What should we change it to instead? your state variable? why yes please!</summary><div><pre><code class="language-html">&lt;input onChange={onInputChange} value={searchterm} placeholder=&quot;search&quot; /&gt;
+</code></pre>
+</div></details>
+
+<p>Now, when you type, the value displayed by the field is actually what is currently in the state. This is useful for a number of reasons, but primarily it means that the user sees exactly what the state is and React knows exactly what the input is at any point. You never have to search the DOM for the input field and yank the value, it is always in the state. In a more complicated example, say we forgot to set state in our <code>onChange</code> callback on a particular form field. If the field wasn’t driven then you might not notice that your state wasn’t recording that field and later on would have to debug missing values. This way the state of the component is authoritative and visible. <strong>Driven components are good - always drive input fields</strong> unless you have a good reason not too (no idea what that would be).</p>
+<p>🚀 Go ahead and delete the <code>&lt;p&gt; State value: {searchterm} &lt;/p&gt;</code> line completely, we don’t need it.</p>
+<p>Ok, at this point you have an app that displays a search bar, it is a driven field so it’s value is always the value that is in the state. Now, lets add some fun stuff.</p>
+<h2 style="margin-top: 1.5em;">YouTube API</h2>
+<p>We’ll be using YouTube’s api for finding videos. So we need to sign up and get an api key.</p>
+<p>🚀 Go to: <a href="http://console.developers.google.com/">http://console.developers.google.com</a></p>
+<ol>
+<li><p>Select <em>Library</em> on the left hand invisible menu.</p>
+<p> <img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/google-library-1765382859434.jpg" alt=""></p>
+</li>
+<li><p>Search for youtube and select <strong>YouTube Data API V3</strong></p>
+<p> <img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/google-enable-1765382859434.jpg" alt=""></p>
+</li>
+<li><p>Click <strong>Enable</strong></p>
+</li>
+<li><p>Go to <strong>Credentials</strong></p>
+</li>
+<li><p>Click <strong>Create Credentials</strong></p>
+</li>
+<li><p>Choose <strong>Api Key</strong></p>
+<p> <img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/google-create-apikey-1765382859434.jpg" alt=""></p>
+</li>
+<li><p>Save the <strong>API Key</strong> for you will need it!</p>
+</li>
+<li><p><strong>Restrict the key</strong> to only the youtube api</p>
+<p> <img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/restrict-1765382859434.jpg" alt=""></p>
+</li>
+</ol>
+<h2 style="margin-top: 1.5em;">YouTube Search</h2>
+<p>Now, you are ready to connect to YouTube!</p>
+<p>🚀 Let’s create a module to make searching the youtube API easier for us. Create a new file under <code>src/services</code> called <code>youtube-api.js</code></p>
+<pre><code class="language-jsx">import axios from &#39;axios&#39;;
+
+const API_URL = &#39;https://www.googleapis.com/youtube/v3/search&#39;;
+const API_KEY = &#39;YOUR SAVED API KEY&#39;;
+
+const youtubeSearch = async(term) =&gt; {
+const params = {
+part: &#39;snippet&#39;,
+key: API_KEY,
+q: term,
+type: &#39;video&#39;,
+};
+
+try {
+const response = await axios.get(API_URL, { params });
+return response.data.items;
+} catch (error) {
+console.log(`youtube api error: ${error}`);
+throw error;
+}
+};
+
+export default youtubeSearch;
+</code></pre>
+<p>In the above, <a href="https://axios-http.com/">axios</a> is a module to simplify making http api requests (GET, POST, etc). We are wrapping it in a try/catch and async/await so that using our module is really easy from our main app.</p>
+<p><em>⚠️  <code>axios.get</code> is already returns a promise. The <strong>only</strong> reason we are wrapping it is to abstract out the response.data.items portion and to show how promises work. You could easily instead do <code>return axios.get(API_URL), {params})</code> and then in your app remember to use <code>videos.data.items</code>. But for the sake of a little bit of data abstraction we are returning a clean array rather than a response object with a data key.</em></p>
+<p>🔥<strong>WARNING</strong> 🔥 In this example you are asked to push your YouTube API key to GitHub. While this is not a major concern in today’s SA as this is a readonly key. Later, when we use private keys server side, you’ll learn how to keep them out of your code. Since there is not much you can do to protect a key on the frontend once it is in memory on the webpage, the only secure way to deal with private keys is to proxy any requests through your own server.</p>
+<p>🚀 Now import our new module in <code>app.jsx</code>:</p>
+<pre><code class="language-jsx">import youtubeSearch from &#39;./youtube-api&#39;;
+</code></pre>
+<p>🚀 Let’s try getting some results! Since we just want to test, add the following to your App component:</p>
+<pre><code class="language-jsx">youtubeSearch(&#39;pixar&#39;).then(videos =&gt; {
+console.log(videos);
+});
+</code></pre>
+<p>We’re just console logging the response, open up inspector to examine!</p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/youtube-results-1765382859434.png" alt=""></p>
+<p>Cool!</p>
+<p><em>Note: In the above you may have noticed we used a <code>.then</code> that is the syntax for calling a <code>Promise</code>. <a href="https://www.digitalocean.com/community/tutorials/understanding-javascript-promises">Promises</a> are a way of dealing with asynchronous callbacks in a more elegant fashion.</em></p>
+<h2 style="margin-top: 1.5em;">Results and State</h2>
+<p>Now that we have some results, we should do something with them? Perhaps we should have some state! Let’s be proactive and think about what state we need for our app. We should save the search results certainly, but we should probably also choose a default video to display in the larger detail view. Let’s call that our <code>selectedVideo</code>.</p>
+<p>🚀 Let’s save our search results in some state in our <code>app.jsx</code>.</p>
+<p><strong>🚨 Warning, be ready to close your browser quickly.</strong> </p>
+<pre><code class="language-jsx">
+// in our App function at the top add:
+
+const [videos, setVideos] = useState([]);
+const [selectedVideo, setSelected] = useState(null)
+
+youtubeSearch(&#39;pixar&#39;).then(result =&gt; {
+setVideos(result);
+setSelected(result[0]);
+console.log(result);
+});
+</code></pre>
+<p><strong>🚨Wait, why is now console.logging over and over and over again, help! Quick close the browser window before youtube blocks you for too many requests!</strong></p>
+<p>Ok, let’s debrief what happened. </p>
+<p>Clearly an infinite loop, but how can that happen? You have a functional component, you have some useState hooks, and then you run an async function to fetch some results from a youtube api, and then you set some state and then the component…. rerenders.  In a functional component that means re-runs!  Which then fetches some results, and rerenders, and so on! </p>
+<p>Ok, how do we fix this travesty?  In a Class based component when we want something to only run once when the component loads we put it in the componentDidMount function.  What about when we are using a functional component with hooks? </p>
+<h2 style="margin-top: 1.5em;">useEffect Hook</h2>
+<p>Enter the useEffect Hook, perhaps one of the most misunderstood hooks.  The useEffect hook allows you to <a href="https://react.dev/reference/react/useEffect">synchronize a component with an external system</a>.  In this case we want to synchronize with a list returned by a query to the youtube api. </p>
+<details><summary>**Learn about useEffect**</summary><div><p>The <a href="https://react.dev/reference/react/useEffect">useEffect hook is very powerful and essential hook</a>, but is also very weird.  In essence you are declaring that your React component, and specifically your render, has a side effect dependency.  It needs to synchronize with something external, often an api.  </p>
+<p>If you have a button that triggers an event that changes state - that does NOT need useEffect. There is a specific event triggering that re-render.  But what if a re-render itself needs to sometimes connect externally?  That is the case for useEffect. </p>
+<p>The details:   </p>
+<p>It takes two arguments: <code>useEffect(setup, dependencies?)</code></p>
+<p><strong>setup</strong>: is a function that runs some code to say connect to the server. </p>
+<p><strong>dependencies</strong>: is an optional array of variables to check for changes.  If useEffect causes a state change, then then causes a rerender that will run the useEffect again, so we need a way to prevent this and on rerun useEffect if necessary. Say when a state or props variable in the dependency array changes. </p>
+<p>and useEffect returns, option cleanup code.  Woof!</p>
+<p>Here is an example that loads up some stuff and then does paginated requests. Do we need to useEffect here or is there a simpler way?</p>
+<p><a href="https://codepen.io/timofei/embed/JjmGmWz?default-tab=html%2Cresult&editable=true">https://codepen.io/timofei/embed/JjmGmWz?default-tab=html%2Cresult&amp;editable=true</a></p>
+</div></details>
+
+<p>🚀 Let’s first put our search in <code>app.jsx</code> into a function so it doesn’t automatically run. </p>
+<pre><code class="language-jsx">const search = (text) =&gt; {
+youtubeSearch(text).then((result) =&gt; {
+setVideos(result);
+setSelected(result[0]);
+});
+};
+</code></pre>
+<p>Great, now it won’t accidentally keep looping! </p>
+<p>🚀  Now, let’s call it in a useEffect</p>
+<pre><code class="language-jsx">useEffect(() =&gt; {
+search(&#39;pixar&#39;);
+}, []);
+</code></pre>
+<p>Why are we passing in an empty array as the dependency argument for useEffect? </p>
+<p>An empty dependency array makes this useEffect only run once, basically like <code>componentDidMount</code>. What would have happened if we simply omitted the dependency argument?….  Yup, infinite loop again!  ♾️ 😵‍💫</p>
+<h2 style="margin-top: 1.5em;">VideoList and Props</h2>
+<p>We identified a component <em>VideoList</em> originally, that seems like a reasonable place to handle displaying some videos.</p>
+<p>But how do we get our parent videos state into another component?</p>
+<p>React has a way to do this called <a href="https://devhints.io/react#states--properties">props</a>. You can pass data from a parent to a child component as easily as defining a property on the JSX tag.</p>
+<p>In our case we want to pass <code>videos</code> to our <em>VideoList</em> component. That component doesn’t exist yet but let’s see how we would call it first:</p>
+<p>🚀 Change the JSX in <code>app.jsx</code> to include the <em>VideoList</em> component:</p>
+<pre><code class="language-html">&lt;div&gt;
+&lt;SearchBar /&gt;
+&lt;VideoList videos={videos} /&gt;
+&lt;/div&gt;
+</code></pre>
+<p>and don’t forget:</p>
+<pre><code class="language-jsx">import VideoList from &#39;./components/video_list&#39;;
+</code></pre>
+<p>🚀 Now, let’s make <em>VideoList</em> do something:</p>
+<pre><code class="language-jsx">import React from &#39;react&#39;;
+
+const VideoList = (props) =&gt; {
+const videoItems = props.videos.map((video) =&gt; {
+return &lt;li&gt;{video.snippet.title}&lt;/li&gt;;
+});
+
+return (
+&lt;ul&gt;
+{videoItems}
+&lt;/ul&gt;
+);
+};
+
+export default VideoList;
+</code></pre>
+<p>Note: how props are passed into this functional component as an argument. These are the props from the parent, which in our case is <em>App</em> passign down the list of video objects.</p>
+<p>Are you getting console log errors?</p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/key-error-1765382859434.png" alt=""></p>
+<p>This is because React needs each component in a list to have a <code>key</code> property. If you click on an element React needs to have more information about that element, which it is in the list etc and it uses the unique identifier key property to do so.</p>
+<p>But, since we were just testing let’s fix this when we create the <em>VideoListItem</em> component. But <strong>do</strong> fix this generally when you see it — key errors will have points taken off. <strong>Keys must be <a href="https://stackoverflow.com/questions/28329382/understanding-unique-keys-for-array-children-in-react-js#answer-43892905">unique and unchanging ids</a> associated with every component that is in a list</strong> — that is whenever you have react elements that are siblings. Lots of weirdness can happen when keys are not set or not set correctly, list items won’t appear in the right order, some may not display, or they may not update.</p>
+<h2 style="margin-top: 1.5em;">VideoListItem</h2>
+<p>Before we continue, we should create our <em>VideoListItem</em> component. Does this component need to know it’s own state? Does it need to be a class based or functional component?</p>
+<p>It would seem that all it really needs to do is display a video object reasonably.</p>
+<p>🚀 Let’s create our <em>VideoListItem</em> component as a functional component. From now on actually we’re going to call it a dumb or presentational component. A component that does not need to know anything about its state.</p>
+<pre><code class="language-jsx">import React from &#39;react&#39;;
+
+const VideoListItem = (props) =&gt; {
+const imgUrl = props.video.snippet.thumbnails.default.url;
+
+return (
+&lt;li&gt;
+&lt;img src={imgUrl} alt=&quot;video&quot; /&gt;
+&lt;div&gt;{props.video.snippet.title}&lt;/div&gt;
+&lt;/li&gt;
+);
+};
+
+export default VideoListItem;
+</code></pre>
+<p>🚀 Now import it <code>import VideoListItem from &#39;./video_list_item&#39;;</code> into <em>VideoList</em> and let’s use it. Remember you’ll need to set the key property on it as well as passing the video in to props, like so:</p>
+<pre><code class="language-jsx">const videoItems = props.videos.map((video) =&gt; {
+return &lt;VideoListItem key={video.etag} video={video} /&gt;;
+});
+</code></pre>
+<p>Great, now we’re showing the list!</p>
+<h2 style="margin-top: 1.5em;">VideoDetail</h2>
+<p>We promised that we would have a larger video view with details. I suppose we should write this!</p>
+<pre><code class="language-jsx">import React from &#39;react&#39;;
+
+const VideoDetail = ({ video }) =&gt; {
+const videoId = video.id.videoId; //will give linting error - read it and decide for yourself
+// const {videoId} = video.id // is example of destructuring, pulling videoId from out of the object that is video.id
+const url = `https://www.youtube.com/embed/${videoId}`;
+
+return (
+&lt;div id=&quot;video-detail&quot;&gt;
+&lt;iframe src={url} title=&quot;video-detail&quot; /&gt;
+&lt;div className=&quot;details&quot;&gt;
+&lt;div&gt;{video.snippet.title}&lt;/div&gt;
+&lt;div&gt;{video.snippet.description}&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+);
+};
+
+export default VideoDetail;
+</code></pre>
+<p>⚠️ Eslint: <em>In general, if you find you are ignoring a particular rule multiple times - you could add it to your <code>.eslintrc.json</code> file rather than having separate ignore rules in every file.</em></p>
+<p>🚀 And don’t forget to add this new component in to the right place in <code>app.jsx</code>, this should be old hat for you now.</p>
+<pre><code class="language-jsx">// at the top-ish
+import VideoDetail from &#39;./components/video_detail&#39;;
+//
+// render it after SearchBar
+&lt;VideoDetail video={selectedVideo} /&gt;
+// finally selectedVideo comes into play!
+</code></pre>
+<p>Take a look at your page, what is happening? Oh wait, it’s crashing! Why?</p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/sa3-error-1-1765382859434.png" alt="sa3-error-1.png"></p>
+<p>Hmm, looks like for some reason <code>video</code> is undefined!</p>
+<p>This is because <code>videos[0]</code> which we are using for the state of <code>selectedVideo</code> is actually undefined for a little bit of time when we first load the page. WHAT?!</p>
+<p>The videos array is empty (initialized that way by us) until the API request to youtube completes, but that takes a few milliseconds at least. In the meantime, React just goes and renders all the components right away. As soon as the state changes, it will re-render with all the data there, but for a brief moment the data isn’t there yet.</p>
+<p>To fix this, we can just have the <em>VideoDetail</em> component render something else if video is not set. How would you do that?</p>
+<pre><code class="language-jsx">// Here&#39;s a snippet that&#39;ll help
+if (!video) {
+return &lt;div&gt;Loading...&lt;/div&gt;;
+}
+</code></pre>
+<p>Now, when the page reloads you will very briefly see loading and then the component will fill in. </p>
+<p>🎨 Note: I know right now the pages are looking pretty grim. We’ll do a little bit of styling at the end just to clean it up some, but you are welcome to style things as you see fit! For your loading state, maybe consider a <a href="https://loading.io/css/">spinny loady</a>!</p>
+<h3 style="margin-top: 1.25em;">VideoListItem OnClick</h3>
+<p>Wait, why are we hardcoding <code>videos[0]</code>? Don’t we want <em>VideoListItem</em> to be clickable to select which video to display?</p>
+<p>In our case <em>VideoListItem</em> needs to be clickable. We want the user to be able to click on it to select it and then show that video in the <em>VideoDetail</em> view. How should we structure this?</p>
+<p>This is where a tricky part of React comes in. It is a tiny bit tricky to pass an event from one component to another. We want the <em>onClick</em> event in <em>VideoListItem</em> to trigger a change in the state of the top level <em>App</em> component. That is, we want to change the state <code>selectedVideo</code> in <code>app.jsx</code>.</p>
+<p>So far what we’ve been doing is implementing downwards data flow. Our toplevel component is the one that knows about videos and passes that data onto its children. What we want to do now is pass events or actions back up the chain. When there is an event in one of the child components that other components need to be aware of we would pass that event upwards to the parent, and then back downwards to any component that ‘needs to know’.</p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/down-data-1765382859434.png" alt=""></p>
+<p>Solution! We create a callback function in the parent and pass it down to the children in <code>props</code>! We’re just passing a function around, we know how to do that.</p>
+<p>🚀 Let’s change where we instantiate <em>VideoList</em> in <code>app.jsx</code> and pass in a callback function. It can even be an anonymous function. Another great use for arrow functions!</p>
+<pre><code class="language-jsx">&lt;VideoList onVideoSelect={(selection) =&gt; setSelected(selection)} videos={videos} /&gt;
+</code></pre>
+<p>🚀 Now, in <em>VideoListItem</em> all we need to do is set an <code>onClick</code> event listener on <code>&lt;li&gt;</code>. When clicked it will run the passed in callback function with the video that that link is displaying (that was passed in as a prop originally!).</p>
+<pre><code class="language-jsx">&lt;li onClick={() =&gt; props.onVideoSelect(props.video)}&gt;
+</code></pre>
+<p>🚀 Oh, wait but we actually need to pass this callback through one more view, <em>VideoList</em>. Simple, just pass it down the same way: in props. Change our instantiation of <em>VideoListItem</em></p>
+<pre><code class="language-jsx">return &lt;VideoListItem key={video.etag} video={video} onVideoSelect={props.onVideoSelect} /&gt;;
+</code></pre>
+<p>Ok, now it should all be wired together. Try it! When you click on any of the list items, the <em>VideoDetail</em> should update. Cool. 😎</p>
+<p>🐦 Note: Passing callbacks like this down for multiple views is a bit unwieldy, and this is exactly why next week we’re going to learn of some very cool solutions to this. But now you can see how React components are typically arranged. This works pretty well for smaller simpler apps such as this, but if you end up passing props around for more than two levels, you should rethink your life and continue with this class so next week you’ll learn how to avoid this.</p>
+<h2 style="margin-top: 1.5em;">What about SearchBar?</h2>
+<p>Ok, but wait. The <em>SearchBar</em> doesn’t actually do anything yet. We still have to wire up the <em>SearchBar</em> to trigger events!</p>
+<p>You can see a pattern here, <em>SearchBar</em> is in a similar position where it has datas it needs to pass up to <em>App</em>. Let’s make that happen!</p>
+<p>Remember how we made a <code>search</code> function that is called by our <code>useEffect</code> when the component is first loaded up? </p>
+<p>We can just use that!</p>
+<p>🚀  Let’s pass this <code>search</code> method down to <em>SearchBar</em>:</p>
+<pre><code class="language-jsx">&lt;SearchBar onSearchChange={search} /&gt;
+</code></pre>
+<p>🚀 In <em>SearchBar</em> let’s call this new callback! Add the following to your <code>onInputChange</code> method before <strong>or</strong> after the <code>setState</code>:</p>
+<pre><code class="language-jsx">props.onSearchChange(event.target.value);
+</code></pre>
+<p>Try it out! You should now be able to type into the search bar and get the results to change.</p>
+<p><em>Note: that we couldn’t use the<code>searchterm</code> state right after setting it on the previous line. The reason for this is that <code>setState</code> is not guaranteed to be synchronous, in fact usually it is not as it tries to batch state changes for efficiency. Something to keep an eye out for if you are having bugs where your state seems to be lagging one step behind.</em></p>
+<h2 style="margin-top: 1.5em;">Debouncing</h2>
+<p>You may notice that it searches immediately when you type. This both desired, but also it seems a little laggy. That is because for every keystroke it immediately launches an asynchronous web API request. This isn’t quite ideal. You might want to issue a fewer requests. The technique for this is called debouncing. The term comes from hardware input where buttons will sometimes bounce slightly — enough to trigger a few keypresses where only one was really intended. Debouncing is simple, if a function was called, don’t let it be called again within some small timeout. We’re going to use lodash.debounce to help us.</p>
+<p><code>lodash.debounce</code> is a higher order function. It takes as an argument a function and a timeout and returns a new function that is debounced.</p>
+<pre><code class="language-jsx">// at the top import useCallback too!
+import React, { useCallback, useEffect, useState } from &#39;react&#39;;
+
+// import to be used in your App component
+import debounce from &#39;lodash.debounce&#39;;
+
+// create a new debounced search function
+const debouncedSearch = useCallback(debounce(search, 500), []);
+</code></pre>
+<p>Can you explain what the above assignment is doing?</p>
+<p>💡 The <code>useCallback</code> hook is structured similarly to <code>useEffect</code>. It returns a memoized version of the callback that is passed—in, in this case <code>debounce(search,500)</code>. The debounce function returns a debounced version of the search function that batches up calls every half-second (500 milliseconds). This hook, similar to <code>useEffect</code>, is useful for preventing unnecessary renders, but specifically for callback functions. Since a hooks based component is just an function, every const and function definition is recreated every render call - to prevent that, <code>useCallback</code> takes a function and returns a version of it that persists across renders. </p>
+<p>It memorizes the function!</p>
+<p>🚀 To integrate <code>debounceSearch</code> instead of <code>search</code>, swap out <code>search</code> for <code>debouncedSearch</code>. </p>
+<pre><code class="language-jsx">&lt;SearchBar onSearchChange={debouncedSearch} /&gt;
+</code></pre>
+<h2 style="margin-top: 1.5em;">Where the Styles be at?</h2>
+<p>Congrats you now have a fully functioning React frontend webapp!</p>
+<p>Ok, lets do a quick styling pass on this. You already have <code>style.scss</code> file with a nicer default font. Let’s flex a few things.</p>
+<p>🚀 Wrap <em>VideoDetail</em> and <em>VideoList</em> in <code>app.jsx</code> in a <code>&lt;div id=&quot;video-section&quot;&gt;</code> — this we can make a flex container.</p>
+<p>🚀 Add an id to the <em>SearchBar</em> div in <code>search_bar.jsx</code> also: <code>id=&quot;search-bar&quot;</code></p>
+<p>🚀 Here’s some basic scss to get you started.</p>
+<pre><code class="language-css">$fontcolor:  rgb(10%, 10%, 10%);
+$backgroundcolor: rgb(98%, 98%, 98%);
+
+body {
+font-family: &quot;Roboto&quot;, sans-serif;
+color: $fontcolor;
+background-color: $backgroundcolor;
+margin: 50px;
+}
+
+#search-bar {
+margin-bottom: 20px;
+
+input {
+font-size: 1.5em;
+border-radius: .25em;
+}
+}
+
+#video-detail {
+width: 100%;
+}
+
+#video-section {
+display: flex;
+
+li {
+list-style: none;
+cursor: pointer;
+display: flex;
+width: 25vw;
+padding: 10px;
+}
+li:hover {
+background: darken( $backgroundcolor, 10% );
+}
+
+}
+</code></pre>
+<p>🚀 Don’t forget to import your <code>scss</code> from your <code>index.jsx</code>:</p>
+<pre><code class="language-jsx">import &#39;./style.scss&#39;;
+</code></pre>
+<p>This css could still use a lot of love. Feel free to make this look better!</p>
+<h2 style="margin-top: 1.5em;">Responsive video iframes</h2>
+<p>Turns out response iframe embeds are actually pretty difficult to achieve. We’re going to cheat a little and include bootstrap only for the responsive video.</p>
+<p>🚀 In <code>index.html</code> add bootstrap4 css only:</p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css&quot; integrity=&quot;sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh&quot; crossorigin=&quot;anonymous&quot;&gt;
+</code></pre>
+<p>🚀 Change your video iframe code in <em>VideoDetail</em></p>
+<pre><code class="language-html">&lt;div className=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+&lt;iframe title=&quot;youtube detail&quot; className=&quot;embed-responsive-item&quot; src={url}&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 style="margin-top: 1.5em;">Debugging</h2>
+<p>🚀 You <strong>MUST install</strong>: <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi">React Developer Tools</a></p>
+<p>This adds a tab to your Chrome Dev Tools which allows you to inspect state in your React app and more!</p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/react-dev-tools-1765382859434.png" alt=""></p>
+<h2 style="margin-top: 1.5em;">Git</h2>
+<p>Now don’t forget to git add, commit, and push to <code>origin main</code></p>
+<p>Since this is just the beginning of our codes, for this one we were just working in the <code>main</code> branch. </p>
+<h2 style="margin-top: 1.5em;">Deployment</h2>
+<p>And don’t forget to set up your <a href="http://render.com">render.com</a> deployment!</p>
+<h2 style="margin-top: 1.5em;">To Turn In</h2>
 <ul>
-<li>one big store just like we did in Part 1.  Easy but over time will get confusing.</li>
-<li>we could split this up into 2 completely separate stores, fine, but what if we ever wanted to change something in both, and if we want to see them in the Redux DevTools as one global state?</li>
-<li>we could use a pattern called slices.  This is the <a href="https://docs.pmnd.rs/zustand/guides/slices-pattern">recommended pattern</a> from the Zustand creators, so while we don’t need it at this stage, we might as well introduce it so you know it!</li>
-</ul>
-<div class="heading-block h3-block"><h3>Slices</h3></div>
-<p>🚀&nbsp;Set up your store to have slices!  </p>
-<p>1️⃣&nbsp; <code>store/index.js</code> will now import slices and create the store</p>
-<pre><code class="language-javascript">import { create } from 'zustand';
-import { devtools } from 'zustand/middleware';
-import { immer } from 'zustand/middleware/immer';
-
-import createVideoSlice from './video-slice';
-import createCountSlice from './count-slice';
-
-// folks can use slices or multiple stores if they want
-const useStore = create(
-  devtools(
-    immer((...args) =&gt; ({
-      videoSlice: createVideoSlice(...args),
-      countSlice: createCountSlice(...args),
-    }))
-  )
-);
-
-export default useStore;</code></pre>
-<p><em>EC question:  what is <code>...args</code> up above?</em> </p>
-<p>2️⃣&nbsp;Recreate our count store as a slice! <code>store/count-slice.js</code></p>
-<pre><code class="language-javascript">export default function createCountSlice(set) {
-  return {
-    count: 0,
-    increment: () =&gt;
-      set(
-        ({ countSlice: draftState }) =&gt; {
-          draftState.count += 1;
-        },
-        false,
-        'counter/increment'
-      ),
-    decrement: () =&gt;
-      set(
-        ({ countSlice: draftState }) =&gt; {
-          draftState.count -= 1;
-        },
-        false,
-        'counter/decrement'
-      ),
-  };
-}</code></pre>
-<p>Note some peculiarities.. We essentially have just taken part of the store creation out into a separate file, yes. BUT we have also used some <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">destructuring syntax</a> to help us only operate on the count slice key we defined in the store. We called our slice <code>countSlice</code> so here we pull that key out AND rename it:  <code>{countSlice: draftState}</code> deconstructs our global state object and pulls out only the <code>countSlice</code> key and renames it to be <code>draftState</code>.  </p>
-<p>WHY!??   For clarity! This is so you don’t forget that we are working with Immer on a draft.  If you forget, you may do things that don’t work.  So we remind ourselves by writing clear code! </p>
-<p>3️⃣&nbsp;Create our videoStore <code>store/video-slice.js</code></p>
-<pre><code class="language-javascript">export default function createVideoSlice(set) {
-  return {
-    selected: null,
-    list: [],
-    selectVideo: (video) =&gt;
-      set(
-        ({ videoSlice: draftState }) =&gt; {
-          draftState.selected = video;
-        },
-        false,
-        'video/selectVideo'
-      ),
-    setVideos: (videos) =&gt;
-      set(
-        ({ videoSlice: draftState }) =&gt; {
-          draftState.selected = videos[0];
-          draftState.list = videos;
-        },
-        false,
-        'video/setVideos'
-      ),
-  };
-}</code></pre>
-<div class="heading-block h2-block"><h2>Connected Components</h2></div>
-<p>Let’s see what you remember!</p>
-<div class="heading-block h3-block"><h3>VideoListItem</h3></div>
-<p>🚀 In <code>components/video_list_item.jsx</code> connect <code>VideoListItem</code> to the store (import <code>useStore</code>) and change the react function <code>props.onVideoSelect(props.video)</code> to now instead grab the <code>videoSlice.selectVideo</code> function from the store. </p>
-<p><strong>HINT:</strong> if you’re stuck, use <code>controls.js</code> as an example</p>
-<details><summary>If you’re stuck++, take a look here</summary><div><pre><code class="language-jsx">import React from 'react';
-import useStore from '../store';
-
-<p>function VideoListItem(props) {<br>  const selectVideo = useStore(({ videoSlice }) =&gt; videoSlice.selectVideo);<br>  const imgUrl = props?.video?.snippet?.thumbnails?.default?.url;<br>    //notice our nice use of optional chaining</p>
-<p>  return (<br>        &lt;li onClick={() =&gt; selectVideo(props.video)}&gt;<br>      &lt;img src={imgUrl} alt="video" /&gt;<br>      &lt;div&gt;{props?.video?.snippet?.title}&lt;/div&gt;<br>    &lt;/li&gt;<br>  );<br>};</p>
-</code><p><code class="language-jsx">export default VideoListItem;<br></code></p></pre><p></p>
-</div></details>
-<div class="heading-block h3-block"><h3>VideoList</h3></div>
-<p>🚀 In <code>components/video_list.jsx</code> remove <code>onVideoSelect={props.onVideoSelect}</code>  from <code>VideoListItem</code>. Yay! We no longer need to pass this function around it lives directly in our store.</p>
-<p>🚀 We can also upgrade <em>VideoList</em> to connect to the entire list of videos. Edit <code>video_list.jsx</code> to include the following:</p>
-<pre><code class="language-javascript">const videos = useStore(({ videoSlice }) =&gt; videoSlice.list);</code></pre>
-<p><em>Note we don’t have to edit that we map over props.videos… cause we’re just naming it the same thing!</em></p>
-<details><summary>Whole thing in case, but you should really not need this.</summary><div><pre><code class="language-jsx">import React from 'react';
-import useStore from '../store';
-import VideoListItem from './video_list_item';
-
-<p>const VideoList = (props) =&gt; {<br>    const videos = useStore(({ videoSlice }) =&gt; (videoSlice.list));<br>  const videoItems = videos.map((video) =&gt; {<br>    return &lt;VideoListItem key={video.etag} video={video} /&gt;;<br>  });</p>
-<p>  return (<br>    &lt;ul&gt;<br>      {videoItems}<br>    &lt;/ul&gt;<br>  );<br>};</p>
-</code><p><code class="language-jsx">export default VideoList;<br></code></p></pre><p></p>
-</div></details>
-<div class="heading-block h2-block"><h2>YouTube Component</h2></div>
-<p>🚀 Now, we need to connect <code>components/youtube.jsx</code></p>
-<ol start="1">
-<li>Let’s connect <code>YouTube</code> to our store. The only thing this top component now needs is to be able to run the <code>setVideos</code> action.</li>
-<li><strong>Remove ALL top level state</strong>! It isn’t necessary to keep the variables in both the react state and the  store in this situation.</li>
-<li><strong>Remove ALL passed props</strong> from <code>&lt;VideoDetail /&gt;</code> and <code>&lt;VideoList /&gt;</code>, just render them as is.</li>
-<li>Change the search function to simply pass the videos list to <code>setVideos(videos)</code> rather than running any setState. We’ll stick with using the youtubeSearch api promise like we’ve been doing.<details><summary>Give it a try on your own first!</summary><div><pre><code class="language-jsx">import React, { useCallback, useEffect } from 'react';
-import debounce from 'lodash.debounce';
-import SearchBar from './search_bar';
-import youtubeSearch from '../services/youtube-api';
-import VideoList from './video_list';
-import VideoDetail from './video_detail';
-import useStore from '../store';</code></pre></div></details></li>
-</ol>
-<pre><code>import React, { useCallback, useEffect } from 'react';
-import debounce from 'lodash.debounce';
-import SearchBar from './search_bar';
-import youtubeSearch from '../services/youtube-api';
-import VideoList from './video_list';
-import VideoDetail from './video_detail';
-import useStore from '../store';
-
-function YouTube(props) {
-  const setVideos = useStore(({ videoSlice }) =&gt; videoSlice.setVideos);
-  const search = (text) =&gt; {
-    youtubeSearch(text).then((videos) =&gt; {
-      setVideos(videos);
-    });
-  };
-}
-export default YouTube;</code></pre>
-<div class="heading-block h2-block"><h2>VideoDetail</h2></div>
-<p>Ok, this one needs access to the bit of store state which is <code>state.videoSlice.selected</code>.</p>
-<pre><code class="language-javascript">const video = useStore((state) =&gt; state.videoSlice.selected);
-</code></pre>
-<p>❓&nbsp;Wait, you did something different there. You don’t have any destructuring assignment… and state is in there?  </p>
-<p>🤪&nbsp;Sure thing!  There are many ways to do stuff.  <code>({videoSlice})</code> is an example of destructuring assignment, but here I wanted to show that you can also just dig through the global state object to get at the videoSlice data.  Your preference how you do it. I like the destructuring because I feel it makes things clearer, but you may prefer to always just think of the global state.  Your preference!</p>
-<div class="heading-block h2-block"><h2>Debugging</h2></div>
-<p>Last thing! Try opening up the Redux Chrome DevTools and play with the timeline to move the state forward and back.</p>
-<p>Play i the <em>slider</em> and note how you can export and import state. Imagine how powerful that would be if we could just save the whole state of a very complex app!</p>
-<div class="heading-block h2-block"><h2>Release it!</h2></div>
-<p><strong>Commit</strong> and <strong>push</strong> your changes to your new state management branch  <code>git push origin statemanagement-sa</code>. No need to merge into main! </p>
-<p>🚀&nbsp;You should create a new render site and then select the <code>statemanagement-sa</code> branch instead of <code>main</code> so you can have multiple sites running off of different versions of your code.</p>
-<div class="heading-block h1-block"><h1>To Turn In</h1></div>
-<ul>
-<li>👉&nbsp;The GitHub assignment Issue will be considered your submission! <strong>To officially turn it in, please comment on the Issue in the repository when you have completed the assignment and mark it Closed.</strong><details><summary>🙏&nbsp;In your comment please include:</summary><div><ul>
+<li>👉 The GitHub assignment Issue will be considered your submission! <strong>To officially turn it in, please comment on the Issue in the repository when you have completed the assignment and mark it Closed.</strong><details><summary>🙏 In your comment please include:</summary><div><ul>
 <li><strong>link to deployed hosted version of the page (render.com)</strong></li>
 <li>brief summary of what worked and what didn’t</li>
 <li>remember you must cite external sources when you include other people’s code, chatGPT, etc</li>
 </ul>
 </div></details></li>
-<li>include: url to new starterpack render deployed site</li>
-<li>include: url to new react-videos render deployed site from the <code>statemanagement-sa</code> branch</li>
-<li>remember that all your code should lint cleanly</li>
-<li>your youtube searcher should have the same functionality as before, but now with state management!</li>
 </ul>
-<div class="heading-block h1-block"><h1>Extra Credit</h1></div>
-<ul>
-<li>hmm, as always add in some more data sources, giphy etc (can’t count em twice but if you hadn’t done it before you could now)</li>
-<li>add in zustand persist middleware</li>
-<li>implement undo/redo<details><summary>play around with other zustand middleware, including [these third-party libraries](https://docs.pmnd.rs/zustand/integrations/third-party-libraries)</summary><div><ul>
-<li><a href="https://github.com/charkour/zundo">https://github.com/charkour/zundo</a></li>
-<li><a href="https://github.com/Albert-Gao/auto-zustand-selectors-hook">https://github.com/Albert-Gao/auto-zustand-selectors-hook</a></li>
-<li><a href="https://github.com/oslabs-beta/Zusty">https://github.com/oslabs-beta/Zusty</a></li>
+<ol>
+<li>Your App should have the following working: <ul>
+<li>search, with new videos loading</li>
+<li>clicking on a list item changes state and the main detail view</li>
+<li>js is linted without errors</li>
+<li>video in the detail view is playable</li>
 </ul>
-</div></details></li>
+</li>
+<li>A short answer response in your submission github comment to: <ul>
+<li>describe what you think React is and how you can imagine using it?</li>
+<li>any questions about what/why/how that you feel are unresolved?</li>
 </ul>
-<div class="heading-block h2-block"><h2>Resources</h2></div>
-<ul>
-<li><a href="https://zustand-demo.pmnd.rs/">https://zustand-demo.pmnd.rs/</a></li>
-</ul>
+</li>
+</ol>
+
 </body>
 </html>
