@@ -339,13 +339,12 @@ import * as Posts from './controllers/post_controller';
 const router = Router();
 
 router.get('/', (req, res) =&gt; {
-res.json({ message: 'welcome to our blog api!' });
+  res.json({ message: 'welcome to our blog api!' });
 });
 
 ///your routes will go here
 
-export default router;
-</code></pre>
+export default router;</code></pre>
 <p>Express provides a nice <a href="https://expressjs.com/en/4x/api.html#router">route interface</a> that we will use to define all of our routes.</p>
 <p>The chaining method simplifies how our routes look. For instance here is how we could define our <code>posts/:id</code> routes.</p>
 <pre><code class="language-javascript">// example!
