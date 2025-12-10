@@ -472,8 +472,7 @@ db.posts.find({})
 <div class="heading-block h2-block"><h2>Test It!</h2></div>
 <p>Add in <code>"test": "cypress run"</code> to your scripts and you can run <code>npm run test</code> to see how you fare.  If your frontend is working, but the tests are failing… that is because the tests expect specific error codes.  You can and should edit your code and/or the test so that it works!  Take a look at <code>cypress/e2e/*.cy</code> for the tests that are run!  </p>
 <p>For instance, here’s an example:</p>
-<pre><code class="language-javascript">      expect(response.status).to.eq(401);
-</code></pre>
+<pre><code class="language-javascript">expect(response.status).to.eq(401);</code></pre>
 <p>This is looking for a 401 error code,  but maybe you are responding with 402.  Status codes may feel somewhat arbitrary, but <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">here’s a list of them</a>.  Try to shoot for ones that make sense. In the test, we’ve done some of the decision-making around that. If you disagree, feel free to change them. </p>
 <div class="heading-block h2-block"><h2>What about APIKEY</h2></div>
 <p>Unlike the blog api we’ve been using, nothing in the above relies on the query parameter <code>?key=foobar</code>. This is because this is your personal database for which we’re shortly going to implement authentication, so you don’t really need the APIKEY sandboxing. If you were curious and wanted to implement it it would be available to you in <code>req.query.key</code> and easiest would be to store it in the db as a new field and then query on it.</p>
