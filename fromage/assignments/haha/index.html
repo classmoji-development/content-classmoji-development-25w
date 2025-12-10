@@ -440,12 +440,11 @@ setSearchTerm(event.target.value);
 </code></pre>
 <p>🚀 And we should add some way to visualize this so let’s add an element to your <code>render</code> method:</p>
 <pre><code class="language-javascript">return (
-&lt;div id="search-bar"&gt;
-&lt;input onChange={onInputChange} /&gt;
-&lt;p&gt; State value: {searchterm} &lt;/p&gt;
-&lt;/div&gt;
-);
-</code></pre>
+  &lt;div id="search-bar"&gt;
+    &lt;input onChange={onInputChange} /&gt;
+    &lt;p&gt; State value: {searchterm} &lt;/p&gt;
+  &lt;/div&gt;
+);</code></pre>
 <p>Now you have something like this:</p>
 <p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/state-value-1765382859434.png" alt=""></p>
 <p>Nice! 🌟</p>
@@ -495,25 +494,24 @@ setSearchTerm(event.target.value);
 const API_URL = 'https://www.googleapis.com/youtube/v3/search';
 const API_KEY = 'YOUR SAVED API KEY';
 
-const youtubeSearch = async(term) =&gt; {
-const params = {
-part: 'snippet',
-key: API_KEY,
-q: term,
-type: 'video',
+const youtubeSearch = async (term) =&gt; {
+  const params = {
+    part: 'snippet',
+    key: API_KEY,
+    q: term,
+    type: 'video',
+  };
+
+  try {
+    const response = await axios.get(API_URL, { params });
+    return response.data.items;
+  } catch (error) {
+    console.log(`youtube api error: ${error}`);
+    throw error;
+  }
 };
 
-try {
-const response = await axios.get(API_URL, { params });
-return response.data.items;
-} catch (error) {
-console.log(`youtube api error: ${error}`);
-throw error;
-}
-};
-
-export default youtubeSearch;
-</code></pre>
+export default youtubeSearch;</code></pre>
 <p>In the above, <a href="https://axios-http.com/">axios</a> is a module to simplify making http api requests (GET, POST, etc). We are wrapping it in a try/catch and async/await so that using our module is really easy from our main app.</p>
 <p><em>⚠️  <code>axios.get</code> is already returns a promise. The <strong>only</strong> reason we are wrapping it is to abstract out the response.data.items portion and to show how promises work. You could easily instead do <code>return axios.get(API_URL), {params})</code> and then in your app remember to use <code>videos.data.items</code>. But for the sake of a little bit of data abstraction we are returning a clean array rather than a response object with a data key.</em></p>
 <p>🔥<strong>WARNING</strong> 🔥 In this example you are asked to push your YouTube API key to GitHub. While this is not a major concern in today’s SA as this is a readonly key. Later, when we use private keys server side, you’ll learn how to keep them out of your code. Since there is not much you can do to protect a key on the frontend once it is in memory on the webpage, the only secure way to deal with private keys is to proxy any requests through your own server.</p>
@@ -521,10 +519,9 @@ export default youtubeSearch;
 <pre><code class="language-javascript">import youtubeSearch from './youtube-api';
 </code></pre>
 <p>🚀 Let’s try getting some results! Since we just want to test, add the following to your App component:</p>
-<pre><code class="language-javascript">youtubeSearch('pixar').then(videos =&gt; {
-console.log(videos);
-});
-</code></pre>
+<pre><code class="language-javascript">youtubeSearch('pixar').then((videos) =&gt; {
+  console.log(videos);
+});</code></pre>
 <p>We’re just console logging the response, open up inspector to examine!</p>
 <p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/fromage/assignments/haha/assets/youtube-results-1765382859434.png" alt=""></p>
 <p>Cool!</p>
@@ -533,18 +530,16 @@ console.log(videos);
 <p>Now that we have some results, we should do something with them? Perhaps we should have some state! Let’s be proactive and think about what state we need for our app. We should save the search results certainly, but we should probably also choose a default video to display in the larger detail view. Let’s call that our <code>selectedVideo</code>.</p>
 <p>🚀 Let’s save our search results in some state in our <code>app.jsx</code>.</p>
 <p><strong>🚨&nbsp;Warning, be ready to close your browser quickly.</strong> </p>
-<pre><code class="language-javascript">
-// in our App function at the top add:
+<pre><code class="language-javascript">// in our App function at the top add:
 
 const [videos, setVideos] = useState([]);
-const [selectedVideo, setSelected] = useState(null)
+const [selectedVideo, setSelected] = useState(null);
 
-youtubeSearch('pixar').then(result =&gt; {
-setVideos(result);
-setSelected(result[0]);
-console.log(result);
-});
-</code></pre>
+youtubeSearch('pixar').then((result) =&gt; {
+  setVideos(result);
+  setSelected(result[0]);
+  console.log(result);
+});</code></pre>
 <p><strong>🚨Wait, why is now console.logging over and over and over again, help! Quick close the browser window before youtube blocks you for too many requests!</strong></p>
 <p>Ok, let’s debrief what happened. </p>
 <p>Clearly an infinite loop, but how can that happen? You have a functional component, you have some useState hooks, and then you run an async function to fetch some results from a youtube api, and then you set some state and then the component…. rerenders.  In a functional component that means re-runs!  Which then fetches some results, and rerenders, and so on! </p>
@@ -563,18 +558,16 @@ console.log(result);
 </div></details>
 <p>🚀&nbsp;Let’s first put our search in <code>app.jsx</code> into a function so it doesn’t automatically run. </p>
 <pre><code class="language-javascript">const search = (text) =&gt; {
-youtubeSearch(text).then((result) =&gt; {
-setVideos(result);
-setSelected(result[0]);
-});
-};
-</code></pre>
+  youtubeSearch(text).then((result) =&gt; {
+    setVideos(result);
+    setSelected(result[0]);
+  });
+};</code></pre>
 <p>Great, now it won’t accidentally keep looping! </p>
 <p>🚀&nbsp; Now, let’s call it in a useEffect</p>
 <pre><code class="language-javascript">useEffect(() =&gt; {
-search('pixar');
-}, []);
-</code></pre>
+  search('pixar');
+}, []);</code></pre>
 <p>Why are we passing in an empty array as the dependency argument for useEffect? </p>
 <p>An empty dependency array makes this useEffect only run once, basically like <code>componentDidMount</code>. What would have happened if we simply omitted the dependency argument?….  Yup, infinite loop again!  ♾️&nbsp;😵‍💫</p>
 <div class="heading-block h2-block"><h2>VideoList and Props</h2></div>
