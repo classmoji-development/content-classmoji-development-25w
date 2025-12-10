@@ -577,13 +577,17 @@ import SearchBar from './search_bar';
 import youtubeSearch from '../services/youtube-api';
 import VideoList from './video_list';
 import VideoDetail from './video_detail';
-import useStore from '../store';</code></pre>
-<p>function YouTube(props) {<br>  const setVideos = useStore(({ videoSlice }) =&gt; videoSlice.setVideos);</p>
-<p>  const search = (text) =&gt; {<br>    youtubeSearch(text).then((videos) =&gt; {<br>      setVideos(videos);<br>    });<br>  };</p>
-<p>  const debouncedSearch = useCallback(debounce(search, 500), []);</p>
-<p>  useEffect(() =&gt; {<br>    search('pixar');<br>  }, []);</p>
-<p>  return (<br>    &lt;div&gt;<br>      &lt;SearchBar onSearchChange={debouncedSearch} /&gt;<br>      &lt;div id="video-section"&gt;<br>        &lt;VideoDetail /&gt;<br>        &lt;VideoList /&gt;<br>      &lt;/div&gt;<br>    &lt;/div&gt;<br>  );<br>}</p>
-<p><code class="language-jsx">export default YouTube;<br></code></p>
+import useStore from '../store';
+
+function YouTube(props) {
+  const setVideos = useStore(({ videoSlice }) =&gt; videoSlice.setVideos);
+  const search = (text) =&gt; {
+    youtubeSearch(text).then((videos) =&gt; {
+      setVideos(videos);
+    });
+  };
+}
+export default YouTube;</code></pre>
 <div class="heading-block h2-block"><h2>VideoDetail</h2></div>
 <p>Ok, this one needs access to the bit of store state which is <code>state.videoSlice.selected</code>.</p>
 <pre><code class="language-javascript">const video = useStore((state) =&gt; state.videoSlice.selected);
