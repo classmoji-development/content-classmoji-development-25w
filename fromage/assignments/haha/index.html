@@ -8,7 +8,7 @@
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
       font-size: 16px;
       line-height: 1.6;
-      max-width: 100%;
+      max-width: 85%;
       margin: 0 auto;
       padding: 2rem;
       color: #333;
@@ -584,10 +584,9 @@ search('pixar');
 <p>In our case we want to pass <code>videos</code> to our <em>VideoList</em> component. That component doesn’t exist yet but let’s see how we would call it first:</p>
 <p>🚀 Change the JSX in <code>app.jsx</code> to include the <em>VideoList</em> component:</p>
 <pre><code class="language-html">&lt;div&gt;
-&lt;SearchBar /&gt;
-&lt;VideoList videos={videos} /&gt;
-&lt;/div&gt;
-</code></pre>
+  &lt;SearchBar /&gt;
+  &lt;VideoList videos="{videos}" /&gt;
+&lt;/div&gt;</code></pre>
 <p>and don’t forget:</p>
 <pre><code class="language-javascript">import VideoList from './components/video_list';</code></pre>
 <p>🚀 Now, let’s make <em>VideoList</em> do something:</p>
