@@ -223,6 +223,37 @@
       font-size: 14px;
       line-height: 1.6;
     }
+    .timeline-item {
+      display: flex;
+      gap: 1rem;
+      padding: 0.5rem 0;
+      position: relative;
+      margin-bottom: 0.5em;
+    }
+    .timeline-item::before {
+      content: '';
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 0.375rem;
+    }
+    .timeline-item[data-status="completed"]::before {
+      background: #10b981;
+    }
+    .timeline-item[data-status="current"]::before {
+      background: #3b82f6;
+    }
+    .timeline-item[data-status="upcoming"]::before {
+      background: #9ca3af;
+    }
+    .timeline-item::after {
+      content: attr(data-date);
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #6b7280;
+      margin-right: 0.5rem;
+    }
     .video-embed {
       position: relative;
       padding-bottom: 56.25%;
@@ -518,45 +549,45 @@ git checkout -b javascript_focus
 <p>This will involve reading in quiz questions and answers from a <a href="http://api.jquery.com/jquery.getjson/">JSON file</a> and then looping through them and <a href="http://api.jquery.com/append/">appending</a> to the html of the page with javascript.</p>
 <p>Imagine you had a <code>data.json</code> file that looked like this:</p>
 <pre><code class="language-json">{
-"title": "quiz title",
-"outcomes": {
-"outcome1": {"img": "img/outcome1.jpg", "text": "outcome 1"},
-"outcome2": {"img": "img/outcome2.jpg", "text": "outcome 2"}
-},
-"questions": [
-{
-"question_name": "question1",
-"question_img_url": "img/question1.jpg",
-"answers": [
-{
-"text": "",
-"img_url": "img/image1.jpg",
-"outcome": "outcome2"
-},
-{
-"text": "",
-"img_url": "img/image2.jpg",
-"outcome": "outcome2"
-},
-{
-"text": "",
-"img_url": "img/image3.jpg",
-"outcome": "outcome1"
-}
-
-]
-},
-{/*........*/}
-]}
-</code></pre>
+  "title": "quiz title",
+  "outcomes": {
+    "outcome1": { "img": "img/outcome1.jpg", "text": "outcome 1" },
+    "outcome2": { "img": "img/outcome2.jpg", "text": "outcome 2" }
+  },
+  "questions": [
+    {
+      "question_name": "question1",
+      "question_img_url": "img/question1.jpg",
+      "answers": [
+        {
+          "text": "",
+          "img_url": "img/image1.jpg",
+          "outcome": "outcome2"
+        },
+        {
+          "text": "",
+          "img_url": "img/image2.jpg",
+          "outcome": "outcome2"
+        },
+        {
+          "text": "",
+          "img_url": "img/image3.jpg",
+          "outcome": "outcome1"
+        }
+      ]
+    },
+    {
+      /*........*/
+    }
+  ]
+}</code></pre>
 <p>You may load this file into your main javascript using the <a href="https://api.jquery.com/jquery.getjson/">jQuery getJSON</a> function:</p>
-<pre><code class="language-javascript">  $.getJSON("data.json", function(data) {
-// now you can do something with this data.
-// remember you can only work with the data in this callback
-// data.title has the title
-// maybe you want to loop through data.questions?
-});
-</code></pre>
+<pre><code class="language-javascript">$.getJSON('data.json', function (data) {
+  // now you can do something with this data.
+  // remember you can only work with the data in this callback
+  // data.title has the title
+  // maybe you want to loop through data.questions?
+});</code></pre>
 <p>💰 Most likely you’ll want to take your already working hardcoded HTML, abstract out some section, and output it from a javascript loop that constructs a big string of all the html you need and then append it to some element in the page. You may find it irritating to do: <code>"&lt;div&gt;"+question.title+"&lt;/div&gt;"</code>… as such if you don’t care about backwards compatibility (Internet Explorer) you may find <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">template literals</a> useful.</p>
 <div class="heading-block h2-block"><h2>Styling Focus (Option 2)</h2></div>
 <pre><code class="language-javascript">git commit -am "making sure main is fully committed"
