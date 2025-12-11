@@ -281,13 +281,12 @@ show dbs
 use platform_db
 // will make platform_db the current database name, db in the below refers to this.
 
-db.posts.insert(
-{
-"title": "first post",
-"tags": "words",
-"content":  "this is a test post",
-"coverUrl": "https://media.giphy.com/media/uscuTAPrWqmqI/giphy.gif"
-}
+db.posts.insert({
+  "title": "first post",
+  "tags": "words",
+  "content":  "this is a test post",
+  "coverUrl": "https://media.giphy.com/media/uscuTAPrWqmqI/giphy.gif"
+  }
 )
 // will insert an object into the database
 // into a collection called posts
