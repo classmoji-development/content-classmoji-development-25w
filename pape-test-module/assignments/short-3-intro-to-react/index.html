@@ -577,18 +577,16 @@ youtubeSearch('pixar').then((result) =&gt; {
 </div></details>
 <p>🚀&nbsp;Let’s first put our search in <code>app.jsx</code> into a function so it doesn’t automatically run. </p>
 <pre><code class="language-javascript">const search = (text) =&gt; {
-youtubeSearch(text).then((result) =&gt; {
-setVideos(result);
-setSelected(result[0]);
-});
-};
-</code></pre>
+  youtubeSearch(text).then((result) =&gt; {
+    setVideos(result);
+    setSelected(result[0]);
+  });
+};</code></pre>
 <p>Great, now it won’t accidentally keep looping! </p>
 <p>🚀&nbsp; Now, let’s call it in a useEffect</p>
 <pre><code class="language-javascript">useEffect(() =&gt; {
-search('pixar');
-}, []);
-</code></pre>
+  search('pixar');
+}, []);</code></pre>
 <p>Why are we passing in an empty array as the dependency argument for useEffect? </p>
 <p>An empty dependency array makes this useEffect only run once, basically like <code>componentDidMount</code>. What would have happened if we simply omitted the dependency argument?….  Yup, infinite loop again!  ♾️&nbsp;😵‍💫</p>
 <div class="heading-block h2-block"><h2>VideoList and Props</h2></div>
