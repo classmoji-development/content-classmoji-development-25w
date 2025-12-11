@@ -448,57 +448,56 @@ VITE v6.0.11  ready in 394 ms
 </code></pre>
 <p><code>eslint</code> comes with a series of plugins for various javascript packages. We’ll be changing some of the rules and the rules are flexible (you may disable some of the more annoying ones).</p>
 <p>🚀 After installing <code>eslint</code>, create an eslint configuration file <code>eslint.config.js</code> with the following content. This file sets us up with a lot of best practices and recommended rules. </p>
-<pre><code class="language-javascript">import js from '@eslint/js'
-import globals from 'globals'
-import pluginReact from 'eslint-plugin-react'
-import pluginReactHooks from 'eslint-plugin-react-hooks'
-import pluginJsxA11y from 'eslint-plugin-jsx-a11y'
-import pluginImport from 'eslint-plugin-import'
-import stylistic from '@stylistic/eslint-plugin'
+<pre><code class="language-javascript">import js from '@eslint/js';
+import globals from 'globals';
+import pluginReact from 'eslint-plugin-react';
+import pluginReactHooks from 'eslint-plugin-react-hooks';
+import pluginJsxA11y from 'eslint-plugin-jsx-a11y';
+import pluginImport from 'eslint-plugin-import';
+import stylistic from '@stylistic/eslint-plugin';
 
 export default [
-js.configs.recommended,
-pluginReact.configs.flat.recommended,
-pluginReactHooks.configs['recommended-latest'],
-pluginJsxA11y.flatConfigs.recommended,
-pluginImport.flatConfigs.recommended,
-stylistic.configs.recommended,
+  js.configs.recommended,
+  pluginReact.configs.flat.recommended,
+  pluginReactHooks.configs['recommended-latest'],
+  pluginJsxA11y.flatConfigs.recommended,
+  pluginImport.flatConfigs.recommended,
+  stylistic.configs.recommended,
 
-{
-files: ['**/*.{js,jsx,ts,tsx}'],
-languageOptions: {
-ecmaVersion: 'latest',
-sourceType: 'module',
-globals: {
-...globals.browser,
-...globals.es2025,
-...globals.node,
-},
-},
-settings: {
-'react': { version: 'detect' },
-'import/resolver': {
-node: { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
-},
-},
-rules: {
-'react/jsx-uses-react': 'off',
-'react/react-in-jsx-scope': 'off',
-'react/prop-types': 'off',
-'no-console': ['warn', { allow: ['warn', 'error'] }],
-},
-},
-{
-files: ['cypress/**/*.{js,jsx}'],
-languageOptions: {
-globals: { ...globals.browser, cy: 'readonly', Cypress: 'readonly' },
-},
-rules: {
-'no-unused-expressions': 'off',
-},
-},
-]
-</code></pre>
+  {
+    files: ['**/*.{js,jsx,ts,tsx}'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      globals: {
+        ...globals.browser,
+        ...globals.es2025,
+        ...globals.node,
+      },
+    },
+    settings: {
+      react: { version: 'detect' },
+      'import/resolver': {
+        node: { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
+      },
+    },
+    rules: {
+      'react/jsx-uses-react': 'off',
+      'react/react-in-jsx-scope': 'off',
+      'react/prop-types': 'off',
+      'no-console': ['warn', { allow: ['warn', 'error'] }],
+    },
+  },
+  {
+    files: ['cypress/**/*.{js,jsx}'],
+    languageOptions: {
+      globals: { ...globals.browser, cy: 'readonly', Cypress: 'readonly' },
+    },
+    rules: {
+      'no-unused-expressions': 'off',
+    },
+  },
+];</code></pre>
 <p>If you find a rule you want to modify, or ignore — you can add it in above.</p>
 <p>🚀 In VSCode -&gt; Settings -&gt; Settings -&gt; search: <code>editor.codeActionsOnSave</code> -&gt; and click Edit in settings.json -&gt; add this line to the JSON file: <code>"editor.codeActionsOnSave": { "source.fixAll.eslint": true },</code> -&gt; save the file.</p>
 <p>👍 Super useful. This will fix indentation problems and some other things automatically whenever you save! Now restart your editor. Test it out - put in some extra spaces at the beginning of a line of javascript, make sure it highlights and when you save the file it should automatically fix any indentation and semi-colons etc.</p>
