@@ -747,45 +747,43 @@ const debouncedSearch = useCallback(debounce(search, 500), []);
 <p>🚀 Wrap <em>VideoDetail</em> and <em>VideoList</em> in <code>app.jsx</code> in a <code>&lt;div id="video-section"&gt;</code> — this we can make a flex container.</p>
 <p>🚀 Add an id to the <em>SearchBar</em> div in <code>search_bar.jsx</code> also: <code>id="search-bar"</code></p>
 <p>🚀 Here’s some basic scss to get you started.</p>
-<pre><code class="language-css">$fontcolor:  rgb(10%, 10%, 10%);
+<pre><code class="language-css">$fontcolor: rgb(10%, 10%, 10%);
 $backgroundcolor: rgb(98%, 98%, 98%);
 
 body {
-font-family: "Roboto", sans-serif;
-color: $fontcolor;
-background-color: $backgroundcolor;
-margin: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: $fontcolor;
+  background-color: $backgroundcolor;
+  margin: 50px;
 }
 
 #search-bar {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 
-input {
-font-size: 1.5em;
-border-radius: .25em;
-}
+  input {
+    font-size: 1.5em;
+    border-radius: 0.25em;
+  }
 }
 
 #video-detail {
-width: 100%;
+  width: 100%;
 }
 
 #video-section {
-display: flex;
+  display: flex;
 
-li {
-list-style: none;
-cursor: pointer;
-display: flex;
-width: 25vw;
-padding: 10px;
-}
-li:hover {
-background: darken( $backgroundcolor, 10% );
-}
-
-}
-</code></pre>
+  li {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    width: 25vw;
+    padding: 10px;
+  }
+  li:hover {
+    background: darken($backgroundcolor, 10%);
+  }
+}</code></pre>
 <p>🚀 Don’t forget to import your <code>scss</code> from your <code>index.jsx</code>:</p>
 <pre><code class="language-javascript">import './style.scss';
 </code></pre>
