@@ -340,11 +340,10 @@ touch search_bar.jsx video_detail.jsx video_list.jsx video_list_item.jsx
 <pre><code class="language-javascript">import React from 'react';
 
 const SearchBar = () =&gt; {
-return &lt;input /&gt;;
+  return &lt;input /&gt;;
 };
 
-export default SearchBar;
-</code></pre>
+export default SearchBar;</code></pre>
 <p><em>Note: we still need to import <code>React</code> in each file that will contain any JSX, this is needed as JSX is transpiled into javascript that uses React functions.</em> </p>
 <p>All we are doing here is exporting a function that returns an input component.</p>
 <p>🚀 Lets add it into our main page.  But first, let’s refactor App into it’s own file - create <code>src/components/app.jsx</code></p>
