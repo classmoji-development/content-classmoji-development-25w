@@ -632,18 +632,17 @@ export default VideoList;
 <pre><code class="language-javascript">import React from 'react';
 
 const VideoListItem = (props) =&gt; {
-const imgUrl = props.video.snippet.thumbnails.default.url;
+  const imgUrl = props.video.snippet.thumbnails.default.url;
 
-return (
-&lt;li&gt;
-&lt;img src={imgUrl} alt="video" /&gt;
-&lt;div&gt;{props.video.snippet.title}&lt;/div&gt;
-&lt;/li&gt;
-);
+  return (
+    &lt;li&gt;
+      &lt;img src={imgUrl} alt="video" /&gt;
+      &lt;div&gt;{props.video.snippet.title}&lt;/div&gt;
+    &lt;/li&gt;
+  );
 };
 
-export default VideoListItem;
-</code></pre>
+export default VideoListItem;</code></pre>
 <p>🚀 Now import it <code>import VideoListItem from './video_list_item';</code> into <em>VideoList</em> and let’s use it. Remember you’ll need to set the key property on it as well as passing the video in to props, like so:</p>
 <pre><code class="language-javascript">const videoItems = props.videos.map((video) =&gt; {
 return &lt;VideoListItem key={video.etag} video={video} /&gt;;
