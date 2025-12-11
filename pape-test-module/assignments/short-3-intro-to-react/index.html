@@ -354,15 +354,14 @@ export default SearchBar;
 import SearchBar from './components/search_bar';
 
 function App(props) {
-return (
-&lt;div&gt;
-&lt;SearchBar /&gt;
-&lt;/div&gt;
-);
-};
+  return (
+    &lt;div&gt;
+      &lt;SearchBar /&gt;
+    &lt;/div&gt;
+  );
+}
 
-export default App;
-</code></pre>
+export default App;</code></pre>
 <p>and in our <code>index.jsx</code> file, delete the the App function and instead import App from the new file:</p>
 <pre><code class="language-javascript">import App from './components/app';
 </code></pre>
