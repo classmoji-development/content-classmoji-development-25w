@@ -538,10 +538,9 @@ export default youtubeSearch;</code></pre>
 <pre><code class="language-javascript">import youtubeSearch from './youtube-api';
 </code></pre>
 <p>🚀 Let’s try getting some results! Since we just want to test, add the following to your App component:</p>
-<pre><code class="language-javascript">youtubeSearch('pixar').then(videos =&gt; {
-console.log(videos);
-});
-</code></pre>
+<pre><code class="language-javascript">youtubeSearch('pixar').then((videos) =&gt; {
+  console.log(videos);
+});</code></pre>
 <p>We’re just console logging the response, open up inspector to examine!</p>
 <p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-3-intro-to-react/assets/youtube-results-1765494678687.png" alt=""></p>
 <p>Cool!</p>
