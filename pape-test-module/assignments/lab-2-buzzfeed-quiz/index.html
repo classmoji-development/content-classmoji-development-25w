@@ -454,61 +454,57 @@
 &lt;input type="radio" id="puppy_question" value="puppy"/&gt;
 </code></pre>
 <pre><code class="language-css">#puppy_question {
-display: none;
-}
-</code></pre>
+  display: none;
+}</code></pre>
 <p>You can actually nest the input inside of the label and then you don’t have to do the <code>for="elementID"</code> part of the label, it will just automatically serve as the label for the input inside it.</p>
 <pre><code class="language-html">&lt;label&gt;
-&lt;img src="http://onlines/someimage.png" /&gt;
-&lt;input type="radio" value="puppy"/&gt;
-&lt;/label&gt;
-</code></pre>
+  &lt;img src="http://onlines/someimage.png" /&gt;
+  &lt;input type="radio" value="puppy" /&gt;
+&lt;/label&gt;</code></pre>
 <p>And you can suppress all radio inputs like so:</p>
-<pre><code class="language-css">input[type=radio] {
-display: none;
-}
-</code></pre>
+<pre><code class="language-css">input[type='radio'] {
+  display: none;
+}</code></pre>
 <p>It is important to note that the way that you group radio buttons together (i.e make it so clicking one de-clicks/de-selects the others) is by their ‘name’ property. Giving two radio buttons the same name groups them together.</p>
 <p>For example, these two radio buttons could both be selected at the same time (you can have a favorite dog and a favorite cat):</p>
 <pre><code class="language-html">&lt;label&gt;
-&lt;img src="http://onlines/someimage.png" /&gt;
-&lt;input type="radio" name="favorite_dog" value="dalmation"/&gt;
+  &lt;img src="http://onlines/someimage.png" /&gt;
+  &lt;input type="radio" name="favorite_dog" value="dalmation" /&gt;
 &lt;/label&gt;
 &lt;label&gt;
-&lt;img src="http://onlines/someimage.png" /&gt;
-&lt;input type="radio" name="favorite_cat" value="tiger"/&gt;
-&lt;/label&gt;
-</code></pre>
+  &lt;img src="http://onlines/someimage.png" /&gt;
+  &lt;input type="radio" name="favorite_cat" value="tiger" /&gt;
+&lt;/label&gt;</code></pre>
 <p>While these two radio buttons will automatically unselect one when the other is clicked (you cannot have two favorite dogs):</p>
 <pre><code class="language-html">&lt;label&gt;
-&lt;img src="http://onlines/someimage.png" /&gt;
-&lt;input type="radio" name="favorite_dog" value="dalmation"/&gt;
+  &lt;img src="http://onlines/someimage.png" /&gt;
+  &lt;input type="radio" name="favorite_dog" value="dalmation" /&gt;
 &lt;/label&gt;
 &lt;label&gt;
-&lt;img src="http://onlines/someimage.png" /&gt;
-&lt;input type="radio" name="favorite_dog" value="retriever"/&gt;
-&lt;/label&gt;
-</code></pre>
+  &lt;img src="http://onlines/someimage.png" /&gt;
+  &lt;input type="radio" name="favorite_dog" value="retriever" /&gt;
+&lt;/label&gt;</code></pre>
 <div class="heading-block h2-block"><h2>Javascript Logic</h2></div>
 <p>Once you have the basic structure up you can dive into getting the logic working. At this point you should have some radio boxes on the screen that are checkable. But how do you collect the input from them?</p>
 <p>For this assignment you are allowed to use <a href="https://jquery.com/">jQuery</a> if you wish. Just load it before your own javascript in your <code>index.html</code> file:</p>
 <pre><code class="language-html">&lt;script
-src="https://code.jquery.com/jquery-3.3.1.min.js"
-integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-crossorigin="anonymous"&gt;&lt;/script&gt;
-</code></pre>
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"
+&gt;&lt;/script&gt;</code></pre>
 <p>jQuery is purely a personal choice. It helps simplify some things. If you have used it before, challenge yourself and use plain vanilla JS this time around. Many sites on the internet use jQuery so it doesn’t hurt to be familiar with it.</p>
 <p>Most likely you have a button that you would like to attach a javascript action to. Here’s a tiny bit of code to get you started:</p>
-<pre><code class="language-javascript">$('#idOfYourButton').on('click', function(e) {
-// gather all checked radio-button values
-var choices = $("input[type='radio']:checked").map(function(i, radio) {
-return $(radio).val();
-}).toArray();
-// now you have an array of choices = ["valueofradiobox1", "valueofradiobox2", "valueofradiobox2"]
-// you'll need to do some calculations with this
-// a naive approach would be to just choose the most common option - seems reasonable
-});
-</code></pre>
+<pre><code class="language-javascript">$('#idOfYourButton').on('click', function (e) {
+  // gather all checked radio-button values
+  var choices = $("input[type='radio']:checked")
+    .map(function (i, radio) {
+      return $(radio).val();
+    })
+    .toArray();
+  // now you have an array of choices = ["valueofradiobox1", "valueofradiobox2", "valueofradiobox2"]
+  // you'll need to do some calculations with this
+  // a naive approach would be to just choose the most common option - seems reasonable
+});</code></pre>
 <p>Some jQuery/JS that will come in handy:</p>
 <ul>
 <li><a href="https://www.w3schools.com/jquery/jquery_hide_show.asp">show()/hide()</a>&nbsp;// equivalent to &nbsp;<code>document.getElementById('someid').style.display = 'none';</code></li>
