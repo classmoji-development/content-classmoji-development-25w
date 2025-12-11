@@ -259,10 +259,9 @@ git pull starter main
 <p>Let’s implement these and more!</p>
 <p>Take a look through the current <code>src/server.js</code> file. This is the entry point for the app. Just like <code>index.js</code> has been in our frontend app (the names of these are arbitrary). Note how we are setting the route:</p>
 <pre><code class="language-javascript">// default index route
-app.get("/", (req, res) =&gt; {
-res.send("hi");
-});
-</code></pre>
+app.get('/', (req, res) =&gt; {
+  res.send('hi');
+});</code></pre>
 <p>This routing concept is identical to the routing we used in our react app. It maps URL paths to functions. These functions take 2 arguments: <code>request</code> and <code>response</code>.</p>
 <p><strong>Request</strong> is an express object that contains, among other things, any data that was part of the request. For instance, the JSON parameters we would POST or PUT in our asynchronous <code>axios</code> calls would be available as <code>req.body.title</code>, etc.</p>
 <p><strong>Response</strong> is another special express object that contains, among other things, a method named <code>send</code> that allows us to send back a response to the client. When your api call gets back JSON data this is how it is returned. Consider <code>res.send()</code> the equivalent of a network based <code>return</code> statement.</p>
