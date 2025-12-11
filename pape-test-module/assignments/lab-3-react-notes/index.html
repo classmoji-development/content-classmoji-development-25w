@@ -350,14 +350,12 @@ delete draft[id];
 </code></pre>
 <p><strong>Additions</strong>:</p>
 <pre><code class="language-javascript">setNotes(
-produce((draft) =&gt; {
-//draft.notes[id] = newNote if you are using class components with a nested object for state
-// for hooks, draft is already notes
-draft[id] = newNote;
-
-}),
-);
-</code></pre>
+  produce((draft) =&gt; {
+    //draft.notes[id] = newNote if you are using class components with a nested object for state
+    // for hooks, draft is already notes
+    draft[id] = newNote;
+  })
+);</code></pre>
 <p>If we were to do this without produce and with a plain array it wouldn’t be too bad, something like <code>[...notes, newNote]</code>, but if we were to do this with a javascript object, we’d first need to clone the object, which can get tricky for nested objects.</p>
 <p>Here is how you could shallow clone an object:</p>
 <pre><code class="language-javascript">// newNote = { title: '', etc }
@@ -368,19 +366,17 @@ const newNotes = {...notes, newNoteID: newNote};
 <p><strong>Updates</strong>:</p>
 <p>Now that we know how to take an object and merge properties on it we can use that as our update function:</p>
 <pre><code class="language-javascript">setNotes(
-produce((draft) =&gt; {
-draft[id] = { ...draft[id], ...fields };
-}),
-);
-</code></pre>
+  produce((draft) =&gt; {
+    draft[id] = { ...draft[id], ...fields };
+  })
+);</code></pre>
 <div class="heading-block h3-block"><h3>How Do You Iterate Through An Object?</h3></div>
 <p>If you are iterating through your Object, you might find that you need to extract both the key (the id) and the value (the note).</p>
 <p>Thankfully we have a nice function <code>Object.entries</code> that returns an array of arrays like so <code>[[key, value]]</code> so you can use the array function <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">map</a> over that and return the instantiation of a note component (for instance).</p>
 <pre><code class="language-javascript">Object.entries(props.notes).map(([id, note]) =&gt; {
-// perhaps you might return some jsx here :-)
-// return (&lt;Note id={id} note={note} /*...*/ &lt;/Note&gt;) // for instance maybe
-});
-</code></pre>
+  // perhaps you might return some jsx here :-)
+  // return (&lt;Note id={id} note={note} /*...*/ &lt;/Note&gt;) // for instance maybe
+});</code></pre>
 <div class="heading-block h2-block"><h2>Note Component</h2></div>
 <p>Ok, so you will probably need a <em>Note</em> component. What might a <em>Note</em> do?</p>
 <details><summary>A Note:</summary><div><ul>
@@ -398,38 +394,35 @@ draft[id] = { ...draft[id], ...fields };
 <p>Dragging is a bit tricky, but you can simplify your life by using a component from the onlines. I recommend <a href="https://github.com/react-grid-layout/react-draggable">react-draggable</a>. <em>(remember we are using <code>npm</code> for package dependencies)</em></p>
 <p>The basic idea is that you would import this new component just like you have been with your own components and then it has some props that you pass into it for configuration.</p>
 <p>Here is an example:</p>
-<pre><code class="language-javascript">  &lt;Draggable
-
-handle=".class-of-note-mover-element" // this is for you to define, what part of the note do you want to drag by
-nodeRef={draggableRef}
-grid={[25, 25]} // snapping to grid pixels
-defaultPosition={ {x: 20, y: 20} } //if no position given
-position={ {x: yourX, y: yourY, width: yourWidth, height: yourHeight} }
-onStart={handleStartDrag}
-onDrag={handleDrag}
-onStop={handleStopDrag}
+<pre><code class="language-javascript">&lt;Draggable
+  handle=".class-of-note-mover-element" // this is for you to define, what part of the note do you want to drag by
+  nodeRef={draggableRef}
+  grid={[25, 25]} // snapping to grid pixels
+  defaultPosition={{ x: 20, y: 20 }} //if no position given
+  position={{ x: yourX, y: yourY, width: yourWidth, height: yourHeight }}
+  onStart={handleStartDrag}
+  onDrag={handleDrag}
+  onStop={handleStopDrag}
 &gt;
-&lt;div ref={draggableRef}&gt;
-YOUR ACTUAL NOTE HERE
-title, content, drag handle etc
-&lt;/div&gt;
-&lt;/Draggable&gt;
-</code></pre>
+  &lt;div ref={draggableRef}&gt;
+    YOUR ACTUAL NOTE HERE title, content, drag handle etc
+  &lt;/div&gt;
+&lt;/Draggable&gt;;</code></pre>
 <p>The way to use this component is to wrap whatever JSX you want in your <em>Note</em> render method in <code>&lt;Draggable&gt;</code>.</p>
 <p>Note the 3 callbacks. <code>handleStart</code>, <code>handleDrag</code>, <code>handleStop</code>. You would use these to drive the position of the note. You’ll want the position to be part of the note object as eventually we will synchronize using a cloud component. You may find that you only need to implement <code>handleDrag</code>.</p>
 <p>In particular, Draggable will call the function <strong>you</strong> provide to <code>onDrag</code> with two arguments, let’s call them <code>(e, data)</code>. ➠Just to save you some digging, <code>data</code> will have <code>x</code> and <code>y</code> components so you can extract them and use them for your <code>note.position</code> state. </p>
 <p><em>⚠️&nbsp;Note: you do not need to do anything with calculating deltas etc, draggable will give you the new x, y coords directly.</em> </p>
 <p>Here’s a potential component hierarchy you could end up with:</p>
 <pre><code class="language-html">&lt;Note&gt;
-&lt;Draggable&gt;
-&lt;div&gt;&lt;/div&gt;
-&lt;/Draggable&gt;
-&lt;Note&gt;
-&lt;Draggable&gt;
-&lt;div&gt;&lt;/div&gt;
-&lt;/Draggable&gt;
-&lt;/Note&gt;
-</code></pre>
+  &lt;Draggable&gt;
+    &lt;div&gt;&lt;/div&gt;
+  &lt;/Draggable&gt;
+  &lt;Note&gt;
+    &lt;Draggable&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/Draggable&gt;
+  &lt;/Note&gt;
+&lt;/Note&gt;</code></pre>
 <p>Note: this is not how any of your render methods would be, this is just an illustration of how the output might appear to help conceptualize where <em>Draggable</em> fits into the picture.</p>
 <div class="heading-block h2-block"><h2>Delete</h2></div>
 <p>Delete is fairly straightforward, you would have some clickable element assigned a callback that would be passed up to trigger a delete. I used some <a href="https://fontawesome.com/start">font-awesome free webfont css</a> icons. <em>Note: alternatively you can use <a href="https://github.com/FortAwesome/react-fontawesome">react-fontawesome</a></em></p>
