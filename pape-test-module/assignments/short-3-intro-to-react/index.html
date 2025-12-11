@@ -219,7 +219,6 @@
   </style>
 </head>
 <body>
-<div class="heading-block h1-block"><h1>Intro React — SA3</h1></div>
 <p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-3-intro-to-react/assets/react-logo-1765494678687.png" alt=""></p>
 <div class="heading-block h2-block"><h2>Overview</h2></div>
 <p>Today we’ll be learning about <a href="https://facebook.github.io/react/">React</a>! So far you’ve been using html and css to build static sites. Sites that do not have much going on in terms of content that changes. React is a javascript frontend framework for making dynamic sites. In this workshop we will build a video chooser. We will also work with the vite+babel+eslint starter code that you worked on in the previous short assignment.</p>
@@ -514,25 +513,24 @@ setSearchTerm(event.target.value);
 const API_URL = 'https://www.googleapis.com/youtube/v3/search';
 const API_KEY = 'YOUR SAVED API KEY';
 
-const youtubeSearch = async(term) =&gt; {
-const params = {
-part: 'snippet',
-key: API_KEY,
-q: term,
-type: 'video',
+const youtubeSearch = async (term) =&gt; {
+  const params = {
+    part: 'snippet',
+    key: API_KEY,
+    q: term,
+    type: 'video',
+  };
+
+  try {
+    const response = await axios.get(API_URL, { params });
+    return response.data.items;
+  } catch (error) {
+    console.log(`youtube api error: ${error}`);
+    throw error;
+  }
 };
 
-try {
-const response = await axios.get(API_URL, { params });
-return response.data.items;
-} catch (error) {
-console.log(`youtube api error: ${error}`);
-throw error;
-}
-};
-
-export default youtubeSearch;
-</code></pre>
+export default youtubeSearch;</code></pre>
 <p>In the above, <a href="https://axios-http.com/">axios</a> is a module to simplify making http api requests (GET, POST, etc). We are wrapping it in a try/catch and async/await so that using our module is really easy from our main app.</p>
 <p><em>⚠️  <code>axios.get</code> is already returns a promise. The <strong>only</strong> reason we are wrapping it is to abstract out the response.data.items portion and to show how promises work. You could easily instead do <code>return axios.get(API_URL), {params})</code> and then in your app remember to use <code>videos.data.items</code>. But for the sake of a little bit of data abstraction we are returning a clean array rather than a response object with a data key.</em></p>
 <p>🔥<strong>WARNING</strong> 🔥 In this example you are asked to push your YouTube API key to GitHub. While this is not a major concern in today’s SA as this is a readonly key. Later, when we use private keys server side, you’ll learn how to keep them out of your code. Since there is not much you can do to protect a key on the frontend once it is in memory on the webpage, the only secure way to deal with private keys is to proxy any requests through your own server.</p>
