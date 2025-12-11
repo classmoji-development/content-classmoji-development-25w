@@ -540,13 +540,12 @@ height: 100%;
 <p>🚀 Try adding an image to your <code>src/img</code> folder maybe, and then showing it in the logo div. </p>
 <p>In your <code>style.scss</code> file, add:</p>
 <pre><code class="language-css">.logo {
-background-image: url('img/MYIMAGE.jpg');
-width: 100px;
-height: 100px;
-background-repeat: no-repeat;
-background-size: contain;
-}
-</code></pre>
+  background-image: url('img/MYIMAGE.jpg');
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}</code></pre>
 <p>Yeah, can you see it?</p>
 <p>⚠️&nbsp;<em>Always make sure your file naming is case sensitive - don’t name a file <code>MyImage.jpg</code> and then reference with as <code>myimage.jpg</code>. That might work on your personal computer but it won’t work on the internet where most machines are linux and are case-sensitive.</em></p>
 <div class="heading-block h2-block"><h2>AutoPrefixing!</h2></div>
@@ -556,28 +555,21 @@ background-size: contain;
 -moz-transition: all 4s ease;
 -ms-transition: all 4s ease;
 -o-transition: all 4s ease;
-transition: all 4s ease;
-</code></pre>
+transition: all 4s ease;</code></pre>
 <p>Due to varying browser support for features, these are often associated with newer CSS versions. This should be something easy for a machine to solve, rather than us humans manually remembering to make a mess of our CSS code, and indeed someone has. Enter <a href="https://github.com/postcss/autoprefixer">autoprefixer</a>.</p>
 <p>This is a module that we can incorporate and have Vite automatically prefix our canonical css to work in all browsers.  We will use <a href="https://vitejs.dev/guide/features.html#postcss">postcss</a> to load in <code>autoprefixer</code>.</p>
 <p>🚀 Let’s install some dependencies: <code>npm install -D autoprefixer</code></p>
 <p>🚀 Edit your <code>vite.config.js</code> file once again and merge in:</p>
-<pre><code class="language-javascript">
-import autoprefixer from 'autoprefixer';
+<pre><code class="language-javascript">import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
-plugins: [
-eslint(),
-],
-css: {
-postcss: {
-plugins: [
-autoprefixer(),
-],
-},
-},
-});
-</code></pre>
+  plugins: [eslint()],
+  css: {
+    postcss: {
+      plugins: [autoprefixer()],
+    },
+  },
+});</code></pre>
 <p>To test it out you can add in your <code>style.scss</code> file:</p>
 <pre><code class="language-scss">:root {
 text-size-adjust: 100%;
