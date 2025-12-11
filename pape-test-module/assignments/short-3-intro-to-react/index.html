@@ -660,23 +660,22 @@ return &lt;VideoListItem key={video.etag} video={video} /&gt;;
 <pre><code class="language-javascript">import React from 'react';
 
 const VideoDetail = ({ video }) =&gt; {
-const videoId = video.id.videoId; //will give linting error - read it and decide for yourself
-// const {videoId} = video.id // is example of destructuring, pulling videoId from out of the object that is video.id
-const url = `https://www.youtube.com/embed/${videoId}`;
+  const videoId = video.id.videoId; //will give linting error - read it and decide for yourself
+  // const {videoId} = video.id // is example of destructuring, pulling videoId from out of the object that is video.id
+  const url = `https://www.youtube.com/embed/${videoId}`;
 
-return (
-&lt;div id="video-detail"&gt;
-&lt;iframe src={url} title="video-detail" /&gt;
-&lt;div className="details"&gt;
-&lt;div&gt;{video.snippet.title}&lt;/div&gt;
-&lt;div&gt;{video.snippet.description}&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-);
+  return (
+    &lt;div id="video-detail"&gt;
+      &lt;iframe src={url} title="video-detail" /&gt;
+      &lt;div className="details"&gt;
+        &lt;div&gt;{video.snippet.title}&lt;/div&gt;
+        &lt;div&gt;{video.snippet.description}&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
 };
 
-export default VideoDetail;
-</code></pre>
+export default VideoDetail;</code></pre>
 <p>⚠️&nbsp;Eslint: <em>In general, if you find you are ignoring a particular rule multiple times - you could add it to your <code>.eslintrc.json</code> file rather than having separate ignore rules in every file.</em></p>
 <p>🚀 And don’t forget to add this new component in to the right place in <code>app.jsx</code>, this should be old hat for you now.</p>
 <pre><code class="language-javascript">// at the top-ish
