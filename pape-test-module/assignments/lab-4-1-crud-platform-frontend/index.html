@@ -395,7 +395,7 @@ curl -X DELETE -H &quot;Content-Type: application/json&quot; &quot;https://platf
 <p>Try these out. Run the create new post one a couple of times to populate your database!</p>
 <p>This will work a bit different from the react-notes, and in a way will be much simpler. Every time you want to update, create, delete, retrieve, you will use http calls like the above to interact with the server.</p>
 <p>Remember our SPA architecture:</p>
-<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/lab-4-1-crud-platform-frontend/assets/single-page-app-1765500615034.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/lab-4-1-crud-platform-frontend/assets/single-page-app-1765502578797.png" alt=""></p>
 <p>The above are the data requests we’ll be making. They all return <em>JSON</em>.</p>
 <p>This site will <em>not</em> update live in the sense that if someone else on another browser added a post, you would not see it pop up automatically, but would need to reload. This is fairly common of most platforms like this, your feed does’t change as you look at it, you need to refresh to see new articles.  It’ll be easy to trigger a refresh with a button or pull down though if you want.</p>
 <h2 style="background-color: #DDEBF1;">Routes</h2>
@@ -443,24 +443,7 @@ curl -X DELETE -H &quot;Content-Type: application/json&quot; &quot;https://platf
 </li>
 </ul>
 <p>This is a component that can both trigger actions and is connected to the global zustand state.</p>
-<details><summary>❓Can you remind me what I’m doing heret?!</summary><div><p>Just a component that both subscribes to a store slice and also triggers a store action.</p>
-<p>And here’s some giveaway code for your <code>Posts</code> component:</p>
-<pre><code class="language-jsx">
-import React, {useEffect} from &#39;react&#39;;
-
-<p>function SomeComponent(props) {<br>    const allPosts = useStore(({ postSlice }) =&gt; postSlice.all);<br>    const fetchAllPosts = useStore(({ postSlice }) =&gt; postSlice.fetchAllPosts);</p>
-<pre><code>useEffect( () =&amp;gt; {
-fetchAllPosts();
-}, []);
-
-return (
-{ allPosts.map( post =&amp;gt; { return &amp;lt;div&amp;gt;{post.title}&amp;lt;/div&amp;gt;}) }
-)
-</code></pre>
-<p>}</p>
-<p></code></pre></p>
-<p><em>What other components will need to be connected like this?</em></p>
-</div></details>
+<details><summary>❓Can you remind me what I’m doing heret?!</summary><div data-encoded="PHA+SnVzdCBhIGNvbXBvbmVudCB0aGF0IGJvdGggc3Vic2NyaWJlcyB0byBhIHN0b3JlIHNsaWNlIGFuZCBhbHNvIHRyaWdnZXJzIGEgc3RvcmUgYWN0aW9uLjwvcD4KPHA+QW5kIGhlcmXigJlzIHNvbWUgZ2l2ZWF3YXkgY29kZSBmb3IgeW91ciA8Y29kZT5Qb3N0czwvY29kZT4gY29tcG9uZW50OjwvcD4KPHByZT48Y29kZSBjbGFzcz0ibGFuZ3VhZ2UtanN4Ij4KaW1wb3J0IFJlYWN0LCB7dXNlRWZmZWN0fSBmcm9tICYjMzk7cmVhY3QmIzM5OzsKCmZ1bmN0aW9uIFNvbWVDb21wb25lbnQocHJvcHMpIHsKICAgIGNvbnN0IGFsbFBvc3RzID0gdXNlU3RvcmUoKHsgcG9zdFNsaWNlIH0pID0mZ3Q7IHBvc3RTbGljZS5hbGwpOwogICAgY29uc3QgZmV0Y2hBbGxQb3N0cyA9IHVzZVN0b3JlKCh7IHBvc3RTbGljZSB9KSA9Jmd0OyBwb3N0U2xpY2UuZmV0Y2hBbGxQb3N0cyk7CgogICAgdXNlRWZmZWN0KCAoKSA9Jmd0OyB7CiAgICAgICAgZmV0Y2hBbGxQb3N0cygpOwogICAgfSwgW10pOwoKICAgIHJldHVybiAoCiAgICAgICAgeyBhbGxQb3N0cy5tYXAoIHBvc3QgPSZndDsgeyByZXR1cm4gJmx0O2RpdiZndDt7cG9zdC50aXRsZX0mbHQ7L2RpdiZndDt9KSB9IAogICAgKQp9CiAgCjwvY29kZT48L3ByZT4KPHA+PGVtPldoYXQgb3RoZXIgY29tcG9uZW50cyB3aWxsIG5lZWQgdG8gYmUgY29ubmVjdGVkIGxpa2UgdGhpcz88L2VtPjwvcD4K"></div></details>
 
 <h2 style="background-color: #DDEBF1;">State Management</h2>
 <p>We will be using Zustand for our application state! We’re going to just have 1 slice to start with: <code>postSlice</code>.  Essentially what we are doing is manually syncronizing the frontend store with our backend.  So if the backend has posts that we want to display we will fetch those objects from the api and then store them on the frontend.  Essentially we are caching our queries so the frontend has data to display. </p>
@@ -534,7 +517,7 @@ get().errorSlice.newError(error.message);
 </code></pre>
 <h3>Debugging</h3>
 <p>Recall that you can use Redux DevTools to debug your Zustand store!  You should be able to see you actions happening and your global state. This is key, if it isn’t changing, something ain’t right!</p>
-<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/lab-4-1-crud-platform-frontend/assets/screenshot-2024-04-30-at-9-1765500615034.png" alt="Screenshot 2024-04-30 at 9.43.00 PM.png"></p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/lab-4-1-crud-platform-frontend/assets/screenshot-2024-04-30-at-9-1765502578797.png" alt="Screenshot 2024-04-30 at 9.43.00 PM.png"></p>
 <h3>Navigation Flow</h3>
 <p>When you have a successful create and delete you may find it useful to simply navigate back to your main page. For instance, when you hit delete on the page that is the view of a single post <code>/posts/234243</code>, you would want to be taken back to the <code>/</code> page that shows all the posts rather than an empty page that says ‘post not found’.   If you do a modal this doesn’t apply, you would simply close the modal. </p>
 <p>How might we navigate after deleting or creating a new post?  Something like this might work: </p>
