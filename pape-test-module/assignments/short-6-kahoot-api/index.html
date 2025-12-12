@@ -774,7 +774,7 @@ export default router;
 <p><a href="Short%206%20Kahoot%20API/Insomnia-All_2022-05-10.json">Insomnia-All_kahoots.json</a></p>
 <p>For you terminal junkies out there, <a href="https://curl.se/">Curl</a> is a commandline tool for requests. It’s lightweight and requires no installation as it is commonly present in terminal environments.</p>
 <p>Now, start up your API with <code>npm start</code> and, using the curl commands above, test that creating a room via a post to&nbsp;<code>localhost:9090/rooms</code>&nbsp;with a properly formatted body returns a success message. </p>
-<p>[curl --request POST '<a href="http://localhost:9090/rooms">http://localhost:9090/rooms</a>' <br>--header 'Content-Type: application/json' <br>--data '{<br>    "creator": "Admin",<br>    "roomKey": "secret",<br>    "questions": [<br>            {"prompt": "Question1?", "answer": "1"},<br>            {"prompt": "Question2?", "answer": "2"}<br>    ]<br>}'</p>
+<pre><code class="language-javascript">[curl --request POST '&lt;a href="http://localhost:9090/rooms"&gt;http://localhost:9090/rooms&lt;/a&gt;' &lt;br&gt;--header 'Content-Type: application/json' &lt;br&gt;--data '{&lt;br&gt;    "creator": "Admin",&lt;br&gt;    "roomKey": "secret",&lt;br&gt;    "questions": [&lt;br&gt;            {"prompt": "Question1?", "answer": "1"},&lt;br&gt;            {"prompt": "Question2?", "answer": "2"}&lt;br&gt;    ]&lt;br&gt;}'</code></pre>
 <div class="heading-block h1-block"><h1>response is game state - see below</h1></div>
 <div class="heading-block h1-block"><h1>question index integers are automatically assigned](<a href="https://www.notion.so/curl-request-POST-http-localhost-9090-rooms-header-Content-Type-application-json-da-4fae2fbd910b4c2a9e16ed08f55c2352?pvs=21">https://www.notion.so/curl-request-POST-http-localhost-9090-rooms-header-Content-Type-application-json-da-4fae2fbd910b4c2a9e16ed08f55c2352?pvs=21</a>)</h1></div>
 <p>Remember how you set up your room model? What should your backend be expecting to receive as input?  Take a look at it now.</p>
@@ -868,59 +868,83 @@ return newSubmission;
 <p>Every time a player submits an answer we need to compute a few things.  Have all the players answered the question? If yes we should move on to the next question.  Have all the questions been answered? If yes, game over! </p>
 <p>🚀&nbsp;Fill in the <code>submit</code> and <code>countSubmissions</code> functions in the <code>submission_controller</code></p>
 <pre><code class="language-javascript">// new answer submission
-export async function submit(roomId, player, questionNumber, response, correct) {
-const exisitingSubmission = await Submission.findOne({ roomId, player, questionNumber });
-if (exisitingSubmission) {
-throw new Error('This player has already submitted a repsonse to this question');
-}
+export async function submit(
+  roomId,
+  player,
+  questionNumber,
+  response,
+  correct
+) {
+  const exisitingSubmission = await Submission.findOne({
+    roomId,
+    player,
+    questionNumber,
+  });
+  if (exisitingSubmission) {
+    throw new Error(
+      'This player has already submitted a repsonse to this question'
+    );
+  }
 
-const newSubmission = new Submission({
-roomId,
-player,
-response,
-questionNumber,
-correct,
-});
-await newSubmission.save();
+  const newSubmission = new Submission({
+    roomId,
+    player,
+    response,
+    questionNumber,
+    correct,
+  });
+  await newSubmission.save();
 
-return newSubmission;
+  return newSubmission;
 }
 
 export async function countSubmissions(roomId, questionNumber) {
-// see if all players have submitted and update the game state as necessary / has to be after submission is saved
-const numSubmissions = await Submission.countDocuments({ roomId, questionNumber });
+  // see if all players have submitted and update the game state as necessary / has to be after submission is saved
+  const numSubmissions = await Submission.countDocuments({
+    roomId,
+    questionNumber,
+  });
 
-return numSubmissions;
-}
-</code></pre>
+  return numSubmissions;
+}</code></pre>
 <p>Players will include the information about their submissions in the body of a post request to the&nbsp;<code>/rooms/:id/submissions</code>/&nbsp;endpoint. We will parse this to get the player's name and the answers they submitted.  Don’t forget hook it up in routes and to <a href="https://www.notion.so/Backend-2-Kahoot-API-df8153201c6f431b829f39f84880d48b?pvs=21">test it out!</a> </p>
 <div class="heading-block h3-block"><h3>Get Room State for next questions and <strong>scoreboard! → <code>getState</code></strong></h3></div>
 <p>We need an endpoint for players to be able to access the information about a room.  This is the most complicated endpoint we have.  Folks need to be able to get what the current question is, the list of players, and the running leaderboard of the top 3 players.</p>
 <pre><code class="language-javascript">// returns the main game state with current question, rank, game status, and scoreboard
 export async function getState(roomId, player) {
-const room = await Room.findById(roomId);
-const scores = await getScores(roomId, room.currentQuestionNumber, room.players);
-const topThree = scores.slice(0, 3);
+  const room = await Room.findById(roomId);
+  const scores = await getScores(
+    roomId,
+    room.currentQuestionNumber,
+    room.players
+  );
+  const topThree = scores.slice(0, 3);
 
-// get rank of requestingPlayer
-const requestingPlayerScoreboardPosition = scores.findIndex((entry) =&gt; { return entry[0] === player; });
+  // get rank of requestingPlayer
+  const requestingPlayerScoreboardPosition = scores.findIndex((entry) =&gt; {
+    return entry[0] === player;
+  });
 
-const gameOver = room.currentQuestionNumber === room.questions.length;
+  const gameOver = room.currentQuestionNumber === room.questions.length;
 
-const state = {
-roomId,
-status: room.status,
-players: room.players,
-yourName: player,
-yourRank: requestingPlayerScoreboardPosition === -1 ? null : requestingPlayerScoreboardPosition + 1,
-top3: topThree,
-currentQuestionNumber: gameOver ? -1 : room.currentQuestionNumber,
-currentQuestion: gameOver ? -1 : room.questions[room.currentQuestionNumber].prompt,
-};
+  const state = {
+    roomId,
+    status: room.status,
+    players: room.players,
+    yourName: player,
+    yourRank:
+      requestingPlayerScoreboardPosition === -1
+        ? null
+        : requestingPlayerScoreboardPosition + 1,
+    top3: topThree,
+    currentQuestionNumber: gameOver ? -1 : room.currentQuestionNumber,
+    currentQuestion: gameOver
+      ? -1
+      : room.questions[room.currentQuestionNumber].prompt,
+  };
 
-return state;
-}
-</code></pre>
+  return state;
+}</code></pre>
 <p>But you’ll notice here too, we need something from submissions - scores are computed from the submissions after all.  </p>
 <p>🚀&nbsp;We should add a <code>getScores</code> function to the <code>submission_controller</code> to help us. </p>
 <pre><code class="language-javascript">// computes scores for all players in a room
