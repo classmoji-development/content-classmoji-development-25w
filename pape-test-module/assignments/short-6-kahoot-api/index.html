@@ -663,63 +663,58 @@ const router = Router();
 
 // default index route
 router.get('/', (req, res) =&gt; {
-return res.json({ message: 'Welcome to the kahoot API!' });
+  return res.json({ message: 'Welcome to the kahoot API!' });
 });
 
 // create a room - admin
 router.post('/rooms', async (req, res) =&gt; {
-const roomInitInfo = req.body;
+  const roomInitInfo = req.body;
 
-try {
-const result = await Rooms.createRoom(roomInitInfo);
-return res.json(result);
-} catch (error) {
-return res.status(422).json({ error: error.message });
-}
+  try {
+    const result = await Rooms.createRoom(roomInitInfo);
+    return res.json(result);
+  } catch (error) {
+    return res.status(422).json({ error: error.message });
+  }
 });
 
 // get gamestate for room
 router.get('/rooms/:id', async (req, res) =&gt; {
-const roomId = req.params.id;
-const { player } = req.query;
+  const roomId = req.params.id;
+  const { player } = req.query;
 
-// fill in try/catch that handles calling the appropriate Rooms function
-// returns a response, see `create a room` above
-
+  // fill in try/catch that handles calling the appropriate Rooms function
+  // returns a response, see `create a room` above
 });
 
 // join a room
 router.post('/rooms/:id', async (req, res) =&gt; {
-const roomId = req.params.id;
-const playerInfo = req.body;
+  const roomId = req.params.id;
+  const playerInfo = req.body;
 
-// fill in try/catch that handles calling the appropriate Rooms function
-// returns a response, see `create a room` above
-
+  // fill in try/catch that handles calling the appropriate Rooms function
+  // returns a response, see `create a room` above
 });
 
 // change room status - admin
 router.patch('/rooms/:id', async (req, res) =&gt; {
-const roomId = req.params.id;
-const { roomKey, status } = req.body;
+  const roomId = req.params.id;
+  const { roomKey, status } = req.body;
 
-// fill in try/catch that handles calling the appropriate Rooms function
-// returns a response, see `create a room` above
-
+  // fill in try/catch that handles calling the appropriate Rooms function
+  // returns a response, see `create a room` above
 });
 
 // submit a response
 router.post('/rooms/:id/submissions', async (req, res) =&gt; {
-const roomId = req.params.id;
-const { player, response } = req.body;
+  const roomId = req.params.id;
+  const { player, response } = req.body;
 
-// fill in try/catch that handles calling the appropriate Rooms function
-// returns a response, see `create a room` above
-
+  // fill in try/catch that handles calling the appropriate Rooms function
+  // returns a response, see `create a room` above
 });
 
-export default router;
-</code></pre>
+export default router;</code></pre>
 <p>After making your <code>routes.js</code> , add the following line to your server.js <strong>below</strong> where you have <code>app.use(express.json());</code> and before <code>startServer</code>:</p>
 <pre><code class="language-javascript">app.use('', routes);
 </code></pre>
