@@ -541,15 +541,13 @@ get().errorSlice.newError(error.message);
 const params = useParams();
 
 function Post(props) {
-/* ... */
+  /* ... */
 
-const onDeleteClick = async () =&gt; {
-await deletePost(params.postID);
-navigate('/');
-};
-
-}
-</code></pre>
+  const onDeleteClick = async () =&gt; {
+    await deletePost(params.postID);
+    navigate('/');
+  };
+}</code></pre>
 <div class="heading-block h2-block"><h2>And you are on your way!</h2></div>
 <p>That should be all you need to build a simple content platform (we’ll add more features later!).</p>
 <p>If you don’t know where to start, remember the steps in creating a React application:</p>
