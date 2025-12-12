@@ -698,19 +698,28 @@ export default useStore;</code></pre>
 <p>WHY!??   For clarity! This is so you don’t forget that we are working with Immer on a draft.  If you forget, you may do things that don’t work.  So we remind ourselves by writing clear code! </p>
 <p>3️⃣&nbsp;Create our videoStore <code>store/video-slice.js</code></p>
 <pre><code class="language-javascript">export default function createVideoSlice(set) {
-return {
-selected: null,
-list: [],
-selectVideo: (video) =&gt; set(({ videoSlice: draftState }) =&gt; {
-draftState.selected = video;
-}, false, 'video/selectVideo'),
-setVideos: (videos) =&gt; set(({ videoSlice: draftState }) =&gt; {
-draftState.selected = videos[0];
-draftState.list = videos;
-}, false, 'video/setVideos'),
-};
-}
-</code></pre>
+  return {
+    selected: null,
+    list: [],
+    selectVideo: (video) =&gt;
+      set(
+        ({ videoSlice: draftState }) =&gt; {
+          draftState.selected = video;
+        },
+        false,
+        'video/selectVideo'
+      ),
+    setVideos: (videos) =&gt;
+      set(
+        ({ videoSlice: draftState }) =&gt; {
+          draftState.selected = videos[0];
+          draftState.list = videos;
+        },
+        false,
+        'video/setVideos'
+      ),
+  };
+}</code></pre>
 <div class="heading-block h2-block"><h2>Connected Components</h2></div>
 <p>Let’s see what you remember!</p>
 <div class="heading-block h3-block"><h3>VideoListItem</h3></div>
