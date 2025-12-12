@@ -468,32 +468,31 @@ current: {},
 <div class="heading-block h3-block"><h3>Store</h3></div>
 <p>🏪&nbsp;Setting up your store is left as an exercise for the reader.  But here is a barebones setup for your postSlice: </p>
 <pre><code class="language-javascript">export default function createPostSlice(set, get) {
-return {
-all: [],
-current: {},
-fetchPost: async (id) =&gt; {
-// GET
-// takes the ID of the post to fetch from router params
-},
-fetchAllPosts: async () =&gt; {
-// GET
-// would need pagination but for now we'll just get them all
-},
-updatePost: async (post) =&gt; {
-// PUT
-// takes in updated data (could include the ID of the post to update in the post object or add a separate parameter
-},
-createPost: async (post) =&gt; {
-// POST
-// takes in new post data (no id)
-},
-deletePost: async (id) =&gt; {
-// DELETE
-// takes id of the post to delete
-},
-};
-}
-</code></pre>
+  return {
+    all: [],
+    current: {},
+    fetchPost: async (id) =&gt; {
+      // GET
+      // takes the ID of the post to fetch from router params
+    },
+    fetchAllPosts: async () =&gt; {
+      // GET
+      // would need pagination but for now we'll just get them all
+    },
+    updatePost: async (post) =&gt; {
+      // PUT
+      // takes in updated data (could include the ID of the post to update in the post object or add a separate parameter
+    },
+    createPost: async (post) =&gt; {
+      // POST
+      // takes in new post data (no id)
+    },
+    deletePost: async (id) =&gt; {
+      // DELETE
+      // takes id of the post to delete
+    },
+  };
+}</code></pre>
 <p>Here are some actions you should consider implementing. </p>
 <p>Now you might ask, how the heck do we fetch from an API using actions!?</p>
 <p>Don’t worry, this part we’ll walk you through.</p>
