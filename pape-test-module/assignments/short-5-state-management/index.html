@@ -577,35 +577,37 @@ import VideoList from './video_list';
 import VideoDetail from './video_detail';
 
 function YouTubeHooks(props) {
-const [videos, setVideos] = useState([]);
-const [selectedVideo, setSelected] = useState(null);
+  const [videos, setVideos] = useState([]);
+  const [selectedVideo, setSelected] = useState(null);
 
-const search = (text) =&gt; {
-youtubeSearch(text).then((result) =&gt; {
-setVideos(result);
-setSelected(result[0]);
-});
-};
+  const search = (text) =&gt; {
+    youtubeSearch(text).then((result) =&gt; {
+      setVideos(result);
+      setSelected(result[0]);
+    });
+  };
 
-const debouncedSearch = useCallback(debounce(search, 500), []);
+  const debouncedSearch = useCallback(debounce(search, 500), []);
 
-useEffect(() =&gt; {
-debouncedSearch('pixar');
-}, []);
+  useEffect(() =&gt; {
+    debouncedSearch('pixar');
+  }, []);
 
-return (
-&lt;div&gt;
-&lt;SearchBar onSearchChange={debouncedSearch} /&gt;
-&lt;div id="video-section"&gt;
-&lt;VideoDetail video={selectedVideo} /&gt;
-&lt;VideoList onVideoSelect={(selection) =&gt; setSelected(selection)} videos={videos} /&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-);
+  return (
+    &lt;div&gt;
+      &lt;SearchBar onSearchChange={debouncedSearch} /&gt;
+      &lt;div id="video-section"&gt;
+        &lt;VideoDetail video={selectedVideo} /&gt;
+        &lt;VideoList
+          onVideoSelect={(selection) =&gt; setSelected(selection)}
+          videos={videos}
+        /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
 }
 
-export default YouTubeHooks;
-</code></pre>
+export default YouTubeHooks;</code></pre>
 <p>🚀 To finish off our merge:</p>
 <pre><code class="language-javascript">// you'll need to import the YouTube component in index.jsx (or app.jsx)
 import YouTube from './youtube';
