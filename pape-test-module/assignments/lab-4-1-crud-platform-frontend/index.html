@@ -400,12 +400,11 @@ curl -X DELETE -H "Content-Type: application/json" "https://platform.cs52.me/api
 <p>We’re going to use some routes to set up our app with different “pages”.</p>
 <p>🚀 Your routes could look something like this. Basically you’re going to have a route for creating new posts (this will be a form) and a page for showing a post by ID. The default route will show a list of all posts.</p>
 <pre><code class="language-javascript">&lt;Routes&gt;
-&lt;Route path="/" element={&lt;Posts/&gt;} /&gt;
-&lt;Route path="/posts/new" element={&lt;NewPost /&gt;} /&gt;
-&lt;Route path="/posts/:postID" element={&lt;Post/&gt;} /&gt;
-&lt;Route path="*" element={&lt;div&gt;post not found &lt;/div&gt;} /&gt;
-&lt;/Routes&gt;
-</code></pre>
+  &lt;Route path="/" element={&lt;Posts /&gt;} /&gt;
+  &lt;Route path="/posts/new" element={&lt;NewPost /&gt;} /&gt;
+  &lt;Route path="/posts/:postID" element={&lt;Post /&gt;} /&gt;
+  &lt;Route path="*" element={&lt;div&gt;post not found &lt;/div&gt;} /&gt;
+&lt;/Routes&gt;;</code></pre>
 <p>This is just the basics, feel free to expand on this. For reference it might help to look back on the <a href="https://cs52.me/assignments/lab/sa/routing">routes short assignment</a>. Refresh your understanding of what the <code>:postID</code> part of the route means.</p>
 <div class="heading-block h3-block"><h3>App</h3></div>
 <p>Is a simple component that simply renders a <em>NavBar</em> component and the route components. You can think of this as your main layout!</p>
