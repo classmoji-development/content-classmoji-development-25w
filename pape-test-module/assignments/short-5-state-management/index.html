@@ -458,19 +458,22 @@ export default Counter;</code></pre>
 import useStore from '../store';
 
 function Controls(props) {
-const increment = useStore((state) =&gt; state.increment);
-const decrement = useStore((state) =&gt; state.decrement);
+  const increment = useStore((state) =&gt; state.increment);
+  const decrement = useStore((state) =&gt; state.decrement);
 
-return (
-&lt;div&gt;
-&lt;button type="button" onClick={increment}&gt;+&lt;/button&gt;
-&lt;button type="button" onClick={decrement}&gt;-&lt;/button&gt;
-&lt;/div&gt;
-);
+  return (
+    &lt;div&gt;
+      &lt;button type="button" onClick={increment}&gt;
+        +
+      &lt;/button&gt;
+      &lt;button type="button" onClick={decrement}&gt;
+        -
+      &lt;/button&gt;
+    &lt;/div&gt;
+  );
 }
 
-export default Controls;
-</code></pre>
+export default Controls;</code></pre>
 <p>Some things to note about the this component:</p>
 <ol start="1">
 <li><code>useStore</code>  we use the <code>useStore</code> hook (that we created!) again here to pull out the two action functions. </li>
