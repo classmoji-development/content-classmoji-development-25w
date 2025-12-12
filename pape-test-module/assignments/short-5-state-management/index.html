@@ -634,13 +634,15 @@ root.render(
 <p><em>NOTE: If you are adding zustand to some other existing project and don’t want to merge in the starter repo, you can go through the steps in part 1 to set up the dependencies and store.</em> </p>
 <div class="heading-block h2-block"><h2>Store</h2></div>
 <p>Ok,  let’s think about the data that we want now.  Let’s summarize what data we want:</p>
-<pre><code class="language-javascript">countStore:  { count: 0 }
+<pre><code class="language-javascript">countStore: {
+  count: 0;
+}
 
 videoStore: {
-list: []
-selected: {}
-}
-</code></pre>
+  list: [];
+  selected: {
+  }
+}</code></pre>
 <p>So we could have:</p>
 <ul>
 <li>one big store just like we did in Part 1.  Easy but over time will get confusing.</li>
