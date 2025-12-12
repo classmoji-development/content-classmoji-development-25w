@@ -489,8 +489,7 @@ export default Controls;</code></pre>
 <p>✔️&nbsp;Yeah, that is because the redux devtools want a specific String name for the action. We can add that in like so:</p>
 <pre><code class="language-javascript">    // careful with this syntax - if 2nd arg is true it will replace all state rather than merge
 increment: () =&gt; set((state) =&gt; ({ count: state.count + 1 }), false, 'count/increment'),
-decrement: () =&gt; set((state) =&gt; ({ count: state.count - 1 }), false, 'count/decrement'),
-</code></pre>
+decrement: () =&gt; set((state) =&gt; ({ count: state.count - 1 }), false, 'count/decrement'),</code></pre>
 <p>The zustand <code>set</code> function takes some extra arguments! </p>
 <ol start="1">
 <li>Argument 1 (what we have used so far) is the state updater function that returns new state. </li>
