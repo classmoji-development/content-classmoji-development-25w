@@ -113,7 +113,6 @@
     }
     .terminal-block pre {
       background: transparent;
-      color: #d1d5db;
       margin: 0;
       padding: 1rem;
       font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Menlo', 'Consolas', monospace;
@@ -122,10 +121,13 @@
       white-space: pre-wrap;
       word-wrap: break-word;
     }
-    /* Terminal syntax highlighting */
-    .terminal-block .terminal-prompt { color: #4ade80; }
-    .terminal-block .terminal-command { color: #f8f8f2; }
-    .terminal-block .terminal-comment { color: #6b7280; }
+    .terminal-block pre code {
+      background: transparent;
+      color: #d1d5db;
+      padding: 0;
+      font-size: inherit;
+      font-family: inherit;
+    }
     blockquote {
       border-left: 4px solid #ddd;
       margin: 1em 0;
@@ -348,22 +350,17 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/bash.min.js"></script>
 </head>
 <body>
-<div class="terminal-block"><div class="terminal-header"><div class="terminal-dots"><span></span><span></span><span></span></div><span class="terminal-title">Terminal</span></div><pre>(base) papesowtraore@MacBook-Pro-7 apps %  ls -l
+<div class="terminal-block"><div class="terminal-header"><div class="terminal-dots"><span></span><span></span><span></span></div><span class="terminal-title">Terminal</span></div><pre><code class="language-bash">(base) papesowtraore@MacBook-Pro-7 apps %  ls -l
 total 944
 -rw-r--r--@   1 papesowtraore  staff    9960 Dec  8 11:48 AGENTS.md
 -rw-r--r--@   1 papesowtraore  staff     140 Nov 10 15:00 CLAUDE.md
 -rw-r--r--@   1 papesowtraore  staff    1592 Nov  1 22:15 README.md
-drwxr-xr-x@   7 papesowtraore  staff     224 Dec  8 16:08 apps
--rw-r--r--@   1 papesowtraore  staff    1192 Dec  8 11:48 docker-compose.yml
-drwxr-xr-x@   4 papesowtraore  staff     128 Dec  9 12:03 docs
--rw-r--r--@   1 papesowtraore  staff     379 Sep 24 20:28 eslint.config.js
-drwxr-xr-x@ 984 papesowtraore  staff   31488 Dec  9 21:34 node_modules
--rw-r--r--@   1 papesowtraore  staff  446072 Dec  9 21:34 package-lock.json
--rw-r--r--@   1 papesowtraore  staff    2877 Dec  8 22:01 package.json
-drwxr-xr-x@   9 papesowtraore  staff     288 Dec  8 17:08 packages
-drwxr-xr-x@   4 papesowtraore  staff     128 Dec  8 11:48 scripts
--rw-r--r--@   1 papesowtraore  staff    2018 Dec  8 16:08 turbo.json</pre></div>
+drwxr-xr-x@   7 papesowtraore  staff     224 Dec  8 16:08 apps</code></pre></div>
+<script>hljs.highlightAll();</script>
 </body>
 </html>
