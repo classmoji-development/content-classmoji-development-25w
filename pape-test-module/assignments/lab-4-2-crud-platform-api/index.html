@@ -396,10 +396,9 @@ git pull starter main
 <p>Let’s implement these and more!</p>
 <p>Take a look through the current <code>src/server.js</code> file. This is the entry point for the app. Just like <code>index.js</code> has been in our frontend app (the names of these are arbitrary). Note how we are setting the route:</p>
 <pre><code class="language-javascript">// default index route
-app.get("/", (req, res) =&gt; {
-res.send("hi");
-});
-</code></pre>
+app.get('/', (req, res) =&gt; {
+  res.send('hi');
+});</code></pre>
 <p>This routing concept is identical to the routing we used in our react app. It maps URL paths to functions. These functions take 2 arguments: <code>request</code> and <code>response</code>.</p>
 <p><strong>Request</strong> is an express object that contains, among other things, any data that was part of the request. For instance, the JSON parameters we would POST or PUT in our asynchronous <code>axios</code> calls would be available as <code>req.body.title</code>, etc.</p>
 <p><strong>Response</strong> is another special express object that contains, among other things, a method named <code>send</code> that allows us to send back a response to the client. When your api call gets back JSON data this is how it is returned. Consider <code>res.send()</code> the equivalent of a network based <code>return</code> statement.</p>
@@ -408,8 +407,8 @@ res.send("hi");
 <p>Mongo is the database that we are going to use. We will run a local mongo daemon to connect to for testing.</p>
 <p>🚀 Install MongoDB Server and Client: you should already have these installed from the <a href="https://www.notion.so/SA6-Kahoot-API-f9e5bbc269654c918a14b0860ab510b7?pvs=21">server-side short</a> assignment <a href="https://docs.mongodb.com/manual/installation/#mongodb-community-edition">installation instructions here</a>.</p>
 <p>There is a commmandline client you can use to connect to the database: <code>mongosh</code>. You can also play around with a more graphical client <a href="https://www.mongodb.com/download-center?jmp=nav#compass">mongodb compass community</a> (just make sure to download the <em>community</em> version).</p>
-<pre><code class="language-bash">mongosh
-</code></pre>
+<div class="terminal-block"><div class="terminal-header"><div class="terminal-dots"><span></span><span></span><span></span></div><span class="terminal-title">Terminal</span></div><pre><code class="language-bash">mongosh
+</code></pre></div>
 <pre><code class="language-javascript">// mongoshell is a commandline interface to your local mongo db
 
 show dbs
@@ -449,8 +448,7 @@ db.posts.find({"title": "first post"})
 
 // create PostModel class from schema
 
-export default PostModel;
-</code></pre>
+export default PostModel;</code></pre>
 <p>This will do for now, let’s see about how to use this.</p>
 <div class="heading-block h2-block"><h2>Controllers</h2></div>
 <p>🚀 Create a directory <code>src/controllers</code> and a file inside this named <code>post_controller.js</code>.</p>
@@ -490,40 +488,39 @@ import * as Posts from './controllers/post_controller';
 const router = Router();
 
 router.get('/', (req, res) =&gt; {
-res.json({ message: 'welcome to our blog api!' });
+  res.json({ message: 'welcome to our blog api!' });
 });
 
 ///your routes will go here
 
-export default router;
-</code></pre>
+export default router;</code></pre>
 <p>Express provides a nice <a href="https://expressjs.com/en/4x/api.html#router">route interface</a> that we will use to define all of our routes.</p>
 <p>The chaining method simplifies how our routes look. For instance here is how we could define our <code>posts/:id</code> routes.</p>
 <pre><code class="language-javascript">// example!
 // on routes ending in /someroute/:someID
 // ----------------------------------------------------
 
-const exampleHandleDelete = async (req,res) =&gt; {
-try {
-// use req.body etc to await some contoller function
-const result = await Contoller.someFunction(req.params.someID);
-// send back the result
-res.json(result);
-} catch (error) {
-// or catch the error and send back an error
-res.status(500).json({ error });
-}
-}
+const exampleHandleDelete = async (req, res) =&gt; {
+  try {
+    // use req.body etc to await some contoller function
+    const result = await Contoller.someFunction(req.params.someID);
+    // send back the result
+    res.json(result);
+  } catch (error) {
+    // or catch the error and send back an error
+    res.status(500).json({ error });
+  }
+};
 
-router.route('/someroute/:someID')
-.post(async (req,res) =&gt; {
-// use req.body etc to await some contoller function
-// send back the result
-// or catch the error and send back an error
-})
-.get(/*your choice of defining inline above or function by reference below*/)
-.delete(exampleHandleDelete);
-</code></pre>
+router
+  .route('/someroute/:someID')
+  .post(async (req, res) =&gt; {
+    // use req.body etc to await some contoller function
+    // send back the result
+    // or catch the error and send back an error
+  })
+  .get(/*your choice of defining inline above or function by reference below*/)
+  .delete(exampleHandleDelete);</code></pre>
 <p>In short, you listen on a route and register various callback functions. Those could be defined inline, or separated out. In this example we are marking them as async functions and from each of these we will call the various controller methods we have defined.</p>
 <p>Ok, remember how we defined all our API endpoints? Let’s map them in our router.</p>
 <p>🚀 Use the syntax above to make routes and functions to handle the following:</p>
@@ -540,17 +537,8 @@ router.route('/someroute/:someID')
 <p>You can have 2 <code>router.route()</code> definitions with separate chains of HTTP verb methods, one for <code>/posts</code> and one for <code>/posts/:id</code>.</p>
 <div class="heading-block h3-block"><h3>Import New Routes</h3></div>
 <p>🚀 Now in your <code>src/server.js</code> file import our new routes and assign them to handle all <code>/api/*</code> routes! Nicely organized.</p>
-<pre><code class="language-javascript">//at top of server.js
-import apiRoutes from './router';
-// when importing a default route you can name it whatever you want router, routes, apiRoutes, etc. naming is only important when you destructure import { key } from module.
-
-// REGISTER OUR ROUTES -------------------------------
-// all of our routes will be prefixed with /api
-// this should go AFTER body parser
-app.use('/api', apiRoutes);
-</code></pre>
 <p>Neat! 🌟</p>
-<p>Note: the <code>app.use('api</code> line should go towards the bottom of the file, in particular after <code>bodyparser</code>. The <code>server.js</code> file is <strong>read top to bottom every connection request</strong>, so when it hits the route definition if the body of the request hasn’t been parsed you will get errors when you try to use <code>req.body</code>.</p>
+<p>Note: the <code>app.use('api')</code> line should go towards the bottom of the file, in particular after <code>bodyparser</code>. The <code>server.js</code> file is <strong>read top to bottom every connection request</strong>, so when it hits the route definition if the body of the request hasn’t been parsed you will get errors when you try to use <code>req.body</code>.</p>
 <div class="heading-block h2-block"><h2>Testing</h2></div>
 <p>Let’s test what we have done so far! Test out each of the routes using these curl commands (just modified version with localhost from platform-client).</p>
 <p>🍸 Since you don’t yet have the controller functions working, try making mock <code>res.json({'hi'})</code> test responses for each of the routes so you know that they are being called.</p>
@@ -624,8 +612,7 @@ db.posts.find({})
 <div class="heading-block h2-block"><h2>Test It!</h2></div>
 <p>Add in <code>"test": "cypress run"</code> to your scripts and you can run <code>npm run test</code> to see how you fare.  If your frontend is working, but the tests are failing… that is because the tests expect specific error codes.  You can and should edit your code and/or the test so that it works!  Take a look at <code>cypress/e2e/*.cy</code> for the tests that are run!  </p>
 <p>For instance, here’s an example:</p>
-<pre><code class="language-javascript">      expect(response.status).to.eq(401);
-</code></pre>
+<pre><code class="language-javascript">expect(response.status).to.eq(401);</code></pre>
 <p>This is looking for a 401 error code,  but maybe you are responding with 402.  Status codes may feel somewhat arbitrary, but <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">here’s a list of them</a>.  Try to shoot for ones that make sense. In the test, we’ve done some of the decision-making around that. If you disagree, feel free to change them. </p>
 <div class="heading-block h2-block"><h2>What about APIKEY</h2></div>
 <p>Unlike the blog api we’ve been using, nothing in the above relies on the query parameter <code>?key=foobar</code>. This is because this is your personal database for which we’re shortly going to implement authentication, so you don’t really need the APIKEY sandboxing. If you were curious and wanted to implement it it would be available to you in <code>req.query.key</code> and easiest would be to store it in the db as a new field and then query on it.</p>
