@@ -408,7 +408,7 @@
 <body>
 
 <p>Module: Backend<br>Assignment: Short<br>Serial: 11</p>
-<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/kahoot-1765518733993.png" alt="kahoot.png"></p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/kahoot-1765519152338.png" alt="kahoot.png"></p>
 <h2 style="background-color: #DDEBF1;"><strong>Overview</strong></h2>
 <p>In this assignment we will augment our frontend knowledge of creating beautiful websites by learning how to design backends to provide your sites with data and handle complex “business” logic. We will build a replica of an API for the popular quiz website <a href="https://kahoot.com/">Kahoot</a>. The assignment will help you practice more complex database and API design techniques and help you learn how to test a backend without using a frontend (A well-designed API can work with many variations of frontends—you can design one for EC 😊). We’ll use a standard REST API design for our approach this time around but you’ll also learn what some limitations of the REST approach might be.</p>
 <p>Remember our basic client-server <strong>RE</strong>presentational <strong>S</strong>tate <strong>T</strong>ransfer (REST) CRUD design:</p>
@@ -454,12 +454,12 @@
 <pre><code class="language-jsx">curl --request POST &#39;http://localhost:9090/rooms&#39; \
 --header &#39;Content-Type: application/json&#39; \
 --data &#39;{
-&quot;creator&quot;: &quot;Admin&quot;,
-&quot;roomKey&quot;: &quot;secret&quot;,
-&quot;questions&quot;: [
-{&quot;prompt&quot;: &quot;Question1?&quot;, &quot;answer&quot;: &quot;1&quot;},
-{&quot;prompt&quot;: &quot;Question2?&quot;, &quot;answer&quot;: &quot;2&quot;}
-]
+    &quot;creator&quot;: &quot;Admin&quot;,
+    &quot;roomKey&quot;: &quot;secret&quot;,
+    &quot;questions&quot;: [
+			{&quot;prompt&quot;: &quot;Question1?&quot;, &quot;answer&quot;: &quot;1&quot;},
+			{&quot;prompt&quot;: &quot;Question2?&quot;, &quot;answer&quot;: &quot;2&quot;}
+    ]
 }&#39;
 # response is game state - see below
 # question index integers are automatically assigned
@@ -469,8 +469,8 @@
 <pre><code class="language-jsx">curl --request PATCH &#39;http://localhost:9090/rooms/%YOUR_ROOM_ID%&#39; \
 --header &#39;Content-Type: application/json&#39; \
 --data &#39;{
-&quot;roomKey&quot;: &quot;secret&quot;,
-&quot;status&quot;: &quot;OPEN&quot;
+		&quot;roomKey&quot;: &quot;secret&quot;,
+    &quot;status&quot;: &quot;OPEN&quot;
 }&#39;
 
 // returns game state
@@ -484,7 +484,7 @@
 <pre><code class="language-jsx">curl --request POST &#39;http://localhost:9090/rooms/%YOUR_ROOM_ID%&#39; \
 --header &#39;Content-Type: application/json&#39; \
 --data &#39;{
-&quot;name&quot;: &quot;%YOUR_PLAYER_NAME&quot;
+    &quot;name&quot;: &quot;%YOUR_PLAYER_NAME&quot;
 }&#39;
 
 // returns game room id and name confirmation
@@ -493,7 +493,7 @@
 <pre><code class="language-jsx">curl --request PATCH &#39;http://localhost:9090/rooms/%YOUR_ROOM_ID%&#39; \
 --header &#39;Content-Type: application/json&#39; \
 --data &#39;{
-&quot;status&quot;: &quot;IN_PROGRESS&quot;
+    &quot;status&quot;: &quot;IN_PROGRESS&quot;
 }&#39;
 
 // returns game state
@@ -502,12 +502,12 @@
 <pre><code class="language-jsx">curl --request POST &#39;http://localhost:9090/rooms/%YOUR_ROOM_ID%/submissions&#39; \
 --header &#39;Content-Type: application/json&#39; \
 --data &#39;{
-&quot;player&quot;: &quot;%YOUR_PLAYER_NAME%&quot;,
-&quot;response&quot;: &quot;1&quot;
+	&quot;player&quot;: &quot;%YOUR_PLAYER_NAME%&quot;,
+	&quot;response&quot;: &quot;1&quot;
 }&#39;
 
 // returns game state
-// applies to currently open question only automatically, once all players answer
+// applies to currently open question only automatically, once all players answer 
 // a question gamestate automatically moves to next questions
 </code></pre>
 <h3><strong>Look at the scoreboard to see who won! (just the regular getState above)</strong></h3>
@@ -517,7 +517,7 @@
 </code></pre>
 <h2 style="background-color: #DDEBF1;">To <strong>Start</strong></h2>
 <p>We will build an <a href="https://expressjs.com/">express</a> server that will store data in <a href="https://www.mongodb.com/">mongodb</a>.</p>
-<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/enm-1765518733993.jpg" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/enm-1765519152338.jpg" alt=""></p>
 <h3><strong>Database (Mongo)</strong></h3>
 <p>First, you need to install MongoDB Community Edition, the database client for this API. </p>
 <p>🚀 Install our database server <a href="https://docs.mongodb.com/manual/installation/#mongodb-community-edition">installation instructions here</a>.</p>
@@ -550,7 +550,7 @@ npm start
 <p>Recall that the <code>src/server.js</code> file is the entry point for our API. Note how we are setting the route:</p>
 <pre><code class="language-jsx">// default index route
 app.get(&#39;/&#39;, (req, res) =&gt; {
-res.send(&#39;hi&#39;);
+  res.send(&#39;hi&#39;);
 });
 </code></pre>
 <p>The 2nd parameter to <code>.get()</code> is a function that takes 2 arguments: <code>request</code> and <code>response</code>.</p>
@@ -569,7 +569,7 @@ res.send(&#39;hi&#39;);
 <details><summary>👽 Below are some commands to play around with a test database in the mongoshell, always nice to know you can inspect your database pretty easily.</summary><div data-encoded="PHByZT48Y29kZSBjbGFzcz0ibGFuZ3VhZ2UtYmFzaCI+CiMgcnVuIGBtb25nb2AgY29tbWFuZCAKIyB0aGlzIGxhdW5jaGVzIG1vbmdvc2hlbGwgaXMgYSBjb21tYW5kbGluZSBpbnRlcmZhY2UgdG8geW91ciBsb2NhbCBtb25nbyBkYgoKc2hvdyBkYnMKIyB3aWxsIHNob3cgeW91ciBjdXJyZW50IGRhdGFiYXNlcwoKdXNlIHRlc3QKIyB3aWxsIG1ha2UgJnF1b3Q7dGVzdCZxdW90OyB0aGUgY3VycmVudCBkYXRhYmFzZQoKZGIudGVzdC5pbnNlcnQoCiAgIHsKICAgICAgJiMzOTt0ZXh0JiMzOTs6ICYjMzk7UGFuZ29saW5zIGFyZSBjdXRlJiMzOTssCiAgICAgICYjMzk7aW1hZ2VVUkwmIzM5OzomIzM5O2h0dHBzOi8vbWVkaWEuZ2lwaHkuY29tL21lZGlhL3VzY3VUQVByV3FtcUkvZ2lwaHkuZ2lmJiMzOTssCiAgIH0KKQojIHdpbGwgaW5zZXJ0IGFuIG9iamVjdCBpbnRvIHRoZSBkYXRhYmFzZQojIGludG8gYSBjb2xsZWN0aW9uIGNhbGxlZCBgdGVzdGAKCmRiLnRlc3QuZmluZCgpCiMgcmV0dXJucyBldmVyeXRoaW5nIGluIHRoaXMgY29sbGVjdGlvbgoKZGIudGVzdC5maW5kKHsmcXVvdDt0ZXh0JnF1b3Q7OiAmcXVvdDtQYW5nb2xpbnMgYXJlIGN1dGUmcXVvdDt9KQojIGZpbmRzIGEgZW50cnkgaW4gZGF0YWJhc2UgYnkga2V5OnZhbHVlCjwvY29kZT48L3ByZT4KPHA+T2ssIHNvIG5vdyB5b3XigJl2ZSBwbGF5ZWQgYSBsaXR0bGUgYml0IHdpdGggbW9uZ28gZGlyZWN0bHksIGxldOKAmXMgYnVpbGQgc29tZXRoaW5nIG9uIHRvcCBvZiBpdC48L3A+Cg=="></div></details>
 
 <h2 style="background-color: #DDEBF1;"><strong>Mongoose</strong></h2>
-<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/mongoose-1765518733993.jpg" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/mongoose-1765519152338.jpg" alt=""></p>
 <p>To interface with mongo for our API, we will use a module called <code>mongoose</code>. <a href="http://mongoosejs.com/">Mongoose</a> is an object model for mongo. This allows us to treat data that we are storing in mongo as objects in our code that have a nice API for querying, saving, validating, etc. rather than writing Mongo queries directly. Mongo is in general considered a schema-less store. We store JSON documents similarly to Firebase. However, with Mongoose we are able to specify a schema for our objects. This allows us to validate and assert our data before inserting it into the database to protect us from pesky bugs. You will sometimes see this type of module called an ODM (Object Document Mapping/Mapper) for non-relational databases like mongo or an ORM (Object Relational Mapping) for relational databases like PostgreSQL.</p>
 <p>🚀 Install mongoose: <code>npm install mongoose</code></p>
 <p>🚀 Add this snippet to get mongoose initialized with our database at the bottom of <code>server.js</code>. We will wrap this in an anonymous <code>async</code> function so that we can <code>await</code> our call to connect to the database:</p>
@@ -581,19 +581,19 @@ import mongoose from &#39;mongoose&#39;;
 // START THE SERVER
 // =============================================================================
 async function startServer() {
-try {
-// connect DB
-const mongoURI = process.env.MONGODB_URI || &#39;mongodb://localhost/kahootAPI&#39;;
-await mongoose.connect(mongoURI);
-console.log(`Mongoose connected to: ${mongoURI}`);
+  try {
+    // connect DB
+    const mongoURI = process.env.MONGODB_URI || &#39;mongodb://localhost/kahootAPI&#39;;
+    await mongoose.connect(mongoURI);
+    console.log(`Mongoose connected to: ${mongoURI}`);
 
-const port = process.env.PORT || 9090;
-app.listen(port);
+    const port = process.env.PORT || 9090;
+    app.listen(port);
 
-console.log(`Listening on port ${port}`);
-} catch (error) {
-console.error(error);
-}
+    console.log(`Listening on port ${port}`);
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 startServer();
@@ -605,25 +605,25 @@ startServer();
 <pre><code class="language-jsx">import mongoose, { Schema } from &#39;mongoose&#39;;
 
 export const RoomStates = {
-IN_PROGRESS: &#39;IN_PROGRESS&#39;,
-CLOSED: &#39;CLOSED&#39;,
-GAME_OVER: &#39;GAME_OVER&#39;,
-OPEN: &#39;OPEN&#39;,
+  IN_PROGRESS: &#39;IN_PROGRESS&#39;,
+  CLOSED: &#39;CLOSED&#39;,
+  GAME_OVER: &#39;GAME_OVER&#39;,
+  OPEN: &#39;OPEN&#39;,
 };
 
 const RoomSchema = new Schema(
-{
-creator: String,
-questions: [{ prompt: String, answer: String }],
-players: [String],
-roomKey: String,
-status: { type: String, enum: RoomStates, default: RoomStates.CLOSED },
-currentQuestionNumber: Number,
-},
-{
-toObject: { virtuals: true },
-toJSON: { virtuals: true },
-},
+  {
+    creator: String,
+    questions: [{ prompt: String, answer: String }],
+    players: [String],
+    roomKey: String,
+    status: { type: String, enum: RoomStates, default: RoomStates.CLOSED },
+    currentQuestionNumber: Number,
+  },
+  {
+    toObject: { virtuals: true },
+    toJSON: { virtuals: true },
+  },
 );
 
 const RoomModel = mongoose.model(&#39;Room&#39;, RoomSchema);
@@ -642,18 +642,18 @@ export default RoomModel;
 <pre><code class="language-jsx">import mongoose, { Schema } from &#39;mongoose&#39;;
 
 export const SubmissionSchema = new Schema(
-{
-roomId: { type: Schema.Types.ObjectId, ref: &#39;Room&#39; },
-player: { type: String, required: true },
-response: { type: String, required: true },
-questionNumber: { type: Number, required: true },
-correct: { type: Boolean, required: true },
-},
-{
-timestamps: true,
-toObject: { virtuals: true },
-toJSON: { virtuals: true },
-},
+  {
+    roomId: { type: Schema.Types.ObjectId, ref: &#39;Room&#39; },
+    player: { type: String, required: true },
+    response: { type: String, required: true },
+    questionNumber: { type: Number, required: true },
+    correct: { type: Boolean, required: true },
+  },
+  {
+    timestamps: true,
+    toObject: { virtuals: true },
+    toJSON: { virtuals: true },
+  },
 );
 
 const SubmissionModel = mongoose.model(&#39;Submission&#39;, SubmissionSchema);
@@ -683,11 +683,11 @@ export async function submitAnswer(roomId, player, response) {}
 
 // new answer submission
 export async function submit(
-roomId,
-player,
-questionNumber,
-response,
-correct,
+  roomId,
+  player,
+  questionNumber,
+  response,
+  correct,
 ) {}
 
 export async function countSubmissions(roomId, questionNumber) {}
@@ -707,55 +707,55 @@ const router = Router();
 
 // default index route
 router.get(&#39;/&#39;, (req, res) =&gt; {
-return res.json({ message: &#39;Welcome to the kahoot API!&#39; });
+  return res.json({ message: &#39;Welcome to the kahoot API!&#39; });
 });
 
 // create a room - admin
 router.post(&#39;/rooms&#39;, async (req, res) =&gt; {
-const roomInitInfo = req.body;
+  const roomInitInfo = req.body;
 
-try {
-const result = await Rooms.createRoom(roomInitInfo);
-return res.json(result);
-} catch (error) {
-return res.status(422).json({ error: error.message });
-}
+  try {
+    const result = await Rooms.createRoom(roomInitInfo);
+    return res.json(result);
+  } catch (error) {
+    return res.status(422).json({ error: error.message });
+  }
 });
 
 // get gamestate for room
 router.get(&#39;/rooms/:id&#39;, async (req, res) =&gt; {
-const roomId = req.params.id;
-const { player } = req.query;
+  const roomId = req.params.id;
+  const { player } = req.query;
 
-// fill in try/catch that handles calling the appropriate Rooms function
-// returns a response, see `create a room` above
+  // fill in try/catch that handles calling the appropriate Rooms function
+  // returns a response, see `create a room` above
 });
 
 // join a room
 router.post(&#39;/rooms/:id&#39;, async (req, res) =&gt; {
-const roomId = req.params.id;
-const playerInfo = req.body;
+  const roomId = req.params.id;
+  const playerInfo = req.body;
 
-// fill in try/catch that handles calling the appropriate Rooms function
-// returns a response, see `create a room` above
+  // fill in try/catch that handles calling the appropriate Rooms function
+  // returns a response, see `create a room` above
 });
 
 // change room status - admin
 router.patch(&#39;/rooms/:id&#39;, async (req, res) =&gt; {
-const roomId = req.params.id;
-const { roomKey, status } = req.body;
+  const roomId = req.params.id;
+  const { roomKey, status } = req.body;
 
-// fill in try/catch that handles calling the appropriate Rooms function
-// returns a response, see `create a room` above
+  // fill in try/catch that handles calling the appropriate Rooms function
+  // returns a response, see `create a room` above
 });
 
 // submit a response
 router.post(&#39;/rooms/:id/submissions&#39;, async (req, res) =&gt; {
-const roomId = req.params.id;
-const { player, response } = req.body;
+  const roomId = req.params.id;
+  const { player, response } = req.body;
 
-// fill in try/catch that handles calling the appropriate Rooms function
-// returns a response, see `create a room` above
+  // fill in try/catch that handles calling the appropriate Rooms function
+  // returns a response, see `create a room` above
 });
 
 export default router;
@@ -769,7 +769,7 @@ export default router;
 <p>When looking over the above endpoints, recall that when we reference <code>req.params.id</code>, the <code>:id</code> is defined in the route — the <code>:</code> indicates pattern matching the next part. When the user makes a GET request to the route <code>rooms/33</code>, for example, <code>req.params.id</code> is 33. Similarly, <code>req.query</code> is the query parameters (e.g., the <code>name</code> query param would have the value <code>Tim</code> in <code>https://exampleurl?name=Tim</code>).</p>
 <h2 style="background-color: #DDEBF1;">Test Suite with <a href="https://www.cypress.io/">Cypress.io</a></h2>
 <p>So, you may have heard of test driven development — the idea being develop a test first and then code to satisfy the test.  We may rarely have that opportunity, but in this case we’ve gone ahead and build a test suite for you!</p>
-<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/screen-shot-2022-05-07-at-11-1765518733993.png" alt="Screen Shot 2022-05-07 at 11.27.10 AM.png"></p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/screen-shot-2022-05-07-at-11-1765519152338.png" alt="Screen Shot 2022-05-07 at 11.27.10 AM.png"></p>
 <p>We’ll use <a href="http://cypress.io">cypress.io</a> as our test running.  Cypress is an end-to-end testing framework that is primarily geared toward front end testing, but it is flexible and we can use it for server side also. </p>
 <p>In the template code for the repo we gave you a <code>cypress</code> directory and a <code>cypress.json</code> config file.  </p>
 <p>🚀 We should add in Cypress to our project!</p>
@@ -794,20 +794,20 @@ export default router;
 <p>We should first implement the <code>createRoom</code> endpoint. Without any rooms, we can&#39;t play! This will be in the room_controller.</p>
 <p>🚀  We use the <code>new</code> keyword to initialize a new room, then give it the appropriate properties and save it using the <code>.save()</code> method.  <a href="https://mongoosejs.com/docs/api.html#model_Model">Here’s the docs</a>. </p>
 <pre><code class="language-jsx">export async function createRoom(roomInitInfo) {
-const newRoom = new Room();
-newRoom.creator = roomInitInfo.creator;
-newRoom.questions = roomInitInfo.questions;
-newRoom.submissions = [];
-newRoom.status = RoomStates.CLOSED;
-newRoom.currentQuestionNumber = 0;
-newRoom.roomKey = roomInitInfo.roomKey;
+  const newRoom = new Room();
+  newRoom.creator = roomInitInfo.creator;
+  newRoom.questions = roomInitInfo.questions;
+  newRoom.submissions = [];
+  newRoom.status = RoomStates.CLOSED;
+  newRoom.currentQuestionNumber = 0;
+  newRoom.roomKey = roomInitInfo.roomKey;
 
-return newRoom.save();
+  return newRoom.save();
 }
 </code></pre>
 <p>The <code>.save()</code> method returns a promise, so we should make sure to <code>await</code> <code>createRoom</code> when we call it.</p>
 <p>🚀  Let&#39;s see if this works! For this assignment, we do not have a frontend, so we will instead use tools to test our API. <a href="https://www.postman.com/">Postman</a> and <a href="https://insomnia.rest/download">Insomnia</a> are tools that lets us make requests to an API, and can help us test our endpoints more easily. If you download Insomnia here are the requests in easy to import format!</p>
-<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/screen-shot-2022-05-07-at-6-1765518733993.png" alt="Screen Shot 2022-05-07 at 6.36.15 PM.png"></p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/screen-shot-2022-05-07-at-6-1765519152338.png" alt="Screen Shot 2022-05-07 at 6.36.15 PM.png"></p>
 <p><a href="Short%206%20Kahoot%20API/Insomnia-All_2022-05-10.json">Insomnia-All_kahoots.json</a></p>
 <p>For you terminal junkies out there, <a href="https://curl.se/">Curl</a> is a commandline tool for requests. It’s lightweight and requires no installation as it is commonly present in terminal environments.</p>
 <p>Now, start up your API with <code>npm start</code> and, using the curl commands above, test that creating a room via a post to <code>localhost:9090/rooms</code> with a properly formatted body returns a success message. </p>
@@ -821,47 +821,47 @@ return newRoom.save();
 <p>Now that the Admin has created a room, let’s create a way for the admin to open the room for players to join! In our case all that means is changing the room status to <code>OPEN</code>. Now here’s the trick,  remember the <code>id</code> that we are returning when we create a room?   Of course you do, because you ran that curl request above and it worked.  Now you’ll want to copy the <code>id</code> or <code>_id</code> (same thing) and use that in the URL part of the other requests where we have <code>%YOUR_ROOM_ID%</code>. </p>
 <p>🚀 Here’s our controller <code>changeStatus</code> function.  Note it checks that the roomkey passed in matches that of the creator.  Super basic secret style security, not the best, but sufficient for us here. </p>
 <pre><code class="language-jsx">export async function changeStatus(roomId, roomKey, status) {
-const room = await Room.findById(roomId);
-if (room.roomKey !== roomKey) {
-throw new Error(&#39;Room key is incorrect&#39;);
-}
+  const room = await Room.findById(roomId);
+  if (room.roomKey !== roomKey) {
+    throw new Error(&#39;Room key is incorrect&#39;);
+  }
 
-if (status in RoomStates) {
-room.status = status;
-} else {
-throw new Error(
-`Invalid status. Must be ${RoomStates.CLOSED}, ${RoomStates.OPEN}, ${RoomStates.IN_PROGRESS} or ${RoomStates.GAME_OVER}`,
-);
-}
+  if (status in RoomStates) {
+    room.status = status;
+  } else {
+    throw new Error(
+      `Invalid status. Must be ${RoomStates.CLOSED}, ${RoomStates.OPEN}, ${RoomStates.IN_PROGRESS} or ${RoomStates.GAME_OVER}`,
+    );
+  }
 
-return room.save();
+  return room.save();
 }
 </code></pre>
 <p>Note how we’re using a dictionary as an enum that we get from the room model <code>import Room, { RoomStates } from &#39;../models/room_model&#39;;</code>.   Now we have this called by our PATCH route that we set up.  Don’t forget to go back to that route and make sure this is being called and test it with <a href="https://www.notion.so/Backend-2-Kahoot-API-df8153201c6f431b829f39f84880d48b?pvs=21">curl</a>.</p>
 <h3>Players Join → joinRoom</h3>
 <p>Now that the room is open, players should join it!   Here’s our joinRoom.  We have to do some work here, mostly just making sure that rooms don’t have duplicate player names and that the room is open for joining.</p>
 <pre><code class="language-jsx">export async function joinRoom(roomId, playerInfo) {
-const room = await Room.findById(roomId);
+  const room = await Room.findById(roomId);
 
-// make sure player&#39;s intended name does not already exist
-const newPlayerName = playerInfo.name;
-const existingPlayers = room.players;
+  // make sure player&#39;s intended name does not already exist
+  const newPlayerName = playerInfo.name;
+  const existingPlayers = room.players;
 
-if (existingPlayers.includes(newPlayerName)) {
-throw new Error(
-`Player with your intended name (${newPlayerName}) already exists`,
-);
-}
+  if (existingPlayers.includes(newPlayerName)) {
+    throw new Error(
+      `Player with your intended name (${newPlayerName}) already exists`,
+    );
+  }
 
-if (room.status !== RoomStates.OPEN) {
-throw new Error(
-`This room is not open for joining in state ${room.status}`,
-);
-}
+  if (room.status !== RoomStates.OPEN) {
+    throw new Error(
+      `This room is not open for joining in state ${room.status}`,
+    );
+  }
 
-// username is free; add player to room
-room.players.push(newPlayerName);
-return room.save();
+  // username is free; add player to room
+  room.players.push(newPlayerName);
+  return room.save();
 }
 </code></pre>
 <p>Don’t forget to wire this in to our POST <code>/rooms/:id</code> route and <a href="https://www.notion.so/Backend-2-Kahoot-API-df8153201c6f431b829f39f84880d48b?pvs=21">test it!</a> </p>
@@ -872,44 +872,44 @@ return room.save();
 <p>Great, now for the fun part - players should submit their answers to the first question.  Wait, but how do we know what the question is? Let’s make this function first and then see how to ask for questions, since we made the question/answer pairs we can play it without it (its a big one). </p>
 <pre><code class="language-jsx">// submit an answer to a room&#39;s current question
 export async function submitAnswer(roomId, player, response) {
-const room = await Room.findById(roomId);
+  const room = await Room.findById(roomId);
 
-if (room.status !== &#39;IN_PROGRESS&#39;) {
-throw new Error(&quot;This game is not in progress. Can&#39;t submit now.&quot;);
-}
+  if (room.status !== &#39;IN_PROGRESS&#39;) {
+    throw new Error(&quot;This game is not in progress. Can&#39;t submit now.&quot;);
+  }
 
-if (!room.players.includes(player)) {
-throw new Error(`Player (${player}) not in room`);
-}
+  if (!room.players.includes(player)) {
+    throw new Error(`Player (${player}) not in room`);
+  }
 
-const isCorrect =
-room.questions[room.currentQuestionNumber].answer === response;
+  const isCorrect =
+    room.questions[room.currentQuestionNumber].answer === response;
 
-const newSubmission = await submit(
-roomId,
-player,
-room.currentQuestionNumber,
-response,
-isCorrect,
-);
-const numSubmissions = await countSubmissions(
-roomId,
-room.currentQuestionNumber,
-);
+  const newSubmission = await submit(
+    roomId,
+    player,
+    room.currentQuestionNumber,
+    response,
+    isCorrect,
+  );
+  const numSubmissions = await countSubmissions(
+    roomId,
+    room.currentQuestionNumber,
+  );
 
-// if question has been submitted by all players, move to next question
-if (numSubmissions === room.players.length) {
-room.currentQuestionNumber += 1;
-}
+  // if question has been submitted by all players, move to next question
+  if (numSubmissions === room.players.length) {
+    room.currentQuestionNumber += 1;
+  }
 
-// close room if all questions have been answered
-if (room.currentQuestionNumber === room.questions.length) {
-room.status = RoomStates.GAME_OVER;
-}
+  // close room if all questions have been answered
+  if (room.currentQuestionNumber === room.questions.length) {
+    room.status = RoomStates.GAME_OVER;
+  }
 
-await room.save();
+  await room.save();
 
-return newSubmission;
+  return newSubmission;
 }
 </code></pre>
 <p><code>rooms/:id/submissions</code></p>
@@ -918,43 +918,43 @@ return newSubmission;
 <p>🚀 Fill in the <code>submit</code> and <code>countSubmissions</code> functions in the <code>submission_controller</code></p>
 <pre><code class="language-jsx">// new answer submission
 export async function submit(
-roomId,
-player,
-questionNumber,
-response,
-correct,
+  roomId,
+  player,
+  questionNumber,
+  response,
+  correct,
 ) {
-const exisitingSubmission = await Submission.findOne({
-roomId,
-player,
-questionNumber,
-});
-if (exisitingSubmission) {
-throw new Error(
-&#39;This player has already submitted a repsonse to this question&#39;,
-);
-}
+  const exisitingSubmission = await Submission.findOne({
+    roomId,
+    player,
+    questionNumber,
+  });
+  if (exisitingSubmission) {
+    throw new Error(
+      &#39;This player has already submitted a repsonse to this question&#39;,
+    );
+  }
 
-const newSubmission = new Submission({
-roomId,
-player,
-response,
-questionNumber,
-correct,
-});
-await newSubmission.save();
+  const newSubmission = new Submission({
+    roomId,
+    player,
+    response,
+    questionNumber,
+    correct,
+  });
+  await newSubmission.save();
 
-return newSubmission;
+  return newSubmission;
 }
 
 export async function countSubmissions(roomId, questionNumber) {
-// see if all players have submitted and update the game state as necessary / has to be after submission is saved
-const numSubmissions = await Submission.countDocuments({
-roomId,
-questionNumber,
-});
+  // see if all players have submitted and update the game state as necessary / has to be after submission is saved
+  const numSubmissions = await Submission.countDocuments({
+    roomId,
+    questionNumber,
+  });
 
-return numSubmissions;
+  return numSubmissions;
 }
 </code></pre>
 <p>Players will include the information about their submissions in the body of a post request to the <code>/rooms/:id/submissions</code>/ endpoint. We will parse this to get the player&#39;s name and the answers they submitted.  Don’t forget hook it up in routes and to <a href="https://www.notion.so/Backend-2-Kahoot-API-df8153201c6f431b829f39f84880d48b?pvs=21">test it out!</a> </p>
@@ -962,82 +962,82 @@ return numSubmissions;
 <p>We need an endpoint for players to be able to access the information about a room.  This is the most complicated endpoint we have.  Folks need to be able to get what the current question is, the list of players, and the running leaderboard of the top 3 players.</p>
 <pre><code class="language-jsx">// returns the main game state with current question, rank, game status, and scoreboard
 export async function getState(roomId, player) {
-const room = await Room.findById(roomId);
-const scores = await getScores(
-roomId,
-room.currentQuestionNumber,
-room.players,
-);
-const topThree = scores.slice(0, 3);
+  const room = await Room.findById(roomId);
+  const scores = await getScores(
+    roomId,
+    room.currentQuestionNumber,
+    room.players,
+  );
+  const topThree = scores.slice(0, 3);
 
-// get rank of requestingPlayer
-const requestingPlayerScoreboardPosition = scores.findIndex((entry) =&gt; {
-return entry[0] === player;
-});
+  // get rank of requestingPlayer
+  const requestingPlayerScoreboardPosition = scores.findIndex((entry) =&gt; {
+    return entry[0] === player;
+  });
 
-const gameOver = room.currentQuestionNumber === room.questions.length;
+  const gameOver = room.currentQuestionNumber === room.questions.length;
 
-const state = {
-roomId,
-status: room.status,
-players: room.players,
-yourName: player,
-yourRank:
-requestingPlayerScoreboardPosition === -1
-? null
-: requestingPlayerScoreboardPosition + 1,
-top3: topThree,
-currentQuestionNumber: gameOver ? -1 : room.currentQuestionNumber,
-currentQuestion: gameOver
-? -1
-: room.questions[room.currentQuestionNumber].prompt,
-};
+  const state = {
+    roomId,
+    status: room.status,
+    players: room.players,
+    yourName: player,
+    yourRank:
+      requestingPlayerScoreboardPosition === -1
+        ? null
+        : requestingPlayerScoreboardPosition + 1,
+    top3: topThree,
+    currentQuestionNumber: gameOver ? -1 : room.currentQuestionNumber,
+    currentQuestion: gameOver
+      ? -1
+      : room.questions[room.currentQuestionNumber].prompt,
+  };
 
-return state;
+  return state;
 }
 </code></pre>
 <p>But you’ll notice here too, we need something from submissions - scores are computed from the submissions after all.  </p>
 <p>🚀 We should add a <code>getScores</code> function to the <code>submission_controller</code> to help us. </p>
 <pre><code class="language-jsx">// computes scores for all players in a room
 export async function getScores(roomId, currentQuestionNumber, players) {
-const submissions = await Submission.find({ roomId });
+  const submissions = await Submission.find({ roomId });
 
-const scores = {};
-players.forEach((player) =&gt; {
-scores[player] = 0;
-});
+  const scores = {};
+  players.forEach((player) =&gt; {
+    scores[player] = 0;
+  });
 
-submissions.forEach((submission) =&gt; {
-// don&#39;t count unfinished rounds
-if (
-submission.questionNumber &lt; currentQuestionNumber &amp;&amp;
-submission.correct
-) {
-scores[submission.player] += 1;
-}
-});
+  submissions.forEach((submission) =&gt; {
+    // don&#39;t count unfinished rounds
+    if (
+      submission.questionNumber &lt; currentQuestionNumber &amp;&amp;
+      submission.correct
+    ) {
+      scores[submission.player] += 1;
+    }
+  });
 
-const sorted = Object.entries(scores).sort((a, b) =&gt; {
-return b[1] - a[1];
-});
+  const sorted = Object.entries(scores).sort((a, b) =&gt; {
+    return b[1] - a[1];
+  });
 
-return sorted;
+  return sorted;
 }
 </code></pre>
 <p>Great, now we should be able to do all the steps to play a game and see how we are doing! </p>
-<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/screenshot-2024-05-04-at-1-1765518733993.png" alt="Screenshot 2024-05-04 at 1.49.17 PM.png"></p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/screenshot-2024-05-04-at-1-1765519152338.png" alt="Screenshot 2024-05-04 at 1.49.17 PM.png"></p>
 <h2 style="background-color: #DDEBF1;"><strong>Deploy!</strong></h2>
 <h2 style="background-color: #DDEBF1;"><strong>Render</strong></h2>
 <p>Let’s deploy all of this! </p>
 <p>🚀 Create a new Web Service</p>
-<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/screen-shot-2022-05-03-at-5-1765518733993.png" alt="Screen Shot 2022-05-03 at 5.28.07 PM.png"></p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/screen-shot-2022-05-03-at-5-1765519152338.png" alt="Screen Shot 2022-05-03 at 5.28.07 PM.png"></p>
 <p>🚀 Choose:</p>
 <ul>
 <li>environment: <code>Node</code></li>
 <li><strong>IMPORTANT</strong> - build command: <code>npm install &amp;&amp; npm run build</code></li>
 <li>start command: <code>npm run prod</code></li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/screen-shot-2022-05-03-at-12-1765518733993.png" alt="Screen Shot 2022-05-03 at 12.28.27 PM.png"></p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/screen-shot-2022-05-03-at-12-1765519152338.png" alt="Screen Shot 2022-05-03 at 12.28.27 PM.png"></p>
 <h2 style="background-color: #DDEBF1;"><strong>MongoDB Atlas</strong></h2>
 <p>Wait, but we don&#39;t have a database on our remote server! </p>
 <p>To run a MongoDB process with remote access there are several options, but we&#39;ll choose the cloud mongo option offered by mongodb.com.</p>
@@ -1051,11 +1051,11 @@ return sorted;
 <li><p>This will create a &quot;Project 0&quot; with &quot;Cluster 0&quot;. You are limited to 1 free cluster per project, so later on you may want to create more. For now, it is probably fine to use the same database for all your projects.</p>
 </li>
 <li><p>Create an access username and password. Save them.</p>
-<p> <img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/newuser0-1765518733993.jpg" alt=""></p>
-<p> <img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/newuser-1765518733993.jpg" alt=""></p>
+<p> <img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/newuser0-1765519152338.jpg" alt=""></p>
+<p> <img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/newuser-1765519152338.jpg" alt=""></p>
 </li>
 <li><p>Under <em>Network Access</em>, add an IP Access Entry with <code>0.0.0.0/0</code> as the entry. This will allow all IPs, which is not ideal, but for testing purposes we’ll leave it.</p>
-<p> <img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/screenshot-2025-02-12-at-2-1765518733993.png" alt="Screenshot 2025-02-12 at 2.56.47 PM.png"></p>
+<p> <img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/screenshot-2025-02-12-at-2-1765519152338.png" alt="Screenshot 2025-02-12 at 2.56.47 PM.png"></p>
 </li>
 <li><p>Click <em>Clusters</em> -&gt; <em>Connect</em> -&gt; <em>Connect Your Application</em></p>
 </li>
@@ -1064,10 +1064,10 @@ return sorted;
 </ol>
 <h2 style="background-color: #DDEBF1;">Connect Your DB to Render</h2>
 <p>One you have your connection string  you can add it to <a href="http://Render.com">Render.com</a> as <code>MONGODB_URI</code></p>
-<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/screen-shot-2022-05-07-at-10-1765518733993.png" alt="Screen Shot 2022-05-07 at 10.27.26 PM.png"></p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/screen-shot-2022-05-07-at-10-1765519152338.png" alt="Screen Shot 2022-05-07 at 10.27.26 PM.png"></p>
 <p> Once you add that you should be able to access the deployed url and try it out there!</p>
 <h2 style="background-color: #DDEBF1;"><strong>Congrats!</strong> 😊</h2>
-<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/kahoot-podium-1765518733993.gif" alt="kahoot-podium.gif"></p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/kahoot-podium-1765519152338.gif" alt="kahoot-podium.gif"></p>
 <h2 style="background-color: #DDEBF1;">To Turn In</h2>
 <ul>
 <li>👉 The GitHub assignment Issue will be considered your submission! <strong>To officially turn it in, please comment on the Issue in the repository when you have completed the assignment and mark it Closed.</strong></li>
