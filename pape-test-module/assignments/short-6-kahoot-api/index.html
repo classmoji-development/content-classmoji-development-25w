@@ -805,25 +805,28 @@ export default router;
 <div class="heading-block h3-block"><h3>Players Join → joinRoom</h3></div>
 <p>Now that the room is open, players should join it!   Here’s our joinRoom.  We have to do some work here, mostly just making sure that rooms don’t have duplicate player names and that the room is open for joining.</p>
 <pre><code class="language-javascript">export async function joinRoom(roomId, playerInfo) {
-const room = await Room.findById(roomId);
+  const room = await Room.findById(roomId);
 
-// make sure player's intended name does not already exist
-const newPlayerName = playerInfo.name;
-const existingPlayers = room.players;
+  // make sure player's intended name does not already exist
+  const newPlayerName = playerInfo.name;
+  const existingPlayers = room.players;
 
-if (existingPlayers.includes(newPlayerName)) {
-throw new Error(`Player with your intended name (${newPlayerName}) already exists`);
-}
+  if (existingPlayers.includes(newPlayerName)) {
+    throw new Error(
+      `Player with your intended name (${newPlayerName}) already exists`
+    );
+  }
 
-if (room.status !== RoomStates.OPEN) {
-throw new Error(`This room is not open for joining in state ${room.status}`);
-}
+  if (room.status !== RoomStates.OPEN) {
+    throw new Error(
+      `This room is not open for joining in state ${room.status}`
+    );
+  }
 
-// username is free; add player to room
-room.players.push(newPlayerName);
-return room.save();
-}
-</code></pre>
+  // username is free; add player to room
+  room.players.push(newPlayerName);
+  return room.save();
+}</code></pre>
 <p>Don’t forget to wire this in to our POST <code>/rooms/:id</code> route and <a href="https://www.notion.so/Backend-2-Kahoot-API-df8153201c6f431b829f39f84880d48b?pvs=21">test it!</a> </p>
 <div class="heading-block h3-block"><h3>Start Game → <code>changeStatus</code></h3></div>
 <p>Once all the players join the room that the admin wants - they need to start the game. In our case all that means is changing the status to <code>IN_PROGRESS</code></p>
