@@ -629,23 +629,22 @@ import './style.scss';
 
 const root = createRoot(document.getElementById('main'));
 
-root.render(
-&lt;YouTube /&gt;,
-);
-</code></pre>
+root.render(&lt;YouTube /&gt;);</code></pre>
 <p>🚀 Your linter should tell you that <code>youtube.jsx</code> has a lot of errors. Notice that we moved that code into the component directory so a lot of the import paths are wrong. You’ll want to fix the paths in those import statements. Remember <code>../</code> is up one directory and <code>./</code> is in the current directory. At this point you should be able to get it to a point where it will build and you can get the main page up and running.</p>
 <p>🚀 Don’t forget to run <code>npm install</code> to install any of the new dependencies that were merged into <code>package.json</code>.</p>
 <p>🚀 Finish the Merge! Once you have finished handling the conflicts, go ahead and <code>git add</code> and <code>git commit</code> the changes to resolve the conflicts and finish the merge.</p>
 <p><em>NOTE: If you are adding zustand to some other existing project and don’t want to merge in the starter repo, you can go through the steps in part 1 to set up the dependencies and store.</em> </p>
 <div class="heading-block h2-block"><h2>Store</h2></div>
 <p>Ok,  let’s think about the data that we want now.  Let’s summarize what data we want:</p>
-<pre><code class="language-javascript">countStore:  { count: 0 }
+<pre><code class="language-javascript">countStore: {
+  count: 0;
+}
 
 videoStore: {
-list: []
-selected: {}
-}
-</code></pre>
+  list: [];
+  selected: {
+  }
+}</code></pre>
 <p>So we could have:</p>
 <ul>
 <li>one big store just like we did in Part 1.  Easy but over time will get confusing.</li>
@@ -663,23 +662,39 @@ import createVideoSlice from './video-slice';
 import createCountSlice from './count-slice';
 
 // folks can use slices or multiple stores if they want
-const useStore = create(devtools(immer((...args) =&gt; ({
-videoSlice: createVideoSlice(...args),
-countSlice: createCountSlice(...args),
-}))));
+const useStore = create(
+  devtools(
+    immer((...args) =&gt; ({
+      videoSlice: createVideoSlice(...args),
+      countSlice: createCountSlice(...args),
+    }))
+  )
+);
 
-export default useStore;
-</code></pre>
+export default useStore;</code></pre>
 <p><em>EC question:  what is <code>...args</code> up above?</em> </p>
 <p>2️⃣&nbsp;Recreate our count store as a slice! <code>store/count-slice.js</code></p>
 <pre><code class="language-javascript">export default function createCountSlice(set) {
-return {
-count: 0,
-increment: () =&gt; set(({ countSlice: draftState }) =&gt; { draftState.count += 1; }, false, 'counter/increment'),
-decrement: () =&gt; set(({ countSlice: draftState }) =&gt; { draftState.count -= 1; }, false, 'counter/decrement'),
-};
-}
-</code></pre>
+  return {
+    count: 0,
+    increment: () =&gt;
+      set(
+        ({ countSlice: draftState }) =&gt; {
+          draftState.count += 1;
+        },
+        false,
+        'counter/increment'
+      ),
+    decrement: () =&gt;
+      set(
+        ({ countSlice: draftState }) =&gt; {
+          draftState.count -= 1;
+        },
+        false,
+        'counter/decrement'
+      ),
+  };
+}</code></pre>
 <p>Note some peculiarities.. We essentially have just taken part of the store creation out into a separate file, yes. BUT we have also used some <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">destructuring syntax</a> to help us only operate on the count slice key we defined in the store. We called our slice <code>countSlice</code> so here we pull that key out AND rename it:  <code>{countSlice: draftState}</code> deconstructs our global state object and pulls out only the <code>countSlice</code> key and renames it to be <code>draftState</code>.  </p>
 <p>WHY!??   For clarity! This is so you don’t forget that we are working with Immer on a draft.  If you forget, you may do things that don’t work.  So we remind ourselves by writing clear code! </p>
 <p>3️⃣&nbsp;Create our videoStore <code>store/video-slice.js</code></p>
