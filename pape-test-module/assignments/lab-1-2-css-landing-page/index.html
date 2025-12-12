@@ -468,11 +468,9 @@ background-size: cover;
 <p>Anything in this media query will only apply if the screen is fairly narrow. Don’t worry about it working on every single device - rather focus on it working in a more general fashion in a “mobile” width vs “desktop”. Flex-boxes will take care of things being responsive in most widths but you want to make sure that there is a mobile version where a few bigger site wide changes happen: rows into columns, nav links into hamburger menu.</p>
 <p>⚠️⚠️⚠️ Add <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code> to the <code>head</code> section of your html. This tells the mobile browser to not pretend to be a real browser and use actual device pixels for width and allows you to test on mobile / in the Chrome mobile device mode.</p>
 <div class="heading-block h3-block"><h3>Important Techniques</h3></div>
-<div class="code-block"><div class="code-header"><span class="code-lang">CSS</span></div><div class="code-body"><div class="line-numbers"><span class="line-number">1</span><span class="line-number">2</span></div><pre><code class="language-css">flex-direction: column;
-</code></pre></div></div>
+<div class="code-block"><div class="code-header"><span class="code-lang">CSS</span></div><div class="code-body"><div class="line-numbers"><span class="line-number">1</span></div><pre><code class="language-css">flex-direction: column;</code></pre></div></div>
 <p>🚀&nbsp;Take some of your row flex boxes and simply convert them to columns. This works remarkably well for many cases. The input box and button,  the links at the bottom, the highlight selections in the middle. </p>
-<div class="code-block"><div class="code-header"><span class="code-lang">CSS</span></div><div class="code-body"><div class="line-numbers"><span class="line-number">1</span><span class="line-number">2</span></div><pre><code class="language-css">display: none;
-</code></pre></div></div>
+<div class="code-block"><div class="code-header"><span class="code-lang">CSS</span></div><div class="code-body"><div class="line-numbers"><span class="line-number">1</span></div><pre><code class="language-css">display: none;</code></pre></div></div>
 <p>This method can be very powerful.   For your navbar the recommendation is to do this:</p>
 <ol start="1">
 <li><code>&lt;nav class="desktop"&gt;</code></li>
