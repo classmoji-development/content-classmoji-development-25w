@@ -949,25 +949,29 @@ export async function getState(roomId, player) {
 <p>🚀&nbsp;We should add a <code>getScores</code> function to the <code>submission_controller</code> to help us. </p>
 <pre><code class="language-javascript">// computes scores for all players in a room
 export async function getScores(roomId, currentQuestionNumber, players) {
-const submissions = await Submission.find({ roomId });
+  const submissions = await Submission.find({ roomId });
 
-const scores = {};
-players.forEach((player) =&gt; {
-scores[player] = 0;
-});
+  const scores = {};
+  players.forEach((player) =&gt; {
+    scores[player] = 0;
+  });
 
-submissions.forEach((submission) =&gt; {
-// don't count unfinished rounds
-if (submission.questionNumber &lt; currentQuestionNumber &amp;&amp; submission.correct) {
-scores[submission.player] += 1;
-}
-});
+  submissions.forEach((submission) =&gt; {
+    // don't count unfinished rounds
+    if (
+      submission.questionNumber &lt; currentQuestionNumber &amp;&amp;
+      submission.correct
+    ) {
+      scores[submission.player] += 1;
+    }
+  });
 
-const sorted = Object.entries(scores).sort((a, b) =&gt; { return b[1] - a[1]; });
+  const sorted = Object.entries(scores).sort((a, b) =&gt; {
+    return b[1] - a[1];
+  });
 
-return sorted;
-}
-</code></pre>
+  return sorted;
+}</code></pre>
 <p>Great, now we should be able to do all the steps to play a game and see how we are doing! </p>
 <p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/short-6-kahoot-api/assets/screenshot-2024-05-04-at-1-1765510311184.png" alt="Screenshot 2024-05-04 at 1.49.17 PM.png"></p>
 <div class="heading-block h2-block"><h2><strong>Deploy!</strong></h2></div>
