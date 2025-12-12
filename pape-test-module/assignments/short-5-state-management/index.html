@@ -733,25 +733,23 @@ export default useStore;</code></pre>
 import useStore from '../store';
 
 function VideoListItem(props) {
-const selectVideo = useStore(({ videoSlice }) =&gt; videoSlice.selectVideo);
-const imgUrl = props?.video?.snippet?.thumbnails?.default?.url;
-//notice our nice use of optional chaining
+  const selectVideo = useStore(({ videoSlice }) =&gt; videoSlice.selectVideo);
+  const imgUrl = props?.video?.snippet?.thumbnails?.default?.url;
+  //notice our nice use of optional chaining
 
-return (
-&lt;li onClick={() =&gt; selectVideo(props.video)}&gt;
-&lt;img src={imgUrl} alt="video" /&gt;
-&lt;div&gt;{props?.video?.snippet?.title}&lt;/div&gt;
-&lt;/li&gt;
-);
-};
+  return (
+    &lt;li onClick={() =&gt; selectVideo(props.video)}&gt;
+      &lt;img src={imgUrl} alt="video" /&gt;
+      &lt;div&gt;{props?.video?.snippet?.title}&lt;/div&gt;
+    &lt;/li&gt;
+  );
+}
 
-export default VideoListItem;
-</code></pre>
+export default VideoListItem;</code></pre>
 <div class="heading-block h3-block"><h3>VideoList</h3></div>
 <p>🚀 In <code>components/video_list.jsx</code> remove <code>onVideoSelect={props.onVideoSelect}</code>  from <code>VideoListItem</code>. Yay! We no longer need to pass this function around it lives directly in our store.</p>
 <p>🚀 We can also upgrade <em>VideoList</em> to connect to the entire list of videos. Edit <code>video_list.jsx</code> to include the following:</p>
-<pre><code class="language-javascript">  const videos = useStore(({ videoSlice }) =&gt; (videoSlice.list));
-</code></pre>
+<pre><code class="language-javascript">const videos = useStore(({ videoSlice }) =&gt; videoSlice.list);</code></pre>
 <p><em>Note we don’t have to edit that we map over props.videos… cause we’re just naming it the same thing!</em></p>
 <ul>
 <li>Whole thing in case, but you should really not need this.</li>
@@ -761,20 +759,15 @@ import useStore from '../store';
 import VideoListItem from './video_list_item';
 
 const VideoList = (props) =&gt; {
-const videos = useStore(({ videoSlice }) =&gt; (videoSlice.list));
-const videoItems = videos.map((video) =&gt; {
-return &lt;VideoListItem key={video.etag} video={video} /&gt;;
-});
+  const videos = useStore(({ videoSlice }) =&gt; videoSlice.list);
+  const videoItems = videos.map((video) =&gt; {
+    return &lt;VideoListItem key={video.etag} video={video} /&gt;;
+  });
 
-return (
-&lt;ul&gt;
-{videoItems}
-&lt;/ul&gt;
-);
+  return &lt;ul&gt;{videoItems}&lt;/ul&gt;;
 };
 
-export default VideoList;
-</code></pre>
+export default VideoList;</code></pre>
 <div class="heading-block h2-block"><h2>YouTube Component</h2></div>
 <p>🚀 Now, we need to connect <code>components/youtube.jsx</code></p>
 <ol start="1">
