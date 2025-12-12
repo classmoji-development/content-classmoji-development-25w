@@ -599,22 +599,24 @@ export default RoomModel;
 <p>Now that we know we want to multiple types of data (rooms and submissions), we have a few choices. One option is to store the submissions in a separate collection with the <code>roomId</code> of the room to which they were submitted and store no information about the submissions in the room model. Another is to just make the&nbsp;<code>submissions</code>&nbsp;field of each room an array of&nbsp;<code>SubmissionSchema</code>&nbsp;instances, so the room knows all the information about players' submissions to it. We could even combine these options to have the submissions stored in their own collection and the rooms have a <code>submissions</code> field that stores the ids of its submissions so it can recover them if needed. All of these are valid options, but we’re going to make them separate collections to see what that is like. Let’s make a submission schema and model in <code>src/models/submission_model.js</code>:</p>
 <pre><code class="language-javascript">import mongoose, { Schema } from 'mongoose';
 
-export const SubmissionSchema = new Schema({
-roomId: { type: Schema.Types.ObjectId, ref: 'Room' },
-player: { type: String, required: true },
-response: { type: String, required: true },
-questionNumber: { type: Number, required: true },
-correct: { type: Boolean, required: true },
-}, {
-timestamps: true,
-toObject: { virtuals: true },
-toJSON: { virtuals: true },
-});
+export const SubmissionSchema = new Schema(
+  {
+    roomId: { type: Schema.Types.ObjectId, ref: 'Room' },
+    player: { type: String, required: true },
+    response: { type: String, required: true },
+    questionNumber: { type: Number, required: true },
+    correct: { type: Boolean, required: true },
+  },
+  {
+    timestamps: true,
+    toObject: { virtuals: true },
+    toJSON: { virtuals: true },
+  }
+);
 
 const SubmissionModel = mongoose.model('Submission', SubmissionSchema);
 
-export default SubmissionModel;
-</code></pre>
+export default SubmissionModel;</code></pre>
 <p>We hope you do not leave this assignment thinking that there are not alternative approaches. All of the designs we mentioned are valid, and there are likely more we did not consider. Here we chose to keep the submission information separate from the rooms.</p>
 <div class="heading-block h2-block"><h2><strong>Controllers</strong></h2></div>
 <p>🚀 Create a directory&nbsp;<code>src/controllers</code>&nbsp;and a file inside this named&nbsp;<code>room_controller.js</code>. This controller will hold the business logic responsible for handling all the requests related to rooms (aka games) for our API:</p>
