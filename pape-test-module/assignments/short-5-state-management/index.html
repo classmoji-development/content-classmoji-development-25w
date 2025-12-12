@@ -8,7 +8,7 @@
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
       font-size: 16px;
       line-height: 1.6;
-      max-width: 85%;
+      max-width: 100%;
       margin: 0 auto;
       padding: 2rem;
       color: #333;
@@ -127,6 +127,10 @@
       padding: 0;
       font-size: inherit;
       font-family: inherit;
+    }
+    .terminal-block .terminal-prompt {
+      color: #4ade80;
+      user-select: none;
     }
     blockquote {
       border-left: 4px solid #ddd;
@@ -545,10 +549,9 @@ export default useStore;</code></pre>
 <p>✔️&nbsp;Sure!  With the Immer middleware (notice how we now have <code>devtools</code> and <code>immer</code> middleware in our <code>create</code>) instead of passing in the current store state to our action functions, we instead get passed in a draftState which immer then creates a new state out of.  SO!  We can now simply mutate draftState and are always guaranteed that our actual store state won’t be mutated because Immer is great. AND we didn’t even need the Immer <code>produce</code> function, as essentially our entire store is automatically wrapped in Immer with this middleware.  Nifty keen! </p>
 <p>🧪&nbsp;Ok test it all out, still works great?  Great!  Release it. </p>
 <div class="heading-block h2-block"><h2>PR it!</h2></div>
-<div class="terminal-block"><div class="terminal-header"><div class="terminal-dots"><span></span><span></span><span></span></div><span class="terminal-title">Terminal</span></div><pre><code class="language-bash">git commit
-git push origin add_state_management
-# then make a PR and merge it in to your main branch!
-</code></pre></div>
+<div class="terminal-block"><div class="terminal-header"><div class="terminal-dots"><span></span><span></span><span></span></div><span class="terminal-title">Terminal</span></div><pre><code class="language-bash"><span class="terminal-prompt">$</span> git commit
+<span class="terminal-prompt">$</span> git push origin add_state_management
+<span class="terminal-prompt">$</span> # then make a PR and merge it in to your main branch!</code></pre></div>
 <div class="heading-block h1-block"><h1>Part 2: YouTube!</h1></div>
 <p>Currently our React YouTube search app works great, but maybe we can learn some state management and refactor it! If you remember, we had to pass props down multiple levels, can we now use our new State Management Skills to select the video to show in Detail View without having to pass properties down multiple levels and to keep our state beautifully coherent?</p>
 <p><a href="http://res.cloudinary.com/dali-lab/video/upload/ac_none,w_800,h_762/v1546203223/cs52/videos-redux.webm">videos-redux.webm</a></p>
@@ -556,11 +559,10 @@ git push origin add_state_management
 <p>😱 The next part may be a bit scary - we’re going to merge in your new starterpack changes into this repo and it’ll create a bit of confusion. <strong>You can either do the merge and practice fixing merge conflicts, or you can manually try to copy over changes.</strong> The merge conflict way works surprisingly well, but can be a bit scary at first as you’ll have some broken code and you’ll need to pay attention to linting errors and merge conflict markers to fix it. If you need a refresher about git merge resolution see the <a href="https://www.notion.so/ECSA-Git-Map-029087af71764896a7246445074002c0?pvs=21">git-map ec short</a>. You got this, breathe and read the codes. 👏&nbsp;This is a great exercise as to merge successfully you’ll need to read the codes and understand which lines to pick — but I believe in you, you are ready. </p>
 <p>🚀 To begin, we’ll create a new branch <code>statemanagement-sa</code> in your react-videos short assignment repo.</p>
 <p>Navigate to your repository on the command line and pull in the updates you’ve just made to your starterpack:</p>
-<div class="terminal-block"><div class="terminal-header"><div class="terminal-dots"><span></span><span></span><span></span></div><span class="terminal-title">Terminal</span></div><pre><code class="language-bash">cd react-videos-short-assignment-directory
-git pull origin main #just in case to make sure you have the latest
-git checkout -b statemanagement-sa #create a new branch statemanagement-sa
-git pull starter main  #pull in your updated starter code! (this will only work AFTER you have merged in your changes in P1!
-</code></pre></div>
+<div class="terminal-block"><div class="terminal-header"><div class="terminal-dots"><span></span><span></span><span></span></div><span class="terminal-title">Terminal</span></div><pre><code class="language-bash"><span class="terminal-prompt">$</span> cd react-videos-short-assignment-directory
+<span class="terminal-prompt">$</span> git pull origin main #just in case to make sure you have the latest
+<span class="terminal-prompt">$</span> git checkout -b statemanagement-sa #create a new branch statemanagement-sa
+<span class="terminal-prompt">$</span> git pull starter main  #pull in your updated starter code! (this will only work AFTER you have merged in your changes in P1!</code></pre></div>
 <p>Hopefully, you should only have major conflicts in your <code>src/index.jsx</code> file. Let’s handle them now!</p>
 <p>⚠️ If you have conflicts in your <code>package-lock.json</code> do: <code>git checkout --theirs -- package-lock.json</code>. This will choose the entire file from your starterpack.</p>
 <p>⚠️ If you have conflicts in your <code>package.json</code>, merge them in manually, you will most likely want the union of the two.</p>
@@ -848,6 +850,7 @@ export default YouTube;</code></pre>
 <ul>
 <li><a href="https://zustand-demo.pmnd.rs/">https://zustand-demo.pmnd.rs/</a></li>
 </ul>
+<p>hljs.highlightAll();</p>
 <p>hljs.highlightAll();</p>
 <script>hljs.highlightAll();</script>
 </body>
