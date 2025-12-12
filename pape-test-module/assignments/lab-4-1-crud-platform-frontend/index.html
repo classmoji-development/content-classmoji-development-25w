@@ -395,7 +395,7 @@ curl -X DELETE -H &quot;Content-Type: application/json&quot; &quot;https://platf
 <p>Try these out. Run the create new post one a couple of times to populate your database!</p>
 <p>This will work a bit different from the react-notes, and in a way will be much simpler. Every time you want to update, create, delete, retrieve, you will use http calls like the above to interact with the server.</p>
 <p>Remember our SPA architecture:</p>
-<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/lab-4-1-crud-platform-frontend/assets/single-page-app-1765499858997.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/lab-4-1-crud-platform-frontend/assets/single-page-app-1765500370327.png" alt=""></p>
 <p>The above are the data requests we’ll be making. They all return <em>JSON</em>.</p>
 <p>This site will <em>not</em> update live in the sense that if someone else on another browser added a post, you would not see it pop up automatically, but would need to reload. This is fairly common of most platforms like this, your feed does’t change as you look at it, you need to refresh to see new articles.  It’ll be easy to trigger a refresh with a button or pull down though if you want.</p>
 <h2 style="background-color: #DDEBF1;">Routes</h2>
@@ -534,7 +534,7 @@ get().errorSlice.newError(error.message);
 </code></pre>
 <h3>Debugging</h3>
 <p>Recall that you can use Redux DevTools to debug your Zustand store!  You should be able to see you actions happening and your global state. This is key, if it isn’t changing, something ain’t right!</p>
-<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/lab-4-1-crud-platform-frontend/assets/screenshot-2024-04-30-at-9-1765499858997.png" alt="Screenshot 2024-04-30 at 9.43.00 PM.png"></p>
+<p><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pape-test-module/assignments/lab-4-1-crud-platform-frontend/assets/screenshot-2024-04-30-at-9-1765500370327.png" alt="Screenshot 2024-04-30 at 9.43.00 PM.png"></p>
 <h3>Navigation Flow</h3>
 <p>When you have a successful create and delete you may find it useful to simply navigate back to your main page. For instance, when you hit delete on the page that is the view of a single post <code>/posts/234243</code>, you would want to be taken back to the <code>/</code> page that shows all the posts rather than an empty page that says ‘post not found’.   If you do a modal this doesn’t apply, you would simply close the modal. </p>
 <p>How might we navigate after deleting or creating a new post?  Something like this might work: </p>
