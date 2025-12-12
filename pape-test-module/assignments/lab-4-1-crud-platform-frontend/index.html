@@ -547,32 +547,33 @@ current: {},
 </code></pre></div></div>
 <div class="heading-block h3-block"><h3>Store</h3></div>
 <p>🏪&nbsp;Setting up your store is left as an exercise for the reader.  But here is a barebones setup for your postSlice: </p>
-<div class="code-block"><div class="code-header"><span class="code-lang">JavaScript</span></div><div class="code-body"><div class="line-numbers"><span class="line-number">1</span><span class="line-number">2</span><span class="line-number">3</span><span class="line-number">4</span><span class="line-number">5</span><span class="line-number">6</span><span class="line-number">7</span><span class="line-number">8</span><span class="line-number">9</span><span class="line-number">10</span><span class="line-number">11</span><span class="line-number">12</span><span class="line-number">13</span><span class="line-number">14</span><span class="line-number">15</span><span class="line-number">16</span><span class="line-number">17</span><span class="line-number">18</span><span class="line-number">19</span><span class="line-number">20</span><span class="line-number">21</span><span class="line-number">22</span><span class="line-number">23</span><span class="line-number">24</span><span class="line-number">25</span><span class="line-number">26</span></div><pre><code class="language-javascript">export default function createPostSlice(set, get) {
-  return {
-    all: [],
-    current: {},
-    fetchPost: async (id) =&gt; {
-      // GET
-      // takes the ID of the post to fetch from router params
-    },
-    fetchAllPosts: async () =&gt; {
-      // GET
-      // would need pagination but for now we'll just get them all
-    },
-    updatePost: async (post) =&gt; {
-      // PUT
-      // takes in updated data (could include the ID of the post to update in the post object or add a separate parameter
-    },
-    createPost: async (post) =&gt; {
-      // POST
-      // takes in new post data (no id)
-    },
-    deletePost: async (id) =&gt; {
-      // DELETE
-      // takes id of the post to delete
-    },
-  };
-}</code></pre></div></div>
+<div class="code-block"><div class="code-header"><span class="code-lang">JavaScript</span></div><div class="code-body"><div class="line-numbers"><span class="line-number">1</span><span class="line-number">2</span><span class="line-number">3</span><span class="line-number">4</span><span class="line-number">5</span><span class="line-number">6</span><span class="line-number">7</span><span class="line-number">8</span><span class="line-number">9</span><span class="line-number">10</span><span class="line-number">11</span><span class="line-number">12</span><span class="line-number">13</span><span class="line-number">14</span><span class="line-number">15</span><span class="line-number">16</span><span class="line-number">17</span><span class="line-number">18</span><span class="line-number">19</span><span class="line-number">20</span><span class="line-number">21</span><span class="line-number">22</span><span class="line-number">23</span><span class="line-number">24</span><span class="line-number">25</span><span class="line-number">26</span><span class="line-number">27</span></div><pre><code class="language-javascript">export default function createPostSlice(set, get) {
+return {
+all: [],
+current: {},
+fetchPost: async (id) =&gt; {
+// GET
+// takes the ID of the post to fetch from router params
+},
+fetchAllPosts: async () =&gt; {
+// GET
+// would need pagination but for now we'll just get them all
+},
+updatePost: async (post) =&gt; {
+// PUT
+// takes in updated data (could include the ID of the post to update in the post object or add a separate parameter
+},
+createPost: async (post) =&gt; {
+// POST
+// takes in new post data (no id)
+},
+deletePost: async (id) =&gt; {
+// DELETE
+// takes id of the post to delete
+},
+};
+}
+</code></pre></div></div>
 <p>Here are some actions you should consider implementing. </p>
 <p>Now you might ask, how the heck do we fetch from an API using actions!?</p>
 <p>Don’t worry, this part we’ll walk you through.</p>
@@ -612,19 +613,17 @@ get().errorSlice.newError(error.message);
 <div class="heading-block h3-block"><h3>Navigation Flow</h3></div>
 <p>When you have a successful create and delete you may find it useful to simply navigate back to your main page. For instance, when you hit delete on the page that is the view of a single post <code>/posts/234243</code>, you would want to be taken back to the <code>/</code> page that shows all the posts rather than an empty page that says ‘post not found’.   If you do a modal this doesn’t apply, you would simply close the modal. </p>
 <p>How might we navigate after deleting or creating a new post?  Something like this might work: </p>
-<div class="code-block"><div class="code-header"><span class="code-lang">JavaScript</span></div><div class="code-body"><div class="line-numbers"><span class="line-number">1</span><span class="line-number">2</span><span class="line-number">3</span><span class="line-number">4</span><span class="line-number">5</span><span class="line-number">6</span><span class="line-number">7</span><span class="line-number">8</span><span class="line-number">9</span><span class="line-number">10</span><span class="line-number">11</span><span class="line-number">12</span><span class="line-number">13</span></div><pre><code class="language-javascript">const navigate = useNavigate();
+<div class="code-block"><div class="code-header"><span class="code-lang">JavaScript</span></div><div class="code-body"><div class="line-numbers"><span class="line-number">1</span><span class="line-number">2</span><span class="line-number">3</span><span class="line-number">4</span><span class="line-number">5</span><span class="line-number">6</span><span class="line-number">7</span><span class="line-number">8</span><span class="line-number">9</span><span class="line-number">10</span><span class="line-number">11</span></div><pre><code class="language-javascript">const navigate = useNavigate();
 const params = useParams();
 
 function Post(props) {
-/* ... */
+  /* ... */
 
-const onDeleteClick = async () =&gt; {
-await deletePost(params.postID);
-navigate('/');
-};
-
-}
-</code></pre></div></div>
+  const onDeleteClick = async () =&gt; {
+    await deletePost(params.postID);
+    navigate('/');
+  };
+}</code></pre></div></div>
 <div class="heading-block h2-block"><h2>And you are on your way!</h2></div>
 <p>That should be all you need to build a simple content platform (we’ll add more features later!).</p>
 <p>If you don’t know where to start, remember the steps in creating a React application:</p>
