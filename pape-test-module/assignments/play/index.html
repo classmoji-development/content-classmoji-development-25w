@@ -361,6 +361,17 @@ git commit -am "done with html layout stage"
 git tag html
 # tags need to be pushed to github manually
 git push origin --tags</code></pre></div>
+<pre><code>const navigate = useNavigate();
+const params = useParams();
+
+function Post(props) {
+  /* ... */
+
+  const onDeleteClick = async () =&gt; {
+    await deletePost(params.postID);
+    navigate('/');
+  };
+}</code></pre>
 <script>hljs.highlightAll();</script>
 </body>
 </html>
