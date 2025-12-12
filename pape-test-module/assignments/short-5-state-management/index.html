@@ -787,37 +787,35 @@ import VideoDetail from './video_detail';
 import useStore from '../store';
 
 function YouTube(props) {
-const setVideos = useStore(({ videoSlice }) =&gt; videoSlice.setVideos);
+  const setVideos = useStore(({ videoSlice }) =&gt; videoSlice.setVideos);
 
-const search = (text) =&gt; {
-youtubeSearch(text).then((videos) =&gt; {
-setVideos(videos);
-});
-};
+  const search = (text) =&gt; {
+    youtubeSearch(text).then((videos) =&gt; {
+      setVideos(videos);
+    });
+  };
 
-const debouncedSearch = useCallback(debounce(search, 500), []);
+  const debouncedSearch = useCallback(debounce(search, 500), []);
 
-useEffect(() =&gt; {
-search('pixar');
-}, []);
+  useEffect(() =&gt; {
+    search('pixar');
+  }, []);
 
-return (
-&lt;div&gt;
-&lt;SearchBar onSearchChange={debouncedSearch} /&gt;
-&lt;div id="video-section"&gt;
-&lt;VideoDetail /&gt;
-&lt;VideoList /&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-);
+  return (
+    &lt;div&gt;
+      &lt;SearchBar onSearchChange={debouncedSearch} /&gt;
+      &lt;div id="video-section"&gt;
+        &lt;VideoDetail /&gt;
+        &lt;VideoList /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
 }
 
-export default YouTube;
-</code></pre>
+export default YouTube;</code></pre>
 <div class="heading-block h2-block"><h2>VideoDetail</h2></div>
 <p>Ok, this one needs access to the bit of store state which is <code>state.videoSlice.selected</code>.</p>
-<pre><code class="language-javascript">const video = useStore((state) =&gt; state.videoSlice.selected);
-</code></pre>
+<pre><code class="language-javascript">const video = useStore((state) =&gt; state.videoSlice.selected);</code></pre>
 <p>❓&nbsp;Wait, you did something different there. You don’t have any destructuring assignment… and state is in there?  </p>
 <p>🤪&nbsp;Sure thing!  There are many ways to do stuff.  <code>({videoSlice})</code> is an example of destructuring assignment, but here I wanted to show that you can also just dig through the global state object to get at the videoSlice data.  Your preference how you do it. I like the destructuring because I feel it makes things clearer, but you may prefer to always just think of the global state.  Your preference!</p>
 <div class="heading-block h2-block"><h2>Debugging</h2></div>
