@@ -365,6 +365,38 @@
       font-size: 1rem;
       flex-shrink: 0;
     }
+    .profile-card {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 1em;
+      background: white;
+    }
+    .profile-card img {
+      width: 100%;
+      height: 192px;
+      object-fit: cover;
+      background: #f3f4f6;
+      margin: 0;
+    }
+    .profile-card > div {
+      padding: 1rem;
+    }
+    .profile-card strong {
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      color: #111827;
+    }
+    .profile-card em {
+      display: block;
+      font-size: 14px;
+      font-style: normal;
+      color: #6b7280;
+      margin-top: 0.25rem;
+    }
     .embed-container {
       position: relative;
       padding-bottom: 56.25%;
@@ -407,5 +439,6 @@
 </head>
 <body>
 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.<br></p>
+<div class="profile-card"><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/resources/syllabus/assets/1766008776626-2025110553221580.jpg" alt="Profile"><div><strong></strong><br><em></em></div></div>
 </body>
 </html>
