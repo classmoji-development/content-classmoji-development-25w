@@ -365,6 +365,42 @@
       font-size: 1rem;
       flex-shrink: 0;
     }
+    .profile-card {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 1em;
+      background: white;
+      width: 100%;
+    }
+    .columns .profile-card {
+      max-width: 100%;
+    }
+    .profile-card img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #f3f4f6;
+      margin: 0;
+    }
+    .profile-card > div {
+      padding: 1rem;
+    }
+    .profile-card strong {
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      color: #111827;
+    }
+    .profile-card em {
+      display: block;
+      font-size: 14px;
+      font-style: normal;
+      color: #6b7280;
+      margin-top: 0.25rem;
+    }
     .embed-container {
       position: relative;
       padding-bottom: 56.25%;
@@ -411,8 +447,8 @@
 <div class="heading-block h2-block"><h2>Goal Overview</h2></div>
 <ul>
 <li>Become comfortable with <a href="https://developers.google.com/web/tools/chrome-devtools/">Chrome DevTools</a></li>
-<li>Be able to mimic the structure and style of pages using html structure and css rules</li>
 <li>Focus on HTML/CSS foundations</li>
+<li>Be able to mimic the structure and style of pages using html structure and css rules</li>
 <li>Understand and use semantic HTML elements</li>
 <li>Build a beautiful static landing page</li>
 </ul>
@@ -436,9 +472,9 @@
 <ul>
 <li><a href="https://flourbakery.com/">flourbakery.com</a></li>
 <li><a href="https://github.com/">github.com</a> <em>(logged out incognito mode)</em></li>
-<li><a href="https://www.starbucks.com/">starbucks.com</a> <em>(add a fullwidth image)</em></li>
 <li><a href="https://stripe.com/">stripe.com</a></li>
 <li><a href="https://tempo.fit/">tempo.fit</a></li>
+<li><a href="https://www.starbucks.com/">starbucks.com</a> <em>(add a fullwidth image)</em></li>
 <li><a href="https://collegepulse.com/">collegepulse</a> <em>(words changing using css animations, EC)</em></li>
 <li><a href="https://www.figma.com/">figma.com</a> <em>(moving pointers on media size css animations are pretty sweet, EC)</em></li>
 <li><a href="https://mixpanel.com/">mixpanel.com</a></li>
