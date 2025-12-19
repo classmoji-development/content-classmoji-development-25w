@@ -443,5 +443,19 @@
 </head>
 <body>
 <p>My name is Pape</p>
+<div class="code-block"><div class="code-header"><span class="code-lang">JavaScript</span></div><div class="code-body"><div class="line-numbers"><span class="line-number">1</span><span class="line-number">2</span><span class="line-number">3</span><span class="line-number">4</span><span class="line-number">5</span><span class="line-number">6</span><span class="line-number">7</span><span class="line-number">8</span><span class="line-number">9</span><span class="line-number">10</span><span class="line-number">11</span><span class="line-number">12</span><span class="line-number">13</span></div><pre><code class="language-javascript">class Emoji {
+  constructor(name, symbol) {
+    this.name = name;
+    this.symbol = symbol;
+  }
+
+  display() {
+    return `${this.name}: ${this.symbol}`;
+  }
+}
+
+const lightning = new Emoji('lightning', '⚡');
+console.log(lightning.display());</code></pre></div></div>
+<p></p>
 </body>
 </html>
