@@ -2,7 +2,8 @@
   "modules": {
     "test-module-for-manifest": {
       "pages": [
-        "module-linked-page"
+        "module-linked-page",
+        "pape-page"
       ],
       "slides": [
         "module-linked-slide"
