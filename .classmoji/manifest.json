@@ -1,8 +1,12 @@
 {
   "modules": {
     "test-module-for-manifest": {
-      "pages": [],
-      "slides": [],
+      "pages": [
+        "module-linked-page"
+      ],
+      "slides": [
+        "module-linked-slide"
+      ],
       "assignments": {
         "test-assignment-for-manifest": {
           "pages": [
@@ -16,7 +20,11 @@
     }
   },
   "general": {
-    "pages": [],
-    "slides": []
+    "pages": [
+      "unlinked-general-page"
+    ],
+    "slides": [
+      "unlinked-general-slide"
+    ]
   }
 }
