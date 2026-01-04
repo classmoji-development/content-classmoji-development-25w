@@ -11,7 +11,8 @@
         "test-assignment-for-manifest": {
           "pages": [
             "test-page-for-manifest",
-            "pape-page"
+            "pape-page",
+            "test-page-for-linking"
           ],
           "slides": [
             "test-slide-for-manifest",
@@ -24,7 +25,6 @@
   "general": {
     "pages": [
       "new-page-for-manifest-test",
-      "test-page-for-linking",
       "unlinked-general-page"
     ],
     "slides": [
