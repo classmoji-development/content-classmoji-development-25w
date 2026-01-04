@@ -10,10 +10,12 @@
       "assignments": {
         "test-assignment-for-manifest": {
           "pages": [
-            "test-page-for-manifest"
+            "test-page-for-manifest",
+            "pape-page"
           ],
           "slides": [
-            "test-slide-for-manifest"
+            "test-slide-for-manifest",
+            "pape-slide"
           ]
         }
       }
@@ -21,6 +23,7 @@
   },
   "general": {
     "pages": [
+      "new-page-for-manifest-test",
       "test-page-for-linking",
       "unlinked-general-page"
     ],
