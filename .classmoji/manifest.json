@@ -1,19 +1,14 @@
 {
   "modules": {
     "test-module-for-manifest": {
-      "pages": [
-        "module-linked-page",
-        "pape-page"
-      ],
+      "pages": [],
       "slides": [
         "module-linked-slide"
       ],
       "assignments": {
         "test-assignment-for-manifest": {
           "pages": [
-            "test-page-for-manifest",
-            "pape-page",
-            "test-page-for-linking"
+            "test-page-for-manifest"
           ],
           "slides": [
             "test-slide-for-manifest",
@@ -25,7 +20,8 @@
   },
   "general": {
     "pages": [
-      "new-page-for-manifest-test",
+      "lab-2-build-a-buzzfeed-quiz",
+      "lab-3-react-notes",
       "unlinked-general-page"
     ],
     "slides": [
