@@ -1,26 +1,21 @@
 {
   "modules": {
-    "test-module-for-manifest": {
+    "null": {
       "pages": [],
-      "slides": [
-        "module-linked-slide"
-      ],
+      "slides": [],
       "assignments": {
-        "test-assignment-for-manifest": {
+        "null": {
           "pages": [],
-          "slides": [
-            "test-slide-for-manifest",
-            "pape-slide"
-          ]
+          "slides": []
         }
       }
     }
   },
   "general": {
-    "pages": [],
-    "slides": [
-      "test-slide-for-linking",
-      "unlinked-general-slide"
-    ]
+    "pages": [
+      null,
+      null
+    ],
+    "slides": []
   }
 }
