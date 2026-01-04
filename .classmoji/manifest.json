@@ -21,9 +21,11 @@
   },
   "general": {
     "pages": [
+      "test-page-for-linking",
       "unlinked-general-page"
     ],
     "slides": [
+      "test-slide-for-linking",
       "unlinked-general-slide"
     ]
   }
