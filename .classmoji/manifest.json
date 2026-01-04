@@ -7,9 +7,7 @@
       ],
       "assignments": {
         "test-assignment-for-manifest": {
-          "pages": [
-            "test-page-for-manifest"
-          ],
+          "pages": [],
           "slides": [
             "test-slide-for-manifest",
             "pape-slide"
