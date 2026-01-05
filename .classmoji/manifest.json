@@ -1,5 +1,19 @@
 {
   "modules": {
+    "mongodb": {
+      "pages": [],
+      "slides": [],
+      "assignments": {
+        "setting-up-databases": {
+          "pages": [],
+          "slides": []
+        },
+        "local-development": {
+          "pages": [],
+          "slides": []
+        }
+      }
+    },
     "react-fundamentals": {
       "pages": [],
       "slides": [],
