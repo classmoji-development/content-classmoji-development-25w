@@ -42,7 +42,9 @@
           "slides": []
         },
         "javascript": {
-          "pages": [],
+          "pages": [
+            "random-page"
+          ],
           "slides": []
         }
       }
