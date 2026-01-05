@@ -14,7 +14,9 @@
           "slides": []
         },
         "local-development": {
-          "pages": [],
+          "pages": [
+            "random-page"
+          ],
           "slides": []
         }
       }
@@ -44,8 +46,7 @@
   },
   "general": {
     "pages": [
-      "logistics",
-      "random-page"
+      "logistics"
     ],
     "slides": []
   }
