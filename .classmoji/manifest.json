@@ -30,7 +30,9 @@
       ],
       "assignments": {
         "html": {
-          "pages": [],
+          "pages": [
+            "logistics"
+          ],
           "slides": []
         },
         "css": {
@@ -45,9 +47,7 @@
     }
   },
   "general": {
-    "pages": [
-      "logistics"
-    ],
+    "pages": [],
     "slides": []
   }
 }
