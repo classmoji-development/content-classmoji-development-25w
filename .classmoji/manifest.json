@@ -36,7 +36,9 @@
           "slides": []
         },
         "css": {
-          "pages": [],
+          "pages": [
+            "jaune"
+          ],
           "slides": []
         },
         "javascript": {
