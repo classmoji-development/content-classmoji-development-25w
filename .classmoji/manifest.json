@@ -8,7 +8,9 @@
       ],
       "assignments": {
         "setting-up-databases": {
-          "pages": [],
+          "pages": [
+            "jaune"
+          ],
           "slides": []
         },
         "local-development": {
@@ -43,8 +45,7 @@
   "general": {
     "pages": [
       "logistics",
-      "random-page",
-      "jaune"
+      "random-page"
     ],
     "slides": []
   }
