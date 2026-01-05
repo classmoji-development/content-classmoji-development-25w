@@ -19,7 +19,9 @@
     },
     "react-fundamentals": {
       "pages": [],
-      "slides": [],
+      "slides": [
+        "test-slide-for-linking"
+      ],
       "assignments": {
         "html": {
           "pages": [],
@@ -43,7 +45,6 @@
       "jaune"
     ],
     "slides": [
-      "test-slide-for-linking",
       "test-slide-for-manifest",
       "unlinked-general-slide"
     ]
