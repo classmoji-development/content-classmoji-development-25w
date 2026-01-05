@@ -21,7 +21,8 @@
       "pages": [],
       "slides": [
         "test-slide-for-linking",
-        "test-slide-for-manifest"
+        "test-slide-for-manifest",
+        "unlinked-general-slide"
       ],
       "assignments": {
         "html": {
@@ -45,8 +46,6 @@
       "random-page",
       "jaune"
     ],
-    "slides": [
-      "unlinked-general-slide"
-    ]
+    "slides": []
   }
 }
