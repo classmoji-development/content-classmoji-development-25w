@@ -1,61 +1,20 @@
 {
   "modules": {
-    "mongodb": {
-      "pages": [
-        "logistics"
-      ],
-      "slides": [
-        "module-linked-slide",
-        "pape-slide"
-      ],
+    "null": {
+      "pages": [],
+      "slides": [],
       "assignments": {
-        "setting-up-databases": {
-          "pages": [
-            "jaune"
-          ],
-          "slides": []
-        },
-        "local-development": {
-          "pages": [
-            "random-page"
-          ],
-          "slides": []
-        }
-      }
-    },
-    "react-fundamentals": {
-      "pages": [
-        "random-page"
-      ],
-      "slides": [
-        "test-slide-for-linking",
-        "test-slide-for-manifest",
-        "unlinked-general-slide"
-      ],
-      "assignments": {
-        "html": {
-          "pages": [
-            "logistics"
-          ],
-          "slides": []
-        },
-        "css": {
-          "pages": [
-            "jaune"
-          ],
-          "slides": []
-        },
-        "javascript": {
-          "pages": [
-            "random-page"
-          ],
+        "null": {
+          "pages": [],
           "slides": []
         }
       }
     }
   },
   "general": {
-    "pages": [],
+    "pages": [
+      "dartmouth-cs52"
+    ],
     "slides": []
   }
 }
