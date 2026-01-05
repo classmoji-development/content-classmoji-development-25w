@@ -13,7 +13,8 @@
   },
   "general": {
     "pages": [
-      "dartmouth-cs52"
+      "dartmouth-cs52",
+      "dartmouth-cs98"
     ],
     "slides": []
   }
