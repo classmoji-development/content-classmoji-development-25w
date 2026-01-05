@@ -1,10 +1,18 @@
 {
   "modules": {
-    "null": {
+    "react-fundamentals": {
       "pages": [],
       "slides": [],
       "assignments": {
-        "null": {
+        "html": {
+          "pages": [],
+          "slides": []
+        },
+        "css": {
+          "pages": [],
+          "slides": []
+        },
+        "javascript": {
           "pages": [],
           "slides": []
         }
@@ -13,11 +21,15 @@
   },
   "general": {
     "pages": [
-      "dartmouth-cs52",
-      "dartmouth-cs98"
+      "logistics",
+      "new-page"
     ],
     "slides": [
-      "testsssss"
+      "module-linked-slide",
+      "pape-slide",
+      "test-slide-for-linking",
+      "test-slide-for-manifest",
+      "unlinked-general-slide"
     ]
   }
 }
