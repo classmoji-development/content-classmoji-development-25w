@@ -29,12 +29,6 @@
         "unlinked-general-slide"
       ],
       "assignments": {
-        "html": {
-          "pages": [
-            "logistics"
-          ],
-          "slides": []
-        },
         "css": {
           "pages": [
             "jaune"
@@ -44,6 +38,12 @@
         "javascript": {
           "pages": [
             "random-page"
+          ],
+          "slides": []
+        },
+        "html": {
+          "pages": [
+            "logistics"
           ],
           "slides": []
         }
