@@ -2,7 +2,9 @@
   "modules": {
     "mongodb": {
       "pages": [],
-      "slides": [],
+      "slides": [
+        "module-linked-slide"
+      ],
       "assignments": {
         "setting-up-databases": {
           "pages": [],
@@ -40,7 +42,6 @@
       "jaune"
     ],
     "slides": [
-      "module-linked-slide",
       "pape-slide",
       "test-slide-for-linking",
       "test-slide-for-manifest",
