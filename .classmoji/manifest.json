@@ -1,7 +1,9 @@
 {
   "modules": {
     "mongodb": {
-      "pages": [],
+      "pages": [
+        "logistics"
+      ],
       "slides": [
         "module-linked-slide",
         "pape-slide"
