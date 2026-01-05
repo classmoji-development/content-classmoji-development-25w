@@ -24,7 +24,9 @@
       }
     },
     "react-fundamentals": {
-      "pages": [],
+      "pages": [
+        "random-page"
+      ],
       "slides": [
         "test-slide-for-linking",
         "test-slide-for-manifest",
