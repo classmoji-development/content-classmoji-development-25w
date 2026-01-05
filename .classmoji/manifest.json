@@ -16,6 +16,9 @@
       null,
       null
     ],
-    "slides": []
+    "slides": [
+      "testing",
+      "welcome"
+    ]
   }
 }
