@@ -12,7 +12,9 @@
     }
   },
   "general": {
-    "pages": [],
+    "pages": [
+      "dartmouth-cs98"
+    ],
     "slides": [
       "testsssss"
     ]
