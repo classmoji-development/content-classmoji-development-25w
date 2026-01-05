@@ -7,15 +7,15 @@
         "pape-slide"
       ],
       "assignments": {
-        "local-development": {
-          "pages": [
-            "random-page"
-          ],
-          "slides": []
-        },
         "setting-up-databases": {
           "pages": [
             "jaune"
+          ],
+          "slides": []
+        },
+        "local-development": {
+          "pages": [
+            "random-page"
           ],
           "slides": []
         }
