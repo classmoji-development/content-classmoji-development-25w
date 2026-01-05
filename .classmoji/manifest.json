@@ -21,7 +21,8 @@
   },
   "general": {
     "pages": [
-      "logistics"
+      "logistics",
+      "random-page"
     ],
     "slides": [
       "module-linked-slide",
