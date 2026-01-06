@@ -16,6 +16,8 @@
       "dartmouth-cs52",
       "dartmouth-cs98"
     ],
-    "slides": []
+    "slides": [
+      "hidden-slide-test"
+    ]
   }
 }
