@@ -34,9 +34,7 @@
       ],
       "assignments": {
         "html": {
-          "pages": [
-            "logistics"
-          ],
+          "pages": [],
           "slides": []
         },
         "css": {
