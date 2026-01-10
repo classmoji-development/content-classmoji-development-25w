@@ -12,9 +12,7 @@
     }
   },
   "general": {
-    "pages": [
-      "dartmouth-cs52"
-    ],
+    "pages": [],
     "slides": []
   }
 }
