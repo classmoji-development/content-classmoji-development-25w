@@ -13,9 +13,7 @@
   },
   "general": {
     "pages": [
-      "dartmouth-cs98",
-      "logistics",
-      "state-of-the-art-research"
+      "introduction-to-rails"
     ],
     "slides": []
   }
