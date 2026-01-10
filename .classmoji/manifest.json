@@ -12,7 +12,9 @@
     }
   },
   "general": {
-    "pages": [],
+    "pages": [
+      "state-of-the-art-research"
+    ],
     "slides": []
   }
 }
