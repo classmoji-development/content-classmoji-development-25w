@@ -13,8 +13,7 @@
   },
   "general": {
     "pages": [
-      "dartmouth-cs52",
-      "logistics"
+      "dartmouth-cs52"
     ],
     "slides": []
   }
