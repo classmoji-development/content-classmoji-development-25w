@@ -13,6 +13,7 @@
   },
   "general": {
     "pages": [
+      "scaffolding",
       "state-of-the-art-research"
     ],
     "slides": []
