@@ -1,5 +1,15 @@
 {
   "modules": {
+    "asdfasdf": {
+      "pages": [],
+      "slides": [],
+      "assignments": {
+        "asdfasdfasdf": {
+          "pages": [],
+          "slides": []
+        }
+      }
+    },
     "null": {
       "pages": [],
       "slides": [],
@@ -9,24 +19,16 @@
           "slides": []
         }
       }
-    },
-    "teamtest": {
-      "pages": [],
-      "slides": [],
-      "assignments": {
-        "teststssdfsdf": {
-          "pages": [],
-          "slides": []
-        }
-      }
     }
   },
   "general": {
     "pages": [
-      "dartmouth-cs98",
-      "logistics",
-      "state-of-the-art-research"
+      "dartmouth-cs52",
+      "dartmouth-cs98"
     ],
-    "slides": []
+    "slides": [
+      "hidden-slide-test",
+      "html"
+    ]
   }
 }
