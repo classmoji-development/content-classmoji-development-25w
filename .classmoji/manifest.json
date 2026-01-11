@@ -1,10 +1,5 @@
 {
   "modules": {
-    "self-formed": {
-      "pages": [],
-      "slides": [],
-      "assignments": {}
-    },
     "null": {
       "pages": [],
       "slides": [],
@@ -15,15 +10,22 @@
         }
       }
     },
-    "team-project": {
+    "teamtest": {
       "pages": [],
       "slides": [],
-      "assignments": {}
+      "assignments": {
+        "teststssdfsdf": {
+          "pages": [],
+          "slides": []
+        }
+      }
     }
   },
   "general": {
     "pages": [
-      "introduction-to-rails"
+      "dartmouth-cs98",
+      "logistics",
+      "state-of-the-art-research"
     ],
     "slides": []
   }
