@@ -1,5 +1,10 @@
 {
   "modules": {
+    "self-formed": {
+      "pages": [],
+      "slides": [],
+      "assignments": {}
+    },
     "null": {
       "pages": [],
       "slides": [],
