@@ -1,15 +1,5 @@
 {
   "modules": {
-    "asdfasdf": {
-      "pages": [],
-      "slides": [],
-      "assignments": {
-        "asdfasdfasdf": {
-          "pages": [],
-          "slides": []
-        }
-      }
-    },
     "null": {
       "pages": [],
       "slides": [],
@@ -22,13 +12,10 @@
     }
   },
   "general": {
-    "pages": [
-      "dartmouth-cs52",
-      "dartmouth-cs98"
-    ],
+    "pages": [],
     "slides": [
-      "hidden-slide-test",
-      "html"
+      "modern-javascript",
+      "more-slides"
     ]
   }
 }
