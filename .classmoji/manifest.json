@@ -13,6 +13,7 @@
   },
   "general": {
     "pages": [
+      "dartmouth-cs98",
       "term-demos-and-testing",
       "ui-design-mockups"
     ],
