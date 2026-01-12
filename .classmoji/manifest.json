@@ -1,5 +1,17 @@
 {
   "modules": {
+    "self-formed": {
+      "pages": [
+        "introduction-to-rails"
+      ],
+      "slides": [],
+      "assignments": {
+        "rails": {
+          "pages": [],
+          "slides": []
+        }
+      }
+    },
     "null": {
       "pages": [],
       "slides": [],
@@ -9,19 +21,15 @@
           "slides": []
         }
       }
+    },
+    "team-project": {
+      "pages": [],
+      "slides": [],
+      "assignments": {}
     }
   },
   "general": {
-    "pages": [
-      "dartmouth-cs98",
-      "logistics",
-      "term-demos-and-testing",
-      "ui-design-mockups"
-    ],
-    "slides": [
-      "modern-javascript",
-      "more-slides",
-      "sessions-and-auth"
-    ]
+    "pages": [],
+    "slides": []
   }
 }
