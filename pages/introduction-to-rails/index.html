@@ -462,17 +462,6 @@
   </style>
 </head>
 <body>
-<p>In this guide, we'll set up a new Rails project and create our first model. Let's start by creating a new Rails application and generating our first model.</p>
-<div class="terminal-block"><div class="terminal-header"><div class="terminal-dots"><span></span><span></span><span></span></div><span class="terminal-title">Terminal</span></div><pre><code class="language-bash">rails new blog --database=postgresql
-cd blog
-rails generate model Post:title body:text
-rails db:migrate</code></pre></div>
-<p>Now let's add some validations and ensure every post has a title and body.</p>
-<div class="diff-block" data-content="Y2xhc3MgUG9zdCA8IEFwcGxpY2F0aW9uUmVjb3JkIAotICMgVE9ETzogYWRkIHZhbGlkYXRpb25zIAorIHZhbGlkYXRlcyA6dGl0bGUsIHByZXNlbmNlOiB0cnVlIAorIHZhbGlkYXRlcyA6Ym9keSwgcHJlc2VuY2U6IHRydWUsIGxlbmd0aDogeyBtaW5pbXVtOiAxMCB9IAplbmQ="><pre>class Post &lt; ApplicationRecord 
-- # TODO: add validations 
-+ validates :title, presence: true 
-+ validates :body, presence: true, length: { minimum: 10 } 
-end</pre></div>
-<p></p>
+<figure class="image-block"><img src="https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pages/introduction-to-rails/assets/1768233059190-pexels-olly-733872.jpg" alt=""></figure>
 </body>
 </html>
