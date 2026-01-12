@@ -12,10 +12,13 @@
     }
   },
   "general": {
-    "pages": [],
+    "pages": [
+      "ui-design-mockups"
+    ],
     "slides": [
       "modern-javascript",
-      "more-slides"
+      "more-slides",
+      "sessions-and-auth"
     ]
   }
 }
