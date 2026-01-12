@@ -13,6 +13,7 @@
   },
   "general": {
     "pages": [
+      "term-demos-and-testing",
       "ui-design-mockups"
     ],
     "slides": [
