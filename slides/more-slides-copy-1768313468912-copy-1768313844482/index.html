@@ -30,13 +30,11 @@ function example() {
 <section style="top: 350px; display: block;" class="editing-mode" hidden="" aria-hidden="true">
         <h2>Questions?</h2>
       </section>
-<section style="top: 220px; display: block;" class="editing-mode" spellcheck="false">
-<div class="sl-block" data-block-type="sandpack" style="left: 41px; top: -140px; width: 900px; height: 400px;"><div class="sl-block-content"><div class="sandpack-embed" data-template="react" data-theme="auto" data-layout="preview-right" data-show-console="true"><script type="application/json" data-sandpack-files="">{
-  "/styles.css": ".App {\n  font-family: system-ui, sans-serif;\n  padding: 20px;\n}\n\nh1 {\n  color: #333;\n}",
-  "/App.js": "export default function App() {\n  return (\n    <div className=\"App\">\n      <h1>Hello Class - What is UP?!?!</h1>\n      <p>Edit this code to see changes!</p>\n    </div>\n  );\n}",
-  "/index.js": "import React, { StrictMode } from \"react\";\nimport { createRoot } from \"react-dom/client\";\nimport \"./styles.css\";\n\nimport App from \"./App\";\n\nconst root = createRoot(document.getElementById(\"root\"));\nroot.render(\n  <StrictMode>\n    <App />\n  </StrictMode>\n);",
-  "/public/index.html": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Document</title>\n  </head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>",
-  "/package.json": "{\n  \"dependencies\": {\n    \"react\": \"^19.0.0\",\n    \"react-dom\": \"^19.0.0\",\n    \"react-scripts\": \"^5.0.0\"\n  },\n  \"main\": \"/index.js\",\n  \"devDependencies\": {}\n}"
+<section style="top: 100px; display: block;" class="editing-mode" spellcheck="false">
+<div class="sl-block" data-block-type="sandpack" style="left: 30px; top: 100px; width: 900px; height: 400px;"><div class="sl-block-content"><div class="sandpack-embed" data-template="vanilla" data-theme="auto" data-layout="preview-right"><script type="application/json" data-sandpack-files="">{
+  "/index.html": "<!DOCTYPE html>\n<html>\n<head>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n  <h1>Hello World</h1>\n  <p>Edit the code to see changes!</p>\n  <script src=\"index.js\"><\/script>\n</body>\n</html>",
+  "/styles.css": "body {\n  font-family: system-ui, sans-serif;\n  padding: 20px;\n  margin: 0;\n}\n\nh1 {\n  color: #333;\n}",
+  "/index.js": "// Your JavaScript code here\nconsole.log('Hello from JavaScript!');\n\ndocument.querySelector('h1').addEventListener('click', () => {\n  alert('Clicked!');\n});"
 }</script></div></div></div></section>
     </div>
   </div>
