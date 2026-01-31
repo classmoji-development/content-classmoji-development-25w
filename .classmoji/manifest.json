@@ -1,17 +1,5 @@
 {
   "modules": {
-    "self-formed": {
-      "pages": [
-        "introduction-to-rails"
-      ],
-      "slides": [],
-      "assignments": {
-        "rails": {
-          "pages": [],
-          "slides": []
-        }
-      }
-    },
     "null": {
       "pages": [],
       "slides": [],
@@ -21,20 +9,21 @@
           "slides": []
         }
       }
-    },
-    "team-project": {
-      "pages": [],
-      "slides": [],
-      "assignments": {
-        "test-issue-linking": {
-          "pages": [],
-          "slides": []
-        }
-      }
     }
   },
   "general": {
-    "pages": [],
-    "slides": []
+    "pages": [
+      "dartmouth-cs98",
+      "logistics",
+      "term-demos-and-testing",
+      "ui-design-mockups"
+    ],
+    "slides": [
+      "more-slides-copy-1768313468912",
+      "more-slides-copy-1768313468912-copy-1768313844482",
+      "sessions-and-auth-copy-1768313410601",
+      "sessions-and-auth-copy-1768313625800",
+      "what-is-the-internet"
+    ]
   }
 }
