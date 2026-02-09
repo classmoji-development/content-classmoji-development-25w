@@ -13,11 +13,10 @@
   },
   "general": {
     "pages": [
+      "ui-design-mockups",
       "term-demos-and-testing",
       "dartmouth-cs98",
-      "logistics",
-      "ui-design-mockups",
-      "asdfasdfasdf"
+      "logistics"
     ],
     "slides": [
       "what-is-the-internet",
