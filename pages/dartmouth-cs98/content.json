@@ -1,0 +1,915 @@
+[
+  {
+    "id": "01d1294d-e447-4ff7-92b4-9862c10dcfce",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://www.notion.so/Schedule-a58306ff4af74a90b8ccc352b15a5bab?pvs=21",
+        "content": [
+          {
+            "type": "text",
+            "text": "Schedule",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1d975ad0-ec67-4492-9191-6c981abb9c27",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://www.notion.so/Check-Ins-971fffeeecf64d9cb420bbdd068549d9?pvs=21",
+        "content": [
+          {
+            "type": "text",
+            "text": "Check-Ins",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d86659f2-db63-404e-bbb4-8fe213d8bc27",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://www.notion.so/Logistics-a9ceb948239e4748949e58bd2f6a866b?pvs=21",
+        "content": [
+          {
+            "type": "text",
+            "text": "Logistics",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "a3c6c1ce-e5b8-469c-81f0-2d6417626fc7",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://www.notion.so/Staff-Only-9d1eb2ea19f54f05aa92767c69fb2e2a?pvs=21",
+        "content": [
+          {
+            "type": "text",
+            "text": "Staff Only",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "547b3708-cff2-40fa-8ead-6348d9e99195",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://www.notion.so/b692999ee80945df988cf6cf0f60ddfe?pvs=21",
+        "content": [
+          {
+            "type": "text",
+            "text": "Projects",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "55469344-d154-4e88-a666-cc85a9197866",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://www.notion.so/538652d1cd86451b8d5daa412732144e?pvs=21",
+        "content": [
+          {
+            "type": "text",
+            "text": "Hack-a-thing DB",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d13904ea-36d9-4822-a726-0d37a40e4dd7",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://www.notion.so/414eb91fffec42f68e791f263009209c?pvs=21",
+        "content": [
+          {
+            "type": "text",
+            "text": "Technigala Schedule",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "172d6335-4a7d-462f-9c52-2fde2b401fca",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://www.figma.com/team_invite/redeem/OzJ9cmYtA08AXmUehZcHTN",
+        "content": [
+          {
+            "type": "text",
+            "text": "Join CS98 Figma Team",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e2304436-faef-45c6-9001-260b081a68a5",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Participation in a software engineering group project to meet a real-world need. Group members are responsible for all aspects of a software system, including iterative requirements analysis, design, implementation, and testing. The course also stresses customer interactions, documentation, process, and teamwork. The result is a software product of significant scope and significant benefit to a user base.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "da64e596-bb74-4b5b-ad6e-72e8828a7e10",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "",
+      "url": "https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pages/dartmouth-cs98/assets/dev-magic-1768181433911.gif",
+      "caption": "",
+      "showPreview": true
+    },
+    "children": []
+  },
+  {
+    "id": "441cd519-f410-417b-a5ae-6c3379e2fdf8",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Open only to students pursuing a major in Computer Science or a modified major with Computer Science as the primary part. 98.01 and 98.02 constitute a two course sequence, and they must be taken in consecutive terms, either fall/winter or winter/spring, normally in the senior year.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b4fc9438-8c9e-4dab-a95f-6ff46c97244d",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "At least two courses from COSC 50-69 or at least three courses from COSC 50-89, or permission of instructor.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "71f27743-63e2-4cc0-a521-6e5fde159a34",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "In this course you will have the freedom to pitch and develop your own project idea. It is your time to spend two terms to create your own startup product. The first class meetings will be devoted to short technology hackathons, brainstorming sessions, and choosing your product teams. You will be encouraged to be creative and push yourselves technically, but simultaneously to keep your project scope feasible. Often the most successful projects start out as a small, clever idea, while projects that are overly ambitious will prevent you from thoroughly investigating the concept.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5303affd-4717-4afd-af7f-49554db58924",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Some things to consider while thinking about project ideas:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "fae2f176-328a-48c5-aa69-fe32184e7735",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🚀 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Novelty",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ": The purpose of this course is to broaden your experience as a developer. It is an opportunity to investigate a novel idea in a team environment, from initial concept, through all stages of design & development, to delivery of a functional final product. Your project must be a fresh idea, introduced solely for this course. It should not be a continuation of an internship, previous course project, or existing startup.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f856e754-558a-4bd8-ac3a-d7ad0b9db1b2",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "📱 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Format",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ": You may choose any format relevant to software design & implementation. For example, your team may choose to develop a game, a web or mobile app, or even experiment with IoT.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "0c9bc4f1-5ef8-4108-8dc2-d5783efb1e87",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🔨 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Impact",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ": Your project should demonstrate a positive impact and offer clear benefit to a user base. Consider themes such as education, research, health care, or environmental protection and improvement. Think outside of what is useful to Dartmouth students - new event apps, social network clones, and marketplaces have been attempted before and you might find it more rewarding to build something that challenges you.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b45cb2b9-d00f-497e-bc2b-9b7222cfb8c6",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🏄 This class will be an adventure and requires active participation both inside and outside of class.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1ff5273e-e491-40c7-b781-91ab4c683a70",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "By the end of the second term of this course, you will:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "bff6c8f4-8e5b-44c8-ba4b-6aac2c096bc7",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🎛️ experiment with various technologies and push your coding limits to new heights",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "86117ae9-f41d-4999-94bf-45aafd4174cb",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🏗️ conceptualize, pitch, and design a software product that is interesting, impactful, and fun to build",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "bee1eb29-0cf2-4e61-add6-66d4c2c03531",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "👩‍👩‍👧‍👦 use software development and design best practices to work collaboratively on a tight-knit and smoothly operating team",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "0810f0c2-7ee2-4277-8957-db6dfbc33bb8",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💻 use your knowledge of the fundamental concepts and best practices of software development to design a software project from the ground up",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c9ca3c37-1476-47f6-96e8-28b4cd960c53",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🔨 utilize state-of-the-art tools and frameworks to build a complex system",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "84a9bc42-7c95-49d2-ba5a-7f2731d89f20",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🏆 demo your work to hundreds of people for fame and fortune",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "29231d7a-ed15-4e7b-9a5c-71980ae91e87",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "rgb(251, 243, 219)",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Groups",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "49a48910-fa3b-4003-8d16-3d3843fa61fa",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Teams will be ~6 members each. Group dynamics and roles will be discussed. Working together collaboratively is central to this course. Groups will be assigned through a combination of voting on ideas, team member preference and balancing.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "10971ba2-3e79-49dd-878a-2160bb1b2947",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "rgb(251, 243, 219)",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Time Commitment",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d0eb69d9-d314-4aff-8e1b-ca2c0ccf9e62",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Groups are required to establish a team meeting schedule for coding hours throughout the week. Minimum obligation is 10 hours/week ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "outside",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " of class time. Group coding is encouraged.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "80e1ad0c-fd1b-4869-9f3b-3906c8b1e0b8",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "rgb(251, 243, 219)",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Schedule",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ee6396a5-88eb-4f50-8d92-164fe99d1d86",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "There are two (CS 98.01 + CS 98.02) classes for this course. You need to take CS 98.01 and CS 98.02 in consecutive terms.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1784bd54-78a6-44c9-ba15-2544cdef5ee8",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "rgb(251, 243, 219)",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Class",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "2a4c9955-5630-42d2-80f7-7626af8fa8ee",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Winter/Spring: 26W (98.01) - 26S (98.02)",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": [
+      {
+        "id": "243c58c6-4073-442f-b1eb-8389aebef8be",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "3A",
+            "styles": {}
+          }
+        ],
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "10c50fa6-4a50-4739-9113-dadb1ccacd53",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Class time will be used for topic hackathons, team meetings, showing your work, and coding together time. Each project team will also meet separately every week to work and hack together. At least 10 hours per week is the required time commitment to this course.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c9e8a29b-199a-42c4-9204-4ad7140b7f2a",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "IMG_0393.jpeg",
+      "url": "https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pages/dartmouth-cs98/assets/img-0393-1768181433911.jpeg",
+      "caption": "",
+      "showPreview": true
+    },
+    "children": []
+  },
+  {
+    "id": "a520dd7d-8956-412c-884e-a665d2b6a6d2",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "See ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://www.notion.so/b684f385aa7a43c18e57ad117d13b3e9?pvs=21",
+        "content": [
+          {
+            "type": "text",
+            "text": "weekly schedule",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " for more details.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d26af371-c4fa-495c-b6df-ee4869e1d2b0",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "rgb(251, 243, 219)",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Office Hours and Contact",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ddc65d05-7e98-47bb-97a8-7908e5bda354",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "We’ll be using ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://cs98-dartmouth.slack.com/",
+        "content": [
+          {
+            "type": "text",
+            "text": "Slack",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " for most communication. Find us there!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9a5e203f-5a5e-4791-b8c4-86d582b19153",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Instructors:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "64f7fa37-eb95-4fbf-a837-f473fefa63b6",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "mailto:tim.tregubov@dartmouth.edu",
+        "content": [
+          {
+            "type": "text",
+            "text": "Tim Tregubov",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " - Head Coach",
+        "styles": {}
+      }
+    ],
+    "children": [
+      {
+        "id": "23eff3e1-3c4f-48b7-a749-039586b93cf9",
+        "type": "image",
+        "props": {
+          "textAlignment": "left",
+          "backgroundColor": "default",
+          "name": "",
+          "url": "https://cs98.me/assets/imgs/tt_profile.jpg",
+          "caption": "",
+          "showPreview": true
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "82fc6614-5e87-4df3-bb3c-c287df011956",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Office hours by appointment: ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://calendly.com/timofei",
+        "content": [
+          {
+            "type": "text",
+            "text": "calendly",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "69bcdb0c-f795-4d83-b576-78d3bf81464a",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Pape Sow Traore - Teaching Assistant and CTO",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "054b14f7-05b7-4959-b7a3-f3106cc5242a",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  }
+]
