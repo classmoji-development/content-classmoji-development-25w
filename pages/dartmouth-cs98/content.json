@@ -175,7 +175,30 @@
         "content": [
           {
             "type": "text",
-            "text": "Join CS98 Figma Team",
+            "text": "Join CS98 Figma Tea",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d1fa7e84-094a-4112-9e8a-d917a69caaee",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://www.figma.com/team_invite/redeem/OzJ9cmYtA08AXmUehZcHTN",
+        "content": [
+          {
+            "type": "text",
+            "text": "m",
             "styles": {}
           }
         ]
