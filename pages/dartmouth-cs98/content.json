@@ -909,6 +909,23 @@
       "textColor": "default",
       "textAlignment": "left"
     },
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "146482ca-8777-4908-b31e-919c5a9859c1",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
     "content": [],
     "children": []
   }
