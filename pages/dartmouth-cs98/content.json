@@ -175,30 +175,7 @@
         "content": [
           {
             "type": "text",
-            "text": "Join CS98 Figma Tea",
-            "styles": {}
-          }
-        ]
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "d1fa7e84-094a-4112-9e8a-d917a69caaee",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "link",
-        "href": "https://www.figma.com/team_invite/redeem/OzJ9cmYtA08AXmUehZcHTN",
-        "content": [
-          {
-            "type": "text",
-            "text": "m",
+            "text": "Join CS98 Figma Team",
             "styles": {}
           }
         ]
@@ -217,24 +194,7 @@
     "content": [
       {
         "type": "text",
-        "text": "Participation in a software engineering group project to meet a real-world need. Group members are responsible for all aspects of a software system, including iterative requirements analysis, design, implementation, and testing. The course also stresses customer interactions, documentation, process, and teamwork. The resu",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "4f726e37-9145-4cbd-a374-4c07bddd3e83",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "/collt is a software product of significant scope and significant benefit to a user base.",
+        "text": "Participation in a software engineering group project to meet a real-world need. Group members are responsible for all aspects of a software system, including iterative requirements analysis, design, implementation, and testing. The course also stresses customer interactions, documentation, process, and teamwork. The result is a software product of significant scope and significant benefit to a user base.",
         "styles": {}
       }
     ],
