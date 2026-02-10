@@ -909,7 +909,13 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [],
+    "content": [
+      {
+        "type": "text",
+        "text": "/col",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
