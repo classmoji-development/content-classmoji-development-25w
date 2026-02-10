@@ -747,7 +747,7 @@
     "id": "d26af371-c4fa-495c-b6df-ee4869e1d2b0",
     "type": "heading",
     "props": {
-      "backgroundColor": "rgb(251, 243, 219)",
+      "backgroundColor": "brown",
       "textColor": "default",
       "textAlignment": "left",
       "level": 2,
