@@ -283,6 +283,23 @@
     "content": [
       {
         "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "db5efb7f-f4a5-4aef-b1ec-4df993fff9c6",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
         "text": "At least two courses from COSC 50-69 or at least three courses from COSC 50-89, or permission of instructor.",
         "styles": {}
       }
