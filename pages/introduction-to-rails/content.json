@@ -20,16 +20,18 @@
   },
   {
     "id": "e7c05571-6267-4c4f-960b-1512d9389e96",
-    "type": "paragraph",
+    "type": "heading",
     "props": {
       "backgroundColor": "default",
       "textColor": "default",
-      "textAlignment": "left"
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
     },
     "content": [
       {
         "type": "text",
-        "text": "/hw",
+        "text": "Head",
         "styles": {}
       }
     ],
