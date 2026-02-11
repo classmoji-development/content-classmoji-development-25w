@@ -445,18 +445,24 @@
     "children": []
   },
   {
-    "id": "41a0d678-f1a1-4e2d-aa49-6298d03e0643",
-    "type": "file",
+    "id": "87c8838a-5fcc-4a6d-aad1-6fba661c9871",
+    "type": "paragraph",
     "props": {
       "backgroundColor": "default",
-      "name": "Screenshot 2026-01-27 at 10.48.52 AM.png",
-      "url": "https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pages/introduction-to-rails/assets/1770845640997-screenshot-2026-01-27-at-10-48-52-am.png",
-      "caption": ""
+      "textColor": "default",
+      "textAlignment": "left"
     },
+    "content": [
+      {
+        "type": "text",
+        "text": "/fil",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
-    "id": "87c8838a-5fcc-4a6d-aad1-6fba661c9871",
+    "id": "a479c57d-2fdd-4c00-a53e-6e3297af787d",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
