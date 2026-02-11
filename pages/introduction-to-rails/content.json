@@ -28,23 +28,6 @@
     "children": []
   },
   {
-    "id": "49f121b9-b50b-41bb-937d-dccbdc4a0532",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "trying to see jewndjdn dejdje sdnj idi idiw",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
     "id": "ef4afa96-32c5-49d8-b0c6-52a8c1210766",
     "type": "paragraph",
     "props": {
