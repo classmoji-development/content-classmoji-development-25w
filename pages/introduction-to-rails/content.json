@@ -289,7 +289,7 @@
       "backgroundColor": "default",
       "textColor": "default",
       "textAlignment": "left",
-      "checked": false
+      "checked": true
     },
     "content": [
       {
@@ -307,12 +307,40 @@
       "backgroundColor": "default",
       "textColor": "default",
       "textAlignment": "left",
-      "checked": false
+      "checked": true
     },
     "content": [
       {
         "type": "text",
-        "text": "T",
+        "text": "Three",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "fbc7456b-b6a1-46bc-a148-e5899f820a94",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "a4a83326-e924-4063-b8ad-2c57c8ecfbc6",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
         "styles": {}
       }
     ],
