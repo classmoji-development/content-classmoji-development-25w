@@ -1,6 +1,6 @@
 [
   {
-    "id": "891415a0-ee36-4647-bbca-643526a1e4b2",
+    "id": "421942ea-1b46-4041-ba15-715ce881118c",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -10,14 +10,14 @@
     "content": [
       {
         "type": "text",
-        "text": "This is a test of the auto-save feature. After typing this, the status should change from \"Saved\" to \"Unsaved\" within 500ms.",
+        "text": "FINAL TEST - should auto-save after 2 seconds!",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "764ce14f-a32b-41c3-9cbe-43c18cbef013",
+    "id": "e7aaafd8-13f4-4821-923e-4bdc4088e8bb",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
