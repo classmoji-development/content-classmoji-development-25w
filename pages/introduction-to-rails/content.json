@@ -414,7 +414,7 @@
     "id": "d86c2173-ccfd-44e0-9066-46954479a8e0",
     "type": "terminal",
     "props": {
-      "code": "npm install ",
+      "code": "npm install \nxsxs",
       "title": ""
     },
     "children": []
