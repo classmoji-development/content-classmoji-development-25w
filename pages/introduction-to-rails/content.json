@@ -102,6 +102,23 @@
       "textColor": "default",
       "textAlignment": "left"
     },
+    "content": [
+      {
+        "type": "text",
+        "text": "The toggle block",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "2ba5ea18-57bf-477a-bc13-f7d84020b74f",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
     "content": [],
     "children": []
   },
