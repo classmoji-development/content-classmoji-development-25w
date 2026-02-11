@@ -414,15 +414,6 @@
     "children": []
   },
   {
-    "id": "4d576b83-a986-4d4b-a434-03b1db518ad4",
-    "type": "video",
-    "props": {
-      "url": "",
-      "caption": ""
-    },
-    "children": []
-  },
-  {
     "id": "41a0d678-f1a1-4e2d-aa49-6298d03e0643",
     "type": "paragraph",
     "props": {
