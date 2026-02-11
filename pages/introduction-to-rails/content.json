@@ -165,7 +165,58 @@
       "textColor": "default",
       "textAlignment": "left"
     },
+    "content": [
+      {
+        "type": "text",
+        "text": "Two ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "23c3de49-c089-4b0b-8e00-d260bf3e7994",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Three",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8cf7c889-4aa9-41a5-bddb-1fb9efcb92cc",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
     "content": [],
+    "children": []
+  },
+  {
+    "id": "50ce6f15-b135-4b82-81db-68d2547bb11c",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
