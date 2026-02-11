@@ -107,19 +107,13 @@
   },
   {
     "id": "6e16e3fd-8de8-476b-acba-4b549abc5db6",
-    "type": "paragraph",
+    "type": "toggleListItem",
     "props": {
       "backgroundColor": "default",
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
     "children": []
   },
   {
