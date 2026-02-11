@@ -35,7 +35,13 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [],
+    "content": [
+      {
+        "type": "text",
+        "text": "trying to see",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
