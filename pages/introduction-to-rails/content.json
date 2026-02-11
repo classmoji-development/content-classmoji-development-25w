@@ -69,16 +69,15 @@
   },
   {
     "id": "c9a80f62-3164-4328-8de3-4724640d2cea",
-    "type": "paragraph",
+    "type": "quote",
     "props": {
       "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "textColor": "default"
     },
     "content": [
       {
         "type": "text",
-        "text": "/",
+        "text": "This is m",
         "styles": {}
       }
     ],
