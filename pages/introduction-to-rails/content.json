@@ -12,7 +12,24 @@
     "content": [
       {
         "type": "text",
-        "text": "Head",
+        "text": "Heading 1",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e7c05571-6267-4c4f-960b-1512d9389e96",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "/hw",
         "styles": {}
       }
     ],
