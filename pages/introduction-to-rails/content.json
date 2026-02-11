@@ -266,16 +266,53 @@
   },
   {
     "id": "d3de2b0e-02cc-487a-b9fd-a811d1471a99",
-    "type": "paragraph",
+    "type": "checkListItem",
     "props": {
       "backgroundColor": "default",
       "textColor": "default",
-      "textAlignment": "left"
+      "textAlignment": "left",
+      "checked": false
     },
     "content": [
       {
         "type": "text",
-        "text": "/",
+        "text": "One ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e9f908b7-ac2c-45c8-8899-2f27702e8fd9",
+    "type": "checkListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "checked": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Two",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ddc80c09-c943-4537-9d30-e884cea28cd4",
+    "type": "checkListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "checked": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "T",
         "styles": {}
       }
     ],
