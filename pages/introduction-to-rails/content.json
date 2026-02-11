@@ -366,7 +366,7 @@
     "content": [
       {
         "type": "text",
-        "text": "Class Shape (",
+        "text": "Class Shape {\n\n}",
         "styles": {}
       }
     ],
