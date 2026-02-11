@@ -184,34 +184,59 @@
     "children": []
   },
   {
-    "id": "e2304436-faef-45c6-9001-260b081a68a5",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
+    "id": "8a20ee61-9f9e-49ef-b8a4-5c5f4fedc637",
+    "type": "columnList",
+    "props": {},
+    "children": [
       {
-        "type": "text",
-        "text": "Participation in a software engineering group project to meet a real-world need. Group members are responsible for all aspects of a software system, including iterative requirements analysis, design, implementation, and testing. The course also stresses customer interactions, documentation, process, and teamwork. The result is a software product of significant scope and significant benefit to a user base.",
-        "styles": {}
+        "id": "409bf13f-06d0-483a-8c46-f7698fbd005f",
+        "type": "column",
+        "props": {
+          "width": 1
+        },
+        "children": [
+          {
+            "id": "e2304436-faef-45c6-9001-260b081a68a5",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Participation in a software engineering group project to meet a real-world need. Group members are responsible for all aspects of a software system, including iterative requirements analysis, design, implementation, and testing. The course also stresses customer interactions, documentation, process, and teamwork. The result is a software product of significant scope and significant benefit to a user base.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "168520c8-ab97-4ae4-9786-ebf5f818aa48",
+        "type": "column",
+        "props": {
+          "width": 1
+        },
+        "children": [
+          {
+            "id": "da64e596-bb74-4b5b-ad6e-72e8828a7e10",
+            "type": "image",
+            "props": {
+              "textAlignment": "left",
+              "backgroundColor": "default",
+              "name": "",
+              "url": "https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pages/dartmouth-cs98/assets/dev-magic-1768181433911.gif",
+              "caption": "",
+              "showPreview": true
+            },
+            "children": []
+          }
+        ]
       }
-    ],
-    "children": []
-  },
-  {
-    "id": "da64e596-bb74-4b5b-ad6e-72e8828a7e10",
-    "type": "image",
-    "props": {
-      "textAlignment": "left",
-      "backgroundColor": "default",
-      "name": "",
-      "url": "https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pages/dartmouth-cs98/assets/dev-magic-1768181433911.gif",
-      "caption": "",
-      "showPreview": true
-    },
-    "children": []
+    ]
   },
   {
     "id": "441cd519-f410-417b-a5ae-6c3379e2fdf8",
