@@ -95,17 +95,6 @@
     "children": []
   },
   {
-    "id": "87b38101-d790-4c5c-af1b-529941d4dbd1",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
     "id": "6e16e3fd-8de8-476b-acba-4b549abc5db6",
     "type": "toggleListItem",
     "props": {
@@ -113,7 +102,13 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [],
+    "content": [
+      {
+        "type": "text",
+        "text": "The tot",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
