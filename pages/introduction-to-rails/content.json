@@ -109,7 +109,25 @@
         "styles": {}
       }
     ],
-    "children": []
+    "children": [
+      {
+        "id": "9c159366-0925-4d65-9bd3-3a7d1b03cc54",
+        "type": "paragraph",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "This is actually pre",
+            "styles": {}
+          }
+        ],
+        "children": []
+      }
+    ]
   },
   {
     "id": "2ba5ea18-57bf-477a-bc13-f7d84020b74f",
