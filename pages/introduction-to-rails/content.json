@@ -50,17 +50,6 @@
     "children": []
   },
   {
-    "id": "e50c842a-9883-47da-afe4-850496ca5a22",
-    "type": "profile",
-    "props": {
-      "name": "",
-      "title": "",
-      "imageUrl": "",
-      "links": ""
-    },
-    "children": []
-  },
-  {
     "id": "5b946ce5-0122-4dac-83e8-1edcd353b206",
     "type": "paragraph",
     "props": {
