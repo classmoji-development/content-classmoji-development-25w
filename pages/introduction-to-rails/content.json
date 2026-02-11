@@ -1,22 +1,5 @@
 [
   {
-    "id": "8871d37c-3529-4c83-85e0-4a86a3294923",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "red",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Clean test - verifying auto-save works without debug logs",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
     "id": "3820902d-7a7f-4a5b-b2d2-6a073de5c306",
     "type": "paragraph",
     "props": {
