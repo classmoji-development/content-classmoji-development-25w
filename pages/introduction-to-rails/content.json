@@ -142,7 +142,7 @@
   },
   {
     "id": "2f5d0ae5-80a0-45d5-91d5-811fc65b5fde",
-    "type": "paragraph",
+    "type": "numberedListItem",
     "props": {
       "backgroundColor": "default",
       "textColor": "default",
@@ -151,10 +151,21 @@
     "content": [
       {
         "type": "text",
-        "text": "/",
+        "text": "One ",
         "styles": {}
       }
     ],
+    "children": []
+  },
+  {
+    "id": "24301426-a9c6-4f92-a9c9-70d9b159a175",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
     "children": []
   },
   {
