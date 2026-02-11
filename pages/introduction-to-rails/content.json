@@ -1,6 +1,6 @@
 [
   {
-    "id": "421942ea-1b46-4041-ba15-715ce881118c",
+    "id": "8871d37c-3529-4c83-85e0-4a86a3294923",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -10,14 +10,14 @@
     "content": [
       {
         "type": "text",
-        "text": "FINAL TEST - should auto-save after 2 seconds!",
+        "text": "Clean test - verifying auto-save works without debug logs",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "e7aaafd8-13f4-4821-923e-4bdc4088e8bb",
+    "id": "ef4afa96-32c5-49d8-b0c6-52a8c1210766",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
