@@ -366,7 +366,7 @@
     "content": [
       {
         "type": "text",
-        "text": "Class Shape {\n  constructor(){\n    ",
+        "text": "Class Shape {\n  constructor(na){\n    ",
         "styles": {}
       },
       {
@@ -382,7 +382,7 @@
       },
       {
         "type": "text",
-        "text": " =   \n  }\n}",
+        "text": " = name;  \n  }\n}",
         "styles": {}
       }
     ],
