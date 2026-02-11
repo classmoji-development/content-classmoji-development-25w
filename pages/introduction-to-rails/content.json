@@ -340,10 +340,32 @@
     "content": [
       {
         "type": "text",
-        "text": "This is a paragrp",
+        "text": "This is a paragraph",
         "styles": {}
       }
     ],
+    "children": []
+  },
+  {
+    "id": "05d0df4d-1b6d-4b31-a3d5-697cba7ed2d2",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "66859d9a-d3d2-465a-81eb-e96c1ba9dc3c",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
     "children": []
   },
   {
