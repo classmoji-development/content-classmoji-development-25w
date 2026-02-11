@@ -415,6 +415,15 @@
   },
   {
     "id": "41a0d678-f1a1-4e2d-aa49-6298d03e0643",
+    "type": "codeBlock",
+    "props": {
+      "language": "text"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "87c8838a-5fcc-4a6d-aad1-6fba661c9871",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
