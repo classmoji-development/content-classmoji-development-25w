@@ -625,6 +625,17 @@
     "children": []
   },
   {
+    "id": "4f35a0ba-159d-4575-ad7d-557248de3d57",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
     "id": "2a4c9955-5630-42d2-80f7-7626af8fa8ee",
     "type": "bulletListItem",
     "props": {
@@ -694,53 +705,7 @@
         },
         "children": [
           {
-            "id": "4f35a0ba-159d-4575-ad7d-557248de3d57",
-            "type": "paragraph",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "1784bd54-78a6-44c9-ba15-2544cdef5ee8",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "rgb(251, 243, 219)",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 2,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Class",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "3a6e29c4-e264-4367-bd9c-793afaeebde8",
-    "type": "columnList",
-    "props": {},
-    "children": [
-      {
-        "id": "7005e1ae-ad10-44a0-bec2-0e952e9112f0",
-        "type": "column",
-        "props": {
-          "width": 1
-        },
-        "children": [
-          {
-            "id": "96c4fc38-002c-4aa5-aecb-0ae3ee78d4bb",
+            "id": "18c70980-bd90-43b8-8a69-3e53644cc054",
             "type": "paragraph",
             "props": {
               "backgroundColor": "default",
