@@ -446,19 +446,13 @@
   },
   {
     "id": "41a0d678-f1a1-4e2d-aa49-6298d03e0643",
-    "type": "paragraph",
+    "type": "file",
     "props": {
       "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "name": "",
+      "url": "",
+      "caption": ""
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
     "children": []
   },
   {
