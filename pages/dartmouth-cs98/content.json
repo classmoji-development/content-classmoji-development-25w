@@ -589,67 +589,23 @@
     "children": []
   },
   {
-    "id": "5110d808-6327-4d1f-9e24-965d460f9fd2",
-    "type": "columnList",
-    "props": {},
-    "children": [
+    "id": "80e1ad0c-fd1b-4869-9f3b-3906c8b1e0b8",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "rgb(251, 243, 219)",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
       {
-        "id": "6a169e3a-0d58-41a9-abb6-83e67c8a6863",
-        "type": "column",
-        "props": {
-          "width": 1
-        },
-        "children": [
-          {
-            "id": "1784bd54-78a6-44c9-ba15-2544cdef5ee8",
-            "type": "heading",
-            "props": {
-              "backgroundColor": "rgb(251, 243, 219)",
-              "textColor": "default",
-              "textAlignment": "left",
-              "level": 2,
-              "isToggleable": false
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "Class",
-                "styles": {}
-              }
-            ],
-            "children": []
-          }
-        ]
-      },
-      {
-        "id": "2620fca3-353b-469d-ad85-5fed80caa7a1",
-        "type": "column",
-        "props": {
-          "width": 1
-        },
-        "children": [
-          {
-            "id": "80e1ad0c-fd1b-4869-9f3b-3906c8b1e0b8",
-            "type": "heading",
-            "props": {
-              "backgroundColor": "rgb(251, 243, 219)",
-              "textColor": "default",
-              "textAlignment": "left",
-              "level": 2,
-              "isToggleable": false
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "Schedule",
-                "styles": {}
-              }
-            ],
-            "children": []
-          }
-        ]
+        "type": "text",
+        "text": "Schedule",
+        "styles": {}
       }
-    ]
+    ],
+    "children": []
   },
   {
     "id": "ee6396a5-88eb-4f50-8d92-164fe99d1d86",
@@ -706,21 +662,123 @@
     ]
   },
   {
-    "id": "10c50fa6-4a50-4739-9113-dadb1ccacd53",
-    "type": "paragraph",
+    "id": "174d9b9b-543f-45fe-9bca-903df7b81e50",
+    "type": "columnList",
+    "props": {},
+    "children": [
+      {
+        "id": "a022c973-e2e1-423a-8759-0204d5c1316c",
+        "type": "column",
+        "props": {
+          "width": 1
+        },
+        "children": [
+          {
+            "id": "e9424a38-c063-46b4-aeec-eec59a9cdbfb",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "4c229265-1c31-43e9-b314-fc701435eb92",
+        "type": "column",
+        "props": {
+          "width": 1
+        },
+        "children": [
+          {
+            "id": "4f35a0ba-159d-4575-ad7d-557248de3d57",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1784bd54-78a6-44c9-ba15-2544cdef5ee8",
+    "type": "heading",
     "props": {
-      "backgroundColor": "default",
+      "backgroundColor": "rgb(251, 243, 219)",
       "textColor": "default",
-      "textAlignment": "left"
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
     },
     "content": [
       {
         "type": "text",
-        "text": "Class time will be used for topic hackathons, team meetings, showing your work, and coding together time. Each project team will also meet separately every week to work and hack together. At least 10 hours per week is the required time commitment to this course.",
+        "text": "Class",
         "styles": {}
       }
     ],
     "children": []
+  },
+  {
+    "id": "3a6e29c4-e264-4367-bd9c-793afaeebde8",
+    "type": "columnList",
+    "props": {},
+    "children": [
+      {
+        "id": "7005e1ae-ad10-44a0-bec2-0e952e9112f0",
+        "type": "column",
+        "props": {
+          "width": 1
+        },
+        "children": [
+          {
+            "id": "96c4fc38-002c-4aa5-aecb-0ae3ee78d4bb",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "e05647b1-b5a8-4e7d-a2bf-5e5cc75bf88b",
+        "type": "column",
+        "props": {
+          "width": 1
+        },
+        "children": [
+          {
+            "id": "10c50fa6-4a50-4739-9113-dadb1ccacd53",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Class time will be used for topic hackathons, team meetings, showing your work, and coding together time. Each project team will also meet separately every week to work and hack together. At least 10 hours per week is the required time commitment to this course.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "c9e8a29b-199a-42c4-9204-4ad7140b7f2a",
