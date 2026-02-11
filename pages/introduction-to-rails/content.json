@@ -403,7 +403,7 @@
     "id": "4f3a017f-3be2-468d-9d6f-13401f404acd",
     "type": "image",
     "props": {
-      "textAlignment": "left",
+      "textAlignment": "right",
       "backgroundColor": "default",
       "name": "Screenshot 2026-02-09 at 8.27.03 PM.png",
       "url": "https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pages/introduction-to-rails/assets/1770844018249-screenshot-2026-02-09-at-8-27-03-pm.png",
