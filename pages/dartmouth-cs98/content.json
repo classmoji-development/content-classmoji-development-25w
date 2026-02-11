@@ -589,23 +589,67 @@
     "children": []
   },
   {
-    "id": "80e1ad0c-fd1b-4869-9f3b-3906c8b1e0b8",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "rgb(251, 243, 219)",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 2,
-      "isToggleable": false
-    },
-    "content": [
+    "id": "5110d808-6327-4d1f-9e24-965d460f9fd2",
+    "type": "columnList",
+    "props": {},
+    "children": [
       {
-        "type": "text",
-        "text": "Schedule",
-        "styles": {}
+        "id": "6a169e3a-0d58-41a9-abb6-83e67c8a6863",
+        "type": "column",
+        "props": {
+          "width": 1
+        },
+        "children": [
+          {
+            "id": "1784bd54-78a6-44c9-ba15-2544cdef5ee8",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "rgb(251, 243, 219)",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Class",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "2620fca3-353b-469d-ad85-5fed80caa7a1",
+        "type": "column",
+        "props": {
+          "width": 1
+        },
+        "children": [
+          {
+            "id": "80e1ad0c-fd1b-4869-9f3b-3906c8b1e0b8",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "rgb(251, 243, 219)",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Schedule",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
       }
-    ],
-    "children": []
+    ]
   },
   {
     "id": "ee6396a5-88eb-4f50-8d92-164fe99d1d86",
@@ -619,25 +663,6 @@
       {
         "type": "text",
         "text": "There are two (CS 98.01 + CS 98.02) classes for this course. You need to take CS 98.01 and CS 98.02 in consecutive terms.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "1784bd54-78a6-44c9-ba15-2544cdef5ee8",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "rgb(251, 243, 219)",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 2,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Class",
         "styles": {}
       }
     ],
