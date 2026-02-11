@@ -121,13 +121,41 @@
         "content": [
           {
             "type": "text",
-            "text": "This is actually pre",
+            "text": "This is actually pretty cool",
             "styles": {}
           }
         ],
         "children": []
       }
     ]
+  },
+  {
+    "id": "c173cdc6-cb7c-42bb-8b96-f47d255ab04b",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "2f5d0ae5-80a0-45d5-91d5-811fc65b5fde",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
+    "children": []
   },
   {
     "id": "2ba5ea18-57bf-477a-bc13-f7d84020b74f",
