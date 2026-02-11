@@ -366,7 +366,7 @@
     "content": [
       {
         "type": "text",
-        "text": "Class Shape {\n  constructor(na){\n    ",
+        "text": "Class Shape {\n  constructor(name){\n    ",
         "styles": {}
       },
       {
@@ -401,6 +401,23 @@
   },
   {
     "id": "4f3a017f-3be2-468d-9d6f-13401f404acd",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "4d576b83-a986-4d4b-a434-03b1db518ad4",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
