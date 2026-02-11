@@ -3,7 +3,7 @@
     "id": "8871d37c-3529-4c83-85e0-4a86a3294923",
     "type": "paragraph",
     "props": {
-      "backgroundColor": "default",
+      "backgroundColor": "red",
       "textColor": "default",
       "textAlignment": "left"
     },
