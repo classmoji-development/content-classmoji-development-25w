@@ -39,6 +39,36 @@
   },
   {
     "id": "2f959a55-0521-446b-a8f0-efd705276a2c",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Heading 3",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "27161f56-92fa-4ded-a23b-fbb854c1cb1f",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "c9a80f62-3164-4328-8de3-4724640d2cea",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -48,7 +78,7 @@
     "content": [
       {
         "type": "text",
-        "text": "/he",
+        "text": "/",
         "styles": {}
       }
     ],
