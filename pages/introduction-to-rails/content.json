@@ -7,13 +7,16 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "bc98b530-142b-4008-ab07-e632db61c35f",
+    "type": "terminal",
+    "props": {
+      "code": "",
+      "title": ""
+    },
     "children": []
   },
   {
