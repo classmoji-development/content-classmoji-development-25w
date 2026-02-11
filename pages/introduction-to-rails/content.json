@@ -158,63 +158,38 @@
     "children": []
   },
   {
-    "id": "d671d4c2-f2b1-447b-ad88-5cd383d89a51",
-    "type": "columnList",
-    "props": {},
-    "children": [
+    "id": "24301426-a9c6-4f92-a9c9-70d9b159a175",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
       {
-        "id": "072ee434-6197-41e1-9994-590a877e18e4",
-        "type": "column",
-        "props": {
-          "width": 1
-        },
-        "children": [
-          {
-            "id": "23c3de49-c089-4b0b-8e00-d260bf3e7994",
-            "type": "numberedListItem",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "Three",
-                "styles": {}
-              }
-            ],
-            "children": []
-          }
-        ]
-      },
-      {
-        "id": "a6c1ef38-d48b-4b7c-8e39-7b7cfda35ede",
-        "type": "column",
-        "props": {
-          "width": 1
-        },
-        "children": [
-          {
-            "id": "24301426-a9c6-4f92-a9c9-70d9b159a175",
-            "type": "numberedListItem",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "Two ",
-                "styles": {}
-              }
-            ],
-            "children": []
-          }
-        ]
+        "type": "text",
+        "text": "Two ",
+        "styles": {}
       }
-    ]
+    ],
+    "children": []
+  },
+  {
+    "id": "23c3de49-c089-4b0b-8e00-d260bf3e7994",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Three",
+        "styles": {}
+      }
+    ],
+    "children": []
   },
   {
     "id": "8cf7c889-4aa9-41a5-bddb-1fb9efcb92cc",
@@ -432,7 +407,13 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [],
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
