@@ -415,19 +415,11 @@
   },
   {
     "id": "4d576b83-a986-4d4b-a434-03b1db518ad4",
-    "type": "paragraph",
+    "type": "video",
     "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "url": "",
+      "caption": ""
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/vi",
-        "styles": {}
-      }
-    ],
     "children": []
   },
   {
