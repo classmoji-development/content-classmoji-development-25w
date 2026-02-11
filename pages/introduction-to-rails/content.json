@@ -330,14 +330,20 @@
     "children": []
   },
   {
-    "id": "a4a83326-e924-4063-b8ad-2c57c8ecfbc6",
+    "id": "7a3a12cc-a716-4d92-af92-a98f8df655cd",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [],
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
