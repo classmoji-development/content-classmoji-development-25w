@@ -415,11 +415,19 @@
   },
   {
     "id": "41a0d678-f1a1-4e2d-aa49-6298d03e0643",
-    "type": "codeBlock",
+    "type": "paragraph",
     "props": {
-      "language": "text"
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
     },
-    "content": [],
+    "content": [
+      {
+        "type": "text",
+        "text": "/code",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
