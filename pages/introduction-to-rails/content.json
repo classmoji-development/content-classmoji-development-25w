@@ -43,13 +43,13 @@
     "type": "alert",
     "props": {
       "textAlignment": "left",
-      "textColor": "default",
+      "textColor": "orange",
       "type": "info"
     },
     "content": [
       {
         "type": "text",
-        "text": "ssssskwmnkwd lqwmdlkwqdmqwmdwqmdqw",
+        "text": "ssssskwmnkwd lqwmdlkwqdmqwmdwqmdqwdiqwmdwq",
         "styles": {}
       }
     ],
