@@ -31,7 +31,24 @@
     "content": [
       {
         "type": "text",
-        "text": "Head",
+        "text": "Heading 2",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "2f959a55-0521-446b-a8f0-efd705276a2c",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "/he",
         "styles": {}
       }
     ],
