@@ -366,7 +366,7 @@
     "content": [
       {
         "type": "text",
-        "text": "Class Shape {\n  constructor(\n}",
+        "text": "Class Shape {\n  constructor(){\n  }\n}",
         "styles": {}
       }
     ],
