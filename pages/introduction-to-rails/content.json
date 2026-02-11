@@ -359,13 +359,17 @@
   },
   {
     "id": "66859d9a-d3d2-465a-81eb-e96c1ba9dc3c",
-    "type": "paragraph",
+    "type": "codeBlock",
     "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "language": "text"
     },
-    "content": [],
+    "content": [
+      {
+        "type": "text",
+        "text": "Cla",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
