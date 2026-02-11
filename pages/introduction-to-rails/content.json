@@ -77,10 +77,21 @@
     "content": [
       {
         "type": "text",
-        "text": "This is me trying the quote block to see if it weo",
+        "text": "This is me trying the quote block to see if it works",
         "styles": {}
       }
     ],
+    "children": []
+  },
+  {
+    "id": "dd858899-2e21-4c64-9aaf-0357397dac69",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
     "children": []
   },
   {
