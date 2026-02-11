@@ -1,0 +1,64 @@
+[
+  {
+    "id": "90ac485f-3f89-4a38-acef-fc43eea15c24",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "asdfasdf",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d786185b-40ef-4c84-97ef-e43b7bb9987a",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "asdfasdf",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1658655b-8845-43b8-9ce7-89645a7e446c",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "asdfasdf",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "03a6b5fe-2f9c-4e97-b6d8-290a089ace6a",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  }
+]
