@@ -204,7 +204,7 @@
   },
   {
     "id": "50ce6f15-b135-4b82-81db-68d2547bb11c",
-    "type": "paragraph",
+    "type": "bulletListItem",
     "props": {
       "backgroundColor": "default",
       "textColor": "default",
@@ -213,10 +213,21 @@
     "content": [
       {
         "type": "text",
-        "text": "/",
+        "text": "One ",
         "styles": {}
       }
     ],
+    "children": []
+  },
+  {
+    "id": "b16961dd-b332-4050-8ac6-5a7ecaffbd8c",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
     "children": []
   },
   {
