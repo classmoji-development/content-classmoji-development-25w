@@ -148,7 +148,13 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [],
+    "content": [
+      {
+        "type": "text",
+        "text": "One kdid nid dj",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
