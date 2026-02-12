@@ -11,22 +11,6 @@
     "children": []
   },
   {
-    "id": "c9a80f62-3164-4328-8de3-4724640d2cea",
-    "type": "quote",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "This is me trying the quote block to see if it works",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
     "id": "dd858899-2e21-4c64-9aaf-0357397dac69",
     "type": "paragraph",
     "props": {
@@ -36,41 +20,6 @@
     },
     "content": [],
     "children": []
-  },
-  {
-    "id": "6e16e3fd-8de8-476b-acba-4b549abc5db6",
-    "type": "toggleListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "The toggle block",
-        "styles": {}
-      }
-    ],
-    "children": [
-      {
-        "id": "9c159366-0925-4d65-9bd3-3a7d1b03cc54",
-        "type": "paragraph",
-        "props": {
-          "backgroundColor": "default",
-          "textColor": "default",
-          "textAlignment": "left"
-        },
-        "content": [
-          {
-            "type": "text",
-            "text": "This is actually pretty cool",
-            "styles": {}
-          }
-        ],
-        "children": []
-      }
-    ]
   },
   {
     "id": "c173cdc6-cb7c-42bb-8b96-f47d255ab04b",
