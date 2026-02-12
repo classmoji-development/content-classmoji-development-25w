@@ -151,7 +151,7 @@
     "content": [
       {
         "type": "text",
-        "text": "One",
+        "text": "One ",
         "styles": {}
       }
     ],
@@ -168,7 +168,7 @@
     "content": [
       {
         "type": "text",
-        "text": "Two",
+        "text": "Two ",
         "styles": {}
       }
     ],
@@ -340,7 +340,7 @@
     "content": [
       {
         "type": "text",
-        "text": "This is a paragraph",
+        "text": "This is a paragraph ",
         "styles": {}
       }
     ],
@@ -440,7 +440,7 @@
       "url": "https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pages/introduction-to-rails/assets/1770844018249-screenshot-2026-02-09-at-8-27-03-pm.png",
       "caption": "These are some cool shoes",
       "showPreview": true,
-      "previewWidth": 506
+      "previewWidth": 532
     },
     "children": []
   },
