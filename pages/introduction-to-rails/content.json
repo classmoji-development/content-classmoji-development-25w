@@ -315,17 +315,6 @@
     "children": []
   },
   {
-    "id": "87c8838a-5fcc-4a6d-aad1-6fba661c9871",
-    "type": "file",
-    "props": {
-      "backgroundColor": "default",
-      "name": "",
-      "url": "",
-      "caption": ""
-    },
-    "children": []
-  },
-  {
     "id": "a479c57d-2fdd-4c00-a53e-6e3297af787d",
     "type": "paragraph",
     "props": {
