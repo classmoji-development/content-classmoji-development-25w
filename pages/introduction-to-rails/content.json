@@ -18,13 +18,18 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "37616fea-faab-45af-9790-247f83afa7b1",
+    "type": "linkCard",
+    "props": {
+      "url": "",
+      "title": "",
+      "description": "",
+      "imageUrl": ""
+    },
     "children": []
   },
   {
