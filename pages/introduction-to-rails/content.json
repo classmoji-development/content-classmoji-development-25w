@@ -83,13 +83,18 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "5fdc102e-7585-4588-a5b9-a335460179e9",
+    "type": "alert",
+    "props": {
+      "textAlignment": "left",
+      "textColor": "default",
+      "type": "info"
+    },
+    "content": [],
     "children": []
   },
   {
