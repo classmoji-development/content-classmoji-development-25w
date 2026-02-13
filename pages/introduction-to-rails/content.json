@@ -7,6 +7,39 @@
       "textColor": "default",
       "textAlignment": "left"
     },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "6e60a4a9-a068-41ff-9f5e-b7c573952196",
+    "type": "alert",
+    "props": {
+      "textAlignment": "left",
+      "textColor": "default",
+      "type": "info"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "d1e1e194-0b62-4d12-84f7-6f27b9bedbd3",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "e1974c0f-4c83-4ba0-88bf-6d7a71f9efd0",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
     "content": [
       {
         "type": "text",
@@ -17,7 +50,7 @@
     "children": []
   },
   {
-    "id": "d1e1e194-0b62-4d12-84f7-6f27b9bedbd3",
+    "id": "c8972f4a-a0fd-4b06-8d5b-7609bddba8d7",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
