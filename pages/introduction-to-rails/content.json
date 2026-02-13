@@ -74,19 +74,11 @@
   },
   {
     "id": "c564fc46-421d-4f05-a9e7-925bd3583bdd",
-    "type": "paragraph",
+    "type": "video",
     "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "url": "",
+      "caption": ""
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/vi",
-        "styles": {}
-      }
-    ],
     "children": []
   },
   {
