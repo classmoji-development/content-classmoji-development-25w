@@ -32,19 +32,11 @@
   },
   {
     "id": "bbe86eaf-2381-42c0-b76d-3f7bb165a4c6",
-    "type": "paragraph",
+    "type": "video",
     "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "url": "",
+      "caption": ""
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/emb",
-        "styles": {}
-      }
-    ],
     "children": []
   },
   {
