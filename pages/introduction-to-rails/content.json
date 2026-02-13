@@ -60,20 +60,14 @@
     "children": []
   },
   {
-    "id": "0ba1ddbf-1017-4e63-88fb-233cb97e6e34",
-    "type": "paragraph",
+    "id": "31bb3db0-6fc1-473f-9d11-a113df8f89ea",
+    "type": "linkCard",
     "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "url": "",
+      "title": "",
+      "description": "",
+      "imageUrl": ""
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
     "children": []
   },
   {
