@@ -56,6 +56,17 @@
       "textColor": "default",
       "textAlignment": "left"
     },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "3a7c0fb5-244a-49cf-973d-13d4bb11ffb5",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
     "content": [
       {
         "type": "text",
@@ -66,7 +77,7 @@
     "children": []
   },
   {
-    "id": "3a7c0fb5-244a-49cf-973d-13d4bb11ffb5",
+    "id": "4c7ee381-f695-47fa-bb60-cee3ade7933d",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
