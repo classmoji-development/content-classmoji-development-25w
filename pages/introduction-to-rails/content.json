@@ -1,16 +1,5 @@
 [
   {
-    "id": "55ba40a5-07c6-4806-b146-d8274e0a9848",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
     "id": "be699d60-b07c-41a0-a2d3-aebdf00805dc",
     "type": "fileTree",
     "props": {
