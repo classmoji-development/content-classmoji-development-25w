@@ -7,13 +7,17 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "dfa57c11-79a3-4cb4-b55f-d639296ec968",
+    "type": "callout",
+    "props": {
+      "textAlignment": "left",
+      "emoji": "💡"
+    },
+    "content": [],
     "children": []
   },
   {
