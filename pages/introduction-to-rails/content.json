@@ -60,16 +60,24 @@
     "children": []
   },
   {
-    "id": "567d8630-a544-4223-9c63-1396a0587e2e",
-    "type": "diff",
+    "id": "0ba1ddbf-1017-4e63-88fb-233cb97e6e34",
+    "type": "paragraph",
     "props": {
-      "code": "",
-      "language": "diff"
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
     },
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
-    "id": "0ba1ddbf-1017-4e63-88fb-233cb97e6e34",
+    "id": "3a7c0fb5-244a-49cf-973d-13d4bb11ffb5",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
