@@ -43,7 +43,7 @@
     "props": {
       "textAlignment": "left",
       "textColor": "default",
-      "type": "warning"
+      "type": "success"
     },
     "content": [],
     "children": []
