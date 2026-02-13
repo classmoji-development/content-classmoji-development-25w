@@ -49,99 +49,17 @@
     "children": []
   },
   {
-    "id": "4ec30bbe-fa21-4f56-b45f-8cf69fcb2f05",
-    "type": "table",
+    "id": "75fe8e25-aa18-44a4-8e19-2716b78dfb4a",
+    "type": "quote",
     "props": {
+      "backgroundColor": "default",
       "textColor": "default"
     },
-    "content": {
-      "type": "tableContent",
-      "columnWidths": [
-        null,
-        245,
-        409
-      ],
-      "rows": [
-        {
-          "cells": [
-            {
-              "type": "tableCell",
-              "content": [],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            },
-            {
-              "type": "tableCell",
-              "content": [],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            },
-            {
-              "type": "tableCell",
-              "content": [],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "type": "tableCell",
-              "content": [],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            },
-            {
-              "type": "tableCell",
-              "content": [],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            },
-            {
-              "type": "tableCell",
-              "content": [],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            }
-          ]
-        }
-      ]
-    },
+    "content": [],
     "children": []
   },
   {
-    "id": "75fe8e25-aa18-44a4-8e19-2716b78dfb4a",
+    "id": "51724d67-9329-460d-ac52-05e1bedf667b",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
