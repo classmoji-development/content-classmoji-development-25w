@@ -18,11 +18,17 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [],
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
-    "id": "05272d11-1579-4510-8854-82e484c87808",
+    "id": "9aee52f1-ccaa-49b2-95d4-9a337ccd4f7a",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
