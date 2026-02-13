@@ -44,6 +44,23 @@
       "textColor": "default",
       "textAlignment": "left"
     },
+    "content": [
+      {
+        "type": "text",
+        "text": "/emb",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e7163095-8ef3-4cc8-bffc-813228c79a5f",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
     "content": [],
     "children": []
   }
