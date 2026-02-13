@@ -100,6 +100,17 @@
     "children": []
   },
   {
+    "id": "6f7e230b-b4a7-4576-a600-ced7a567e6fd",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
     "id": "f744c552-0150-43c9-b712-5b4dabd2bb7a",
     "type": "paragraph",
     "props": {
