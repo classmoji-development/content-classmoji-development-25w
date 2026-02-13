@@ -7,6 +7,23 @@
       "textColor": "default",
       "textAlignment": "left"
     },
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d1e1e194-0b62-4d12-84f7-6f27b9bedbd3",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
     "content": [],
     "children": []
   }
