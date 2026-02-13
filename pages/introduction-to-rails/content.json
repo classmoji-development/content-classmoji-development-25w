@@ -27,13 +27,16 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/vi",
-        "styles": {}
-      }
-    ],
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "09e94e35-02f2-4b81-9911-6d2ef43ff2af",
+    "type": "video",
+    "props": {
+      "url": "",
+      "caption": ""
+    },
     "children": []
   },
   {
