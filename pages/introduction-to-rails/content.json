@@ -1,19 +1,14 @@
 [
   {
     "id": "e1974c0f-4c83-4ba0-88bf-6d7a71f9efd0",
-    "type": "paragraph",
+    "type": "audio",
     "props": {
       "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "name": "",
+      "url": "",
+      "caption": "",
+      "showPreview": true
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
     "children": []
   },
   {
