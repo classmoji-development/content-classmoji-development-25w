@@ -1,21 +1,5 @@
 [
   {
-    "id": "dfa57c11-79a3-4cb4-b55f-d639296ec968",
-    "type": "callout",
-    "props": {
-      "textAlignment": "left",
-      "emoji": "⚡"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when ",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
     "id": "55ba40a5-07c6-4806-b146-d8274e0a9848",
     "type": "paragraph",
     "props": {
@@ -23,18 +7,13 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "d9a76929-dc65-4270-a8e5-2c3a8775db3c",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
