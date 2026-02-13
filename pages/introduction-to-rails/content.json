@@ -40,22 +40,15 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
     "children": []
   },
   {
-    "id": "c8972f4a-a0fd-4b06-8d5b-7609bddba8d7",
-    "type": "paragraph",
+    "id": "3bc7db34-ac36-4619-80ed-760a0b565057",
+    "type": "callout",
     "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "textAlignment": "left",
+      "emoji": "💡"
     },
     "content": [],
     "children": []
