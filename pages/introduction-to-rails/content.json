@@ -7,61 +7,7 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "29312dfd-c0f7-4b47-bf44-2e42e09682d6",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
     "content": [],
-    "children": []
-  },
-  {
-    "id": "68439482-f4c6-4881-8cbd-723d29c0f995",
-    "type": "video",
-    "props": {
-      "url": "",
-      "caption": ""
-    },
-    "children": []
-  },
-  {
-    "id": "3ba1bcf0-4274-4b57-8e7b-d7a082ceb93d",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "1056d355-6ba4-4cf6-9be3-b56d159ef938",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
     "children": []
   },
   {
