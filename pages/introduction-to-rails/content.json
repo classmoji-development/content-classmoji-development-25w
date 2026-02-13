@@ -64,14 +64,14 @@
     "content": [
       {
         "type": "text",
-        "text": ":smi",
+        "text": "/",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "ae318c51-3096-450e-92de-11c7b7c4679e",
+    "id": "f46a0e45-8461-4e8f-862f-3949ad29b6fb",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
