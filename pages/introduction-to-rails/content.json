@@ -22,17 +22,6 @@
     "children": []
   },
   {
-    "id": "37616fea-faab-45af-9790-247f83afa7b1",
-    "type": "linkCard",
-    "props": {
-      "url": "",
-      "title": "",
-      "description": "",
-      "imageUrl": ""
-    },
-    "children": []
-  },
-  {
     "id": "05272d11-1579-4510-8854-82e484c87808",
     "type": "paragraph",
     "props": {
