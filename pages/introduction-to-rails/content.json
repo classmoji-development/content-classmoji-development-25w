@@ -78,13 +78,16 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "666e87ba-97d3-4099-a223-c0f8ef33cf47",
+    "type": "video",
+    "props": {
+      "url": "",
+      "caption": ""
+    },
     "children": []
   },
   {
