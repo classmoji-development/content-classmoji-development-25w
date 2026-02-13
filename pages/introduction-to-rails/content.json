@@ -22,14 +22,12 @@
     "children": []
   },
   {
-    "id": "a7b03f9d-eb04-4c85-b8ac-adbc3c8b6c3e",
-    "type": "paragraph",
+    "id": "bbe86eaf-2381-42c0-b76d-3f7bb165a4c6",
+    "type": "video",
     "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "url": "",
+      "caption": ""
     },
-    "content": [],
     "children": []
   },
   {
@@ -43,6 +41,26 @@
   },
   {
     "id": "c78cd558-96c2-4d73-9df6-80e243a8abc8",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "c564fc46-421d-4f05-a9e7-925bd3583bdd",
+    "type": "video",
+    "props": {
+      "url": "",
+      "caption": ""
+    },
+    "children": []
+  },
+  {
+    "id": "d0acb759-e786-4b8f-8d08-f63df10aec80",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
