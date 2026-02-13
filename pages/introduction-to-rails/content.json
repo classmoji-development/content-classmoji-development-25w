@@ -18,7 +18,13 @@
       "textColor": "default",
       "type": "info"
     },
-    "content": [],
+    "content": [
+      {
+        "type": "text",
+        "text": "ddwdwdwdwd",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
@@ -26,7 +32,7 @@
     "type": "callout",
     "props": {
       "textAlignment": "left",
-      "emoji": "💡"
+      "emoji": "⚡"
     },
     "content": [],
     "children": []
