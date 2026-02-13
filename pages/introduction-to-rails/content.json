@@ -28,16 +28,6 @@
     "children": []
   },
   {
-    "id": "05723b7f-ac61-466f-98c6-0c134be6a95c",
-    "type": "callout",
-    "props": {
-      "textAlignment": "left",
-      "emoji": "⚡"
-    },
-    "content": [],
-    "children": []
-  },
-  {
     "id": "63cf6c89-e49b-45cb-b1f3-fa56fdcd65bb",
     "type": "paragraph",
     "props": {
