@@ -7,13 +7,16 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "be699d60-b07c-41a0-a2d3-aebdf00805dc",
+    "type": "fileTree",
+    "props": {
+      "tree": "",
+      "title": ""
+    },
     "children": []
   },
   {
