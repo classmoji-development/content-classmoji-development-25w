@@ -86,7 +86,23 @@
     "content": [
       {
         "type": "text",
-        "text": "/tog",
+        "text": "/",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ff187138-58c6-47af-b374-1b0a01083b90",
+    "type": "toggle",
+    "props": {
+      "textAlignment": "left",
+      "summary": "Click to expand"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "aaa",
         "styles": {}
       }
     ],
