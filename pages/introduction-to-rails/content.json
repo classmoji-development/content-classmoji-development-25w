@@ -1,70 +1,20 @@
 [
   {
-    "id": "2ea7b4e9-3890-4d81-bb8b-43babc747fb1",
-    "type": "columnList",
-    "props": {},
-    "children": [
+    "id": "b69dc1b6-452e-4f73-944e-5bbc1c4ce73b",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
       {
-        "id": "23933c60-bdcd-490a-8111-590a29f6d21d",
-        "type": "column",
-        "props": {
-          "width": 1
-        },
-        "children": [
-          {
-            "id": "675e613b-b2e3-428a-8507-c8f2437be985",
-            "type": "paragraph",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [],
-            "children": []
-          }
-        ]
-      },
-      {
-        "id": "027974e6-861c-40e4-9a38-9e046ea862d1",
-        "type": "column",
-        "props": {
-          "width": 1
-        },
-        "children": [
-          {
-            "id": "7b5247ac-1bcb-408b-bd96-ff3eb42aa7fe",
-            "type": "paragraph",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [],
-            "children": []
-          }
-        ]
-      },
-      {
-        "id": "027a181d-50ae-4ed9-b81e-4cc25a5c56de",
-        "type": "column",
-        "props": {
-          "width": 1
-        },
-        "children": [
-          {
-            "id": "83d645b0-91be-4288-a8cf-1a44fc73dcae",
-            "type": "paragraph",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [],
-            "children": []
-          }
-        ]
+        "type": "text",
+        "text": "/",
+        "styles": {}
       }
-    ]
+    ],
+    "children": []
   },
   {
     "id": "d1e1e194-0b62-4d12-84f7-6f27b9bedbd3",
