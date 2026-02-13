@@ -1,1 +1,13 @@
-
+[
+  {
+    "id": "b69dc1b6-452e-4f73-944e-5bbc1c4ce73b",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  }
+]
