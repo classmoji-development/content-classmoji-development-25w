@@ -7,13 +7,16 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "60a2c898-04f3-4d10-b1a0-b904ebca4436",
+    "type": "video",
+    "props": {
+      "url": "",
+      "caption": ""
+    },
     "children": []
   },
   {
