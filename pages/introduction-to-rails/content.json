@@ -1,25 +1,5 @@
 [
   {
-    "id": "079a2ad4-76ca-4f8b-aeec-4a5427c49a25",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "0b9fdd36-9fdb-44db-9199-545e540e3eae",
-    "type": "video",
-    "props": {
-      "url": "https://www.youtube.com/watch?v=pP3R-LiWaaY",
-      "caption": ""
-    },
-    "children": []
-  },
-  {
     "id": "e5e819be-1ebc-4a7a-855d-a9d791f06c93",
     "type": "paragraph",
     "props": {
