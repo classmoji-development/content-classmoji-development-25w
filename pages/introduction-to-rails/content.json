@@ -22,16 +22,6 @@
     "children": []
   },
   {
-    "id": "103e54b9-974a-4d92-8c29-a0093f69c9b0",
-    "type": "pageLink",
-    "props": {
-      "pageId": "",
-      "pageTitle": "",
-      "pageSlug": ""
-    },
-    "children": []
-  },
-  {
     "id": "9aee52f1-ccaa-49b2-95d4-9a337ccd4f7a",
     "type": "paragraph",
     "props": {
