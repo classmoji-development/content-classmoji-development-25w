@@ -42,15 +42,5 @@
     },
     "content": [],
     "children": []
-  },
-  {
-    "id": "3bc7db34-ac36-4619-80ed-760a0b565057",
-    "type": "callout",
-    "props": {
-      "textAlignment": "left",
-      "emoji": "📌"
-    },
-    "content": [],
-    "children": []
   }
 ]
