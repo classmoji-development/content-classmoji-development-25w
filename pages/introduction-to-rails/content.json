@@ -43,7 +43,7 @@
     "props": {
       "textAlignment": "left",
       "textColor": "default",
-      "type": "note"
+      "type": "info"
     },
     "content": [],
     "children": []
