@@ -30,5 +30,33 @@
     },
     "content": [],
     "children": []
+  },
+  {
+    "id": "d3d5ed03-303f-4b7c-83b2-922e8dffcc4d",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "00578b7b-3730-452c-a00e-38fe90e50e68",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
   }
 ]
