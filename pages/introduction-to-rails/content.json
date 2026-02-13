@@ -7,20 +7,17 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [],
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
-    "id": "abf1eda9-f175-4d90-84b3-feab21dbcbf5",
-    "type": "diff",
-    "props": {
-      "code": "- sjsdwnd\n+ isjisiws",
-      "language": "diff"
-    },
-    "children": []
-  },
-  {
-    "id": "18ee0fba-4d2f-4ca1-a602-4996d3f11705",
+    "id": "90e986c3-11dc-45aa-8c2f-ee96a30693af",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
