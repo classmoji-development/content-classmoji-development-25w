@@ -61,13 +61,16 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "919d1314-140a-4f4b-950e-87ea1a07ad18",
+    "type": "embed",
+    "props": {
+      "url": "",
+      "type": ""
+    },
     "children": []
   },
   {
