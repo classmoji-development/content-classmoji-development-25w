@@ -37,20 +37,12 @@
     "children": []
   },
   {
-    "id": "51724d67-9329-460d-ac52-05e1bedf667b",
-    "type": "paragraph",
+    "id": "5ca5d54f-0759-4aea-9716-44406dc2c785",
+    "type": "embed",
     "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "url": "",
+      "caption": ""
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/emb",
-        "styles": {}
-      }
-    ],
     "children": []
   },
   {
