@@ -61,13 +61,8 @@
   },
   {
     "id": "de57c6a4-409d-4180-a2c8-11726174f768",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
+    "type": "divider",
+    "props": {},
     "children": []
   },
   {
