@@ -1,16 +1,5 @@
 [
   {
-    "id": "618fd55b-9de5-4762-b939-b43a8afede8e",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
     "id": "dfa57c11-79a3-4cb4-b55f-d639296ec968",
     "type": "callout",
     "props": {
