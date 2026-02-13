@@ -11,27 +11,6 @@
     "children": []
   },
   {
-    "id": "aaa120a7-e161-48af-b4a6-a35873d9405b",
-    "type": "callout",
-    "props": {
-      "textAlignment": "left",
-      "emoji": "🎯"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "63cf6c89-e49b-45cb-b1f3-fa56fdcd65bb",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
     "id": "d3d5ed03-303f-4b7c-83b2-922e8dffcc4d",
     "type": "paragraph",
     "props": {
