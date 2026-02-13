@@ -14,7 +14,7 @@
     "id": "9e897452-c34d-488c-84a7-39b4db165a25",
     "type": "embed",
     "props": {
-      "url": ""
+      "url": "https://www.youtube.com/watch?v=ajFGtpNBGEQ&list=RDajFGtpNBGEQ&start_radio=1"
     },
     "children": []
   },
@@ -30,20 +30,12 @@
     "children": []
   },
   {
-    "id": "ee209b51-9593-4d0b-9bd9-f0a46fb07ab8",
-    "type": "paragraph",
+    "id": "68439482-f4c6-4881-8cbd-723d29c0f995",
+    "type": "video",
     "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "url": "",
+      "caption": ""
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
     "children": []
   },
   {
