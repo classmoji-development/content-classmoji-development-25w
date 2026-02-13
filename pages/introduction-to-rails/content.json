@@ -5,7 +5,25 @@
     "props": {
       "language": "javascript"
     },
-    "content": [],
+    "content": [
+      {
+        "type": "text",
+        "text": "class Shape {\n",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "  ",
+        "styles": {
+          "textColor": "rgb(225, 228, 232)"
+        }
+      },
+      {
+        "type": "text",
+        "text": "constructor(){\n}",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
