@@ -22,16 +22,6 @@
     "children": []
   },
   {
-    "id": "921de48b-909d-480f-8a79-084b2101bb51",
-    "type": "pageLink",
-    "props": {
-      "pageId": "9699ab64-ba04-488c-b0ce-41aa703bfcff",
-      "pageTitle": "Introduction to Rails",
-      "pageSlug": "introduction-to-rails"
-    },
-    "children": []
-  },
-  {
     "id": "d01a6b73-6973-4f41-87d6-360ba0b88e11",
     "type": "paragraph",
     "props": {
