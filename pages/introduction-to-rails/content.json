@@ -1,22 +1,5 @@
 [
   {
-    "id": "dc8abe8b-a9e2-45ef-92e2-cdaf1d777f6c",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "rgb(255, 255, 255)",
-      "textColor": "rgb(0, 0, 0)",
-      "textAlignment": "justify"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
     "id": "618fd55b-9de5-4762-b939-b43a8afede8e",
     "type": "paragraph",
     "props": {
@@ -24,210 +7,10 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "2f5d0ae5-80a0-45d5-91d5-811fc65b5fde",
-    "type": "numberedListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
     "content": [
       {
         "type": "text",
-        "text": "One ",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "24301426-a9c6-4f92-a9c9-70d9b159a175",
-    "type": "numberedListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Two ",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "23c3de49-c089-4b0b-8e00-d260bf3e7994",
-    "type": "numberedListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Three",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "8cf7c889-4aa9-41a5-bddb-1fb9efcb92cc",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "50ce6f15-b135-4b82-81db-68d2547bb11c",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "One ",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "b16961dd-b332-4050-8ac6-5a7ecaffbd8c",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Two",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "4c8c1d5c-882a-4741-8b92-2d3ed6d0afee",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Three",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "b0562e26-cce9-45b9-bbb9-374f07273683",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "d3de2b0e-02cc-487a-b9fd-a811d1471a99",
-    "type": "checkListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left",
-      "checked": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "One ",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "e9f908b7-ac2c-45c8-8899-2f27702e8fd9",
-    "type": "checkListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left",
-      "checked": true
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Two",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "ddc80c09-c943-4537-9d30-e884cea28cd4",
-    "type": "checkListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left",
-      "checked": true
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Three",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "fbc7456b-b6a1-46bc-a148-e5899f820a94",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "7a3a12cc-a716-4d92-af92-a98f8df655cd",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "This is a paragraph ",
+        "text": "/",
         "styles": {}
       }
     ],
@@ -245,37 +28,6 @@
     "children": []
   },
   {
-    "id": "66859d9a-d3d2-465a-81eb-e96c1ba9dc3c",
-    "type": "codeBlock",
-    "props": {
-      "language": "javascript"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "class Shape {\n  constructor(name){\n    ",
-        "styles": {}
-      },
-      {
-        "type": "link",
-        "href": "https://this.name",
-        "content": [
-          {
-            "type": "text",
-            "text": "this.name",
-            "styles": {}
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "text": " = name;  \n  }\n}",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
     "id": "bb8c2493-fceb-4dfb-8aa1-e703cb760c47",
     "type": "paragraph",
     "props": {
@@ -284,15 +36,6 @@
       "textAlignment": "left"
     },
     "content": [],
-    "children": []
-  },
-  {
-    "id": "d86c2173-ccfd-44e0-9066-46954479a8e0",
-    "type": "terminal",
-    "props": {
-      "code": "npm install \nsw",
-      "title": ""
-    },
     "children": []
   },
   {
