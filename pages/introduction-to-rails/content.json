@@ -60,12 +60,6 @@
     "children": []
   },
   {
-    "id": "de57c6a4-409d-4180-a2c8-11726174f768",
-    "type": "divider",
-    "props": {},
-    "children": []
-  },
-  {
     "id": "a479c57d-2fdd-4c00-a53e-6e3297af787d",
     "type": "paragraph",
     "props": {
@@ -74,15 +68,6 @@
       "textAlignment": "left"
     },
     "content": [],
-    "children": []
-  },
-  {
-    "id": "666e87ba-97d3-4099-a223-c0f8ef33cf47",
-    "type": "video",
-    "props": {
-      "url": "",
-      "caption": ""
-    },
     "children": []
   },
   {
