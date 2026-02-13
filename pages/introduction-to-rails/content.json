@@ -60,17 +60,6 @@
     "children": []
   },
   {
-    "id": "31bb3db0-6fc1-473f-9d11-a113df8f89ea",
-    "type": "linkCard",
-    "props": {
-      "url": "",
-      "title": "",
-      "description": "",
-      "imageUrl": ""
-    },
-    "children": []
-  },
-  {
     "id": "3a7c0fb5-244a-49cf-973d-13d4bb11ffb5",
     "type": "paragraph",
     "props": {
