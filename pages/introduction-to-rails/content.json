@@ -44,6 +44,23 @@
       "textColor": "default",
       "textAlignment": "left"
     },
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8e4f502e-d005-4174-90aa-706b7acd4046",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
     "content": [],
     "children": []
   }
