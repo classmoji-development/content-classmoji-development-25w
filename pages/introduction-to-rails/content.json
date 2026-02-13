@@ -1,19 +1,13 @@
 [
   {
     "id": "b69dc1b6-452e-4f73-944e-5bbc1c4ce73b",
-    "type": "paragraph",
+    "type": "file",
     "props": {
       "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "name": "Group 26 (3).png",
+      "url": "https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pages/introduction-to-rails/assets/1770954982165-group-26-3.png",
+      "caption": ""
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/em",
-        "styles": {}
-      }
-    ],
     "children": []
   },
   {
