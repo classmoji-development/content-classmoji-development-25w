@@ -49,6 +49,23 @@
     "children": []
   },
   {
+    "id": "4ec30bbe-fa21-4f56-b45f-8cf69fcb2f05",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
     "id": "0ba1ddbf-1017-4e63-88fb-233cb97e6e34",
     "type": "paragraph",
     "props": {
