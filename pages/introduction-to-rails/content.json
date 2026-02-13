@@ -7,13 +7,16 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "abf1eda9-f175-4d90-84b3-feab21dbcbf5",
+    "type": "diff",
+    "props": {
+      "code": "- sjsdwnd\n+ isjisiws",
+      "language": "diff"
+    },
     "children": []
   },
   {
