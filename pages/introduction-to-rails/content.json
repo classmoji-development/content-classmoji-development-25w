@@ -11,23 +11,6 @@
     "children": []
   },
   {
-    "id": "9b3deb45-a496-4cd5-ba9b-3e5273c77c5c",
-    "type": "alert",
-    "props": {
-      "textAlignment": "left",
-      "textColor": "default",
-      "type": "info"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "ddwdwdwdwd",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
     "id": "63cf6c89-e49b-45cb-b1f3-fa56fdcd65bb",
     "type": "paragraph",
     "props": {
