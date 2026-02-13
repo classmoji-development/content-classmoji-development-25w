@@ -69,5 +69,33 @@
     },
     "content": [],
     "children": []
+  },
+  {
+    "id": "6ef9a579-79b7-404f-ad99-5a0a0c667150",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "0ba1ddbf-1017-4e63-88fb-233cb97e6e34",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
   }
 ]
