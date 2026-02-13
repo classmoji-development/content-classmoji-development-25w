@@ -38,27 +38,6 @@
     "children": []
   },
   {
-    "id": "d0acb759-e786-4b8f-8d08-f63df10aec80",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "75fe8e25-aa18-44a4-8e19-2716b78dfb4a",
-    "type": "quote",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default"
-    },
-    "content": [],
-    "children": []
-  },
-  {
     "id": "51724d67-9329-460d-ac52-05e1bedf667b",
     "type": "paragraph",
     "props": {
