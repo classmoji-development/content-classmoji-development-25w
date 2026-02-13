@@ -71,20 +71,12 @@
     "children": []
   },
   {
-    "id": "6ef9a579-79b7-404f-ad99-5a0a0c667150",
-    "type": "paragraph",
+    "id": "25eb0c4f-318f-4775-90c7-1a5c9370bfad",
+    "type": "embed",
     "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "url": "",
+      "type": ""
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
     "children": []
   },
   {
