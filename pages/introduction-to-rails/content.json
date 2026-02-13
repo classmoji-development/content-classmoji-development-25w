@@ -93,6 +93,17 @@
     "children": []
   },
   {
+    "id": "5ce91240-4d78-43b1-b6ac-11aa3b46f94d",
+    "type": "linkCard",
+    "props": {
+      "url": "",
+      "title": "",
+      "description": "",
+      "imageUrl": ""
+    },
+    "children": []
+  },
+  {
     "id": "5b1aa832-9ce4-4479-a853-90b391d90c45",
     "type": "paragraph",
     "props": {
