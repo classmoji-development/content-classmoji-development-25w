@@ -7,17 +7,54 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "3b76f8cd-6aec-4e94-99fb-a5ed461df3ac",
+    "type": "alert",
+    "props": {
+      "textAlignment": "left",
+      "textColor": "default",
+      "type": "info"
+    },
+    "content": [],
     "children": []
   },
   {
     "id": "ccaf2b08-75f0-4f12-9724-987dc131d587",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "b036a613-3c72-4cad-99d1-d93808300ed6",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "a599efaf-e0d3-40b0-9660-d66c9df4e259",
+    "type": "callout",
+    "props": {
+      "textAlignment": "left",
+      "emoji": "💡"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "102b903a-ede8-4e07-9aaf-569d98acf6a2",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
