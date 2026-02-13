@@ -56,13 +56,16 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "567d8630-a544-4223-9c63-1396a0587e2e",
+    "type": "diff",
+    "props": {
+      "code": "",
+      "language": "diff"
+    },
     "children": []
   },
   {
