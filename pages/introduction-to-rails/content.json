@@ -1,11 +1,9 @@
 [
   {
     "id": "e42c3e8e-de48-4041-8550-429cf26aefdf",
-    "type": "paragraph",
+    "type": "codeBlock",
     "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "language": "javascript"
     },
     "content": [],
     "children": []
