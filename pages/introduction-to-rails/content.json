@@ -11,6 +11,17 @@
     "children": []
   },
   {
+    "id": "9b3deb45-a496-4cd5-ba9b-3e5273c77c5c",
+    "type": "alert",
+    "props": {
+      "textAlignment": "left",
+      "textColor": "default",
+      "type": "info"
+    },
+    "content": [],
+    "children": []
+  },
+  {
     "id": "05723b7f-ac61-466f-98c6-0c134be6a95c",
     "type": "callout",
     "props": {
