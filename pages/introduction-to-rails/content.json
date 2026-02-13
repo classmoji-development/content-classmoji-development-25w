@@ -7,29 +7,13 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "6e60a4a9-a068-41ff-9f5e-b7c573952196",
-    "type": "alert",
-    "props": {
-      "textAlignment": "left",
-      "textColor": "default",
-      "type": "info"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "d1e1e194-0b62-4d12-84f7-6f27b9bedbd3",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
