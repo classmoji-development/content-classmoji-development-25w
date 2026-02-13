@@ -20,7 +20,23 @@
       },
       {
         "type": "text",
-        "text": "constructor(){\n  }\n}",
+        "text": "constructor(name){\n    ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://this.name",
+        "content": [
+          {
+            "type": "text",
+            "text": "this.name",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " = name;\n  }\n}",
         "styles": {}
       }
     ],
