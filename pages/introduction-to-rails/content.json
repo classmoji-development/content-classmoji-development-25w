@@ -4,12 +4,12 @@
     "type": "callout",
     "props": {
       "textAlignment": "left",
-      "emoji": "💬"
+      "emoji": "📌"
     },
     "content": [
       {
         "type": "text",
-        "text": "Lundi matin",
+        "text": "Lundi matin ",
         "styles": {}
       }
     ],
