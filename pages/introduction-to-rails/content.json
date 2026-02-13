@@ -7,13 +7,16 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "a1004063-108b-4dc7-b51c-9e02bff003ef",
+    "type": "embed",
+    "props": {
+      "url": "",
+      "type": ""
+    },
     "children": []
   },
   {
