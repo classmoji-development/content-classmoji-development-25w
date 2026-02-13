@@ -4,7 +4,7 @@
     "type": "callout",
     "props": {
       "textAlignment": "left",
-      "emoji": "💡"
+      "emoji": "⚡"
     },
     "content": [
       {
@@ -67,13 +67,7 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
     "children": []
   },
   {
