@@ -18,13 +18,17 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "103e54b9-974a-4d92-8c29-a0093f69c9b0",
+    "type": "pageLink",
+    "props": {
+      "pageId": "",
+      "pageTitle": "",
+      "pageSlug": ""
+    },
     "children": []
   },
   {
