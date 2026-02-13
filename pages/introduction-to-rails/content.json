@@ -1,19 +1,11 @@
 [
   {
-    "id": "e1974c0f-4c83-4ba0-88bf-6d7a71f9efd0",
-    "type": "paragraph",
+    "id": "d5273079-87f6-4cb0-bdca-a5bfec9cf000",
+    "type": "embed",
     "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "url": "",
+      "type": ""
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
     "children": []
   },
   {
