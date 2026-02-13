@@ -7,17 +7,13 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "4905cda5-5968-4055-aae9-7df96cac7382",
-    "type": "pageLink",
-    "props": {
-      "pageId": "",
-      "pageTitle": "",
-      "pageSlug": ""
-    },
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
