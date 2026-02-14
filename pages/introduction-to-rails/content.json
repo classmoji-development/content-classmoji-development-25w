@@ -3743,6 +3743,17 @@
     "children": []
   },
   {
+    "id": "d6684107-bdf3-4152-bb50-b7ea8b4cbd52",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
     "id": "a46b1f36-63d5-4f1f-b04b-be20ffbe5f30",
     "type": "heading",
     "props": {
@@ -3805,6 +3816,17 @@
         "styles": {}
       }
     ],
+    "children": []
+  },
+  {
+    "id": "c4c3e19e-c7b1-4ec3-8671-430ec250a155",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
     "children": []
   },
   {
