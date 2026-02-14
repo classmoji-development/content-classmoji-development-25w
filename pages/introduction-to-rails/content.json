@@ -351,7 +351,7 @@
     "id": "5bf77da7-035e-40c0-b9c6-f5aeab2db1ad",
     "type": "terminal",
     "props": {
-      "code": "",
+      "code": "# also don't forget to run:\\\nnpm install #to fetch all your package dependencies",
       "title": ""
     },
     "children": []
