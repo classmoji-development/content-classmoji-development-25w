@@ -26,6 +26,19 @@
       "level": 1,
       "isToggleable": false
     },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "c3b7cdde-cb0f-4b25-84d4-1ea4073b578a",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 1,
+      "isToggleable": false
+    },
     "content": [
       {
         "type": "text",
