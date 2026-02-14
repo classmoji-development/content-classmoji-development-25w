@@ -4179,6 +4179,17 @@
     "children": []
   },
   {
+    "id": "af1d3908-6212-4e3f-8b8f-57264ba20246",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
     "id": "8f40de4a-f85a-4774-8dd7-7e63ff0daba3",
     "type": "heading",
     "props": {
