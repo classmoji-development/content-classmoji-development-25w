@@ -5215,6 +5215,17 @@
     "children": []
   },
   {
+    "id": "5d46b988-a0c9-47d4-ae42-b868b352a5c4",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
     "id": "5faad9eb-97aa-4225-8d1c-736732d321d9",
     "type": "heading",
     "props": {
