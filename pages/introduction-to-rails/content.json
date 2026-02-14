@@ -17,19 +17,6 @@
     "children": []
   },
   {
-    "id": "2c0a5b0c-3944-4253-94f1-be7238478e7e",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 1,
-      "isToggleable": false
-    },
-    "content": [],
-    "children": []
-  },
-  {
     "id": "af3d1220-e902-4975-96c0-540fda44e4d7",
     "type": "heading",
     "props": {
@@ -403,12 +390,12 @@
       },
       {
         "type": "text",
-        "text": " (e.g., ",
+        "text": " (e.g., `",
         "styles": {}
       },
       {
         "type": "text",
-        "text": "git checkout -b add-notes",
+        "text": "git checkout -b add-notes`",
         "styles": {
           "code": true
         }
