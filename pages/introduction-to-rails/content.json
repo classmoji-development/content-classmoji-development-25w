@@ -7225,6 +7225,23 @@
     "children": []
   },
   {
+    "id": "f02e1a4e-07de-495f-8b10-4b2e0b1c1fc6",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Our Firebase implementation works, but what happens when two users edit the same note simultaneously? Firebase uses \"last write wins\" — one user's changes get overwritten. For real collaborative editing, this is a problem.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
     "id": "4246b07d-9da2-40cb-910c-bb7dd7bcaaab",
     "type": "paragraph",
     "props": {
@@ -7255,23 +7272,6 @@
       {
         "type": "text",
         "text": " — no conflicts, no data loss. The CRDT handles merging locally, and you use Firebase to sync changes between clients.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "f02e1a4e-07de-495f-8b10-4b2e0b1c1fc6",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Our Firebase implementation works, but what happens when two users edit the same note simultaneously? Firebase uses \"last write wins\" — one user's changes get overwritten. For real collaborative editing, this is a problem.",
         "styles": {}
       }
     ],
