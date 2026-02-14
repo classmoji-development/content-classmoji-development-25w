@@ -3844,23 +3844,6 @@
     "children": []
   },
   {
-    "id": "5993f4cd-b80d-4f6b-b516-a55c5348eb19",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "powershell",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
     "id": "30dc0ab0-bff5-461d-ab85-ddf1a22a6a76",
     "type": "terminal",
     "props": {
