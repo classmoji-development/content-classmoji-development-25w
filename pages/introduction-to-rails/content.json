@@ -1,0 +1,7946 @@
+[
+  {
+    "id": "e8e040b8-04b2-4d0b-afaf-9d7b6199a605",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Where we dive deeper into React and construct a realtime collaborative post-it note app with React!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e2920faa-86d3-4bc5-8e8d-4b2221ad8536",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "VIDEO_EMBED",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "be889239-7b6c-4458-88f9-a244d53cfa95",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Part 1",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8a702228-4269-4440-a92e-30bde6ee3d57",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "We will start with a version of the app that does not have a backend, it’ll use state for notes but if you refresh the page all your hard work will disappear — and it’ll only work in one browser window.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ee17f52f-1851-47e9-9fe3-0742298b0d50",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🖼️ FYI, you all allowed to use component libraries now!  So if you wanted to use something like ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://ui.shadcn.com/",
+        "content": [
+          {
+            "type": "text",
+            "text": "https://ui.shadcn.com/",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " or ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://chakra-ui.com/",
+        "content": [
+          {
+            "type": "text",
+            "text": "https://chakra-ui.com/",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " or ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://mantine.dev/",
+        "content": [
+          {
+            "type": "text",
+            "text": "https://mantine.dev/",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " or ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://mui.com/",
+        "content": [
+          {
+            "type": "text",
+            "text": "https://mui.com/",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": ", you are welcome to! (shadcn I only recommend to use with AI). ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "34ba4337-e164-4d4a-8dc2-b62e0a81841c",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Part 2",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "4b11dbbc-293e-432e-923e-98cbc3ef65c3",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Then we will add in Firebase for persistent storage. Firebase is a backend as a service (BAAS). It provides a simple JSON data store (",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://firebase.google.com/docs/database/",
+        "content": [
+          {
+            "type": "text",
+            "text": "Firebase Realtime Database",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": ") that has some nice realtime properties. You can subscribe to change events on collections of objects, this is perfect to use with React!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b4594822-2953-49f9-96e7-e55602d9b546",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "This will involve a small bit of refactoring, but will demonstrate how you can prototype frontend and then add in server side later.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "2618dbca-6837-4579-8c6c-a52ffa0f0d79",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "In this version your notes will persist and will synchronize in real-time so multiple people can collaborate.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "50e9cb0b-b0b3-4b20-9eca-c91ba6fa6219",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Let’s Start",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "a404b2af-fd9a-476c-95c7-9f7a4490c992",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🚀 Assuming you did the pre-lab, then you have already started! ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f97bc1f7-34a4-4258-8d9e-4aa20d1bfbf4",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "If not then remember to use the repo provided for you by Classmoji.  Then you’ll pull in your vite+babel+eslint+(with the prior short react additions) starter code like so:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7a149085-ecdc-429c-8db4-ec625b1b8e38",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Terminal",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7e203120-2c27-4803-b53e-6bbd2bae0d37",
+    "type": "codeBlock",
+    "props": {
+      "language": "bash"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "#make sure you are in your project directory\ngit remote add starter your-starterpack-github-url\ngit pull starter main --allow-unrelated-histories",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f4de0142-540c-4469-a1ad-c088b6b1af86",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Terminal",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f84dce5d-92bb-4dd8-9f2a-c0da17c05da1",
+    "type": "codeBlock",
+    "props": {
+      "language": "bash"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "# also don't forget to run:\nnpm install #to fetch all your package dependencies",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "3bf2c02a-913d-4019-9b03-598e8513e882",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "The Workflow: Feature Branches + Plan Files",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "24a41638-4b38-48ea-b7a9-27f27290f33c",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "For each feature you add:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "880b9d2e-80f4-4095-8516-b13db0526bd5",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Create a feature branch",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " (e.g., ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "git checkout -b add-notes",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ")",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ce2b631b-8fed-4413-98fe-f72381b39a9a",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Enter plan mode",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " and create a plan for that feature",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9accad4c-1c30-4fe5-9ca2-3c90a69e4a1b",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Copy the plan file",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " from ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "~/.claude/plans/",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " to ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "plans/feature-name.md",
+        "styles": {
+          "code": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d792f24e-47f3-431e-bc8d-328cef823da5",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Implement the feature",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " following the plan",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "02a8f1e0-026e-4b41-b7cb-88bfde6edba9",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Commit and merge",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " the feature branch",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "efd13b5b-81b9-401f-9b64-7346c7e63313",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Repeat",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " for the next feature",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "0e384bd7-a64f-4a56-abc4-830ff9a7126a",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "If working with AI: Do not one-shot this assignment.",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " We want to see your thinking process as you build incrementally. Each feature should have its own plan file.\n\n",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "If you are not working with AI:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " then you don't need the plan files, but you may still find it helpful to discuss ahead of time with claude. ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "75a59fa9-772a-43d4-bca5-c0c8dc44b7ea",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "What are we building?!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f0120f54-076a-4891-b572-6d0f2d0a800b",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-3-react-notes/assets/double-window-1767548477530.png",
+      "caption": "",
+      "showPreview": true
+    },
+    "children": []
+  },
+  {
+    "id": "b0b295f7-90ec-487f-8963-6e4902cb5b3e",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "A post-it note style app where users can add notes, move them around, edit them, and delete them. This React app will use Firebase as its backend to store collections of notes. The position of notes will also be stored, so people in multiple browsers can edit and arrange them in real-time. The notes themselves will support markdown notation and editing.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7a16b71d-bb50-4865-9297-b1126b5bbf63",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "For Part 1, the app will store state in memory only and won’t use Firebase yet. But here are the overall specs of the full project.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7160ff95-3ae1-4d3b-85b8-75be451955f0",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Minimal Functional Specs",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "4d75c09e-a653-479d-a796-95120881ff96",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Notes App:",
+        "styles": {}
+      }
+    ],
+    "children": [
+      {
+        "id": "3b9342c8-7ec9-4212-966a-cd1853574efd",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Add a note:",
+            "styles": {}
+          }
+        ],
+        "children": [
+          {
+            "id": "60f074b8-a453-4bbe-8161-6ffbd88cc120",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "can either be a single title input + create button",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "61165929-8214-4c10-8f61-244d45a98161",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "or a modal if you prefer with all fields",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "1e13b6b9-7d2a-4145-aaac-0cafc35a2c4f",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Delete a note",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "1925958f-fa41-4b7f-8f1a-be94b1eff933",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Move a note in x, y",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "269cf190-3383-472a-8d27-c57c63044ffa",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "zIndex sorting: clicking or dragging a note brings it to the front",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "659b7205-822e-4a4b-889b-3aec04ffdbfb",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Edit a note:",
+            "styles": {}
+          }
+        ],
+        "children": [
+          {
+            "id": "8caffb10-657d-4b69-81e4-f90c6493b162",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "title, content",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "eab08793-ed3a-4487-85db-1d0a8b99fd4c",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Notes:",
+            "styles": {}
+          }
+        ],
+        "children": [
+          {
+            "id": "89a8c762-6da4-4be9-94bb-262ea36a29d6",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "have title and content",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "95f3ff3f-adb2-4cd7-8596-31b7f4dc0f2e",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "content has formatting support (markdown or other)",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "f0e77bc3-a8c5-4bd8-a70d-a1b8cd099b58",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Persists all changes to Firebase in realtime",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "3cc95bb6-e297-4c41-a983-4502ac9faaae",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Updates based on Firebase events",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "e19bb1d8-0ad4-4d9b-a931-9b68e7cc06a9",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "is at least as stylish as these mockups",
+            "styles": {}
+          }
+        ],
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "64964430-5c9e-4ccf-ad03-c653c86adb60",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Note: you are welcome to use CSS frameworks to help with styling (but be careful as the JS that comes with some of them does not play nice with react).",
+        "styles": {
+          "italic": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ab4b3184-902f-4bb6-bfb6-8d6ff2294581",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "App Component",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "55588d90-63dc-4e00-ae63-fb6e3ab00101",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "The skeleton for this is already in the starter. Does it need to be a smart component? It depends on how you organize your components, but you could do something similar to the react short assignment where the ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "App",
+        "styles": {
+          "italic": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " component holds most of the state.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "fa42adac-02c9-47cb-9237-a70c954f693b",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Here is a test note that I used to start with with the minimal set of fields:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "859b2eb4-602c-46a5-9685-5baf4b479606",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8485f675-7c26-4efb-bec2-9eed9c8361eb",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "1234567",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5d2aac9f-5c0e-4ea5-baff-0bdcc598a95c",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  title: 'testing',\n  text: 'I is a note',\n  x: 400,\n  y: 12,\n  zIndex: 26,\n}",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f7d3ee6f-99c9-4e91-83d2-0d21b3dd430d",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Immer JS",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8c402c19-4312-4980-836a-b80cdea75644",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Before we go on, we should talk about ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://immerjs.github.io/immer/",
+        "content": [
+          {
+            "type": "text",
+            "text": "Immer",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": ". And immutable data structures in general!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "593f97ef-b834-42f5-8397-146879480148",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "We’ve discussed how mutable data structures can be dangerous and unpleasant — data changing without you knowing about, etc. React is built around the idea that state in particular should be immutable. You have ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "new",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " states, but you don’t alter existing state. As we dig deeper into react and functional programming we’ll see the insistence on ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "pure",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " functions and immutable data more and more.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "80996686-edbd-44cc-bc73-895c74056d3d",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "For this assignment we’re going to play with a library for making our state immutable and easier to work with at the same time.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6440f0dd-0704-4c62-ab21-9b59d650ba49",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "There are several reasons for this:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "673f32ba-be8a-4fb3-bc71-62a300492993",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "in Part 2 we’ll be handing over state to Firebase and we are going to structure our data to make that easier / more similar to how firebase works.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "739f7f0e-5aec-438b-b02c-f63a741bcb79",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "cleaner api than trying to make sure we remember to deep clone objects to guarantee it is a new state object.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "3fb9d178-d4ea-457c-9e8e-e60ecd43c246",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Feel free to peruse the Immer ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://immerjs.github.io/immer/produce",
+        "content": [
+          {
+            "type": "text",
+            "text": "docs",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " for more info on how and why it is cool.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "de867cdb-3c00-4313-873b-bca876b66235",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🚀 Install Immer",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "74b42ca3-291e-412d-b016-1166f04166f2",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Terminal",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7230e87b-658f-41fd-89c8-14db0162cab4",
+    "type": "codeBlock",
+    "props": {
+      "language": "bash"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "npm install immer",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ca5d7204-4b65-40d5-8117-df18387aaa1e",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🚀 Now wherever you run a setState you can use ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "produce",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " to create the new state!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "54e24c4e-b9ae-4a1c-8c6c-ea899ae05482",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "731b9110-8aba-4f36-823a-e646cd790fd7",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "1234567891011",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d8f6d4c1-a538-4e6c-981b-d069fdbc7ba1",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "// for example if your notes state looked something like this\n// notes = { id1: { title: 'hi' text: 'a'},  id2: { title: 'bye', text: 'b'}}\n\n// to update you could run something like this\n// const updatedFields = {title: 'howdy'}\n// using hooks to set the state of notes\nsetNotes(\n  produce((draftState) => {\n    draftState['id1'] = { ...draftState.notes['id1'], ...updatedFields };\n  }),\n);",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b999c7de-19aa-43b2-8e14-0d94d3e23e03",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "You might ask, why did we make notes an object rather than an array?",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "94176fd8-dde8-4dba-adc0-97c798263d05",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Good question! ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8a22fda0-02ad-4f2a-ad67-50040b8395ca",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "this will make deletion and updating quicker as ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "O(1)",
+        "styles": {
+          "italic": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " hashmap lookups rather than linear list traversal.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "15635920-33bf-4023-bfe2-2e37f930053a",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "a dictionary/hashmap/object is basically the format that Firebase will give us later so it will make refactoring our code in Part 2 much easier",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9a3ddf01-aaca-477b-a0fc-22bf0f260c35",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "⚠️ You will most likely get eslint yelling at you for assigning to a parameter.  That is it doesn’t like that you have a function with draftState as an argument that you are then reassigning.  That is what Immer does though so I would recommend ignoring it like so:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "edd8346e-61ba-4972-a204-ee27beb55181",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8335d167-92c1-4ef8-bbc7-3e5662cfe9b5",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "12",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6df41d9b-c4c2-4ae7-9418-2cd13c3038b6",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "// add this rule to your eslintrc\n\"no-param-reassign\": [\"error\",{ \"props\": true, \"ignorePropertyModificationsForRegex\": [ \"^draft\"]}]",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "836dc747-1eb5-4308-a5c5-f9fffe34b0d6",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Notes State",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b5a73507-5bce-4cd7-8baa-9e44c8ae75e3",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Our main state object (note you may also have react components that have local state for things like editing or for driven fields) is going to simply be a javascript object that looks something like this:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "97f9d740-5c87-4e41-b1da-831125e2ac58",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "337645e2-9be1-47a0-b964-3b9f49b7fce2",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "1234567891011121314",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1f10d6eb-7268-4733-87d9-ae75e98658d0",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "// assuming our state starts with\nconst [notes, setNotes] = useState({});\n\n// and that our overall states looks something like this, a map of maps\n{\n  id: {\n    title: '',\n    text: '',\n    x: 0,\n    y: 0,\n    zIndex:0,\n  },\n  id2: { ... },\n}",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "19eff3af-3b1c-4e9b-8b58-cb5fc924832b",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "An object with unique note ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "id",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "s for the keys and note objects as values. Since ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "id",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " is not inside of the note object this will require a couple of workarounds, but in general is a common way of storing things in a JSON. You are welcome to duplicate the ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "id",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " inside of the note object also if you find that easier.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "643980fe-3e71-45f0-9017-8523b52155cc",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "In Part 2 we will be getting something like this from Firebase:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f5e16b69-80ae-4e3d-bd09-e92a941d3e4c",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "Lab3-firebase.png",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-3-react-notes/assets/lab3-firebase-1767548477530.png",
+      "caption": "",
+      "showPreview": true
+    },
+    "children": []
+  },
+  {
+    "id": "cf9bb4ba-d3b8-4194-a5fe-8de4b1e40f00",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "But for now let’s worry about our own state — We’ll do Firebase later.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "bc6b2383-2242-45ff-a75a-3cc7f1f7a8cf",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Wait, but where do the unique note ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "id",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "s come from? Eventually they’ll be generated by Firebase or our own database, but for now we can just use an integer counter. This is ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318?source=linkShare-6b351af67702-1488669847",
+        "content": [
+          {
+            "type": "text",
+            "text": "not good practice",
+            "styles": {
+              "bold": true
+            }
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " because if you have clashes in keys you can and will get weird behavior as react can’t tell the elements apart. Again - once we move to using a database unique keys will be generated for us. Here’s a good explanation of why ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://stackoverflow.com/questions/28329382/understanding-unique-keys-for-array-children-in-react-js#answer-43892905",
+        "content": [
+          {
+            "type": "text",
+            "text": "unique and unchanging keys are necessary",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b15b4c2d-4efb-408a-8afe-c40d869e1bdd",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Immer & You",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8dc69c8b-a903-4700-9ff1-44171cd77842",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Here’s some tips about dealing with a few different state use cases and how Immer is going to help us.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c9e49bcf-31bb-46dc-ad28-382c5f561435",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "You can think of Immer ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "produce",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " as a helper function to ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "setState",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " that will take in previousState as an argument which you can then modify (mutate) and then Immer will produce a new version of it. It keeps track of changes and is performant in how it returns newState.  Remember that what React expects, like a state machine, is a brand new state, not a modified object/array/string etc.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f5780bd3-7383-47e5-8e2e-ea9cf7ce2dad",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Deletions",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ":",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "2f9e6e63-a07d-4196-b1dc-a35d7e405388",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Here’s an example of using it for setting a new notes state on deletion of a note.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "0015407c-e83e-4664-b86f-444df82beea2",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "fa493196-8eb7-4010-a8ed-94abc0681336",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "123456789101112131415161718",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9d8af143-189b-4193-b754-36cdfc95230d",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "\n// instead of some obtuse code for filtering an object to return a new object sans that specific one\nsetNotes((prevState) => ({\n  Object.fromEntries(Object.entries(prevState).filter( ([note_id, note]) => { note_id != id}))\n}));\n\n// we can use produce and simply modify\nsetNotes(\n    produce((draft) => {\n        delete draft[id];\n    }),\n);\n\n// we could also do it this way:\n// const updater = \tproduce((draft) => {\n//\t\tdelete draft[id];\n//\t}),\n//setNotes(updater);",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "eca60849-e882-41e9-8cde-fa3395a267ab",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Additions",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ":",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "183f0aae-7ca8-46c9-b42e-4c0c0172986c",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5ad8ab0c-6729-4c17-b730-370d353a710f",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "1234567",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8a80c3d5-3fd9-4cc8-a698-e3b9bcfd0cf7",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "setNotes(\n  produce((draft) => {\n    //draft.notes[id] = newNote if you are using class components with a nested object for state\n    // for hooks, draft is already notes\n    draft[id] = newNote;\n  }),\n);",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5b5b2ec5-841e-4143-abad-5d12237a0944",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "If we were to do this without produce and with a plain array it wouldn’t be too bad, something like ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "[...notes, newNote]",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ", but if we were to do this with a javascript object, we’d first need to clone the object, which can get tricky for nested objects.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7a818fba-f75f-4e6d-849b-a45cca09b350",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Here is how you could shallow clone an object:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "3ba8a8c9-eaa7-456b-aac1-d7a9fc61f8c1",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b1dd5ce6-a9f7-4b78-89d2-9b61f0461e27",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "12",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c1388833-1655-45d9-ad80-e07a6f5d77e0",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "// newNote = { title: '', etc }\nconst newNotes = { ...notes, newNoteID: newNote };",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "74b5d89b-0d50-40ec-b3cd-227ef6072671",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Confused? This uses spread notation to copy out all the top level keys from the previous notes into the new ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "{}",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " object! However, it only does the top level properties, so each nested object is still a reference rather than clone. Deep cloning is hard and slow if you are doing it manually. Immer makes it speedy and most importantly if you get used to using Immer to ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "produce",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " new state for ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "setState",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " you will never have weird state mutation bugs. ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d6ec34d5-a0ec-48d8-a8ef-1a0f21d0ebc0",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Great, now that you know how to clone an object we’ll do that for updating a note!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "68809fcb-9287-4e19-8e4e-4ec989e420e8",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Updates",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ":",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "3bf29a0f-316f-4fd6-b73c-5ae3ebf7db0f",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Now that we know how to take an object and merge properties on it we can use that as our update function:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6fb67dab-0ea4-42a2-90ab-86da8b10713b",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "83a2218e-a52f-46de-bbb3-261226459ff8",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "12345",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "eb64c788-34ae-4cea-89ef-b40bc32060c9",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "setNotes(\n  produce((draft) => {\n    draft[id] = { ...draft[id], ...fields };\n  }),\n);",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "13554852-f290-45f4-aa7a-d73e0880cab8",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "How Do You Iterate Through An Object?",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "12768f3c-3986-4145-b2f0-21fff11b777b",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "If you are iterating through your Object, you might find that you need to extract both the key (the id) and the value (the note).",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "0f1241bf-0278-48dc-bb5e-9b5b5a5fe6de",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Thankfully we have a nice function ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Object.entries",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " that returns an array of arrays like so ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "[[key, value]]",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " so you can use the array function ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map",
+        "content": [
+          {
+            "type": "text",
+            "text": "map",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " over that and return the instantiation of a note component (for instance).",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "86fc8f7f-0798-4cf8-8d6e-36b88b55e51a",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9f6a5ea2-9b0d-41d3-a8c6-2c6a797eea65",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "1234",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6215f99a-2586-45b8-b89b-2ea10d672038",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Object.entries(props.notes).map(([id, note]) => {\n  // perhaps you might return some jsx here :-)\n  // return (<Note id={id} note={note} /*...*/ </Note>) // for instance maybe\n});",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "684bd1ff-42cf-4423-b6dd-35746983e272",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Note Component",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6efc05ce-773b-44e1-b515-7a01ea6cbd69",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Ok, so you will probably need a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Note",
+        "styles": {
+          "italic": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " component. What might a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Note",
+        "styles": {
+          "italic": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " do?",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "fab740a8-ae08-4271-9550-449019c0ee9f",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "A Note:",
+        "styles": {}
+      }
+    ],
+    "children": [
+      {
+        "id": "2d4e5ef1-67a8-484f-8822-f4108ecf8ef7",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "displays title",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "61c67e8f-d3d8-430c-a332-8cb2ffbd4575",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "displays content",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "943fcd14-caed-42f3-9f44-4c59043f51ed",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "is draggable",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "132c64a5-d8de-4080-b722-7e7b5556ae04",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "is editable",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "87bc5bae-af57-491c-b81f-e9eee841858d",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "is deletable",
+            "styles": {}
+          }
+        ],
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "122198c5-3f4b-4960-9f89-23a8de9ebf60",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-3-react-notes/assets/note-1767548477530.png",
+      "caption": "",
+      "showPreview": true,
+      "previewWidth": 332
+    },
+    "children": []
+  },
+  {
+    "id": "1c77878c-ba63-4a59-a4d0-8a5ff3782106",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Displaying Title and Content",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "aead5ebe-04ca-4109-832c-6200fdb2d1ba",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Is left as an exercise for the reader. 😡",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "319d8a93-a624-4628-a777-a9af7a638737",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Dragging",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "25809ee4-47c1-494d-b44d-27a73156ae74",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Dragging is a bit tricky, but you can simplify your life by using a component from the onlines. I recommend ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://github.com/react-grid-layout/react-draggable",
+        "content": [
+          {
+            "type": "text",
+            "text": "react-draggable",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": ". ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "(remember we are using ",
+        "styles": {
+          "italic": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "npm",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " for package dependencies)",
+        "styles": {
+          "italic": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "2c418fc6-a36e-4c51-9a3c-5557fc3385b7",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "The basic idea is that you would import this new component just like you have been with your own components and then it has some props that you pass into it for configuration.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "076588b5-7f50-4f19-bb16-66aed499e2ef",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Here is an example:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c2a55f56-f809-4b9c-8a48-2db4cf27599c",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "20d22e6b-1d03-481b-8857-4a996eebcbfb",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "1234567891011121314",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "797bc160-59fd-4c3c-b262-2999e294b683",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "<Draggable\n  handle=\".class-of-note-mover-element\" // this is for you to define, what part of the note do you want to drag by\n  nodeRef={draggableRef}\n  grid={[25, 25]} // snapping to grid pixels\n  defaultPosition={{ x: 20, y: 20 }} //if no position given\n  position={{ x: yourX, y: yourY, width: yourWidth, height: yourHeight }}\n  onStart={handleStartDrag}\n  onDrag={handleDrag}\n  onStop={handleStopDrag}\n>\n  <div ref={draggableRef}>\n    YOUR ACTUAL NOTE HERE title, content, drag handle etc\n  </div>\n</Draggable>;",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "11a1f23b-e0cd-4e02-bdca-730dd1d72587",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "The way to use this component is to wrap whatever JSX you want in your ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Note",
+        "styles": {
+          "italic": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " render method in ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "<Draggable>",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "084e063d-e55a-417f-affd-8be9a5762b36",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Note the 3 callbacks. ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "handleStart",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ", ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "handleDrag",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ", ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "handleStop",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ". You would use these to drive the position of the note. You’ll want the position to be part of the note object as eventually we will synchronize using a cloud component. You may find that you only need to implement ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "handleDrag",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "699375ad-6afa-4cfd-b91c-319616d6c0ee",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "In particular, Draggable will call the function ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "you",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " provide to ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "onDrag",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " with two arguments, let’s call them ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "(e, data)",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ". ➠Just to save you some digging, ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "data",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " will have ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "x",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " and ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "y",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " components so you can extract them and use them for your ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "note.position",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " state. ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "37b4a888-f517-45e5-824c-faf2272cefa5",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "⚠️ Note: you do not need to do anything with calculating deltas etc, draggable will give you the new x, y coords directly.",
+        "styles": {
+          "italic": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7dfdc56f-7e59-409d-b30c-21e51ae3b9e9",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Here’s a potential component hierarchy you could end up with:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ac03187d-8069-4e7e-8e7b-cb50df9832fd",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "HTML",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "dc43e8c2-f3a2-4b28-8ec8-82767a6d0a71",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "123456789",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5e98ed81-96f3-43a8-9158-d5dce0786f9c",
+    "type": "codeBlock",
+    "props": {
+      "language": "html"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "<Note>\n  <Draggable>\n    <div></div>\n  </Draggable>\n  <Note>\n    <Draggable>\n      <div></div>\n    </Draggable> </Note\n></Note>",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "af76f3e5-5001-4254-b0f0-0b37b25a8af4",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Note: this is not how any of your render methods would be, this is just an illustration of how the output might appear to help conceptualize where ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Draggable",
+        "styles": {
+          "italic": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " fits into the picture.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "98780ddd-0243-46cd-9f07-b951a0e0bd04",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Delete",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5911148b-8c90-46e9-83a4-4392fe12ef8d",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Delete is fairly straightforward, you would have some clickable element assigned a callback that would be passed up to trigger a delete. I used some ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://fontawesome.com/start",
+        "content": [
+          {
+            "type": "text",
+            "text": "font-awesome free webfont css",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " icons. ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Note: alternatively you can use ",
+        "styles": {
+          "italic": true
+        }
+      },
+      {
+        "type": "link",
+        "href": "https://github.com/FortAwesome/react-fontawesome",
+        "content": [
+          {
+            "type": "text",
+            "text": "react-fontawesome",
+            "styles": {
+              "italic": true
+            }
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f573959e-dbbb-43ba-bcdd-d50d94cf2134",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "HTML",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "af329074-b639-4ea1-9b19-7b5d41b1edde",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "1",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "07053579-3e66-4344-a191-730fc752d7de",
+    "type": "codeBlock",
+    "props": {
+      "language": "html"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "<i onClick=\"{this.handleDeleteClick}\" className=\"fa fa-trash-o\" />",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f8ebcadb-0cdb-4ce9-8b31-b9f2940b1b5c",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Accessibility",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f2777fb1-0e4e-4671-83d3-923185c2f7da",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "If you used the line above (essentially an icon that has a javascript delete function onClick) you may have found that you got a bunch of ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://www.a11yproject.com/",
+        "content": [
+          {
+            "type": "text",
+            "text": "a11y",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " errors. These are errors related to accessibility, trying to help developers create code that is compatible with various accessibility technologies such as screen readers. The errors here in particular are:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9f3820cd-84f7-49c7-b79d-84f19c6dfc06",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-static-element-interactions.md",
+        "content": [
+          {
+            "type": "text",
+            "text": "no static element interactions",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " if you have an ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "onClick",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " you need to also specify the ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "role",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " for click. Is it a button? A link? Other? There is no way for accessibility tools to determine from the generic element type what the purpose of the click is.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8c359f4a-8cd6-4d1c-b913-2fb32a11aa9a",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/interactive-supports-focus.md",
+        "content": [
+          {
+            "type": "text",
+            "text": "interactive supports focus",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " specifies that clickable elements must be able to be tab-able to.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "648c384e-cf4e-4e57-accc-9b7693eb094e",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-associated-control.md",
+        "content": [
+          {
+            "type": "text",
+            "text": "control has associated label",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ef3d17e7-b1ae-4458-b016-8d920e00f8cb",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Please read these and fix the code based on what you find. You’ll be guided through adding in several attributes to annotate interactive elements in such a way that screen readers can understand how to present them.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8ab61847-02a0-40ea-bde9-c1bd31407e9d",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Edit",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7f28be1c-0dc0-4b2a-93a4-4497d801e912",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "There are several ways to implement this. You could have a button that opens up a modal, or you could do in-place editing, switching out the display JSX for an editing box.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "90937fba-aa09-44ee-8f17-b22da33aae84",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Here’s some tips! For in-place, I would recommend having a boolean in your ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "local component state",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ", something like ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "isEditing",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " and then in your render function simply switch out which you are displaying based on that state. 🚨 Not a global variable, this is state. ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "342fdecb-96e3-49b1-a84a-53d401151438",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Here is a common pattern for having clean and readable ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "render()",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " functions:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9c272e45-6016-4f82-b7c1-8b3a51eccba1",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "54fab478-8697-466a-a2bb-6ce41becbba8",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "1234567891011121314",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b66da7b4-88ff-4a32-be4f-5ef2a6805ff2",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const renderSomeSection => () {\n  if (isEditing)\n  {\n    return <div>editing!</div>\n  } else {\n    return <div>the usual stuff</div>\n  }\n}\n\nreturn (\n  <div>\n    {renderSomeSection()}\n  </div>\n);",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "37dd3021-b8ce-4920-93c5-3b5a6fa5b66c",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "note-edit.png",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-3-react-notes/assets/note-edit-1767548477530.png",
+      "caption": "",
+      "showPreview": true,
+      "previewWidth": 368
+    },
+    "children": []
+  },
+  {
+    "id": "68942b53-37a6-430b-a4f1-ac7d5dd94798",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Markdown",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "29eb42a4-cee0-4322-a1b6-ca7ca69e092d",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "For markdown support in the main text portion of the note, you can use the ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://github.com/remarkjs/react-markdown",
+        "content": [
+          {
+            "type": "text",
+            "text": "react-markdown",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " package.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9edc5fee-ca04-4089-af75-c5624408ae6b",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "af6efb0d-0030-4e71-80f6-753ca3d8c3d2",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "1234",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "cff6cb93-ea28-425b-a93e-6ced30e4b3a7",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "import ReactMarkdown from 'react-markdown';\n\n// then just use something like this where you need it!\n<ReactMarkdown>{props.note.text || ''}</ReactMarkdown>;",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6ecfcbc6-7cfc-417a-93a2-1647d53f126e",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Once you have this working you can test with some markdown syntax!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "841f25f2-cb36-4015-ae76-8a12e60f9567",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "92e05d53-8ec1-46bf-a019-f4930079b62f",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "12345678910111213141516",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6a0e3a10-2b76-443e-986b-567fc46991ae",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n 0: {\n   title: 'testing',\n   text: '![](http://i.giphy.com/gyRWkLSQVqlPi.gif)',\n   x: 400,\n   y: 12,\n   zIndex: 10,\n },\n 1: {\n   title: 'headings',\n   text: '# large ',\n   x: 300,\n   y: 300,\n   zIndex: 20,\n }\n}",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "dd60c460-04dc-416e-8a75-cdf8f86eb172",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Part 1 testing",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "0bfc0be5-8692-4422-b1e6-a65daa2eacea",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Ok, at this point you should have an app where you can add notes, move them around, edit them, but when you reload the page it all disappears. Test it out, make sure it all works before you move on!  You have a working SINGLE USER mode, essentially.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "12530845-d0c9-4b35-a15c-824e898eccab",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🙏 Recommendation: Do ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "not",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " start part 2 until part 1 is fully working! ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "87acc026-67b4-40aa-ba87-bd52adc50855",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Push it!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "82e2899f-e682-4c88-95e9-5be35f6068c4",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🐙 Before we continue let’s make sure we’ve committed and pushed everything. ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "bd0eaa1e-4b6a-4127-88f6-25bccdbe9c04",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "powershell",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1d2e4508-6113-4bec-bed3-d94c65a446bc",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "12",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7445546c-6e30-4778-8a09-261a90717b3e",
+    "type": "codeBlock",
+    "props": {
+      "language": "powershell"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "git commit\ngit push",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f406453e-d10c-4145-a984-c1bb9b492508",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-3-react-notes/assets/react-notes-architecture-1767548477530.jpg",
+      "caption": "",
+      "showPreview": true
+    },
+    "children": []
+  },
+  {
+    "id": "2680927b-ed98-43cd-9e6e-8a5d794fc8db",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Now that we have a working stand-alone app, we should connect it to backend to make it cool and collaborative, MULTI-USER and COLLABORATIVE! We need persistent storage to enable our notes to not go away on reload and to synchronize the notes across different instances of the app.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "078f7402-07e4-4f10-a2a9-2a226fc982e4",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "One way to add persistent storage is to use a backend as a service (BAAS) platform. Firebase is one such platform that provides a JSON based database (",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://firebase.google.com/docs/database/",
+        "content": [
+          {
+            "type": "text",
+            "text": "Firebase Realtime Database",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": ") that has some nice realtime properties. For instance you can subscribe to change events on collections of objects. Can we use Firebase with our React app? You bet!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "a4fc7836-782e-427b-9474-d9bdb90e4ee4",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Note: we'll be using Firebase Realtime Database for this rather than the newer Cloud Firestore, although both would work for our purposes.",
+        "styles": {
+          "italic": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "60fa22c1-dbdd-4bf1-9e2d-cc63bf591f09",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "BAAS Alternatives:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " This lab documents Firebase, but you are ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "welcome and encouraged",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " to explore other platforms! Each has different strengths:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "4411039a-9cb3-4c14-adf9-49c348e89dbd",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://supabase.com/",
+        "content": [
+          {
+            "type": "text",
+            "text": "Supabase",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " — Open-source, PostgreSQL-based (full SQL support), self-hostable, great if you prefer relational data",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "46787815-d40f-4446-94b5-7d36ac1c44e2",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://www.convex.dev/",
+        "content": [
+          {
+            "type": "text",
+            "text": "Convex",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " — TypeScript-first with automatic realtime subscriptions and ACID transactions",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8e214892-f1ed-412b-b799-98ab49380d55",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://liveblocks.io/",
+        "content": [
+          {
+            "type": "text",
+            "text": "Liveblocks",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " — Collaboration infrastructure with built-in presence, comments, and CRDT support",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d013c050-77db-4f69-9add-4b61ad85a795",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://partykit.io/",
+        "content": [
+          {
+            "type": "text",
+            "text": "PartyKit",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " — Edge-first realtime with WebSocket rooms, great for multiplayer experiences",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b1e206b0-9c2c-4558-86dc-2d84a288a454",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "All of these support realtime updates and would work for this assignment. If you choose an alternative, document your experience — we'd love to hear what worked!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "43bcce4a-5625-4317-8adf-b55a9a48850e",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Let’s add Firebase as a Feature",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d8ee8bbf-df91-4ed5-aa49-266b894408ad",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🚀 Create & checkout a new ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "add_firebase",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " feature branch for our work on part 2!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6d9f5dc3-5ba9-41a2-b06b-614e496b5211",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Terminal",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "be0828ed-177a-4e50-997e-11b4d770c197",
+    "type": "codeBlock",
+    "props": {
+      "language": "bash"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "git checkout -b add_react",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "afe87788-535a-45bc-bd90-759e0e4880f5",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Reminder of specs",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "826ba49c-f5b3-4a7c-8787-5efb40eeb52c",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Notes App:",
+        "styles": {}
+      }
+    ],
+    "children": [
+      {
+        "id": "2ba7f68d-c558-4f4c-b4d5-ba6a7ba9575e",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Add a note:",
+            "styles": {}
+          }
+        ],
+        "children": [
+          {
+            "id": "b70ab75e-a112-4ed5-877f-e41b6b542a19",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "can either be a single title input + create button",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "35108f7b-217e-47ba-866c-4261a30b25f8",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "or a modal if you prefer with all fields",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "b73f4387-0eeb-4cc7-904d-c8d0860ca0a5",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Delete a note",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "04ec5e33-6db8-4069-b0f3-5705abc88d00",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Move a note in x, y",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "1c8f55f9-9843-45ba-ae86-bac45853a37a",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "zIndex sorting: clicking or dragging a note brings it to the front",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "ff4e93ca-efa9-44a7-97bf-981d46b83745",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Edit a note",
+            "styles": {}
+          }
+        ],
+        "children": [
+          {
+            "id": "c938ab1e-b336-47e3-91c8-c9e3a5728ca1",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "title, content",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "9fa131f2-904a-433c-bb09-a9d5415db23b",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Notes:",
+            "styles": {}
+          }
+        ],
+        "children": [
+          {
+            "id": "4e7fbb8e-f24a-4e4c-8522-bdd940df6dff",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "have title and content",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "683091a4-56a6-4da3-b0d0-a8aa48166498",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "display with some formatting",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ac0587ab-fb29-4bed-93b8-3e62b7b31d87",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Persists all changes to Firebase in realtime",
+            "styles": {
+              "bold": true
+            }
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "d455b18c-a88a-492b-9cdd-851f581ff31a",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Updates based on Firebase events",
+            "styles": {
+              "bold": true
+            }
+          }
+        ],
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "6bbb1341-5f05-4930-9803-69c92829bef2",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Firebase",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8250ad7a-c266-4694-aa66-0b2d3d301d08",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-3-react-notes/assets/firebase-logo-1767548477530.png",
+      "caption": "",
+      "showPreview": true
+    },
+    "children": []
+  },
+  {
+    "id": "46b976b1-c393-4dbf-a2b7-91c7096793af",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🚀 Create an account and new project at ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://firebase.google.com/",
+        "content": [
+          {
+            "type": "text",
+            "text": "firebase.google.com",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " and start a new project!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "4bb650bf-c27e-42c8-836b-2032050a39d3",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-3-react-notes/assets/firebase-name-1767548477531.jpg",
+      "caption": "",
+      "showPreview": true,
+      "previewWidth": 445
+    },
+    "children": []
+  },
+  {
+    "id": "e0284d71-2a43-4147-9d45-39bf0facb4e9",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🚀 In your new project start a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Realtime Database",
+        "styles": {
+          "code": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b5f7f7aa-96a7-4700-adaa-19618a4a4601",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "Screenshot 2025-04-18 at 9.39.07 AM.png",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-3-react-notes/assets/screenshot-2025-04-18-at-9-1767548477531.png",
+      "caption": "",
+      "showPreview": true,
+      "previewWidth": 646
+    },
+    "children": []
+  },
+  {
+    "id": "4e8be000-cf70-40c6-b6da-136156c096a1",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🚀 Enable Realtime Database with public access",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b11cd3b0-328a-4b87-be0d-494b949cd80d",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "Screenshot 2025-04-18 at 9.40.54 AM.png",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-3-react-notes/assets/screenshot-2025-04-18-at-9-1767548477531.png",
+      "caption": "",
+      "showPreview": true,
+      "previewWidth": 658
+    },
+    "children": []
+  },
+  {
+    "id": "cc9e9d08-3455-4a65-afe7-e42069ec1996",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "By default Firebase only allows authenticated users access to the realtime database, unless you open it up.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b059a943-225d-464c-ad0a-7fdf763c651b",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "The test mode ACL (access control list) only gives you 30 days. You can override it or set it to last through finals! ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e7f18b66-a8b1-42bc-83d5-b45035139eda",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JSON",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "30bc5609-618b-43ae-a7fc-7922ff391a97",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "123456",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5602149a-92d2-4e7e-8826-b82a054d76ea",
+    "type": "codeBlock",
+    "props": {
+      "language": "json"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"rules\": {\n    \".read\": true,\n    \".write\": true\n  }\n}",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "29c29cc4-b2db-4b11-ba1f-56d024d50e5f",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "For now we aren’t going to use authentication, but you can configure your app permissions to allow public read/write while testing.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "a891d7a7-9286-4b9b-aa8b-d2abcabbc5ea",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "You can see other ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://firebase.google.com/docs/database/security/quickstart#sample-rules",
+        "content": [
+          {
+            "type": "text",
+            "text": "sample rules",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": ", but for now public is what we will use.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e09f3680-cb35-48e1-8f97-8bac96154c8a",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Note: it is extra credit to add authentication for users to your app and not just allow anybody to post notes.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "a9d5cacf-7c60-4f61-8aa9-8bc52093d912",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🚀 Let’s add the firebase js library to your project:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e83a8a46-415d-4e0a-b336-a47548fa1d72",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Terminal",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "a40b58dd-7f23-4c13-80df-44945066fca4",
+    "type": "codeBlock",
+    "props": {
+      "language": "bash"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "npm install firebase",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d6976094-056f-4599-8244-f3100f77f11b",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🚀 Now go to your ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Project Overview",
+        "styles": {
+          "italic": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " page -> ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Add Firebase To Your App",
+        "styles": {
+          "italic": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5efef44d-a147-4399-badf-126106070179",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "You’ll need to grab the ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "config",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " part that looks something like (grab the whole object):",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9cd78368-2def-4a3b-b210-4aa8f4f5254a",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "221f44a0-28b0-4f64-ad24-180423a3c7e3",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "12345678910111213",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d0fc7ea0-089e-4d6e-a3c1-475662e6c5d7",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "// Set the configuration for your app\n// TODO: Replace with your project's config object\nvar config = {\n  apiKey: '<your-api-key>',\n  authDomain: '<your-auth-domain>',\n  databaseURL: '<your-database-url>',\n  storageBucket: '<your-storage-bucket>'\n  projectId: '<your-project-id>'\n};\nfirebase.initializeApp(config);\n\n// Get a reference to the database service\nconst database = firebase.database();",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7497d071-cfd0-4461-8abd-6d993aa006a7",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Now the question is where shall we put all the various firebase related stuff? How about an javascript ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://www.sitepoint.com/understanding-es6-modules/",
+        "content": [
+          {
+            "type": "text",
+            "text": "module",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " of its own! The idea here is to create a wrapper module with several helpful functions that talk to firebase for us. Think of this as making your own little library of firebase related methods - fact we’ll just abstract it out into something we’ll consider our datastore.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d6c0f497-3667-4a62-b520-0d048759f9da",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🚀 Create a file, ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "datastore.js",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " (not .jsx since it is not a component) in a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "src/services",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " directory. And since we’re using ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "npm",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " to fetch the firebase SDK for us, here is how we would import it to get started. ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b4194784-1c2c-4fbf-9b1a-a9548f7d0bd9",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "33cfd8f4-40f2-4b7a-851c-02b2ce7dbab4",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "123",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "411fb28d-6317-4451-bb09-73389cc9f5cf",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "import firebase from 'firebase/compat/app';\nimport 'firebase/compat/database';\n// ^ we are using compat notation here as the new firebase 9 api is a mess and i kinda hate it",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "abf9ded2-6ca9-484d-86cf-34fe95b9b1c8",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "My recommendation is to put all your firebase functions in this file and export them. We briefly talked about js modules. Easiest way to make this module is to simply export every public function:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "cbd1ab22-a3da-454c-9d75-25980000022b",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9668d8b6-5f89-44ec-9a7f-2e297522877c",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "1234567",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "711499d5-4ee8-434a-9849-bf8ca528a8f3",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "export function onNotesValueChange(callback) {\n  //do something here\n  //callback() when done\n}\n\n// and likewise: import { onNotesValueChange } from '../services/datastore.js'\n// to import",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d4c47598-3efa-425c-a8c8-d7d423327266",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Hey, what’s this ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "onNotesValueChange",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " function?! Just something that might help!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f9e5507b-3e2c-435d-b005-5a43e9e6e215",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "You may also be wondering about the ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "apiKey",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " and putting that directly in your code. That is indeed not ideal. However, our app is a frontend only app, we may be starting our dev server with ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "npm run dev",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " but our app is just some javascript that runs in the browser. Which means we can’t use environment variables or anything like that! Also, note that the key we have above is just an API key. This identifies our app to firebase but it doesn’t necessary grant it any privileges. We’ll see shortly that Firebase wants users to be authenticated, and you will have control over what data is read/write access to your data if you did that.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "dfced1b6-4488-4b41-82c3-71e1b78a2886",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Once you are ready to use these new functions you can just import it wherever you need it. In particular you would want to import these functions in your top level component where you have your note state related callbacks.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c43944e3-2c1d-4f26-b753-67ad1d827511",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Note: if the linter complains about using default it will stop as soon as you add the other functions you’ll probably need here, such as ",
+        "styles": {
+          "italic": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "updateNote",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ", etc.",
+        "styles": {
+          "italic": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "a7c4aff2-2028-4f55-9d96-8daffb38f576",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Data Structure",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "480f9eaa-d20f-420d-86a0-18660f444163",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Firebase stores everything as JSON — in fact the whole thing can be thought of as a JSON tree. This works pretty well with how we’ve already been thinking of our notes app data-structures. Everything we needed we stored in a Map, which essentially is a javascript object called notes, with individual notes underneath it stored by key. We created our own key but now Firebase will just handle all the data storage for us. All we need to do is figure out how.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1db2027b-8305-4cab-8c84-09f6992c0f1f",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Here’s what our data might look like in firebase:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d08c83fd-5dd3-432c-91f2-97414f866f31",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "Lab3-firebase.png",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-3-react-notes/assets/lab3-firebase-1-1767548477531.png",
+      "caption": "",
+      "showPreview": true
+    },
+    "children": []
+  },
+  {
+    "id": "2c97d75c-8f5b-4d14-8cd8-fb300925483e",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Reading From Firebase",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6e904404-5dfd-4f2d-b65e-5fa8231c2556",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Firebase’s realtime database is based on subscribing to events! This should sound familiar.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "45467b56-32d6-4af8-b7a9-e3d9bf7876af",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "In our case, since we are storing the full state of our notes in a top level notes state object, we should subscribe to the on value change Firebase event on all of notes. This isn’t always the best, in most cases you actually want to subscribe to things lower down in the tree. For our app with a single board of notes though, we might as well subscribe to all the displayed notes.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5789ac5c-4080-4305-b8c3-44ff3240d0aa",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Here’s some ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://firebase.google.com/docs/database/web/retrieve-data#value_events",
+        "content": [
+          {
+            "type": "text",
+            "text": "documentation",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": ". For all code sample remember you want “",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Web namespaced API",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "”",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b1008f6c-d9f7-429e-9d8a-1fb4c4c27623",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "What we’ll want to do is at some point early on subscribe to ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "value",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " events on some top level key. You can use ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "notes",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " for now, but if you want to do the extra credit of multiple boards and authentication, this would be unique for a particular ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "noteboard",
+        "styles": {
+          "italic": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ". So you can subscribe to multiple namespaces or root keys. This is a listener that will trigger the given callback function with a new snapshot of the tree every time a value changes.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "a5722724-8a72-4c9a-8081-f0a953371b6c",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d6d842f2-76f8-480e-976b-be14fd603596",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "12345678",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "fef48170-a5bc-4e88-8393-4a5740941f89",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "firebase\n  .database()\n  .ref('notes')\n  .on('value', function (snapshot) {\n    const newNoteState = snapshot.val();\n    // do something with new note state\n    // pass the state to a CALLBACK MAYBE?\n  });",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b11ce1cc-1c62-4390-82c4-211ec1bfbaa8",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "In our React App where is the right place to initiate retrieving values?  You’ll want to create a subscription to the value change event.  This is import, this needs to be event driven, and not a call that reads the database 1 time.  ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d05c2cc7-2cfd-4c4f-ac48-9d9fecd04733",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Let’s try ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "useEffect",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "! remember the empty ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "[]",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " as the dependency!  ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "cec3ac14-9405-4959-ad45-5ba705c0dc83",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Your hook callback function might look something like this:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9d2b9ccc-339c-4e4c-b0bc-8b0b89b0a2b2",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1453b31e-7753-4809-a46a-83a842d44468",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "123",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f03aa540-99b1-4912-a89c-caa2d6a89c12",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "firebasedb.onNotesValueChange((notes) => {\n  this.setState({ notes: notes });\n});",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9bbcb9f1-565d-45b8-bf93-23f83da4ba01",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "To summarize, your ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "App",
+        "styles": {
+          "italic": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " will subscribe to ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "value",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " events on a Firebase database reference (",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "ref",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "). Whenever a note is updated in Firebase it will trigger the callback you provided. Your callback will take this ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "snapshot",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " of data and set your React ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "notes",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " state to the new notes object! Nice, a seamless retrofit. We replace the ENTIRE set of notes, with a new set!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b838f6ab-801a-4514-a78d-2f048b870f5d",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Writing Data To Firebase",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "402470a3-c1c3-4352-8a2c-27b7c4fa6425",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "We have a few methods so far that set state:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f6d71a87-c474-4dab-b638-a23be06436c0",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "create new note",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "3913db4d-6383-49f8-8a0b-a93b7ed14190",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "update note",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8ee0acbe-3c9e-4433-86c5-3490277f2e2f",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "delete note",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d2b325a2-f816-47e1-bdf3-bf546295e322",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "We’ve been using Immer ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "produce",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " methods for our state changes, but now we need to push our note state up to Firebase rather than dealing with it locally. What we are going to do is instead of running a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "setState",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " on our local App component ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "notes",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " state, we are instead going to just push our changes up to Firebase! Then Firebase will essentially return a new notes state for us via the stuff we did above.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "62d399f1-8400-4642-910a-01896dd3b673",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Let’s write these functions in our firebase module to do these ops.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "02b59a57-08fd-4334-a368-8fbba413548f",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Here are the docs for ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://firebase.google.com/docs/database/web/save-data",
+        "content": [
+          {
+            "type": "text",
+            "text": "saving data in Firebase",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": ". Remember we are using compat or Web Version 8 namespaced firebase, not version 9 modular syntax. ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "aab2c765-2967-4489-af3b-d43a28721d1c",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "The basic idea is that we get our database reference like above (we could save the reference globally within our firebase module also), and then either we ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "push",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " a new note onto it, or we use ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "update",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " to change some fields, or we call ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "remove",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " on it.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9b419d9d-c99b-4fb5-b2e0-9f57cf999730",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Since we already have access to the ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "id",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " which is the ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "key",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " for each object in our ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "notes",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " reference. It should be as simple as:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c5339719-98bb-4575-b442-a3b7696f30f7",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "0370617f-49fb-4476-b952-65361f35aa21",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "12",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "745ef19f-194f-4778-8b5d-2d53beaa87be",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "firebase.database().ref('notes').child(id).remove(); // update similarly\n// ref('notes').push(newNote) doesn't take an id, but returns a new auto-generated one",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "32ae3f1a-c659-4b55-8683-939263ed7c02",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "As we refactor our code we may find that we don’t need to use Immer,  we’ll let firebase do any updates and any changes will then push down an entire new state for us!  However, don’t forget about our buddy Immer, we’ll be using it in later assignments. ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8c81994b-279e-4601-9271-92b3d1b31dcf",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "That’s Pretty Much It",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "91a50164-3595-4332-99c2-22afdf046f2e",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Test it out! Open multiple browsers and see how adding and moving notes in one instantly reflects in the other. Pretty cool!  ⚠️ DO NOT FORGET TO TEST WITH MULTIPLE BROWSER WINDOWS THAT IS THE WHOLE POINT.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "eeb274fe-67ae-452f-bc98-538d2983df80",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Merge your Branch!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8a69c937-d69e-465a-a63e-c55878915b54",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "And don't forget to merge your ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "add_firebase",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " branch into main! ",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "fcc24818-7502-4e48-a87c-9bc812d66fc0",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Now try some extra credit! Remember the workflow: feature branch, plan file, implement, merge. One feature at a time.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "0ed88692-425f-47b6-ac0d-1c5183391102",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Create a feature branch",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e59b5b52-a6b3-4b5f-847b-24cfb0e97334",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "If using AI: create a plan, then copy it from ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "~/.claude/plans/",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " to your project's ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "plans/",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " folder",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "a578ffde-2f34-4e69-8638-be6c5fdce7fb",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Implement the feature",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "db28aab9-8d00-4f8d-b4ef-489560b23b6b",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Merge to main",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7c1f61e4-4d17-4180-967f-77b593fcba00",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Do the git feature flow!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "021d9a63-7a74-42da-84c3-0667e9540093",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Optional Cypress End2End and Component testing",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "bd3b9e3b-7cf6-42aa-bca2-b59ff8407f08",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "There is a test suite written for this assignment. It makes some assumptions:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "cd93c346-347b-4077-9af9-afca4612b5fa",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "input for adding notes has classname: ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "noteinput",
+        "styles": {
+          "code": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d6954fd5-cc39-4573-88f4-4b668e690617",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "each note has a class ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "note",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " and an ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "h1",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " with the title",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d396cea2-107b-4d81-a40b-f2448ff7b0de",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "edit button has an aria label ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "aria-label=edit",
+        "styles": {
+          "code": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c1cb3785-bba1-4916-ae8e-cfb7641cdeae",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "save button has an aria label ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "aria-label=done-editing",
+        "styles": {
+          "code": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "19cbd68d-59c1-4eef-a538-b0a5d9fddff5",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "delete button has an aria label ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "aria-label=delete",
+        "styles": {
+          "code": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c1205be2-bf5e-44f2-85c1-d8b7db55d9fa",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "that your firebase configs are in ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "src/services/datastore.js",
+        "styles": {
+          "code": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "342574c2-7e16-4210-8542-23b11f7702e8",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "It is completely optional to utilize this test, but it can be helpful as long as you do the above.  You can find the test itself in: ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "cypress/e2e/test.cy.js",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " and to run it all you have to do is:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "83c735c3-6d07-425b-bcd7-536d23ce6faf",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Terminal",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6957317e-ba0a-4c20-8161-a33d13939cfb",
+    "type": "codeBlock",
+    "props": {
+      "language": "bash"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "npm install cypress -D \nnpx cypress run\n\n# or if you want interactive mode\n\nnpx cypress open",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e9b595b7-0638-4735-bc42-d818cf9af32b",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "note: you may need to adjust the url in cypress.config.js",
+        "styles": {
+          "italic": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "0e8e0224-5711-45cc-aff7-62b0d1c28e86",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "rgb(251, 228, 228)",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "To Turn In",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1e3bc6d6-668f-45ea-802d-f9072baaf7da",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "👉 The GitHub assignment Issue will be considered your submission! ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "To officially turn it in, please comment on the Issue in the repository when you have completed the assignment and mark it Closed.",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "231a27c6-35d6-41e6-afc5-600f39fae95b",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🙏 In your comment please include:",
+        "styles": {}
+      }
+    ],
+    "children": [
+      {
+        "id": "ffdec6f4-bc0f-4d60-9e80-1a1f41da94d9",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "link to deployed hosted version of the page (render.com)",
+            "styles": {
+              "bold": true
+            }
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "facc41e0-d56c-4315-ab98-882cdfcdebed",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "brief summary of what worked and what didn't",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "9466f78e-17a4-4189-a68f-17e33f92f2cb",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "remember you must cite external sources when you include other people's code, chatGPT, etc",
+            "styles": {}
+          }
+        ],
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "e1f28583-165e-457e-9596-0560d8f51e39",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "App should have all the minimal functional specs",
+        "styles": {}
+      }
+    ],
+    "children": [
+      {
+        "id": "4dc6cdca-9508-4d2d-858b-2cf5b48480f3",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "have at least an App and Note component",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "c492ba00-2bc3-43f7-8708-ced36fcd1063",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "ability to add notes to board",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "59e9890a-3e72-49d4-b35f-a2016683003f",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Notes should:",
+            "styles": {}
+          }
+        ],
+        "children": [
+          {
+            "id": "12453fe7-ed5e-4f2a-892e-ed984e8aec81",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "display title",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "65ba18f7-7bad-4a66-a814-dd8473deaa56",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "display content",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "71d784cf-0bed-4984-b2a6-7bd79c7fdbec",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "be draggable",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "88dced72-1e06-4c79-b40d-b22ae4b10cce",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "be editable",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "838e2202-03b0-40fb-be87-9e0838c8b9af",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "be deletable",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "7fd75db9-252c-4adc-a869-86eecbd29b9a",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "App should have at least the minimal styling of the mockups",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "474ed9d6-e766-4da0-bb91-55c31f59546f",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🤖 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "If using AI assistance:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " commit your plan files to ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "plans/",
+        "styles": {
+          "code": true
+        }
+      }
+    ],
+    "children": [
+      {
+        "id": "1b8dff3e-b7ff-46e2-979e-330b21074615",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Copy from ",
+            "styles": {}
+          },
+          {
+            "type": "text",
+            "text": "~/.claude/plans/",
+            "styles": {
+              "code": true
+            }
+          },
+          {
+            "type": "text",
+            "text": " into your project's ",
+            "styles": {}
+          },
+          {
+            "type": "text",
+            "text": "plans/",
+            "styles": {
+              "code": true
+            }
+          },
+          {
+            "type": "text",
+            "text": " folder",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "a3728cc8-c544-4304-b2ec-40186d25f2be",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "One plan file per feature branch (see workflow at top of this page)",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "87d4e358-edb7-4c6c-9272-2e4ce0517518",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Do not one-shot — we want to see incremental planning",
+            "styles": {}
+          }
+        ],
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "1d98c8c9-2b0a-49fc-82b6-adc487816a9c",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "submission comment should include:",
+        "styles": {}
+      }
+    ],
+    "children": [
+      {
+        "id": "4ea1a436-5f1c-45b8-b2e7-585a9ff948cd",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "a couple sentence description about what you did",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "c6bd5bd7-f9cf-4953-ae59-bf2f7574a34f",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "and what worked / didn't work",
+            "styles": {}
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "68bb72e4-ea4d-4bf8-904e-94a70b6f78c6",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "any extra credit attempted",
+            "styles": {}
+          }
+        ],
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "feac25a2-5748-4116-90b2-d17b02a348e9",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Extra Credit",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6a9075ef-9ea6-447d-b8fc-8891560515e5",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "always mention your extra credit in your submission comment - NOTE if using AI we'll expect more of your assignment.",
+        "styles": {
+          "italic": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "98a9a664-f040-4283-a9ec-e1166bbf9a27",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Some method of note organization such as show-all.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "2af13ab1-7bce-4a76-9ab9-32ad34115fbf",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Resizable notes",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7e08e31c-a6e1-4e9b-a953-db5974168ac4",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Undo feature",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "69fcecc4-1359-4199-99e8-0bf6353aa30d",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Support multiple note boards. This could be implemented by adding route handling to your App where ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "http://localhost:8080/boards/:id",
+        "content": [
+          {
+            "type": "text",
+            "text": "http://localhost:8080/boards/:id",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " would load the particular board references by the id in the url.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d2d7d441-6fca-45ca-aacb-e41b2f6e734e",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Add in authentication with Firebase Users. We haven't covered authentication but Firebase provides a ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://firebase.google.com/docs/auth/",
+        "content": [
+          {
+            "type": "text",
+            "text": "nice auth api",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "dc7cadc6-843f-48c9-9ba5-b1c16218acd2",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Allow users to sign-up and then create and manage multiple boards! Can show list of boards as dropdown or as a meta-board of clickable notes!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "00ed79f3-559d-44c6-8995-9c1ff1083734",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Live editing – showing which user is editing which note!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "41750bba-beca-40fa-bddf-a21b2aa2b408",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Locking a note for others when one person is editing.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "515a29cf-cf90-4d32-ac64-09884a946e58",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Column organization Kanban style.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "af6399ac-a481-4be2-ab65-e321768356bd",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Filtering.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c3898c91-298b-48c8-be32-ca3d294e919b",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Upload an image.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1d3bcb8e-a1a9-44ce-be8a-99b6f32d023a",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "be creative! lots of other options and ideas",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "722bf4fe-6177-47ea-b962-74332b9ed781",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Advanced Extra Credit: CRDTs for Conflict-Free Collaboration",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b56c6070-5f8d-45b6-a44a-060b78d2eaa3",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "This is a challenging extra credit that explores technology used by apps like Figma and Linear.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "2add4bdd-4c37-4c0e-9116-e5978dd02be6",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Our Firebase implementation works, but what happens when two users edit the same note simultaneously? Firebase uses \"last write wins\" — one user's changes get overwritten. For real collaborative editing, this is a problem.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "4184d783-80e7-4efb-9e7f-4d065a59ac05",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "CRDTs",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " (Conflict-free Replicated Data Types) solve this. They're data structures where concurrent edits from multiple users ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "always merge automatically",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " — no conflicts, no data loss. The CRDT handles merging locally, and you use Firebase to sync changes between clients.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d5cf3d68-72fa-45f3-b439-d52563f22c86",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "The Architecture",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "02e8e1ca-db69-44fb-a0ee-9eae4fdbfe64",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Local state:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Managed by a CRDT library",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "92026a20-1982-4ce9-ac4f-788f58f520c2",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Remote sync:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Firebase stores and maybe broadcasts CRDT updates or use a public service for this",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "eee5ce06-c0e0-4f86-a355-95364dac2734",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Merging:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " The CRDT library handles conflict resolution automatically",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "3c9cc277-7c93-4752-975c-fe3d45770bb2",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "The Challenge",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "aa216520-9d8c-4c97-ba29-03112085a4e7",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Add a CRDT layer to your notes app. You have options:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "bdd6b44b-3e30-47dc-86b3-6e30f42556d9",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Option A: CRDT Library + Firebase",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ca803e68-ecc7-4b28-8c62-21cd6ab5a150",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Use a CRDT library like ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://loro.dev/",
+        "content": [
+          {
+            "type": "text",
+            "text": "Loro",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": ", ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://automerge.org/",
+        "content": [
+          {
+            "type": "text",
+            "text": "Automerge",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": ", ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://yjs.dev/",
+        "content": [
+          {
+            "type": "text",
+            "text": "Yjs",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": ", or ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://jsonjoy.com/",
+        "content": [
+          {
+            "type": "text",
+            "text": "json-joy",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " to manage state locally, and sync updates through Firebase. Loro is particularly interesting — it has built-in version control (checkout any historical state, like git for your data) and a native moveable tree CRDT (perfect for reordering notes).",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c63b67a8-f23b-4fff-bec4-15cb6943380e",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Option B: CRDT Backend-as-a-Service",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "fba4c6ab-b97d-40f0-83e2-dafa23dc1cdf",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Use a backend service that provides CRDT sync out of the box (e.g., ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://liveblocks.io/",
+        "content": [
+          {
+            "type": "text",
+            "text": "Liveblocks",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": ", ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "https://partykit.io/",
+        "content": [
+          {
+            "type": "text",
+            "text": "PartyKit",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": ", or others). These handle the sync infrastructure for you. Not as impressive but still fun.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b1e68285-9755-41ed-a9eb-456fa01d8b0a",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Requirements",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "70f4559c-c852-4c80-9098-ec0915e351c5",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Demonstrate conflict-free merging when two users edit simultaneously",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1922b2ba-9cc3-4f83-89af-22fec2fb6ad4",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Bonus: Add offline support — edits queue locally and sync when reconnected",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1ebeb32a-6d58-4770-a253-d7c900829ace",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Bonus: Implement undo/redo using CRDT history",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6a703bd8-e916-4baa-a0fc-a00d25c8e073",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 3,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Resources",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "33db8064-51d6-4715-b72d-a5c2e2cc4b01",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://loro.dev/docs",
+        "content": [
+          {
+            "type": "text",
+            "text": "Loro Documentation",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " — Rust/WASM CRDT with version control, moveable trees & lists",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1ad5fe4f-94f2-4652-83b7-06525ab4b1f6",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://automerge.org/docs/quickstart/",
+        "content": [
+          {
+            "type": "text",
+            "text": "Automerge Documentation",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "686ac4dc-33a1-44a8-8ba4-f0450149c68e",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://docs.yjs.dev/",
+        "content": [
+          {
+            "type": "text",
+            "text": "Yjs Documentation",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "688484f6-08ed-4db9-b0b1-e760a0b9b54e",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://jsonjoy.com/specs/json-crdt",
+        "content": [
+          {
+            "type": "text",
+            "text": "json-joy JSON CRDT",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "586f294a-357e-4c9b-b805-39870a0c80ad",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://www.inkandswitch.com/local-first/",
+        "content": [
+          {
+            "type": "text",
+            "text": "Local-first software",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " — the philosophy behind CRDTs",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d1922f2a-87f2-4a54-9999-374fa4659c0c",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  }
+]
