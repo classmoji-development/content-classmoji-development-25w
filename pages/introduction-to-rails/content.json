@@ -23,7 +23,7 @@
       "backgroundColor": "default",
       "textColor": "default",
       "textAlignment": "left",
-      "level": 3,
+      "level": 1,
       "isToggleable": false
     },
     "content": [
@@ -88,7 +88,7 @@
         "content": [
           {
             "type": "text",
-            "text": "https://chakra-ui.com/",
+            "text": "https://chakra-ui.com/ ",
             "styles": {}
           }
         ]
@@ -390,7 +390,7 @@
       },
       {
         "type": "text",
-        "text": " (e.g., `",
+        "text": " (e.g., ",
         "styles": {}
       },
       {
@@ -1292,7 +1292,7 @@
     "id": "90b8c76c-300b-4355-8a55-5e7584ab2073",
     "type": "codeBlock",
     "props": {
-      "language": "bash"
+      "language": "text"
     },
     "content": [
       {
