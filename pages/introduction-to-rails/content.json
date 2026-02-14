@@ -395,7 +395,7 @@
       },
       {
         "type": "text",
-        "text": "git checkout -b add-notes`",
+        "text": "git checkout -b add-notes",
         "styles": {
           "code": true
         }
