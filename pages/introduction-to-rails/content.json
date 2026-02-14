@@ -3861,23 +3861,6 @@
     "children": []
   },
   {
-    "id": "490e5465-a440-4ac9-889a-e9d5c75c2558",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "12",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
     "id": "30dc0ab0-bff5-461d-ab85-ddf1a22a6a76",
     "type": "terminal",
     "props": {
