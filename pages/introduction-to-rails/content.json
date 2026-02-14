@@ -6054,6 +6054,17 @@
     "children": []
   },
   {
+    "id": "09d336cf-5a57-4379-ae7f-a9f1c139b066",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
     "id": "812311c0-168b-4722-8c1c-028cdf3350cc",
     "type": "heading",
     "props": {
