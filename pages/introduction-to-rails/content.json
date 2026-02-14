@@ -338,6 +338,26 @@
   },
   {
     "id": "6f42647b-7920-4566-9b48-1a51d28e2e38",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "rgb(251, 228, 228)",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "5bf77da7-035e-40c0-b9c6-f5aeab2db1ad",
+    "type": "terminal",
+    "props": {
+      "code": "",
+      "title": ""
+    },
+    "children": []
+  },
+  {
+    "id": "7e3cd6df-b965-4854-b15f-678574f03be5",
     "type": "heading",
     "props": {
       "backgroundColor": "rgb(251, 228, 228)",
