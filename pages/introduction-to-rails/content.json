@@ -1567,9 +1567,7 @@
       {
         "type": "text",
         "text": "Our main state object (note you may also have react components that have local state for things like editing or for driven fields) is going to simply be a javascript object that looks something like this:",
-        "styles": {
-          "backgroundColor": "orange"
-        }
+        "styles": {}
       }
     ],
     "children": []
