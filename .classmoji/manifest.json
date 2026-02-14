@@ -34,9 +34,7 @@
     }
   },
   "general": {
-    "pages": [
-      "ddd"
-    ],
+    "pages": [],
     "slides": []
   }
 }
