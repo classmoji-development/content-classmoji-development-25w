@@ -294,7 +294,7 @@
     "id": "f8f31fde-6fdb-4c8c-b8c6-043f95e100fc",
     "type": "terminal",
     "props": {
-      "code": "# also don't forget to run:\n\nnpm install #to fetch all your package dependencies",
+      "code": "# also don't forget to run:\nnpm install #to fetch all your package dependencies",
       "title": "Terminal"
     },
     "children": []
