@@ -36,21 +36,65 @@
     "children": []
   },
   {
-    "id": "3cc084aa-2b44-4ddb-ba23-b93d66eeceba",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
+    "id": "c65203c1-a3af-4321-818c-d2c2a8c71f1d",
+    "type": "columnList",
+    "props": {},
+    "children": [
       {
-        "type": "text",
-        "text": "We will start with a version of the app that does not have a backend, it’ll use state for notes but if you refresh the page all your hard work will disappear — and it’ll only work in one browser window.",
-        "styles": {}
+        "id": "15b9b250-0edb-45a9-b3e4-c5392c6d7da0",
+        "type": "column",
+        "props": {
+          "width": 1
+        },
+        "children": [
+          {
+            "id": "0d05b673-76d2-4b10-9422-f82e03713564",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 3,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Part 2",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "4abebd2a-6e28-48f0-864e-31d30e26b568",
+        "type": "column",
+        "props": {
+          "width": 1
+        },
+        "children": [
+          {
+            "id": "3cc084aa-2b44-4ddb-ba23-b93d66eeceba",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "We will start with a version of the app that does not have a backend, it’ll use state for notes but if you refresh the page all your hard work will disappear — and it’ll only work in one browser window.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
       }
-    ],
-    "children": []
+    ]
   },
   {
     "id": "59d33cff-a460-4fad-b4d8-1d498551f6f9",
@@ -128,25 +172,6 @@
       {
         "type": "text",
         "text": ", you are welcome to! (shadcn I only recommend to use with AI). ",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "0d05b673-76d2-4b10-9422-f82e03713564",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 3,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Part 2",
         "styles": {}
       }
     ],
