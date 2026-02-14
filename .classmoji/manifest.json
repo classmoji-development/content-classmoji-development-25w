@@ -34,9 +34,7 @@
     }
   },
   "general": {
-    "pages": [
-      "testing-link"
-    ],
+    "pages": [],
     "slides": []
   }
 }
