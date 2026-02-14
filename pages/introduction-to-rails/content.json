@@ -1272,6 +1272,37 @@
     "children": []
   },
   {
+    "id": "04acf4f4-0d9e-4f4b-a213-0f9e527e5509",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "3164fe6d-f1fb-49ec-9584-23bf956115e3",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "c902931b-92f5-4d2c-9c22-22f3d75cb7db",
+    "type": "terminal",
+    "props": {
+      "code": "",
+      "title": ""
+    },
+    "children": []
+  },
+  {
     "id": "7de0a4d2-4b04-48eb-a2ee-4583be456029",
     "type": "paragraph",
     "props": {
