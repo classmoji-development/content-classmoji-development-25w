@@ -1561,7 +1561,7 @@
     "props": {
       "backgroundColor": "default",
       "textColor": "default",
-      "textAlignment": "left"
+      "textAlignment": "center"
     },
     "content": [
       {
