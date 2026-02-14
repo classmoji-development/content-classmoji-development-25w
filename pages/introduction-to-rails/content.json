@@ -1586,23 +1586,6 @@
     "children": []
   },
   {
-    "id": "22e33281-0633-495c-8555-2f406d995be7",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
     "id": "6c86cbc0-7e88-47ad-a053-0ecffa627713",
     "type": "image",
     "props": {
@@ -7412,7 +7395,7 @@
     "children": []
   },
   {
-    "id": "77ed8bfb-2364-40b4-abac-a45ebb49c5b2",
+    "id": "ed5e291e-d5ea-460f-ba33-0fb74a576757",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
