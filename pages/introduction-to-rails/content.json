@@ -229,6 +229,17 @@
     "children": []
   },
   {
+    "id": "cfbe4925-e200-415a-b7e3-314ab7533ff9",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
     "id": "4889a069-82a3-428c-81ad-208d9ba05767",
     "type": "heading",
     "props": {
