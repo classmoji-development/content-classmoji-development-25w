@@ -101,7 +101,7 @@
         "content": [
           {
             "type": "text",
-            "text": "https://chakra-ui.com/",
+            "text": "https://chakra-ui.com/ ",
             "styles": {}
           }
         ]
@@ -176,7 +176,7 @@
     "content": [
       {
         "type": "text",
-        "text": "Then we will add in Firebase for persistent **storage. Firebase is a backend as a service (BAAS). It provides a simple JSON data store (",
+        "text": "Then we will add in Firebase for persistent storage. Firebase is a backend as a service (BAAS). It provides a simple JSON data store (",
         "styles": {}
       },
       {
