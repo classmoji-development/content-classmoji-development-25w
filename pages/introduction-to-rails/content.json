@@ -954,6 +954,17 @@
     "children": []
   },
   {
+    "id": "ca3d6acf-4836-4536-8dd5-d7a1ecac5240",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
     "id": "4a86e950-8350-42ad-a62e-cac599781300",
     "type": "heading",
     "props": {
