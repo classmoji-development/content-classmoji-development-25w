@@ -18,19 +18,15 @@
   },
   {
     "id": "2c0a5b0c-3944-4253-94f1-be7238478e7e",
-    "type": "paragraph",
+    "type": "heading",
     "props": {
       "backgroundColor": "default",
       "textColor": "default",
-      "textAlignment": "left"
+      "textAlignment": "left",
+      "level": 1,
+      "isToggleable": false
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
+    "content": [],
     "children": []
   },
   {
