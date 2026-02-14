@@ -1286,7 +1286,7 @@
     "id": "c902931b-92f5-4d2c-9c22-22f3d75cb7db",
     "type": "terminal",
     "props": {
-      "code": "npm install immer",
+      "code": "$ npm install immer",
       "title": ""
     },
     "children": []
