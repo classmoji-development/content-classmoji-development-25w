@@ -32,7 +32,9 @@
     }
   },
   "general": {
-    "pages": [],
+    "pages": [
+      "lab-1-part-1-build-a-landing-page-html"
+    ],
     "slides": []
   }
 }
