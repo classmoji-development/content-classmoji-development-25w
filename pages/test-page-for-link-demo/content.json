@@ -1,0 +1,30 @@
+[
+  {
+    "id": "c0f3b45e-7ace-4641-9cd1-8267fe0992be",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "/page",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ae599b73-71cc-4f70-b96a-5763736c9f04",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  }
+]
