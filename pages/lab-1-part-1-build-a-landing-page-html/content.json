@@ -28,20 +28,14 @@
     "children": []
   },
   {
-    "id": "f1ae2694-ba47-4376-8c3b-57606be21de3",
+    "id": "bb8a7668-662f-40fd-b97a-788e58ebaf32",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/hea",
-        "styles": {}
-      }
-    ],
+    "content": [],
     "children": []
   },
   {
