@@ -1,25 +1,20 @@
 [
   {
-    "id": "60d39b22-3a8d-408a-bd74-963abf9c5a82",
-    "type": "heading",
+    "id": "0cd617b2-c41c-4df5-af2c-bfe8c1fbc59a",
+    "type": "image",
     "props": {
-      "backgroundColor": "blue",
-      "textColor": "default",
       "textAlignment": "left",
-      "level": 2,
-      "isToggleable": false
+      "backgroundColor": "default",
+      "name": "",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-2-build-a-buzzfeed-quiz/assets/quiz-1767548500125.gif",
+      "caption": "",
+      "showPreview": true,
+      "previewWidth": 376
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "GOAL: Continuous Curiosity",
-        "styles": {}
-      }
-    ],
     "children": []
   },
   {
-    "id": "696ccd72-850a-43e5-9044-4a54fb19ff9e",
+    "id": "6de22735-fc08-4470-9a8f-f9b6b76c16ba",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -29,14 +24,45 @@
     "content": [
       {
         "type": "text",
-        "text": "AI coding tools are powerful — but how you use them determines whether you're building skills or outsourcing them.",
+        "text": "Format:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " In-class paired programming with AI assistance\n\n",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Time:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " ~75 minutes\n\n",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Goal:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Build a personality quiz while learning about JavaScript async timing",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "0ef4f7f8-3808-4a32-9f05-537dca6747b0",
+    "id": "98ca6eb4-7eac-460b-9830-ef821fda1395",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -44,40 +70,62 @@
       "textAlignment": "left"
     },
     "content": [
+      {
+        "type": "text",
+        "text": "All the kids are doing it these days. This is where we'll learn a little bit about making interactive sites. We won't need to deal with any backend servers, just some nice clientside code to build up a fun quiz and show some calculated results.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "deb602d3-de56-4c6a-99fc-770e96bdf281",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Head over to buzzfeed and take ",
+        "styles": {}
+      },
       {
         "type": "link",
-        "href": "https://www.anthropic.com/research/AI-assistance-coding-skills",
+        "href": "https://www.buzzfeed.com/justkatiejoy/what-disney-animal-are-you-9bf0kqt6pd",
         "content": [
           {
             "type": "text",
-            "text": "Recent research from Anthropic",
+            "text": "this quiz",
             "styles": {}
           }
         ]
       },
       {
         "type": "text",
-        "text": " studied how different modes of AI interaction affect skill development. ",
+        "text": ". I'll wait.",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "f6f262b5-8c3b-4e9c-a396-582c8ce4e989",
+    "id": "500ff373-1472-413b-9d57-0f5883afd2e7",
     "type": "image",
     "props": {
       "textAlignment": "left",
       "backgroundColor": "default",
       "name": "",
-      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/coding-agents-tips/assets/1769854617812-anthropic-ai-assistance.jpeg",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-2-build-a-buzzfeed-quiz/assets/buzzfeed-1767548500125.png",
       "caption": "",
       "showPreview": true
     },
     "children": []
   },
   {
-    "id": "99cf2a10-55c8-4ce0-95f6-33ba5f47d1d4",
+    "id": "e8ac97d6-b717-4948-a716-376e9d9675a8",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -87,33 +135,14 @@
     "content": [
       {
         "type": "text",
-        "text": "Turns out:",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": "  \nPeople who simply delegated tasks to AI (\"just generate the code\") scored lowest on skill assessments after completing a coding task — even though they did the task just fine. \nThose who practiced ",
-        "styles": {}
-      },
-      {
-        "type": "text",
-        "text": "continuous curiosity",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " — asking the AI to explain, questioning its choices, and understanding before moving on — developed significantly stronger skills in the same amount of time.",
+        "text": "Doesn't that make you want to make your own quiz? Ok, you could use buzzfeed to do this, but you want to make one that doesn't have ugly ads. And looks classier too!",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "bc4a9b0c-f10f-406d-bfa3-ef215971e448",
+    "id": "7f8f4330-5bc4-4bff-b060-ff266a3502a0",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -123,132 +152,26 @@
     "content": [
       {
         "type": "text",
-        "text": "You can use AI and ",
+        "text": "This is a ",
         "styles": {}
       },
       {
         "type": "text",
-        "text": "not learn anything",
+        "text": "paired programming",
         "styles": {
           "bold": true
         }
       },
       {
         "type": "text",
-        "text": ", or you can use it and ",
-        "styles": {}
-      },
-      {
-        "type": "text",
-        "text": "learn more than you would have doing in manually",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": ". ",
+        "text": " exercise. One computer, two people, taking turns driving. You'll be using Claude Code to help build the quiz - but pay attention, it might not always write perfect code on the first try!",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "92fd58f3-6b73-4509-a6f6-76cc62921072",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "This guide is designed around this principle. You'll configure Claude Code to act as a ",
-        "styles": {}
-      },
-      {
-        "type": "text",
-        "text": "mentor ",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": "that explains concepts as it writes code — and you'll build the habit of asking \"why?\" at every step.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "3e8d19c8-18e5-4166-9489-40a69b0dbea9",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "📌If you don't have a good terminal app for claude, consider: ",
-        "styles": {}
-      },
-      {
-        "type": "link",
-        "href": "https://ghostty.org",
-        "content": [
-          {
-            "type": "text",
-            "text": "Ghostty",
-            "styles": {}
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "text": ", ",
-        "styles": {}
-      },
-      {
-        "type": "link",
-        "href": "https://sw.kovidgoyal.net/kitty/",
-        "content": [
-          {
-            "type": "text",
-            "text": "Kitty",
-            "styles": {}
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "text": ", or ",
-        "styles": {}
-      },
-      {
-        "type": "link",
-        "href": "https://www.warp.dev",
-        "content": [
-          {
-            "type": "text",
-            "text": "Warp",
-            "styles": {}
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "text": ".",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "a2d56f53-a353-438c-a5df-0f29c7b5e0bc",
+    "id": "3a1a7ccc-c90a-47cb-a656-76c8c13a5376",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -259,7 +182,7 @@
     "children": []
   },
   {
-    "id": "84af7deb-16b6-421e-bb40-40842b4523fc",
+    "id": "bd8dacda-989d-46fc-bf08-9ac34e763c1f",
     "type": "heading",
     "props": {
       "backgroundColor": "blue",
@@ -271,14 +194,14 @@
     "content": [
       {
         "type": "text",
-        "text": "What is Claude Code?",
+        "text": "How This Lab Works",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "c46c6560-f3e4-4c58-be64-1b4f66fd17db",
+    "id": "b9cb3e2c-fa0e-4881-bcbe-40d11d8c31a9",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -288,81 +211,364 @@
     "content": [
       {
         "type": "text",
-        "text": "Claude Code is an ",
+        "text": "This lab is designed differently than most. Here's the flow:",
         "styles": {}
-      },
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5738a22c-f5d3-4e7f-840d-f73161dec24c",
+    "type": "table",
+    "props": {
+      "textColor": "default"
+    },
+    "content": {
+      "type": "tableContent",
+      "columnWidths": [
+        null,
+        null,
+        null
+      ],
+      "headerRows": 1,
+      "rows": [
+        {
+          "cells": [
+            {
+              "type": "tableCell",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Phase",
+                  "styles": {}
+                }
+              ],
+              "props": {
+                "colspan": 1,
+                "rowspan": 1,
+                "backgroundColor": "default",
+                "textColor": "default",
+                "textAlignment": "left"
+              }
+            },
+            {
+              "type": "tableCell",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Time",
+                  "styles": {}
+                }
+              ],
+              "props": {
+                "colspan": 1,
+                "rowspan": 1,
+                "backgroundColor": "default",
+                "textColor": "default",
+                "textAlignment": "left"
+              }
+            },
+            {
+              "type": "tableCell",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "What You'll Do",
+                  "styles": {}
+                }
+              ],
+              "props": {
+                "colspan": 1,
+                "rowspan": 1,
+                "backgroundColor": "default",
+                "textColor": "default",
+                "textAlignment": "left"
+              }
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "type": "tableCell",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "1. Build",
+                  "styles": {
+                    "bold": true
+                  }
+                }
+              ],
+              "props": {
+                "colspan": 1,
+                "rowspan": 1,
+                "backgroundColor": "default",
+                "textColor": "default",
+                "textAlignment": "left"
+              }
+            },
+            {
+              "type": "tableCell",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "~25 min",
+                  "styles": {}
+                }
+              ],
+              "props": {
+                "colspan": 1,
+                "rowspan": 1,
+                "backgroundColor": "default",
+                "textColor": "default",
+                "textAlignment": "left"
+              }
+            },
+            {
+              "type": "tableCell",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Work with Claude to implement the quiz functionality",
+                  "styles": {}
+                }
+              ],
+              "props": {
+                "colspan": 1,
+                "rowspan": 1,
+                "backgroundColor": "default",
+                "textColor": "default",
+                "textAlignment": "left"
+              }
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "type": "tableCell",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "2. Debug",
+                  "styles": {
+                    "bold": true
+                  }
+                }
+              ],
+              "props": {
+                "colspan": 1,
+                "rowspan": 1,
+                "backgroundColor": "default",
+                "textColor": "default",
+                "textAlignment": "left"
+              }
+            },
+            {
+              "type": "tableCell",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "~30 min",
+                  "styles": {}
+                }
+              ],
+              "props": {
+                "colspan": 1,
+                "rowspan": 1,
+                "backgroundColor": "default",
+                "textColor": "default",
+                "textAlignment": "left"
+              }
+            },
+            {
+              "type": "tableCell",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "When things break (they will!), investigate why with Claude's help",
+                  "styles": {}
+                }
+              ],
+              "props": {
+                "colspan": 1,
+                "rowspan": 1,
+                "backgroundColor": "default",
+                "textColor": "default",
+                "textAlignment": "left"
+              }
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "type": "tableCell",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "3. Fix & Polish",
+                  "styles": {
+                    "bold": true
+                  }
+                }
+              ],
+              "props": {
+                "colspan": 1,
+                "rowspan": 1,
+                "backgroundColor": "default",
+                "textColor": "default",
+                "textAlignment": "left"
+              }
+            },
+            {
+              "type": "tableCell",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "~15 min",
+                  "styles": {}
+                }
+              ],
+              "props": {
+                "colspan": 1,
+                "rowspan": 1,
+                "backgroundColor": "default",
+                "textColor": "default",
+                "textAlignment": "left"
+              }
+            },
+            {
+              "type": "tableCell",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Apply fixes, understand the concepts, add finishing touches",
+                  "styles": {}
+                }
+              ],
+              "props": {
+                "colspan": 1,
+                "rowspan": 1,
+                "backgroundColor": "default",
+                "textColor": "default",
+                "textAlignment": "left"
+              }
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "type": "tableCell",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "4. Share",
+                  "styles": {
+                    "bold": true
+                  }
+                }
+              ],
+              "props": {
+                "colspan": 1,
+                "rowspan": 1,
+                "backgroundColor": "default",
+                "textColor": "default",
+                "textAlignment": "left"
+              }
+            },
+            {
+              "type": "tableCell",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "~5 min",
+                  "styles": {}
+                }
+              ],
+              "props": {
+                "colspan": 1,
+                "rowspan": 1,
+                "backgroundColor": "default",
+                "textColor": "default",
+                "textAlignment": "left"
+              }
+            },
+            {
+              "type": "tableCell",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Try another pair's quiz!",
+                  "styles": {}
+                }
+              ],
+              "props": {
+                "colspan": 1,
+                "rowspan": 1,
+                "backgroundColor": "default",
+                "textColor": "default",
+                "textAlignment": "left"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "children": []
+  },
+  {
+    "id": "e5b718ea-9a29-4ddc-b44a-61c14cac8780",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
       {
         "type": "text",
-        "text": "agentic coding tool",
+        "text": "Important:",
         "styles": {
           "bold": true
         }
       },
       {
         "type": "text",
-        "text": " that runs in your terminal. Unlike the web chat interface, Claude Code can read and edit files in your project, run commands, and help you build things directly in your codebase.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "25fa6492-27c5-405b-8325-d4671951b0ea",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Here's what it looks like when you run ",
+        "text": " When you hit bugs, don't just ask Claude to fix them immediately. Take time to understand ",
         "styles": {}
       },
       {
         "type": "text",
-        "text": "claude",
+        "text": "why",
+        "styles": {
+          "italic": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " the code isn't working. Use ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "console.log",
         "styles": {
           "code": true
         }
       },
       {
         "type": "text",
-        "text": " in a project directory:",
+        "text": " to trace what's happening. This debugging experience is the actual learning!",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "a32df40a-d758-498c-9be0-12799b448d5d",
-    "type": "video",
-    "props": {
-      "url": "https://res.cloudinary.com/dali-lab/video/upload/v1768500512/cs52/claude-code-demo.mp4",
-      "caption": ""
-    },
-    "children": []
-  },
-  {
-    "id": "e2f37f3e-ebf7-4305-a59a-9ba6fa6a42cb",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "You type prompts, Claude responds, and it can edit your files directly. Think of it as pair programming with an AI partner.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "3986667c-e6b7-422d-b09d-182f4d86aa27",
+    "id": "31f81fd6-53fe-4270-a8cf-03d1c9dbf0f5",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -373,7 +579,7 @@
     "children": []
   },
   {
-    "id": "020ffbe9-0f11-42d7-a201-93689d295c53",
+    "id": "7f8cc27e-44ae-4ebb-a80f-990ebda06296",
     "type": "heading",
     "props": {
       "backgroundColor": "blue",
@@ -385,14 +591,355 @@
     "content": [
       {
         "type": "text",
-        "text": "To Start",
+        "text": "Minimal Functional Specs",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "a8110fac-2f2b-4cf3-afc8-e850b572aa45",
+    "id": "405249c6-4c5a-43ef-b550-e18f657b2c55",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Quiz Page:",
+        "styles": {}
+      }
+    ],
+    "children": [
+      {
+        "id": "5dd74a60-b344-405c-a1c4-86e98d2add98",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Questions:",
+            "styles": {}
+          }
+        ],
+        "children": [
+          {
+            "id": "a9ccbd2d-10b4-46b6-8081-55d7c5a03f7e",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "display several questions (enough for this to be interesting)",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "3f62feca-b3de-42a1-badb-39726afe6090",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "have a header image and some text",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "1d8de63a-b53c-4667-8ab4-f489353ff05b",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "have some number of potential answers",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "7b11788a-5215-4e20-996c-e94c69a2aebf",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Question Answers:",
+            "styles": {}
+          }
+        ],
+        "children": [
+          {
+            "id": "55d993f2-22ec-46d7-b8e2-2943bd16f7b9",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "be either text or an image (demonstrate some of both)",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "a891ea27-0d3b-49f8-a6d0-2edf2980af0f",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "have 4 potential display states:",
+                "styles": {}
+              }
+            ],
+            "children": [
+              {
+                "id": "7517109d-daea-400c-9eae-20e6884bebc4",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "initial none selected state",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "b7f9d851-f262-4f9f-9594-903f359167a2",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "have a ",
+                    "styles": {}
+                  },
+                  {
+                    "type": "text",
+                    "text": ":hover",
+                    "styles": {
+                      "code": true
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": " effect",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "6f4b9ddf-7778-4db0-ba27-fe14cdf92963",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "have a clicked/selected state",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "3647a0f4-024f-416a-b9cd-52cf98f7c9f6",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "when one answer is chosen all other answers should change to a not-selected state",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "d1b6cf02-bed0-4bfb-ac2a-c165ad5a3d9a",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "have an associated value to be used to calculate the overall quiz output",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "6efc5682-da4a-449c-81c9-10820b0f4bb6",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Done Button:",
+            "styles": {}
+          }
+        ],
+        "children": [
+          {
+            "id": "22c71f2c-e850-4944-a7c9-0380d1c0351d",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "calculate the quiz output",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "722e9c04-b7da-4652-963a-1de765de7f7c",
+        "type": "bulletListItem",
+        "props": {
+          "backgroundColor": "default",
+          "textColor": "default",
+          "textAlignment": "left"
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Output Display:",
+            "styles": {}
+          }
+        ],
+        "children": [
+          {
+            "id": "2c17c1c4-f96f-485b-87a0-a46cbd43111c",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "should have text and an image",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "1622814b-ef20-4970-97ca-2f75b63ab4c2",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "should not show unless the calculations are finished",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "40cc12fc-d6f2-4650-8692-8a2bb1c3f9c7",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "should display an error if not all questions were answered",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c9cb3b7c-4977-4a32-8685-b553d4c018e2",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -402,26 +949,205 @@
     "content": [
       {
         "type": "text",
-        "text": "Create a ",
+        "text": "Here's some design specs thrown together in ",
         "styles": {}
       },
       {
-        "type": "text",
-        "text": "CLAUDE.md",
-        "styles": {
-          "code": true
-        }
+        "type": "link",
+        "href": "https://www.figma.com/",
+        "content": [
+          {
+            "type": "text",
+            "text": "Figma",
+            "styles": {}
+          }
+        ]
       },
       {
         "type": "text",
-        "text": " file in your project directory (or an empty folder if you are just starting out) with the following contents:",
+        "text": ":",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "bb1bb148-c6b4-4dd9-96cc-233abc84f0aa",
+    "id": "4646a0d8-8a15-4af9-ab02-39fe02606290",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "1. Quiz page with a question and some image answers - nothing selected:",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5eefd91c-0f43-4029-9255-8daf834ce0e5",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-2-build-a-buzzfeed-quiz/assets/main-1767548500125.png",
+      "caption": "",
+      "showPreview": true
+    },
+    "children": []
+  },
+  {
+    "id": "001d1d50-489a-4ad3-8ebf-9ebe2545dc72",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "2. An example hover effect:",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "51c1195b-2f16-4613-b1c9-a1bd7f889351",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-2-build-a-buzzfeed-quiz/assets/hover-1767548500125.png",
+      "caption": "",
+      "showPreview": true
+    },
+    "children": []
+  },
+  {
+    "id": "6155eb80-f2c9-48cc-9691-0cc67a328ea4",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "3. An answer selected:",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "08beb841-af0e-4fb0-9f50-2acbbcb4674d",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-2-build-a-buzzfeed-quiz/assets/checked-1767548500125.png",
+      "caption": "",
+      "showPreview": true
+    },
+    "children": []
+  },
+  {
+    "id": "4847dc72-272b-4900-8965-dfd35e2ceea3",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "4. Answer display:",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e2e590a4-f7f1-4164-bbc9-f2f51f1a8178",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-2-build-a-buzzfeed-quiz/assets/done-1767548500125.png",
+      "caption": "",
+      "showPreview": true
+    },
+    "children": []
+  },
+  {
+    "id": "4b4b1a3c-70a8-452d-8647-063bcb979928",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "0d61d018-a85d-4bcb-8063-a09489e95e13",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Setup",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8650c728-3f46-46b9-a9af-567ccc2d3bb9",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Clone your assigned repository and open it in your editor:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "64e3a444-a4dc-4d11-b250-7b8933e3d2e3",
     "type": "codeBlock",
     "props": {
       "language": "javascript"
@@ -429,44 +1155,14 @@
     "content": [
       {
         "type": "text",
-        "text": "# Learning Agent Configuration\n\nYou are a patient mentor helping someone learn to code. Your goal is to explain and teach concepts and mental models, not just produce working code.\n\n## Teaching Approach\n- Ask the user if they would like you to edit files directly or if they would like to type in the code themselves\n- Break problems into conceptual blocks — don't do too much in each step\n- Before writing code, explain the concept\n- Explain the code before you write it to a file\n- After writing code, ask \"Does this make sense?\" before continuing\n- If they seem confused, slow down and re-explain\n- Keep edits short; split them into multiple steps with explanations at each step\n\n## Problem Decomposition\n- Start with the structure/skeleton before adding details\n- Identify the core pieces: data, presentation, interaction\n- Work through one piece at a time\n- Connect concepts to things the learner already knows\n\n## Pacing\n- Build in functional increments\n- Focus on understanding over complexity\n- Celebrate small wins along the way",
+        "text": "git clone [your-repo-url]\ncd lab2-quiz\ncode .",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "91ef10d8-ba1e-4dad-97aa-4fbbc5e9958b",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "f219ae80-9c5b-4ec4-b332-faca18ef4521",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "blue",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 2,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Setup Claude Code",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "6be8f31a-161c-487d-b069-a565e9802a6a",
+    "id": "b46e3522-9343-43d1-a1fc-5aa5ae312cae",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -476,48 +1172,110 @@
     "content": [
       {
         "type": "text",
-        "text": "Follow these steps to get set up:",
+        "text": "You'll find starter files:",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "129825b1-7199-4142-86f1-5c03b9a123a1",
-    "type": "numberedListItem",
+    "id": "68b06591-661d-4f80-9bef-a3d032e5f596",
+    "type": "bulletListItem",
     "props": {
       "backgroundColor": "default",
       "textColor": "default",
-      "textAlignment": "left",
-      "start": 2
+      "textAlignment": "left"
     },
     "content": [
       {
         "type": "text",
-        "text": "Install Claude Code CLI",
+        "text": "index.html",
         "styles": {
-          "bold": true
+          "code": true
         }
       },
       {
         "type": "text",
-        "text": ":",
+        "text": " - basic HTML structure",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "c932d59c-44fb-44bc-ad0f-7eff0e75d72a",
-    "type": "terminal",
+    "id": "a5f9bc98-055c-49d5-9e0b-a933fc2f2528",
+    "type": "bulletListItem",
     "props": {
-      "code": "curl -fsSL https://claude.ai/install.sh | bash",
-      "title": "Terminal"
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
     },
+    "content": [
+      {
+        "type": "text",
+        "text": "style.css",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " - minimal starter styles",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
-    "id": "cffaff40-2316-495f-83a1-993457319121",
+    "id": "97193c03-344e-4407-9e1b-7a9815135a18",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "main.js",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " - empty, you'll build this",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "63065d0f-d1ad-400a-b1fd-9f161584e125",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "quiz.json",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " - sample quiz data",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "64422b9b-31d6-4f43-9b5f-f9b93ad5a2e6",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -527,62 +1285,169 @@
     "content": [
       {
         "type": "text",
-        "text": "Or ",
+        "text": "Open Claude Code in your project directory:",
         "styles": {}
-      },
-      {
-        "type": "link",
-        "href": "https://claude.com/product/claude-code",
-        "content": [
-          {
-            "type": "text",
-            "text": "download here",
-            "styles": {}
-          }
-        ]
       }
     ],
     "children": []
   },
   {
-    "id": "44ebae5e-3bf3-4fc5-85ad-2af718d93c9d",
-    "type": "numberedListItem",
+    "id": "66332161-d73c-489c-b133-4d9cb7b98b3f",
+    "type": "codeBlock",
     "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left",
-      "start": 3
+      "language": "javascript"
     },
     "content": [
-      {
-        "type": "text",
-        "text": "Authenticate",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " by running ",
-        "styles": {}
-      },
       {
         "type": "text",
         "text": "claude",
-        "styles": {
-          "code": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " and following the prompts.  (you may have a Claude console account from CS52/CS98 otherwise you'll need a claude.ai subscription). ",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "1d2419c2-51c3-4b8f-9434-b71625f7c381",
+    "id": "461fcd27-c120-4c47-87f8-9138df49efbd",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Start by asking Claude to help you build the quiz. Something like:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5b5cae81-59d1-4b6f-8b9c-4344230ef576",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💬",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "67f71368-48ec-4ea5-ad67-06d919506bfd",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "\"Help us build a personality quiz. We need to load questions from quiz.json and display them on the page with clickable answers. When the user clicks submit, calculate which outcome they got based on their answers.\"",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8a4fbc03-72ff-45a2-9422-7bd380cd7d26",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "As you work:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d93d445e-90dd-4aaf-8d90-94247355e0fc",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Driver",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " types and runs commands",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "719dde5e-269f-475c-8cc2-6f8ad2cdb40e",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Navigator",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " watches, thinks ahead, spots issues",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5fcdbb59-411d-4a10-9544-d6cc0a35e3b4",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Swap roles",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " every 10-15 minutes",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "fb49e345-4547-4dae-9c85-9c43442b06a2",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -593,7 +1458,7 @@
     "children": []
   },
   {
-    "id": "4a66cc3b-023e-4a5b-bf35-a512a7a91527",
+    "id": "94be0c08-9754-4c21-be07-8e94b8cb08f4",
     "type": "heading",
     "props": {
       "backgroundColor": "blue",
@@ -605,14 +1470,14 @@
     "content": [
       {
         "type": "text",
-        "text": "Setup Chrome Integration",
+        "text": "HTML Tips: Radio Buttons",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "5319d50f-73da-4ac0-b8d9-278bc21387aa",
+    "id": "96a918da-06fe-411f-9bca-8b61ebc1cd3d",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -622,14 +1487,30 @@
     "content": [
       {
         "type": "text",
-        "text": "⚠️This step is really important for web-dev in particular! Chrome integration lets Claude open and test your code in the browser as it builds.  It closes the loop so you don't have to tell it that its code didn't work, it can see for itself.  A common prompt I use: \"test this in browser and debug until it works\". ",
+        "text": "One thing you may have noticed is that when you select an answer it is an exclusive selection. There is an input type that already does that automatically. Yup, ",
+        "styles": {}
+      },
+      {
+        "type": "link",
+        "href": "http://learn.shayhowe.com/html-css/building-forms/#radio-buttons",
+        "content": [
+          {
+            "type": "text",
+            "text": "radio boxes",
+            "styles": {}
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "!",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "34495ba2-996b-4de0-bd75-2366a83fb36c",
+    "id": "0a31b819-0954-4ec3-a243-e6dfe3e675c3",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -639,14 +1520,205 @@
     "content": [
       {
         "type": "text",
-        "text": "There are two options for Chrome integration:",
+        "text": "But the default styling of radio boxes is so ugly! Sure, but you can hide the actual radio box and use it for display logic.",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "8c591378-0bce-4b21-9b06-3205f9e40118",
+    "id": "24e7d58a-e2a0-4663-9c32-9a3903060c96",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Here is the basic syntax for a radio button with an image label:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e84c5161-090f-4d5d-bcd9-fe4175ed2190",
+    "type": "codeBlock",
+    "props": {
+      "language": "html"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "<label for=\"puppy_question\"><img src=\"someimage.png\" /></label>\n<input type=\"radio\" id=\"puppy_question\" value=\"puppy\" />",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "52ae46ba-0923-4755-9341-e9f9b0bbfde0",
+    "type": "codeBlock",
+    "props": {
+      "language": "css"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "input[type='radio'] {\n  display: none;\n}",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9d9b65f1-2566-4086-8efa-868932a6690b",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "You can nest the input inside of the label and then you don't have to do the ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "for=\"elementID\"",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " part:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "98ef8adb-cf6f-43b4-addf-114cbfef8984",
+    "type": "codeBlock",
+    "props": {
+      "language": "html"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "<label>\n  <img src=\"someimage.png\" />\n  <input type=\"radio\" value=\"puppy\" />\n</label>",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c5075166-dddf-46c1-a6af-ced3ef10d62e",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Important:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " The way you group radio buttons together (clicking one de-selects the others) is by their ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "name",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " property. Same name = same group.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e1400222-743b-40d4-aaa9-443f41cc7e78",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "These two can both be selected (different groups):",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "48ca694e-e2d1-4135-b87a-7245356b1cf2",
+    "type": "codeBlock",
+    "props": {
+      "language": "html"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "<label>\n  <img src=\"dog.png\" />\n  <input type=\"radio\" name=\"favorite_dog\" value=\"dalmation\" />\n</label>\n<label>\n  <img src=\"cat.png\" />\n  <input type=\"radio\" name=\"favorite_cat\" value=\"tiger\" />\n</label>",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "01aecb4b-2632-4a82-80f7-1df65e59a9ba",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "These two will auto-unselect each other (same group):",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f355cb80-8c9c-45c5-8210-d78e55e3e25a",
+    "type": "codeBlock",
+    "props": {
+      "language": "html"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "<label>\n  <img src=\"dalmation.png\" />\n  <input type=\"radio\" name=\"favorite_dog\" value=\"dalmation\" />\n</label>\n<label>\n  <img src=\"retriever.png\" />\n  <input type=\"radio\" name=\"favorite_dog\" value=\"retriever\" />\n</label>",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "54b7da66-91b1-4d54-bda5-6e47f0445cc9",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -657,26 +1729,26 @@
     "children": []
   },
   {
-    "id": "a4796d35-a5c1-4bfd-abab-410013d89797",
+    "id": "20b4cf81-cf2e-4707-8537-80c0e72484a9",
     "type": "heading",
     "props": {
-      "backgroundColor": "rgb(221, 235, 241)",
+      "backgroundColor": "blue",
       "textColor": "default",
       "textAlignment": "left",
-      "level": 3,
+      "level": 2,
       "isToggleable": false
     },
     "content": [
       {
         "type": "text",
-        "text": "Option A: Claude in Chrome (Recommended)",
+        "text": "JSON Data Structure",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "29b5b684-f09a-4154-ac98-fb98f517774c",
+    "id": "d563c6c2-9d08-4ce1-8030-bc9860ef3b92",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -686,26 +1758,59 @@
     "content": [
       {
         "type": "text",
-        "text": "This option requires an ",
-        "styles": {}
-      },
-      {
-        "type": "text",
-        "text": "individual claude.ai Pro/Max subscription",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": ". If you're using a Claude Console API account, skip to Option B.",
+        "text": "Your quiz data will be loaded from a JSON file. Here's an example structure:",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "9aa79d93-b766-4e37-89f6-a492dc6d7d02",
+    "id": "4c522ca5-919a-4215-921f-39cb975ccef8",
+    "type": "codeBlock",
+    "props": {
+      "language": "json"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"title\": \"What Programming Language Are You?\",\n  \"outcomes\": {\n    \"python\": { \"img\": \"img/python.png\", \"text\": \"You're Python!\" },\n    \"javascript\": { \"img\": \"img/js.png\", \"text\": \"You're JavaScript!\" }\n  },\n  \"questions\": [\n    {\n      \"question_name\": \"question1\",\n      \"question_text\": \"How do you like your morning coffee?\",\n      \"question_img_url\": \"img/coffee.jpg\",\n      \"answers\": [\n        {\n          \"text\": \"Simple and clean\",\n          \"img_url\": \"img/black-coffee.jpg\",\n          \"outcome\": \"python\"\n        },\n        {\n          \"text\": \"Complicated with lots of options\",\n          \"img_url\": \"img/fancy-coffee.jpg\",\n          \"outcome\": \"javascript\"\n        }\n      ]\n    }\n  ]\n}",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e2841df6-4662-4691-9bcd-e7f8712783a6",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "f6b0ce51-2bfe-4ec6-bed2-bd4feb21326b",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript: Loading Data with Fetch",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ba603c7c-814a-423f-b241-6953442db79f",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -715,21 +1820,301 @@
     "content": [
       {
         "type": "text",
-        "text": "Claude in Chrome",
+        "text": "You'll need to load the JSON data using ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "fetch",
         "styles": {
-          "bold": true
+          "code": true
         }
       },
       {
         "type": "text",
-        "text": " is a browser extension that lets Claude Code control Chrome directly:",
+        "text": ". Here's the basic pattern:",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "62127e47-b780-444e-86c0-e7bc755d31ca",
+    "id": "b6989a0e-e802-459b-bf9e-70d738bc4b3c",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "fetch('quiz.json')\n  .then(response => response.json())\n  .then(data => {\n    // Now you can work with data\n    console.log(data.title);\n  });",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "04564d24-c237-4260-80cc-8d95763453ce",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "To gather all selected radio button values when the user clicks submit:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1a6c7500-dd6c-45ec-a598-545999ee77a9",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "document.getElementById('submit-btn').addEventListener('click', () => {\n  const checked = document.querySelectorAll(\"input[type='radio']:checked\");\n  const choices = Array.from(checked).map(radio => radio.value);\n\n  // choices is now an array like [\"python\", \"javascript\", \"python\"]\n  // Calculate the most common outcome\n  console.log(choices);\n});",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "25aca99c-71f5-4440-ad56-e69b032e0b1a",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Some useful vanilla JS methods:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "270ed923-9927-49ab-a51d-081b3def0f11",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "element.style.display = 'none'",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " - hide an element",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5bf8cb54-5160-490c-b87c-1f8bea018e16",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "element.style.display = 'block'",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " - show an element",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9ddeee7b-8d80-4bb7-8a85-f80c868fc61e",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "element.textContent = 'new text'",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " - change text",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ae4b671e-f69d-4db8-a89c-5ddfbe764b3b",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "element.innerHTML = '<p>html</p>'",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " - change HTML content",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "887e353e-9ea1-484d-bf45-72c55609d4d1",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "9c05dbe8-b0f6-40ef-9752-ce83afe724ca",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "When Things Break",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "51227491-24bc-4335-bd89-a76f1d0acbbe",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript timing can be tricky. You might encounter situations where:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6c9d39a5-ebcc-4eec-853d-53bfa14ef696",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Data seems to be missing when you try to use it",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c5739070-0f92-4eb6-b741-22d84e70f77f",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Elements can't be found even though they're in your HTML",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8e1d854b-7003-4a8b-8038-fbc1ca6368f5",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Click handlers behave unexpectedly",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f054f15b-679b-4971-86b1-f6957b5ac358",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "When this happens:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "928da2fd-1296-40e7-9f83-a91e29947300",
     "type": "numberedListItem",
     "props": {
       "backgroundColor": "default",
@@ -739,23 +2124,592 @@
     "content": [
       {
         "type": "text",
-        "text": "Install the extension",
+        "text": "Open the browser DevTools console (F12 or Cmd+Option+I)",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d8ca5050-42b7-499a-8601-a4a9be1dccee",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Look for error messages",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "33506023-ca0c-453e-a6f6-8809822b756a",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Add ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "console.log()",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " statements to trace execution order",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "980e6e03-1275-4ac3-b36c-d702978041bc",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Ask Claude questions like \"Why might this variable be undefined here?\"",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "3c127048-1b9e-405d-8008-883e5d213531",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "ffc2acae-1f27-46e3-b4a4-a2159e58bfcf",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Learning Goals",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c2641b95-439f-4705-8077-b2ee274cc4a3",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "By the end of this lab, you should understand:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "77659689-c3ea-4023-bdad-3471c484fad1",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Async execution:",
         "styles": {
           "bold": true
         }
       },
       {
         "type": "text",
-        "text": " from the ",
+        "text": " Why JavaScript doesn't always run top-to-bottom",
         "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d7ed8fab-c288-4aed-a7cf-07fa003006cc",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Promises & fetch:",
+        "styles": {
+          "bold": true
+        }
       },
       {
+        "type": "text",
+        "text": " How to properly wait for data to load",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "aca1a82a-122d-40a8-ac86-3c81b213a7f5",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "DOM ready:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " When it's safe to access HTML elements",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "fb9bda17-34f2-4181-9446-9c0352bda5a5",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Debugging:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " How to use console.log and DevTools to trace issues",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8c919045-9a71-4943-8fb4-4b05c4179973",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "a8500fee-4cae-476e-aee0-6b47df9ccb36",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Submission",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6505fcfb-a6de-490e-b97b-0a6c3c3e3154",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Before time is up:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ff07c51d-992d-4869-bafc-e84b31a4f01c",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Make sure your code is committed and pushed",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "520d0a64-e89f-4117-90ed-4b73c3f5da76",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Verify your quiz works in the browser",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7187bfae-502e-416f-9fca-a99a7022606f",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Be ready to share with another pair!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "3edfb690-0fcd-4975-b812-b026618206dd",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "git add .\ngit commit -m \"Quiz complete!\"\ngit push",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8d38890e-4f73-4e3d-b4ef-bcfdc5a39bdf",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "0e42ef5c-b842-426b-928e-10f12a35d13d",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Reflection (After Class)",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "438c6eba-540d-4c72-9431-d6b04f29dc11",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "In your repo's README, briefly answer:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b1e142fa-2c7a-4298-9623-4ae8e58f584f",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "What timing/async bugs did you encounter?",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "111c6ddf-f1da-4e51-ada4-f8f6c730a4ab",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "How did you figure out what was wrong?",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c4565d98-6750-4b60-9beb-35b07faaaa95",
+    "type": "numberedListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "What's one thing you learned about JavaScript execution order?",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "55b2fb36-0334-4b8e-bba7-1dca191afdc3",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "c6f4cf04-2789-4167-8f88-1f95210ce9b2",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Extra Credit",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "76f1f476-88ce-40ca-94ad-31fd9d07664b",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Feel free to suggest other possibilities; always mention extra credit in your submission.",
+        "styles": {
+          "italic": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ef8777dd-ec06-4468-b608-6aa1d9be45a3",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "More complex quiz scoring (weighted options, probabilities)",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "91d33779-7069-4e48-9332-ff5f4971ffa2",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Fancy CSS animations for results display",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e691b792-5dbd-4489-947e-8c229029dbfc",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Mobile-responsive design",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b65a5480-9f37-4d99-a4bb-5ee8e8a314f7",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Multiple quizzes on different pages",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "216c14cd-5b3f-49c7-9ce5-99fc1b7d517e",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "e48f8174-acc1-427d-9ab7-6f8a57d519e8",
+    "type": "heading",
+    "props": {
+      "backgroundColor": "blue",
+      "textColor": "default",
+      "textAlignment": "left",
+      "level": 2,
+      "isToggleable": false
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Resources",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "51de5ac4-76e5-46d1-b0d7-89f49c8d2cd7",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
         "type": "link",
-        "href": "https://chromewebstore.google.com/detail/claude-in-chrome/bdlgkbkpbdhmiehjbnplhbdjepkadpip",
+        "href": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous",
         "content": [
           {
             "type": "text",
-            "text": "Chrome Web Store",
+            "text": "MDN: Asynchronous JavaScript",
             "styles": {}
           }
         ]
@@ -764,265 +2718,21 @@
     "children": []
   },
   {
-    "id": "421b2b67-5d87-4d58-adc8-32ce0a3e1b55",
-    "type": "numberedListItem",
+    "id": "c3f9eae3-2361-4f46-9417-39f9b0ab600b",
+    "type": "bulletListItem",
     "props": {
       "backgroundColor": "default",
       "textColor": "default",
       "textAlignment": "left"
     },
     "content": [
-      {
-        "type": "text",
-        "text": "Add the MCP server to Claude Code",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": ":",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "eb2765ae-d123-4a2a-81f9-7c8ccd791ae9",
-    "type": "terminal",
-    "props": {
-      "code": "claude mcp add claude-in-chrome --scope user -- npx -y claude-in-chrome-mcp@latest",
-      "title": "Terminal"
-    },
-    "children": []
-  },
-  {
-    "id": "24e5429e-f124-46e1-9785-476a1d4e535a",
-    "type": "numberedListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left",
-      "start": 3
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Restart Claude Code",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " to load the new server",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "e64eb556-5646-42a7-8ba8-116dd11c3935",
-    "type": "numberedListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Test it",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " by asking Claude to open a browser and navigate to a website",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "a64ba0fa-6a98-4e14-9a2b-01544f164fea",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "6450d164-7b7a-408a-be52-9c8885483fcf",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "rgb(221, 235, 241)",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 3,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Option B: Chrome DevTools MCP",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "fdb9e1a6-6e58-4292-b40d-893e35c2bc95",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "If you're using a ",
-        "styles": {}
-      },
-      {
-        "type": "text",
-        "text": "Claude Console API account",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": ", use the Chrome DevTools MCP server instead:",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "fff3cd7b-8c78-40dc-8956-e29347ebfc93",
-    "type": "numberedListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Add the MCP server to Claude Code",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": ":",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "abbeffa0-9701-4a87-b7dd-09dec249cad0",
-    "type": "terminal",
-    "props": {
-      "code": "claude mcp add chrome-devtools --scope user -- npx chrome-devtools-mcp@latest",
-      "title": "Terminal"
-    },
-    "children": []
-  },
-  {
-    "id": "2f7597ae-1731-4a23-9d7e-3e96919c1f15",
-    "type": "numberedListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left",
-      "start": 2
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Restart Claude Code",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " to load the new server",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "62b317cf-6900-4c28-adaa-e8da32b364ae",
-    "type": "numberedListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Test it",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " by asking Claude to open a browser and navigate to a website",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "e0ae02b0-13dc-4759-8f6c-a7947b3a113a",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Docs: ",
-        "styles": {}
-      },
       {
         "type": "link",
-        "href": "https://github.com/anthropics/anthropic-quickstarts/tree/main/chrome-devtools-mcp",
+        "href": "https://javascript.info/async",
         "content": [
           {
             "type": "text",
-            "text": "GitHub",
-            "styles": {}
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "text": " · ",
-        "styles": {}
-      },
-      {
-        "type": "link",
-        "href": "https://www.npmjs.com/package/chrome-devtools-mcp",
-        "content": [
-          {
-            "type": "text",
-            "text": "npm",
+            "text": "JavaScript.info: Promises, async/await",
             "styles": {}
           }
         ]
@@ -1031,37 +2741,112 @@
     "children": []
   },
   {
-    "id": "ad27a938-d169-4fb1-8556-4bab8eaf9b6a",
-    "type": "paragraph",
+    "id": "e594333e-d19b-43a7-8646-6de75ab05641",
+    "type": "bulletListItem",
     "props": {
       "backgroundColor": "default",
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [],
+    "content": [
+      {
+        "type": "link",
+        "href": "https://developer.chrome.com/docs/devtools/",
+        "content": [
+          {
+            "type": "text",
+            "text": "Chrome DevTools",
+            "styles": {}
+          }
+        ]
+      }
+    ],
     "children": []
   },
   {
-    "id": "2f05d72e-bf72-4485-a490-638d6e09f6d9",
-    "type": "heading",
+    "id": "5c84c68e-3364-43e2-a35d-4623152ffd1b",
+    "type": "bulletListItem",
     "props": {
-      "backgroundColor": "blue",
+      "backgroundColor": "default",
       "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://css-tricks.com/",
+        "content": [
+          {
+            "type": "text",
+            "text": "https://css-tricks.com",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "582f035a-fd72-4d4a-ad0e-c129763331d1",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "http://learn.shayhowe.com/html-css/building-forms/#radio-buttons",
+        "content": [
+          {
+            "type": "text",
+            "text": "Radio Buttons Tutorial",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "be9bef40-8417-4a01-bba5-84e4cded3a7d",
+    "type": "bulletListItem",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "link",
+        "href": "https://javascript.info/",
+        "content": [
+          {
+            "type": "text",
+            "text": "https://javascript.info",
+            "styles": {}
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "4f699278-b365-4d59-8e0b-19cc1c39d0c6",
+    "type": "image",
+    "props": {
       "textAlignment": "left",
-      "level": 2,
-      "isToggleable": false
+      "backgroundColor": "default",
+      "name": "",
+      "url": "https://raw.githubusercontent.com/dartmouth-cs52/content-dartmouth-cs52-26w/main/pages/lab-2-build-a-buzzfeed-quiz/assets/scar-1767548500125.png",
+      "caption": "",
+      "showPreview": true
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "Install Recommended Plugins",
-        "styles": {}
-      }
-    ],
     "children": []
   },
   {
-    "id": "45bb3854-2ce1-4b71-8554-42249d5c4d03",
+    "id": "4d111d9c-7d47-42ab-9dbe-4a97d92c655e",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
@@ -1071,1780 +2856,14 @@
     "content": [
       {
         "type": "text",
-        "text": "These plugins enhance Claude Code's capabilities. Install them from the plugin marketplace:",
+        "text": "Remember to have fun with this. We'll share the quizzes in class!",
         "styles": {}
       }
     ],
     "children": []
   },
   {
-    "id": "6f78b41e-a977-4b86-a268-3dd424a9e04e",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "3a7ecf5c-73b1-4394-bb2a-deea043a4422",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "rgb(221, 235, 241)",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 3,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Frontend Design",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "e1557532-c46d-4500-8257-e5a86500f7ef",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Helps Claude create polished, production-quality web interfaces that avoid the generic \"AI look\":",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "b74378f1-73bc-4d83-89ab-5447b3c8ef5e",
-    "type": "terminal",
-    "props": {
-      "code": "/plugin marketplace add anthropics/claude-code\n/plugin install frontend-design@claude-code-plugins",
-      "title": "Terminal"
-    },
-    "children": []
-  },
-  {
-    "id": "3c1177e9-9806-482b-86ee-8618bcecae3e",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Invoke with ",
-        "styles": {}
-      },
-      {
-        "type": "text",
-        "text": "/frontend-design",
-        "styles": {
-          "code": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " when you want Claude to build UI components.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "a646124c-931f-45b3-b752-749dbbe0b5c6",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "c62bec82-4869-4325-aa52-0c1118cc1f13",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "rgb(221, 235, 241)",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 3,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Context7",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "24d6bece-5044-4917-b81b-c5364a70aab9",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Gives Claude access to up-to-date documentation for libraries and frameworks:",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "14e80c19-cbe1-419b-b1ca-b60b07a690a1",
-    "type": "terminal",
-    "props": {
-      "code": "/plugin install context7@claude-plugins-official",
-      "title": "Terminal"
-    },
-    "children": []
-  },
-  {
-    "id": "b43c303a-245f-49c9-a257-67c5c33d3701",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "💡Context7 automatically fetches current library docs when Claude detects you're working with frameworks — no need to ask for it.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "cda54813-73b6-4eba-9aee-c4a70e43b523",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "0ccb2bdf-908c-4a78-96fb-b3233c646ff2",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "blue",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 2,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Part 1: Review Your Learning Agent Config",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "af626a10-07ec-4b96-8cb1-e396541bfd79",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Check out the ",
-        "styles": {}
-      },
-      {
-        "type": "text",
-        "text": "CLAUDE.md",
-        "styles": {
-          "code": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " file from above. This is a special file that Claude reads at the start of every conversation — it's like giving Claude instructions about how to work with you.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "d60b4bad-b526-4b7b-b470-56574e726b73",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Open it and take a look. It tells Claude to:",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "a3ab4ddf-eb0b-4732-aba9-0780c69ec934",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Break problems into conceptual blocks",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "aa717f74-4364-4871-a006-3d9cbb7a125f",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Explain concepts before writing code",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "d86f03cf-cb17-484e-b36d-ec7a3a0032a5",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Focus on teaching, not just producing code",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "91118a78-ca1d-43fc-865e-4b19f420098a",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Check in to make sure you understand",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "544ed05f-5e5a-4c2a-9df0-84f3efd5eaf7",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "💬Feel free to customize the CLAUDE.md! Want Claude to be more concise? Add that. Prefer more examples? Tell it. This is your learning agent.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "6464c007-3822-4e4c-b300-51db9b125e12",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Once you start working on your project you should also keep very succinct details about your project in this file.  How to run it,  does it have a database, how to test, where to put shared code and abstractions to use. ",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "b04e7008-7fad-4285-8b62-8d925e926594",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "719f62eb-d3d7-4fc6-9b85-b661dd9c719c",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "blue",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 2,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Part 2: Start Building with Claude",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "21232cc3-9627-4240-b985-7952b3e6486b",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Now for the fun part! Open Claude Code in your terminal from your project.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "ed671616-0026-4a97-8421-d623b5cb9280",
-    "type": "terminal",
-    "props": {
-      "code": "cd your-project\nclaude",
-      "title": "Terminal"
-    },
-    "children": []
-  },
-  {
-    "id": "44fb200e-455e-4adb-b12a-820d1ea38df1",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Try prompts like these to get started. Claude will build with you while explaining each concept:",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "22fdebb6-9421-4775-acad-2da3f5e29dee",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "fe5de0f6-51d1-44b6-a6cb-681d019e48b4",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "rgb(221, 235, 241)",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 3,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Start Simple",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "c1221c8d-b352-42d7-95d3-da7542740f4d",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "💬\"i want to build [idea].  walk me through planning it step by step and explain each concept as you go.\"",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "d8341fe8-34ae-4a4f-a827-182d5ec82a2a",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "cd5cbfa1-28bb-497a-b5cd-8b6abcf731b3",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "rgb(221, 235, 241)",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 3,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Understand What You Built",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "53f86b86-7f1d-48eb-a7aa-f116f4e10647",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "💬\"explain how [specific part] works. i want to understand it, not just have working code.\"",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "38466c3a-76fc-4114-99d1-bfce35ccdcb4",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "cf2b644d-33a1-46a0-a37a-1040eb22c95b",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "rgb(221, 235, 241)",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 3,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Add Features Incrementally",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "52752b9d-94e0-4f13-ab78-c805e1277736",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "💬\"now let's add [feature]. before you write code, explain the approach you'd take.\"",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "21edf1b0-5c63-4c49-82e9-e252db065a55",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "fa68f94a-ea5e-43ae-a6f7-c60aec1d91f3",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "rgb(221, 235, 241)",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 3,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Debug Together",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "00b2f4ae-7a05-47db-b2c0-b66e70bd2960",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "💬\"this isn't working: [paste error message or describe issue]. help me understand what's wrong.\"",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "bf9faf6e-eed0-4c68-820f-be526961ac71",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "5900ab56-dff2-4a94-95b7-4b86d5f0f4da",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "blue",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 2,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Tips for Working with Claude Code",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "e1585e7d-ac9a-4b99-8c3a-c0b7c5b66df6",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "d2ca43bd-2971-48a0-a31c-99fd2d874b2f",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "rgb(221, 235, 241)",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 3,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Essential Commands",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "23b257ff-0593-4bfb-817c-3a8daf0f3440",
-    "type": "table",
-    "props": {
-      "textColor": "default"
-    },
-    "content": {
-      "type": "tableContent",
-      "columnWidths": [
-        null,
-        null
-      ],
-      "headerRows": 1,
-      "rows": [
-        {
-          "cells": [
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Command",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            },
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "What it does",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "/plan",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            },
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Have Claude plan before coding — great for understanding the approach first",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "/compact",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            },
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Summarize the conversation when context gets long",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "/clear",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            },
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Start fresh when switching to a different task",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Escape",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            },
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Cancel Claude mid-response if it's going the wrong direction",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    "children": []
-  },
-  {
-    "id": "d0a9ffc4-b862-49a4-8e81-92bd6988b65c",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "3201df93-2df6-4289-9729-edad4768b46c",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "rgb(251, 228, 228)",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 3,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Use Plan Mode — Seriously",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "88547c24-8857-40fc-8662-6fff8e2e34db",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "This is the most important habit to build.",
-        "styles": {
-          "bold": true
-        }
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "ace7d436-923a-4aaa-9bab-3a28f7e286af",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "When you give Claude a task, it wants to start coding immediately. That's often a mistake. Plan mode (",
-        "styles": {}
-      },
-      {
-        "type": "text",
-        "text": "/plan",
-        "styles": {
-          "code": true
-        }
-      },
-      {
-        "type": "text",
-        "text": ") forces Claude to think through the approach first:",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "33c6af09-0e92-4448-8784-d8689d68be94",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "You see the strategy before any code is written",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " - Catch bad approaches early, not after 500 lines of code.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "d1c4cd98-6597-4183-a034-40782cb830a6",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "You can ask questions about the plan",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " - \"Why this library?\" or \"What about edge case X?\"",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "b0a15fe9-3298-4924-b48e-864f9ba5b8af",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "You learn how to break down problems",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " - Watching Claude decompose a task teaches you to think the same way.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "1ccc5054-c6c6-485b-8ab0-e130f64d1b54",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "You stay in control",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " - Approve each phase before Claude moves on.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "cbdbdac4-4a88-4937-ad73-a398b302f650",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Without plan mode, Claude might build something that technically works but uses the wrong approach, wrong libraries, or wrong architecture. ",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "c42a698e-7da1-40d0-84f7-08b95757a52f",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "💬Try: \"let's plan this out before writing any code. what are the main pieces we need to build?\"",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "4e2e59f5-6dbc-4f2b-9c58-8673c1f80041",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Plan mode uses exploration subagents and it does a great job figuring out where in the project you already are.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "92320df5-fa73-4f4e-87b6-dff0fc42aa0d",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "d3785957-51bc-40cf-bb27-ea47e15db909",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "rgb(221, 235, 241)",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 3,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Effective Prompting",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "fcf77679-9f54-4162-8287-852d82398bfd",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Paste error messages directly",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " - Claude reads stack traces well. Copy the whole thing.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "111f53c5-3826-47f4-99c6-a7a1be4ba797",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Share screenshots",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " - Claude can see images. Great for debugging UI issues. Just paste in.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "e23d2414-d038-4849-919a-b758cf8d83d4",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Be specific",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " - \"Fix the bug\" is vague. \"The button click handler isn't firing\" is actionable.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "af90f315-9fd5-48ea-8a95-c8203ff5e687",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Ask for explanations",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " - If Claude writes something you don't understand, stop and ask. That's the whole point.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "4db33b3a-1421-4b7e-baa6-2597363d5136",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "3c659100-b197-4d2d-887c-1f215382860b",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "rgb(221, 235, 241)",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 3,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Project Workflow",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "101f9c03-ad75-4061-887d-16442f559dbb",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Claude can use git",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " - Ask it to commit changes, create branches, even open PRs.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "eda595fe-4b27-43c8-b7b5-cd0c9dd7cef1",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Review diffs before accepting",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " - Claude shows you what it's about to change. Read it.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "a6c74a18-83c5-4ec3-97e8-584d83fbb4f4",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Start new conversations",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " - When switching tasks, use ",
-        "styles": {}
-      },
-      {
-        "type": "text",
-        "text": "/clear",
-        "styles": {
-          "code": true
-        }
-      },
-      {
-        "type": "text",
-        "text": ". Old context can confuse things.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "418bfc23-a7d0-4d45-959d-6baacbb66e09",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Use CLAUDE.md for memory",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " - Want Claude to remember something? Ask it to add notes to CLAUDE.md.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "d1a0c43c-549e-4d24-9650-103e8f82615b",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "3fc65ef2-dd5f-4bc8-8178-b8c86302fc9a",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "rgb(221, 235, 241)",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 3,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Efficiency Tips",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "c276d2ff-efa3-4b50-ad0e-db86b46cdb1d",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Keep CLAUDE.md focused",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " - Bloated instructions waste tokens every conversation.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "1046e6b4-59fc-4226-944f-d19df4141e1f",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Test in browser",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " - If you set up Chrome integration, ask Claude to open your page and test it.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "0fe33673-5310-4953-a684-3a5c5f68df00",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Let Claude search the web",
-        "styles": {
-          "bold": true
-        }
-      },
-      {
-        "type": "text",
-        "text": " - It can look up current docs, APIs, and solutions.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "f325c70d-2636-4865-b92a-bae524bc8fcc",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "4932cf92-4f44-4cf4-8701-a2b1c0e5d6bf",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "blue",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 2,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "What You Should Learn",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "d86c3def-56c2-4b44-905c-78e17ef9662a",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "By working with Claude Code, you should get comfortable with:",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "537b30a2-0fcc-45bf-8ff2-a2b62bdb2ac5",
-    "type": "table",
-    "props": {
-      "textColor": "default"
-    },
-    "content": {
-      "type": "tableContent",
-      "columnWidths": [
-        null,
-        null
-      ],
-      "headerRows": 1,
-      "rows": [
-        {
-          "cells": [
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Skill",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            },
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Why it matters",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Breaking down problems",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            },
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Complex features become manageable when split into small steps",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Reading code you didn't write",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            },
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Claude generates code — understanding it is your job",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Debugging with context",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            },
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Good error descriptions get better solutions",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Iterating on solutions",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            },
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "First attempts rarely perfect — refine as you go",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Knowing when to ask",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            },
-            {
-              "type": "tableCell",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Stop Claude when confused rather than letting it continue",
-                  "styles": {}
-                }
-              ],
-              "props": {
-                "colspan": 1,
-                "rowspan": 1,
-                "backgroundColor": "default",
-                "textColor": "default",
-                "textAlignment": "left"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    "children": []
-  },
-  {
-    "id": "64915a6d-10be-4217-a19f-756c50f57cab",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "The goal isn't just working code — it's understanding what you built and being able to modify it yourself.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "0bd27ae8-e66d-4785-a190-7ab8190a8156",
+    "id": "64bd03f3-20f0-4224-ae72-c4fb6f8f755c",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
