@@ -1,9 +1,7 @@
 {
   "modules": {
     "self-formed": {
-      "pages": [
-        "introduction-to-rails"
-      ],
+      "pages": [],
       "slides": [],
       "assignments": {
         "rails": {
