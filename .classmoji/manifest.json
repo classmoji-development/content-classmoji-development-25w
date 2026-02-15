@@ -32,7 +32,10 @@
     }
   },
   "general": {
-    "pages": [],
+    "pages": [
+      "playground",
+      "trial"
+    ],
     "slides": []
   }
 }
