@@ -1,14 +1,5 @@
 [
   {
-    "id": "32033444-6be5-496c-8476-10a6433d933c",
-    "type": "pageLink",
-    "props": {
-      "pageId": "bcbce420-e6f5-440a-87bc-277108bdd33e",
-      "pageTitle": "Lab 1 Part 1: Build A Landing Page HTML"
-    },
-    "children": []
-  },
-  {
     "id": "ae599b73-71cc-4f70-b96a-5763736c9f04",
     "type": "paragraph",
     "props": {
@@ -17,15 +8,6 @@
       "textAlignment": "left"
     },
     "content": [],
-    "children": []
-  },
-  {
-    "id": "7afdb9c7-8368-4b9e-af91-691db0674cca",
-    "type": "pageLink",
-    "props": {
-      "pageId": "",
-      "pageTitle": ""
-    },
     "children": []
   },
   {
