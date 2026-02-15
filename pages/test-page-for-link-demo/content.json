@@ -20,20 +20,12 @@
     "children": []
   },
   {
-    "id": "c8b658b8-fdb3-44ea-885f-9d2b2c35042c",
-    "type": "paragraph",
+    "id": "7afdb9c7-8368-4b9e-af91-691db0674cca",
+    "type": "pageLink",
     "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "pageId": "",
+      "pageTitle": ""
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/lin",
-        "styles": {}
-      }
-    ],
     "children": []
   },
   {
