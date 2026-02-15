@@ -1,6 +1,23 @@
 [
   {
-    "id": "a345206b-e163-4c4e-8558-3554ad763609",
+    "id": "77d7787c-bf19-4eef-865c-e07ea3c95454",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "/",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "973c2a49-22b1-4a84-845b-1d47d8321e4b",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
