@@ -36,13 +36,7 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "lsss",
-        "styles": {}
-      }
-    ],
+    "content": [],
     "children": []
   },
   {
