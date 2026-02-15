@@ -225,7 +225,7 @@
             "id": "da64e596-bb74-4b5b-ad6e-72e8828a7e10",
             "type": "image",
             "props": {
-              "textAlignment": "left",
+              "textAlignment": "center",
               "backgroundColor": "default",
               "name": "",
               "url": "https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pages/dartmouth-cs98/assets/dev-magic-1768181433911.gif",
