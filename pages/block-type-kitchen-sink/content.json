@@ -3,290 +3,775 @@
     {
       "id": "s1",
       "type": "heading",
-      "props": { "level": 1, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Heading Background Colors", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 1,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Heading Background Colors",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "s1-p",
       "type": "paragraph",
-      "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Every heading background color — test in both light and dark mode.", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Every heading background color — test in both light and dark mode.",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "h2-blue",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "blue", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Blue Background", "styles": {} }],
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Blue Background",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "h2-red",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "red", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Red Background", "styles": {} }],
+      "props": {
+        "backgroundColor": "red",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Red Background",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "h2-yellow",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "yellow", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Yellow Background", "styles": {} }],
+      "props": {
+        "backgroundColor": "yellow",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Yellow Background",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "h2-orange",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "orange", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Orange Background", "styles": {} }],
+      "props": {
+        "backgroundColor": "orange",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Orange Background",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "h2-green",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "green", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Green Background", "styles": {} }],
+      "props": {
+        "backgroundColor": "green",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Green Background",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "h2-purple",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "purple", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Purple Background", "styles": {} }],
+      "props": {
+        "backgroundColor": "purple",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Purple Background",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "h2-pink",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "pink", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Pink Background", "styles": {} }],
+      "props": {
+        "backgroundColor": "pink",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Pink Background",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "h2-brown",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "brown", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Brown Background", "styles": {} }],
+      "props": {
+        "backgroundColor": "brown",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Brown Background",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "h2-gray",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "gray", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Gray Background", "styles": {} }],
+      "props": {
+        "backgroundColor": "gray",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Gray Background",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "h3-note",
       "type": "paragraph",
-      "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "And as H3 headings:", "styles": { "italic": true } }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "And as H3 headings:",
+          "styles": {
+            "italic": true
+          }
+        }
+      ],
       "children": []
     },
     {
       "id": "h3-blue",
       "type": "heading",
-      "props": { "level": 3, "textColor": "default", "backgroundColor": "blue", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "H3 Blue", "styles": {} }],
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 3,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "H3 Blue",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "h3-green",
       "type": "heading",
-      "props": { "level": 3, "textColor": "default", "backgroundColor": "green", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "H3 Green", "styles": {} }],
+      "props": {
+        "backgroundColor": "green",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 3,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "H3 Green",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "h3-purple",
       "type": "heading",
-      "props": { "level": 3, "textColor": "default", "backgroundColor": "purple", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "H3 Purple", "styles": {} }],
+      "props": {
+        "backgroundColor": "purple",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 3,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "H3 Purple",
+          "styles": {}
+        }
+      ],
       "children": []
     },
-
     {
       "id": "s2",
       "type": "heading",
-      "props": { "level": 1, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Text Styles", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 1,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Text Styles",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "s2-p1",
       "type": "paragraph",
-      "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
       "content": [
-        { "type": "text", "text": "This paragraph has ", "styles": {} },
-        { "type": "text", "text": "bold", "styles": { "bold": true } },
-        { "type": "text", "text": ", ", "styles": {} },
-        { "type": "text", "text": "italic", "styles": { "italic": true } },
-        { "type": "text", "text": ", ", "styles": {} },
-        { "type": "text", "text": "underline", "styles": { "underline": true } },
-        { "type": "text", "text": ", ", "styles": {} },
-        { "type": "text", "text": "strikethrough", "styles": { "strike": true } },
-        { "type": "text", "text": ", and ", "styles": {} },
-        { "type": "text", "text": "inline code", "styles": { "code": true } },
-        { "type": "text", "text": " styles.", "styles": {} }
+        {
+          "type": "text",
+          "text": "This paragraph has ",
+          "styles": {}
+        },
+        {
+          "type": "text",
+          "text": "bold",
+          "styles": {
+            "bold": true
+          }
+        },
+        {
+          "type": "text",
+          "text": ", ",
+          "styles": {}
+        },
+        {
+          "type": "text",
+          "text": "italic",
+          "styles": {
+            "italic": true
+          }
+        },
+        {
+          "type": "text",
+          "text": ", ",
+          "styles": {}
+        },
+        {
+          "type": "text",
+          "text": "underline",
+          "styles": {
+            "underline": true
+          }
+        },
+        {
+          "type": "text",
+          "text": ", ",
+          "styles": {}
+        },
+        {
+          "type": "text",
+          "text": "strikethrough",
+          "styles": {
+            "strike": true
+          }
+        },
+        {
+          "type": "text",
+          "text": ", and ",
+          "styles": {}
+        },
+        {
+          "type": "text",
+          "text": "inline code",
+          "styles": {
+            "code": true
+          }
+        },
+        {
+          "type": "text",
+          "text": " styles.",
+          "styles": {}
+        }
       ],
       "children": []
     },
     {
       "id": "s2-p2",
       "type": "paragraph",
-      "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
       "content": [
-        { "type": "text", "text": "Bold italic combo: ", "styles": {} },
-        { "type": "text", "text": "bold and italic together", "styles": { "bold": true, "italic": true } },
-        { "type": "text", "text": ". Link: ", "styles": {} },
-        { "type": "link", "href": "https://github.com/classmoji", "content": [{ "type": "text", "text": "Classmoji on GitHub", "styles": {} }] },
-        { "type": "text", "text": ".", "styles": {} }
+        {
+          "type": "text",
+          "text": "Bold italic combo: ",
+          "styles": {}
+        },
+        {
+          "type": "text",
+          "text": "bold and italic together",
+          "styles": {
+            "bold": true,
+            "italic": true
+          }
+        },
+        {
+          "type": "text",
+          "text": ". Link: ",
+          "styles": {}
+        },
+        {
+          "type": "link",
+          "href": "https://github.com/classmoji",
+          "content": [
+            {
+              "type": "text",
+              "text": "Classmoji on GitHub",
+              "styles": {}
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": ".",
+          "styles": {}
+        }
       ],
       "children": []
     },
-
     {
       "id": "s2-colors",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Text Colors", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Text Colors",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "tc-red",
       "type": "paragraph",
-      "props": { "textColor": "red", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Red text color", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "red",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Red text color",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "tc-blue",
       "type": "paragraph",
-      "props": { "textColor": "blue", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Blue text color", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "blue",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Blue text color",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "tc-green",
       "type": "paragraph",
-      "props": { "textColor": "green", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Green text color", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "green",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Green text color",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "tc-purple",
       "type": "paragraph",
-      "props": { "textColor": "purple", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Purple text color", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "purple",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Purple text color",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "tc-orange",
       "type": "paragraph",
-      "props": { "textColor": "orange", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Orange text color", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "orange",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Orange text color",
+          "styles": {}
+        }
+      ],
       "children": []
     },
-
     {
       "id": "s2-pbg",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Paragraph Background Colors", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Paragraph Background Colors",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "pb-blue",
       "type": "paragraph",
-      "props": { "textColor": "default", "backgroundColor": "blue", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Blue background paragraph", "styles": {} }],
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Blue background paragraph",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "pb-yellow",
       "type": "paragraph",
-      "props": { "textColor": "default", "backgroundColor": "yellow", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Yellow background paragraph", "styles": {} }],
+      "props": {
+        "backgroundColor": "yellow",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Yellow background paragraph",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "pb-red",
       "type": "paragraph",
-      "props": { "textColor": "default", "backgroundColor": "red", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Red background paragraph", "styles": {} }],
+      "props": {
+        "backgroundColor": "red",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Red background paragraph",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "pb-green",
       "type": "paragraph",
-      "props": { "textColor": "default", "backgroundColor": "green", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Green background paragraph", "styles": {} }],
+      "props": {
+        "backgroundColor": "green",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Green background paragraph",
+          "styles": {}
+        }
+      ],
       "children": []
     },
-
     {
       "id": "s2-align",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Text Alignment", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Text Alignment",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "ta-left",
       "type": "paragraph",
-      "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Left aligned text (default)", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Left aligned text (default)",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "ta-center",
       "type": "paragraph",
-      "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "center" },
-      "content": [{ "type": "text", "text": "Center aligned text", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "center"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Center aligned text",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "ta-right",
       "type": "paragraph",
-      "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "right" },
-      "content": [{ "type": "text", "text": "Right aligned text", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "right"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Right aligned text",
+          "styles": {}
+        }
+      ],
       "children": []
     },
-
     {
       "id": "s3",
       "type": "heading",
-      "props": { "level": 1, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Lists", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 1,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Lists",
+          "styles": {}
+        }
+      ],
       "children": []
     },
-
     {
       "id": "s3-bh",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Bullet List", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Bullet List",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "bl-1",
       "type": "bulletListItem",
-      "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "First item", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "First item",
+          "styles": {}
+        }
+      ],
       "children": [
         {
           "id": "bl-1a",
           "type": "bulletListItem",
-          "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-          "content": [{ "type": "text", "text": "Nested item A", "styles": {} }],
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Nested item A",
+              "styles": {}
+            }
+          ],
           "children": []
         },
         {
           "id": "bl-1b",
           "type": "bulletListItem",
-          "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-          "content": [{ "type": "text", "text": "Nested item B", "styles": {} }],
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Nested item B",
+              "styles": {}
+            }
+          ],
           "children": []
         }
       ]
@@ -294,46 +779,111 @@
     {
       "id": "bl-2",
       "type": "bulletListItem",
-      "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
       "content": [
-        { "type": "text", "text": "Second item with ", "styles": {} },
-        { "type": "text", "text": "bold text", "styles": { "bold": true } }
+        {
+          "type": "text",
+          "text": "Second item with ",
+          "styles": {}
+        },
+        {
+          "type": "text",
+          "text": "bold text",
+          "styles": {
+            "bold": true
+          }
+        }
       ],
       "children": []
     },
     {
       "id": "bl-3",
       "type": "bulletListItem",
-      "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Third item", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Third item",
+          "styles": {}
+        }
+      ],
       "children": []
     },
-
     {
       "id": "s3-nh",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Numbered List", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Numbered List",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "nl-1",
       "type": "numberedListItem",
-      "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Step one: setup", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Step one: setup",
+          "styles": {}
+        }
+      ],
       "children": [
         {
           "id": "nl-1a",
           "type": "numberedListItem",
-          "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-          "content": [{ "type": "text", "text": "Sub-step: install dependencies", "styles": {} }],
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Sub-step: install dependencies",
+              "styles": {}
+            }
+          ],
           "children": []
         },
         {
           "id": "nl-1b",
           "type": "numberedListItem",
-          "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-          "content": [{ "type": "text", "text": "Sub-step: configure environment", "styles": {} }],
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Sub-step: configure environment",
+              "styles": {}
+            }
+          ],
           "children": []
         }
       ]
@@ -341,248 +891,781 @@
     {
       "id": "nl-2",
       "type": "numberedListItem",
-      "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Step two: develop", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Step two: develop",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "nl-3",
       "type": "numberedListItem",
-      "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Step three: deploy", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Step three: deploy",
+          "styles": {}
+        }
+      ],
       "children": []
     },
-
     {
       "id": "s3-ch",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Checklist", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Checklist",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "cl-1",
       "type": "checkListItem",
-      "props": { "checked": true, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Completed task", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "checked": true
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Completed task",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "cl-2",
       "type": "checkListItem",
-      "props": { "checked": false, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Pending task", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "checked": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Pending task",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "cl-3",
       "type": "checkListItem",
-      "props": { "checked": true, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Another done task", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "checked": true
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Another done task",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "cl-4",
       "type": "checkListItem",
-      "props": { "checked": false, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Still todo", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "checked": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Still todo",
+          "styles": {}
+        }
+      ],
       "children": []
     },
-
     {
       "id": "s4",
       "type": "heading",
-      "props": { "level": 1, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Block Quote", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 1,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Block Quote",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "q1",
       "type": "quote",
-      "props": { "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "The best way to predict the future is to invent it. — Alan Kay", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "The best way to predict the future is to invent it. — Alan Kay",
+          "styles": {}
+        }
+      ],
       "children": []
     },
-
     {
       "id": "s5",
       "type": "heading",
-      "props": { "level": 1, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Code Block", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 1,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Code Block",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "cb1",
       "type": "codeBlock",
-      "props": { "language": "javascript" },
-      "content": [{ "type": "text", "text": "// React component example\nconst App = ({ name }) => {\n  const [count, setCount] = useState(0);\n\n  return (\n    <div className=\"app\">\n      <h1>Hello, {name}!</h1>\n      <button onClick={() => setCount(c => c + 1)}>\n        Count: {count}\n      </button>\n    </div>\n  );\n};", "styles": {} }],
+      "props": {
+        "language": "javascript"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "// React component example\nconst App = ({ name }) => {\n  const [count, setCount] = useState(0);\n\n  return (\n    <div className=\"app\">\n      <h1>Hello, {name}!</h1>\n      <button onClick={() => setCount(c => c + 1)}>\n        Count: {count}\n      </button>\n    </div>\n  );\n};",
+          "styles": {}
+        }
+      ],
       "children": []
     },
-
     {
       "id": "s6",
       "type": "heading",
-      "props": { "level": 1, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Table", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 1,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Table",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "tbl1",
       "type": "table",
-      "props": { "textColor": "default", "backgroundColor": "default" },
+      "props": {
+        "textColor": "default"
+      },
       "content": {
         "type": "tableContent",
+        "columnWidths": [
+          null,
+          null,
+          null
+        ],
         "rows": [
-          { "cells": [[{ "type": "text", "text": "Feature", "styles": { "bold": true } }], [{ "type": "text", "text": "Status", "styles": { "bold": true } }], [{ "type": "text", "text": "Notes", "styles": { "bold": true } }]] },
-          { "cells": [[{ "type": "text", "text": "Dark Mode", "styles": {} }], [{ "type": "text", "text": "Complete", "styles": {} }], [{ "type": "text", "text": "All colors tested", "styles": {} }]] },
-          { "cells": [[{ "type": "text", "text": "Cover Image", "styles": {} }], [{ "type": "text", "text": "Complete", "styles": {} }], [{ "type": "text", "text": "JSON metadata", "styles": {} }]] },
-          { "cells": [[{ "type": "text", "text": "Auto-save", "styles": {} }], [{ "type": "text", "text": "Removed", "styles": {} }], [{ "type": "text", "text": "Explicit saves only", "styles": {} }]] }
+          {
+            "cells": [
+              {
+                "type": "tableCell",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Feature",
+                    "styles": {
+                      "bold": true
+                    }
+                  }
+                ],
+                "props": {
+                  "colspan": 1,
+                  "rowspan": 1,
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                }
+              },
+              {
+                "type": "tableCell",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Status",
+                    "styles": {
+                      "bold": true
+                    }
+                  }
+                ],
+                "props": {
+                  "colspan": 1,
+                  "rowspan": 1,
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                }
+              },
+              {
+                "type": "tableCell",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Notes",
+                    "styles": {
+                      "bold": true
+                    }
+                  }
+                ],
+                "props": {
+                  "colspan": 1,
+                  "rowspan": 1,
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "type": "tableCell",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Dark Mode",
+                    "styles": {}
+                  }
+                ],
+                "props": {
+                  "colspan": 1,
+                  "rowspan": 1,
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                }
+              },
+              {
+                "type": "tableCell",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Complete",
+                    "styles": {}
+                  }
+                ],
+                "props": {
+                  "colspan": 1,
+                  "rowspan": 1,
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                }
+              },
+              {
+                "type": "tableCell",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "All colors tested",
+                    "styles": {}
+                  }
+                ],
+                "props": {
+                  "colspan": 1,
+                  "rowspan": 1,
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "type": "tableCell",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Cover Image",
+                    "styles": {}
+                  }
+                ],
+                "props": {
+                  "colspan": 1,
+                  "rowspan": 1,
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                }
+              },
+              {
+                "type": "tableCell",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Complete",
+                    "styles": {}
+                  }
+                ],
+                "props": {
+                  "colspan": 1,
+                  "rowspan": 1,
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                }
+              },
+              {
+                "type": "tableCell",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "JSON metadata",
+                    "styles": {}
+                  }
+                ],
+                "props": {
+                  "colspan": 1,
+                  "rowspan": 1,
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "type": "tableCell",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Auto-save",
+                    "styles": {}
+                  }
+                ],
+                "props": {
+                  "colspan": 1,
+                  "rowspan": 1,
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                }
+              },
+              {
+                "type": "tableCell",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Removed",
+                    "styles": {}
+                  }
+                ],
+                "props": {
+                  "colspan": 1,
+                  "rowspan": 1,
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                }
+              },
+              {
+                "type": "tableCell",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Explicit saves only",
+                    "styles": {}
+                  }
+                ],
+                "props": {
+                  "colspan": 1,
+                  "rowspan": 1,
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                }
+              }
+            ]
+          }
         ]
       },
       "children": []
     },
-
     {
       "id": "div1",
       "type": "divider",
       "props": {},
       "children": []
     },
-
     {
       "id": "s7",
       "type": "heading",
-      "props": { "level": 1, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Custom Blocks", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 1,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Custom Blocks",
+          "styles": {}
+        }
+      ],
       "children": []
     },
-
     {
       "id": "s7-ch",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Callout", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Callout",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "co1",
       "type": "callout",
-      "props": { "emoji": "💡", "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "This is a tip callout. Use callouts to highlight important information for students.", "styles": {} }],
+      "props": {
+        "textAlignment": "left",
+        "emoji": "💡"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "This is a tip callout. Use callouts to highlight important information for students.",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "co2",
       "type": "callout",
-      "props": { "emoji": "⚡", "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Lightning callout for quick tips and tricks.", "styles": {} }],
+      "props": {
+        "textAlignment": "left",
+        "emoji": "⚡"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Lightning callout for quick tips and tricks.",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "co3",
       "type": "callout",
-      "props": { "emoji": "🔥", "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Fire callout for important warnings or hot topics.", "styles": {} }],
+      "props": {
+        "textAlignment": "left",
+        "emoji": "🔥"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Fire callout for important warnings or hot topics.",
+          "styles": {}
+        }
+      ],
       "children": []
     },
-
     {
       "id": "s7-th",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Terminal", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Terminal",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "term1",
       "type": "terminal",
-      "props": { "code": "$ npm install\n$ npm run dev\n\n> classmoji@1.0.0 dev\n> turbo dev\n\n• Packages in scope: @classmoji/database, @classmoji/services\n✓ All services started successfully", "title": "Getting Started" },
+      "props": {
+        "code": "$ npm install\n$ npm run dev\n\n> classmoji@1.0.0 dev\n> turbo dev\n\n• Packages in scope: @classmoji/database, @classmoji/services\n✓ All services started successfully",
+        "title": "Getting Started"
+      },
       "children": []
     },
-
     {
       "id": "s7-ph",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Profile Card", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Profile Card",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "prof1",
       "type": "profile",
-      "props": { "name": "Tim Tregubov", "title": "CS Professor", "imageUrl": "https://avatars.githubusercontent.com/u/1450774", "links": "https://github.com/timofei7" },
+      "props": {
+        "name": "Tim Tregubov",
+        "title": "CS Professor",
+        "imageUrl": "https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pages/block-type-kitchen-sink/assets/1771182309673-stare-africa-gif.webp",
+        "links": "https://github.com/timofei7"
+      },
       "children": []
     },
-
     {
       "id": "s7-vh",
       "type": "heading",
-      "props": { "level": 2, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Video (YouTube)", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Video (YouTube)",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "vid1",
       "type": "video",
-      "props": { "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ", "caption": "Sample YouTube embed" },
+      "props": {
+        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "caption": "Sample YouTube embed"
+      },
       "children": []
     },
-
     {
       "id": "div2",
       "type": "divider",
       "props": {},
       "children": []
     },
-
     {
       "id": "s8",
       "type": "heading",
-      "props": { "level": 1, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Image", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 1,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Image",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "img1",
       "type": "image",
-      "props": { "url": "https://picsum.photos/800/400", "caption": "Random placeholder image", "previewWidth": 800, "textAlignment": "left", "backgroundColor": "default" },
+      "props": {
+        "textAlignment": "left",
+        "backgroundColor": "default",
+        "name": "",
+        "url": "https://picsum.photos/800/400",
+        "caption": "Random placeholder image",
+        "showPreview": true,
+        "previewWidth": 800
+      },
       "children": []
     },
-
     {
       "id": "s9",
       "type": "heading",
-      "props": { "level": 1, "textColor": "default", "backgroundColor": "default", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Color Combinations", "styles": {} }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 1,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Color Combinations",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "combo1",
       "type": "heading",
-      "props": { "level": 2, "textColor": "red", "backgroundColor": "yellow", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Red text on Yellow background", "styles": {} }],
+      "props": {
+        "backgroundColor": "yellow",
+        "textColor": "red",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Red text on Yellow background",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "combo2",
       "type": "heading",
-      "props": { "level": 2, "textColor": "blue", "backgroundColor": "gray", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Blue text on Gray background", "styles": {} }],
+      "props": {
+        "backgroundColor": "gray",
+        "textColor": "blue",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Blue text on Gray background",
+          "styles": {}
+        }
+      ],
       "children": []
     },
     {
       "id": "combo3",
       "type": "heading",
-      "props": { "level": 3, "textColor": "purple", "backgroundColor": "pink", "textAlignment": "left" },
-      "content": [{ "type": "text", "text": "Purple text on Pink background", "styles": {} }],
+      "props": {
+        "backgroundColor": "pink",
+        "textColor": "purple",
+        "textAlignment": "left",
+        "level": 3,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Purple text on Pink background",
+          "styles": {}
+        }
+      ],
       "children": []
     },
-
     {
       "id": "end",
       "type": "paragraph",
-      "props": { "textColor": "gray", "backgroundColor": "default", "textAlignment": "center" },
-      "content": [{ "type": "text", "text": "— End of Block Type Kitchen Sink —", "styles": { "italic": true } }],
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "gray",
+        "textAlignment": "center"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "— End of Block Type Kitchen Sink —",
+          "styles": {
+            "italic": true
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "11ee5a2f-a5a3-4432-9c00-eb0516843e13",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [],
       "children": []
     }
   ]
