@@ -1,19 +1,11 @@
 [
   {
-    "id": "77d7787c-bf19-4eef-865c-e07ea3c95454",
-    "type": "paragraph",
+    "id": "ad82e5c6-19a6-4398-95d1-e2fd1908b4a4",
+    "type": "pageLink",
     "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "pageId": "",
+      "pageTitle": ""
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "/",
-        "styles": {}
-      }
-    ],
     "children": []
   },
   {
