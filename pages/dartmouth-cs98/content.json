@@ -230,7 +230,8 @@
               "name": "",
               "url": "https://raw.githubusercontent.com/classmoji-development/content-classmoji-development-25w/main/pages/dartmouth-cs98/assets/dev-magic-1768181433911.gif",
               "caption": "",
-              "showPreview": true
+              "showPreview": true,
+              "previewWidth": 379
             },
             "children": []
           }
