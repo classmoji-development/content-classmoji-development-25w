@@ -33,8 +33,7 @@
   },
   "general": {
     "pages": [
-      "playground",
-      "trial"
+      "playground"
     ],
     "slides": []
   }
