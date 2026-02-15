@@ -7,7 +7,13 @@
       "textColor": "default",
       "textAlignment": "left"
     },
-    "content": [],
+    "content": [
+      {
+        "type": "text",
+        "text": "/lin",
+        "styles": {}
+      }
+    ],
     "children": []
   },
   {
