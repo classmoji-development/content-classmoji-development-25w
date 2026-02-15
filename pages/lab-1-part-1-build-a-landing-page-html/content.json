@@ -1,23 +1,48 @@
 [
   {
-    "id": "ad82e5c6-19a6-4398-95d1-e2fd1908b4a4",
-    "type": "pageLink",
-    "props": {
-      "pageId": "10f999ce-48f3-437e-818d-249b6f119f04",
-      "pageTitle": "Test Page for Link Demo"
-    },
-    "children": []
-  },
-  {
-    "id": "a385e6b5-ea9f-4d05-87ba-a2f4ec4039c1",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
+    "id": "51397be9-eae5-4d37-997d-c5616c734ab2",
+    "type": "columnList",
+    "props": {},
+    "children": [
+      {
+        "id": "96645061-e370-44de-91a9-42bc012aedbb",
+        "type": "column",
+        "props": {
+          "width": 1
+        },
+        "children": [
+          {
+            "id": "a385e6b5-ea9f-4d05-87ba-a2f4ec4039c1",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "1b53d467-1172-449f-8e28-e15662474d97",
+        "type": "column",
+        "props": {
+          "width": 1
+        },
+        "children": [
+          {
+            "id": "ad82e5c6-19a6-4398-95d1-e2fd1908b4a4",
+            "type": "pageLink",
+            "props": {
+              "pageId": "10f999ce-48f3-437e-818d-249b6f119f04",
+              "pageTitle": "Test Page for Link Demo"
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "973c2a49-22b1-4a84-845b-1d47d8321e4b",
