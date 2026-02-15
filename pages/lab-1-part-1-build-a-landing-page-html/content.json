@@ -3,13 +3,24 @@
     "id": "ad82e5c6-19a6-4398-95d1-e2fd1908b4a4",
     "type": "pageLink",
     "props": {
-      "pageId": "",
-      "pageTitle": ""
+      "pageId": "10f999ce-48f3-437e-818d-249b6f119f04",
+      "pageTitle": "Test Page for Link Demo"
     },
     "children": []
   },
   {
     "id": "973c2a49-22b1-4a84-845b-1d47d8321e4b",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "a7d816db-f270-4c72-a6cb-09afab223261",
     "type": "paragraph",
     "props": {
       "backgroundColor": "default",
