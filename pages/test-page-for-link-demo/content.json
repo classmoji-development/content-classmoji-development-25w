@@ -40,6 +40,26 @@
     "children": []
   },
   {
+    "id": "4e01c87f-2293-482b-9ad0-44b4e1b5164c",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "9fc2e2fa-c1fd-415d-aeb2-f294358f1260",
+    "type": "pageLink",
+    "props": {
+      "pageId": "",
+      "pageTitle": ""
+    },
+    "children": []
+  },
+  {
     "id": "b0584207-c73c-4f7c-aea0-8089b5f02ddc",
     "type": "paragraph",
     "props": {
