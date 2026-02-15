@@ -32,7 +32,9 @@
     }
   },
   "general": {
-    "pages": [],
+    "pages": [
+      "sample-pape"
+    ],
     "slides": []
   }
 }
