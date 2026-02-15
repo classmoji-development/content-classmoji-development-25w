@@ -32,9 +32,7 @@
     }
   },
   "general": {
-    "pages": [
-      "test-page-for-link-demo"
-    ],
+    "pages": [],
     "slides": []
   }
 }
