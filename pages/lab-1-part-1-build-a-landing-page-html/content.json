@@ -9,6 +9,17 @@
     "children": []
   },
   {
+    "id": "a385e6b5-ea9f-4d05-87ba-a2f4ec4039c1",
+    "type": "paragraph",
+    "props": {
+      "backgroundColor": "default",
+      "textColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
     "id": "973c2a49-22b1-4a84-845b-1d47d8321e4b",
     "type": "paragraph",
     "props": {
