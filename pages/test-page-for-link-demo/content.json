@@ -51,15 +51,6 @@
     "children": []
   },
   {
-    "id": "9fc2e2fa-c1fd-415d-aeb2-f294358f1260",
-    "type": "pageLink",
-    "props": {
-      "pageId": "",
-      "pageTitle": ""
-    },
-    "children": []
-  },
-  {
     "id": "b0584207-c73c-4f7c-aea0-8089b5f02ddc",
     "type": "paragraph",
     "props": {
