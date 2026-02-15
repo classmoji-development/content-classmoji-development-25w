@@ -920,6 +920,19 @@
     "children": []
   },
   {
+    "id": "23eff3e1-3c4f-48b7-a749-039586b93cf9",
+    "type": "image",
+    "props": {
+      "textAlignment": "left",
+      "backgroundColor": "default",
+      "name": "",
+      "url": "https://cs98.me/assets/imgs/tt_profile.jpg",
+      "caption": "",
+      "showPreview": true
+    },
+    "children": []
+  },
+  {
     "id": "9a5e203f-5a5e-4791-b8c4-86d582b19153",
     "type": "heading",
     "props": {
@@ -964,21 +977,7 @@
         "styles": {}
       }
     ],
-    "children": [
-      {
-        "id": "23eff3e1-3c4f-48b7-a749-039586b93cf9",
-        "type": "image",
-        "props": {
-          "textAlignment": "left",
-          "backgroundColor": "default",
-          "name": "",
-          "url": "https://cs98.me/assets/imgs/tt_profile.jpg",
-          "caption": "",
-          "showPreview": true
-        },
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "id": "82fc6614-5e87-4df3-bb3c-c287df011956",
