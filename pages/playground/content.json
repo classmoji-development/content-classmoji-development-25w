@@ -47,6 +47,28 @@
       },
       "content": [],
       "children": []
+    },
+    {
+      "id": "094d147c-67f0-438c-b1c4-f1b5f13d5069",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [],
+      "children": []
+    },
+    {
+      "id": "3428fb31-c6a2-49d4-a129-3dc22f775bfc",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [],
+      "children": []
     }
   ]
 }
