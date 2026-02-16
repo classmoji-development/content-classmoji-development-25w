@@ -5,9 +5,7 @@
       "slides": [],
       "assignments": {
         "rails": {
-          "pages": [
-            "playground"
-          ],
+          "pages": [],
           "slides": []
         }
       }
@@ -34,7 +32,9 @@
     }
   },
   "general": {
-    "pages": [],
+    "pages": [
+      "playground"
+    ],
     "slides": []
   }
 }
