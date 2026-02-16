@@ -1,0 +1,1076 @@
+{
+  "blocks": [
+    {
+      "type": "paragraph",
+      "content": []
+    },
+    {
+      "id": "6a0e6010-939a-4514-a0a7-30a7559cb3c6",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Slack",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "ac38d8d0-96d1-40f1-9d03-bb2959871526",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We will use ",
+          "styles": {}
+        },
+        {
+          "type": "link",
+          "href": "https://cs98-dartmouth.slack.com/",
+          "content": [
+            {
+              "type": "text",
+              "text": "Slack",
+              "styles": {}
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": ", an online collaborative tool for most class messaging and help. Details in class. We will also write slack integrations!",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": "paragraph",
+      "content": []
+    },
+    {
+      "id": "c5b309a8-d97e-434e-a874-acdc3f2d5b8b",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Instructor Meetings",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "55b33428-2d74-4e54-9ee0-b4b78d62c7e5",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Groups will meet with the course instructor weekly in class to discuss progress and plan next steps. Ask questions, be proactive, we’re here to help! ",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "a32c2b06-1ca7-4614-8c1d-7a499115d798",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "At any point you should also feel free to tag your instructor/TAs in any github issues:",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "c2222261-e5ff-424b-b31a-f757c55d4569",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "🚀 Assign to ",
+          "styles": {}
+        },
+        {
+          "type": "text",
+          "text": "@timofei7",
+          "styles": {
+            "code": true
+          }
+        },
+        {
+          "type": "text",
+          "text": "  GitHub for grading and feedback.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": "paragraph",
+      "content": []
+    },
+    {
+      "id": "9cf9d235-c2c7-4057-9483-8e3a141222ba",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Grading",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "e68c8248-ec99-4239-8963-467642e4377d",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Grading of collaborative team-based work will be done based on GitHub pull requests. Proper git flow will be introduced early on in the term. Using version control will become second nature to you. The final grade will be based on a combination of weekly performance, class demos throughout the term, preset milestones, and peer evaluation. Grading will take into account GitHub pull requests. Proper git flow will be introduced early on in the term and will be required for all groups. Since projects are a team effort, you will earn a group grade along with a modifier for individual performance. In extreme cases individuals may be dropped or raised several letter grades from the group. For instance, if you were the star performer on the team and committed the large majority of code but your teammates didn’t pull their weight so the project wasn’t quite up to standards: the team might receive a B- but you might get an A. Alternatively if you slacked and contributed only a few lines to some documentation to boost your git commit count, we will notice and you might get a D even if your teammates pulled off an impressive project without you and the team received an A- overall. We will read your code and we will have regular code reviews.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "89cb0115-4ab4-4b91-a241-6bfc79ae4b22",
+      "type": "bulletListItem",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Project Milestones — 30%",
+          "styles": {}
+        }
+      ],
+      "children": [
+        {
+          "id": "cd5cfe2e-c745-4ee5-b847-d5f4ffdf2a62",
+          "type": "bulletListItem",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "late penalty: -emoji per day",
+              "styles": {}
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "e46d259f-a53a-4498-bf92-91a7da22073f",
+      "type": "bulletListItem",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Weekly Progress: Instructor Checkins, ZenHub, Participation/Attendance — 30%",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "5ed34d5b-4b34-41c7-bf4a-c7cbec708c60",
+      "type": "bulletListItem",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "2 x Final Demos at Technigala and Final Product Submission — 40%",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": "paragraph",
+      "content": []
+    },
+    {
+      "id": "349fe1df-5d9b-4f05-83ba-e35fd16c2f15",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Honor principle – Not your standard warning!",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "c0de7c09-6776-458b-af21-39d85c36bc25",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We understand that a large part of software engineering involves learning from examples, searching for solutions, working with ChatGPT and other AI tools, and integrating your research into your own code. We want you to learn from all available resources while still learning the concepts necessary to generate your own solutions and become capable software engineers.  You should understand all the code that you write/integrate, and be able to walk through it. Most critically, to avoid an Academic Honor Violation you need to cite any sources that you use in your process.  ",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": "paragraph",
+      "content": []
+    },
+    {
+      "id": "736c59f6-890a-427f-9602-4512967089c8",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 3,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "The Internet",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "5fbbd535-1077-4c60-80cc-8783bf4193f6",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "The Internet will be a large source of information and help to you as you do your assignments in this class. We want to encourage you to scour the internet / stackoverflow / chatGPT for help, ",
+          "styles": {}
+        },
+        {
+          "type": "text",
+          "text": "but",
+          "styles": {
+            "bold": true
+          }
+        },
+        {
+          "type": "text",
+          "text": " you ",
+          "styles": {}
+        },
+        {
+          "type": "text",
+          "text": "must credit",
+          "styles": {
+            "bold": true
+          }
+        },
+        {
+          "type": "text",
+          "text": " any solutions you find in comments in your code specifying where you found them and what you took from them. If you copy/paste code without attribution, you are violating the Academic Honor Principle. You will ",
+          "styles": {}
+        },
+        {
+          "type": "text",
+          "text": "not",
+          "styles": {
+            "bold": true
+          }
+        },
+        {
+          "type": "text",
+          "text": " be penalized for copied code as long as it is ",
+          "styles": {}
+        },
+        {
+          "type": "text",
+          "text": "properly attributed",
+          "styles": {
+            "bold": true
+          }
+        },
+        {
+          "type": "text",
+          "text": ". Obviously don’t copy/paste the whole project, as you may not get full credit, but even if you do at least you will not facing the COS. ",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "22d5d125-7956-45c1-9238-6f4e369d6a1e",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Remember: Just cite it!",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": "paragraph",
+      "content": []
+    },
+    {
+      "id": "68489dc0-5820-470f-baba-d52c121d089a",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 3,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Citation Format",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "397f36b8-8dd6-451b-a593-1984c52de84a",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Make your in-code citations look something like this:",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "c9e05cc4-b8e5-4300-af21-58cf7f461fbb",
+      "type": "codeBlock",
+      "props": {
+        "language": "javascript"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "// adapted from: http://stackoverflow.com/someurl\n// this method does x and y\n\nor\n\n// copied off of Cameron Howe's code for this assignment\n// this method does x and y",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "3d0bf4f5-35b0-457a-b211-f8e0be0e546b",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "(policy adapted from: ",
+          "styles": {}
+        },
+        {
+          "type": "link",
+          "href": "https://integrity.mit.edu/handbook/writing-code",
+          "content": [
+            {
+              "type": "text",
+              "text": "https://integrity.mit.edu/handbook/writing-code",
+              "styles": {}
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": ")",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": "paragraph",
+      "content": []
+    },
+    {
+      "id": "1ad3946e-3ada-40b9-9a79-9551012581f5",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Consecutive Terms",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "6206da3e-7637-4d7f-8378-081bd56a4fcb",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Since 98.01 and 98.02 involve team projects and the project from 98.01 continues into 98.02, these two courses must be taken in consecutive terms. If a student is not able to do 98.02 in the term immediately after their 98.01, the department asks that the student repeat 98.01 and then take 98.02. In extenuating circumstances, the student can petition the department for an exception. The petition should be addressed to Undergraduate Adviser listed on ",
+          "styles": {}
+        },
+        {
+          "type": "link",
+          "href": "https://web.cs.dartmouth.edu/undergraduate/advice",
+          "content": [
+            {
+              "type": "text",
+              "text": "this page",
+              "styles": {}
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " and should clearly describe why the student believes they deserve an exception.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "e3aae4b9-a17f-471c-8e08-c8b5e84bc7af",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "The Undergraduate Adviser will share the petition with a department faculty committee that will make the final determination.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": "paragraph",
+      "content": []
+    },
+    {
+      "id": "f3250eb8-1cc4-410f-a30f-473c57f54e50",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Wellness",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "ce8b850b-5398-4a37-b307-dc697364896b",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We recognize that the academic environment at Dartmouth is challenging, that our terms are intensive, and that classes are not the only demanding part of your life. There are a number of resources available to you on campus to support your wellness, including: your ",
+          "styles": {}
+        },
+        {
+          "type": "link",
+          "href": "http://www.dartmouth.edu/~upperde/",
+          "content": [
+            {
+              "type": "text",
+              "text": "undergraduate dean",
+              "styles": {}
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": ", ",
+          "styles": {}
+        },
+        {
+          "type": "link",
+          "href": "http://www.dartmouth.edu/~chd/",
+          "content": [
+            {
+              "type": "text",
+              "text": "Counseling and Human Development",
+              "styles": {}
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": ", and the ",
+          "styles": {}
+        },
+        {
+          "type": "link",
+          "href": "http://www.dartmouth.edu/~healthed/",
+          "content": [
+            {
+              "type": "text",
+              "text": "Student Wellness Center",
+              "styles": {}
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": ". I encourage you to use these resources and come speak with me to take care of yourself throughout the term.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": "paragraph",
+      "content": []
+    },
+    {
+      "id": "a47b6917-d315-4725-ab46-d7dad56ec359",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Auditing",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "c11fb7ee-cdd9-4183-b045-a87fa4d374d5",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Unfortunately due to the nature of the class auditing is not possible.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": "paragraph",
+      "content": []
+    },
+    {
+      "id": "dc1c486c-e1dc-47df-bd59-335d2967615c",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "COVID-19 Addendum",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "9c478dd2-02cc-4d9b-a202-23180ce4fb53",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Attendance: You are expected to attend class in person unless you have made alternative arrangements due to illness, medical reasons, or the need to isolate due to COVID-19. For the health and safety of our class community, please: ",
+          "styles": {}
+        },
+        {
+          "type": "text",
+          "text": "do not attend class when you are sick",
+          "styles": {
+            "bold": true
+          }
+        },
+        {
+          "type": "text",
+          "text": ", nor when you have been instructed by Student Health Services to stay home. You will be able to view recordings of some of the classes in Canvas if you are unable to attend. Please contact the instructor.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "81674172-2094-4a6d-8927-5bf5b7210516",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Safety: In accordance with ",
+          "styles": {}
+        },
+        {
+          "type": "link",
+          "href": "https://covid.dartmouth.edu/face-mask-policy",
+          "content": [
+            {
+              "type": "text",
+              "text": "current College policy",
+              "styles": {}
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": ", all members of the Dartmouth community are required to wear a suitable face covering when indoors, regardless of vaccination status. This includes our classroom and other course-related locations, such as labs, studios, and office hours. If you need to take a quick drink during class, please dip your mask briefly for each sip. Eating is never permitted in the classroom. (The only exception to the mask requirement is for students with an approved disability-related accommodation; see below.) If you do not have an accommodation and refuse to comply with masking or other safety protocols, I am obligated to assure that the Covid health and safety standards are followed, and you will be asked to leave the classroom. You remain subject to course attendance policies, and dismissal from class will result in an unexcused absence. If you refuse to comply with masking or other safety protocols, and to ensure the health and safety of our community, I am obligated to report you to the Dean’s office for disciplinary action under Dartmouth’s ",
+          "styles": {}
+        },
+        {
+          "type": "link",
+          "href": "https://student-affairs.dartmouth.edu/policy/standards-conduct",
+          "content": [
+            {
+              "type": "text",
+              "text": "Standards of Conduct",
+              "styles": {}
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": ". Additional COVID-19 protocols may emerge. Pay attention to emails from the senior administrators at the College.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "013f32b4-dd06-4b1c-88ae-918ff3c555ab",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "While the COVID-19 pandemic has already changed how this course is structured, it has the potential to result in further personal impact which may prevent you from continuing engagement in the class. This may be due to contraction of the disease by you or a loved one, increased familial responsibilities, financial difficulties, or impacts on your mental/emotional health. We have structured the course so that these disruptions will not necessarily prevent you from successfully completing this course. Course meetings will be conducted via Zoom with any important messaging recorded. This will enable flexible viewing of the course content. We will schedule opportunities for live interaction with the Professor during diverse times throughout the week. The group project is designed to be facilitate remote work using industry standard collaboration tools. In the event that you are directly or indirectly impacted by COVID-19 in such a way that will affect your performance in the course, it is imperative that you reach out to the instructor as soon as possible. You may also reach out to your undergraduate Dean if that would make you more comfortable. We cannot assist you if we don’t know there is a problem. Our first priority is your health and security. We will work to put you in touch with appropriate resources to assist you. In addition, appropriate accommodations (for example: deadline extensions and/or extra office hours) will be implemented.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": "paragraph",
+      "content": []
+    },
+    {
+      "id": "65b9c911-20ce-4c22-adf8-98532ea4b3b7",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Video Recording",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "b892948f-e4d6-4428-b9ba-5a1e3f2d7682",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "From the Dean of the Faculty to students regarding recording of class sessions:",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": "paragraph",
+      "content": []
+    },
+    {
+      "id": "d3144e35-0086-4c08-a7eb-d8975603dfe7",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 3,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "1. Consent to recording of course and group office hours",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "6fc12eb9-5e83-425e-bb09-0fc7056e625e",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "By enrolling in this course,\na) I affirm my understanding that the instructor may record meetings of this course and any associated meetings open to multiple students and the instructor, including but not limited to scheduled and ad hoc office hours and other consultations, within any digital platform, including those used to offer remote instruction for this course.\nb) I further affirm that the instructor owns the copyright to their instructional materials, of which these recordings constitute a part, and my distribution of any of these recordings in whole or in part to any person or entity other than other members of the class without prior written consent of the instructor may be subject to discipline by Dartmouth up to and including separation from Dartmouth.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": "paragraph",
+      "content": []
+    },
+    {
+      "id": "29ad93ed-6c46-4070-950f-2d55d137da5f",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 3,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "2. Requirement of consent to one-on-one recordings",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "2c9d4267-aae5-407f-a06d-5efc7cef5eb5",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "By enrolling in this course, I hereby affirm that I will not make a recording in any medium of any one-on-one meeting with the instructor or another member of the class or group of members of the class without obtaining the prior written consent of all those participating, and I understand that if I violate this prohibition, I will be subject to discipline by Dartmouth up to and including separation from Dartmouth, as well as any other civil or criminal penalties under applicable law. I understand that an exception to this consent applies to accommodations approved by SAS for a student’s disability, and that one or more students in a class may record class lectures, discussions, lab sessions, and review sessions and take pictures of essential information, and/or be provided class notes for personal study use only.\n If you have questions, please contact the Office of the Dean of the Faculty of Arts and Sciences.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": "paragraph",
+      "content": []
+    },
+    {
+      "id": "17987459-4545-4c7e-83a3-7c4c531c7d6f",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 3,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Requirement of consent to one-on-one recordings",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "221e965f-b3bc-4d68-ae25-58107360554d",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "By enrolling in this course, I hereby affirm that I will not under any circumstance make a recording in any medium of any one-on-one meeting with the instructor without obtaining the prior written consent of all those participating, and I understand that if I violate this prohibition, I will be subject to discipline by Dartmouth up to and including expulsion, as well as any other civil or criminal penalties under applicable law.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "acf7c90d-a854-4e33-b1f4-f0d1e76d1738",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "If you have any questions about any of these prohibitions or instructions, please consult your Dean’s Office.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": "paragraph",
+      "content": []
+    },
+    {
+      "id": "09106bcf-19bd-4b75-ae2a-7fca1411d795",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Accommodations",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "3929f49f-8037-4e9a-bf29-d12b9d9dbcec",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Students requesting disability-related accommodations and services for this course are required to register with Student Accessibility Services (SAS; ",
+          "styles": {}
+        },
+        {
+          "type": "link",
+          "href": "https://students.dartmouth.edu/student-accessibility/students/working-sas/getting-started",
+          "content": [
+            {
+              "type": "text",
+              "text": "Getting Started with SAS webpage",
+              "styles": {}
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "; ",
+          "styles": {}
+        },
+        {
+          "type": "link",
+          "href": "mailto:student.accessibility.services@dartmouth.edu",
+          "content": [
+            {
+              "type": "text",
+              "text": "student.accessibility.services@dartmouth.edu",
+              "styles": {}
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "; 1-603-646-9900) and to request that an accommodation email be sent to me in advance of the need for an accommodation. Then, students should schedule a follow-up meeting with me to determine relevant details such as what role SAS or its ",
+          "styles": {}
+        },
+        {
+          "type": "link",
+          "href": "https://students.dartmouth.edu/student-accessibility/services/testing-center",
+          "content": [
+            {
+              "type": "text",
+              "text": "Testing Center",
+              "styles": {}
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " may play in accommodation implementation. This process works best for everyone when completed as early in the quarter as possible. If students have questions about whether they are eligible for accommodations or have concerns about the implementation of their accommodations, they should contact the SAS office. All inquiries and discussions will remain confidential.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    }
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200",
+    "position": 7
+  }
+}
