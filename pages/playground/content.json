@@ -1,300 +1,330 @@
-[
-  {
-    "id": "d8f0711a-01f6-4091-b7cb-3be3c9928cf6",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "The last month of class will be dedicated to a group project. This will be a project of your own devising, built from the ground up (libraries/apis are allowed). There are required components such as having both an api server+database and a clientside that you have to build through a series of milestones. Best practices, group dynamics, agile, etc will all be on the menu.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "18646e0d-1291-4f08-a9a9-5ca973dfba78",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [],
-    "children": []
-  },
-  {
-    "id": "2ad44927-8c95-4e91-87e5-5e68d181137f",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "blue",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 2,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Milestones At a Glance",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "05f4953e-c43d-4cdb-bde9-774bb4a0a85b",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "link",
-        "href": "/dartmouth-cs52-26w/pages/0595367a-a13b-4468-9c90-96c46bfa0f8a",
-        "content": [
-          {
-            "type": "text",
-            "text": "Pitch Presentation",
-            "styles": {
-              "bold": true
-            }
-          }
-        ]
+{
+  "blocks": [
+    {
+      "id": "d8f0711a-01f6-4091-b7cb-3be3c9928cf6",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
       },
-      {
-        "type": "text",
-        "text": ": Pitch your problem/solution/topic to the class. Everybody will rank their top choices and groups will be formed that way.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "13ecf0d4-4eec-46b7-9971-a6f9e75f5145",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "content": [
+        {
+          "type": "text",
+          "text": "The last month of class will be dedicated to a group project. This will be a project of your own devising, built from the ground up (libraries/apis are allowed). There are required components such as having both an api server+database and a clientside that you have to build through a series of milestones. Best practices, group dynamics, agile, etc will all be on the menu.",
+          "styles": {}
+        }
+      ],
+      "children": []
     },
-    "content": [
-      {
-        "type": "link",
-        "href": "/dartmouth-cs52-26w/pages/23aef1bf-a352-4097-bc29-c86b5d581435",
-        "content": [
-          {
-            "type": "text",
-            "text": "First Team Meeting",
-            "styles": {
-              "bold": true
-            }
-          }
-        ]
+    {
+      "id": "18646e0d-1291-4f08-a9a9-5ca973dfba78",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
       },
-      {
-        "type": "text",
-        "text": ": Meet your team and work on dynamics, solidifying and consolidating an idea.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "a64fa1c3-0e82-44ef-adc8-acc697db137d",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "content": [],
+      "children": []
     },
-    "content": [
-      {
-        "type": "link",
-        "href": "/dartmouth-cs52-26w/pages/dc769385-eafe-4890-8d7c-727a88c5747d",
-        "content": [
-          {
-            "type": "text",
-            "text": "Feature Spec",
-            "styles": {
-              "bold": true
-            }
-          }
-        ]
+    {
+      "id": "2ad44927-8c95-4e91-87e5-5e68d181137f",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
       },
-      {
-        "type": "text",
-        "text": ": A walk-though of your project from the users perspective listing out every feature that it should have with a few user stories attached and mockups of user experience.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "86facf35-e03c-476b-8e39-fca13799249f",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+      "content": [
+        {
+          "type": "text",
+          "text": "Milestones At a Glance",
+          "styles": {}
+        }
+      ],
+      "children": []
     },
-    "content": [
-      {
-        "type": "link",
-        "href": "/dartmouth-cs52-26w/pages/a6180eb1-2844-4ea8-ac8a-d03ec48bdc7e",
-        "content": [
-          {
-            "type": "text",
-            "text": "Mockups",
-            "styles": {
-              "bold": true
-            }
-          }
-        ]
+    {
+      "id": "05f4953e-c43d-4cdb-bde9-774bb4a0a85b",
+      "type": "bulletListItem",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
       },
-      {
-        "type": "text",
-        "text": ": Designs and Mockups for what you are planning on building!",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "07993365-c9f5-4339-bfe5-1219e7f7e4fb",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "link",
-        "href": "/dartmouth-cs52-26w/pages/3ea35431-7fbc-4c91-9383-fede18b6eee1",
-        "content": [
-          {
-            "type": "text",
-            "text": "Scaffolding",
-            "styles": {
-              "bold": true
+      "content": [
+        {
+          "type": "link",
+          "href": "/dartmouth-cs52-26w/pages/0595367a-a13b-4468-9c90-96c46bfa0f8a",
+          "content": [
+            {
+              "type": "text",
+              "text": "Pitch Presentation",
+              "styles": {
+                "bold": true
+              }
             }
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "text": ": Initial code scaffolding started with a component plan and tools and frameworks chosen.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "e9a704b3-cd1f-4073-915b-40c5390bfa85",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+          ]
+        },
+        {
+          "type": "text",
+          "text": ": Pitch your problem/solution/topic to the class. Everybody will rank their top choices and groups will be formed that way.",
+          "styles": {}
+        }
+      ],
+      "children": []
     },
-    "content": [
-      {
-        "type": "link",
-        "href": "/dartmouth-cs52-26w/pages/9d4df1f6-e498-4569-91d6-9a46528967bd",
-        "content": [
-          {
-            "type": "text",
-            "text": "Dev Site Up (client+server)",
-            "styles": {
-              "bold": true
+    {
+      "id": "13ecf0d4-4eec-46b7-9971-a6f9e75f5145",
+      "type": "bulletListItem",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "link",
+          "href": "/dartmouth-cs52-26w/pages/23aef1bf-a352-4097-bc29-c86b5d581435",
+          "content": [
+            {
+              "type": "text",
+              "text": "First Team Meeting",
+              "styles": {
+                "bold": true
+              }
             }
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "text": ":Dev site goes live allowing people to see basic flow (components hitting api endpoints pulling data from database).",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "ce24e94d-dd2f-4932-8352-5a708c4c0a2e",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+          ]
+        },
+        {
+          "type": "text",
+          "text": ": Meet your team and work on dynamics, solidifying and consolidating an idea.",
+          "styles": {}
+        }
+      ],
+      "children": []
     },
-    "content": [
-      {
-        "type": "link",
-        "href": "/dartmouth-cs52-26w/pages/5ffa7e35-bc5d-4a7e-b5f1-05242ef8aca0",
-        "content": [
-          {
-            "type": "text",
-            "text": "Final Project Demos",
-            "styles": {
-              "bold": true
+    {
+      "id": "a64fa1c3-0e82-44ef-adc8-acc697db137d",
+      "type": "bulletListItem",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "link",
+          "href": "/dartmouth-cs52-26w/pages/dc769385-eafe-4890-8d7c-727a88c5747d",
+          "content": [
+            {
+              "type": "text",
+              "text": "Feature Spec",
+              "styles": {
+                "bold": true
+              }
             }
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "text": ": Final Demos! Open to public (virtually) event combined with other CS projects, CS98 and DALI Demos! Motivate the idea, show it in action, discuss challenges and any user testing.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "6cae1428-e06d-4e99-8319-c65b5963ad5e",
-    "type": "bulletListItem",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+          ]
+        },
+        {
+          "type": "text",
+          "text": ": A walk-though of your project from the users perspective listing out every feature that it should have with a few user stories attached and mockups of user experience.",
+          "styles": {}
+        }
+      ],
+      "children": []
     },
-    "content": [
-      {
-        "type": "link",
-        "href": "/dartmouth-cs52-26w/pages/7b29aa28-488f-464d-806b-f12d130ed3ed",
-        "content": [
-          {
-            "type": "text",
-            "text": "Final Project Code Submission:",
-            "styles": {
-              "bold": true
+    {
+      "id": "86facf35-e03c-476b-8e39-fca13799249f",
+      "type": "bulletListItem",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "link",
+          "href": "/dartmouth-cs52-26w/pages/a6180eb1-2844-4ea8-ac8a-d03ec48bdc7e",
+          "content": [
+            {
+              "type": "text",
+              "text": "Mockups",
+              "styles": {
+                "bold": true
+              }
             }
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "text": " Final code submission with up to date documentation.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "9b4dae6d-3049-4732-95be-864f39799a8e",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
+          ]
+        },
+        {
+          "type": "text",
+          "text": ": Designs and Mockups for what you are planning on building!",
+          "styles": {}
+        }
+      ],
+      "children": []
     },
-    "content": [],
-    "children": []
-  }
-]
+    {
+      "id": "07993365-c9f5-4339-bfe5-1219e7f7e4fb",
+      "type": "bulletListItem",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "link",
+          "href": "/dartmouth-cs52-26w/pages/3ea35431-7fbc-4c91-9383-fede18b6eee1",
+          "content": [
+            {
+              "type": "text",
+              "text": "Scaffolding",
+              "styles": {
+                "bold": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": ": Initial code scaffolding started with a component plan and tools and frameworks chosen.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "e9a704b3-cd1f-4073-915b-40c5390bfa85",
+      "type": "bulletListItem",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "link",
+          "href": "/dartmouth-cs52-26w/pages/9d4df1f6-e498-4569-91d6-9a46528967bd",
+          "content": [
+            {
+              "type": "text",
+              "text": "Dev Site Up (client+server)",
+              "styles": {
+                "bold": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": ":Dev site goes live allowing people to see basic flow (components hitting api endpoints pulling data from database).",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "ce24e94d-dd2f-4932-8352-5a708c4c0a2e",
+      "type": "bulletListItem",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "link",
+          "href": "/dartmouth-cs52-26w/pages/5ffa7e35-bc5d-4a7e-b5f1-05242ef8aca0",
+          "content": [
+            {
+              "type": "text",
+              "text": "Final Project Demos",
+              "styles": {
+                "bold": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": ": Final Demos! Open to public (virtually) event combined with other CS projects, CS98 and DALI Demos! Motivate the idea, show it in action, discuss challenges and any user testing.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "6cae1428-e06d-4e99-8319-c65b5963ad5e",
+      "type": "bulletListItem",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "link",
+          "href": "/dartmouth-cs52-26w/pages/7b29aa28-488f-464d-806b-f12d130ed3ed",
+          "content": [
+            {
+              "type": "text",
+              "text": "Final Project Code Submission:",
+              "styles": {
+                "bold": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " Final code submission with up to date documentation.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "9b4dae6d-3049-4732-95be-864f39799a8e",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [],
+      "children": []
+    },
+    {
+      "id": "94dbd55a-ef61-45c6-896f-eb6c881eae85",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Pape",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "55a68217-b719-481d-a566-8eea9cb3654e",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [],
+      "children": []
+    }
+  ]
+}
