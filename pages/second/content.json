@@ -1,0 +1,15 @@
+{
+  "blocks": [
+    {
+      "id": "d1080cd9-5a96-42af-9736-4f53cb386f85",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [],
+      "children": []
+    }
+  ]
+}
