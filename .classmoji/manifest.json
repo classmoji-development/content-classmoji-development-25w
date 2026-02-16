@@ -34,9 +34,7 @@
     }
   },
   "general": {
-    "pages": [
-      "lol"
-    ],
+    "pages": [],
     "slides": []
   }
 }
