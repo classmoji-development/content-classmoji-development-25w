@@ -1,167 +1,201 @@
-[
-  {
-    "type": "paragraph",
-    "content": []
-  },
-  {
-    "id": "6a0e6010-939a-4514-a0a7-30a7559cb3c6",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "blue",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 2,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Slack",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "ac38d8d0-96d1-40f1-9d03-bb2959871526",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "We will use ",
-        "styles": {}
+{
+  "blocks": [
+    {
+      "id": "435c1093-ed48-4a2c-8be9-bfb7c8ec3e3e",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
       },
-      {
-        "type": "link",
-        "href": "https://cs98-dartmouth.slack.com/",
-        "content": [
-          {
-            "type": "text",
-            "text": "Slack",
-            "styles": {}
-          }
-        ]
+      "content": [],
+      "children": []
+    },
+    {
+      "id": "6a0e6010-939a-4514-a0a7-30a7559cb3c6",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
       },
-      {
-        "type": "text",
-        "text": ", an online collaborative tool for most class messaging and help. Details in class. We will also write slack integrations!",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "type": "paragraph",
-    "content": []
-  },
-  {
-    "id": "c5b309a8-d97e-434e-a874-acdc3f2d5b8b",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "blue",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 2,
-      "isToggleable": false
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Instructor Meetings",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "55b33428-2d74-4e54-9ee0-b4b78d62c7e5",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "Groups will meet with the course instructor weekly in class to discuss progress and plan next steps. Ask questions, be proactive, we\u2019re here to help! ",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "a32c2b06-1ca7-4614-8c1d-7a499115d798",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "At any point you should also feel free to tag your instructor/TAs in any github issues:",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "id": "c2222261-e5ff-424b-b31a-f757c55d4569",
-    "type": "paragraph",
-    "props": {
-      "backgroundColor": "default",
-      "textColor": "default",
-      "textAlignment": "left"
-    },
-    "content": [
-      {
-        "type": "text",
-        "text": "\ud83d\ude80\u00a0Assign to ",
-        "styles": {}
-      },
-      {
-        "type": "text",
-        "text": "@timofei7",
-        "styles": {
-          "code": true
+      "content": [
+        {
+          "type": "text",
+          "text": "Slack",
+          "styles": {}
         }
-      },
-      {
-        "type": "text",
-        "text": "  GitHub for grading and feedback.",
-        "styles": {}
-      }
-    ],
-    "children": []
-  },
-  {
-    "type": "paragraph",
-    "content": []
-  },
-  {
-    "id": "9cf9d235-c2c7-4057-9483-8e3a141222ba",
-    "type": "heading",
-    "props": {
-      "backgroundColor": "blue",
-      "textColor": "default",
-      "textAlignment": "left",
-      "level": 2,
-      "isToggleable": false
+      ],
+      "children": []
     },
-    "content": [
-      {
-        "type": "text",
-        "text": "Grading",
-        "styles": {}
-      }
-    ],
-    "children": []
-  }
-]
+    {
+      "id": "ac38d8d0-96d1-40f1-9d03-bb2959871526",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We will use ",
+          "styles": {}
+        },
+        {
+          "type": "link",
+          "href": "https://cs98-dartmouth.slack.com/",
+          "content": [
+            {
+              "type": "text",
+              "text": "Slack",
+              "styles": {}
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": ", an online collaborative tool for most class messaging and help. Details in class. We will also write slack integrations!  asdfasdf",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "cf6eddb7-a456-45bf-b6c3-3acee80b82b9",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [],
+      "children": []
+    },
+    {
+      "id": "c5b309a8-d97e-434e-a874-acdc3f2d5b8b",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Instructor Meetings",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "55b33428-2d74-4e54-9ee0-b4b78d62c7e5",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Groups will meet with the course instructor weekly in class to discuss progress and plan next steps. Ask questions, be proactive, we’re here to help! ",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "a32c2b06-1ca7-4614-8c1d-7a499115d798",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "At any point you should also feel free to tag your instructor/TAs in any github issues:",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "c2222261-e5ff-424b-b31a-f757c55d4569",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "🚀 Assign to ",
+          "styles": {}
+        },
+        {
+          "type": "text",
+          "text": "@timofei7",
+          "styles": {
+            "code": true
+          }
+        },
+        {
+          "type": "text",
+          "text": "  GitHub for grading and feedback.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "8b4732bb-8dd9-4a01-a386-6f4eb958ae8f",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [],
+      "children": []
+    },
+    {
+      "id": "9cf9d235-c2c7-4057-9483-8e3a141222ba",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "blue",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 2,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Grading",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "749b9b67-62f3-4376-9e77-4e3f07352589",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [],
+      "children": []
+    }
+  ]
+}
