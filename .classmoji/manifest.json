@@ -1,10 +1,14 @@
 {
   "modules": {
-    "null": {
+    "44be6eab-4456-471b-85f4-7ef4b55fc44d": {
       "pages": [],
       "slides": [],
       "assignments": {
-        "null": {
+        "6847c60f-955e-4ace-9364-3c507f57fc72": {
+          "pages": [],
+          "slides": []
+        },
+        "2bd64573-a3c4-44c3-99f3-065e871a69a9": {
           "pages": [],
           "slides": []
         }
@@ -13,20 +17,8 @@
   },
   "general": {
     "pages": [
-      "asdasdf",
-      "block-type-kitchen-sink",
-      "dartmouth-cs98",
-      "logistics",
-      "logistics-2",
-      "term-demos-and-testing",
-      "ui-design-mockups"
+      "asdfasdf"
     ],
-    "slides": [
-      "more-slides-copy-1768313468912",
-      "more-slides-copy-1768313468912-copy-1768313844482",
-      "sessions-and-auth-copy-1768313410601",
-      "sessions-and-auth-copy-1768313625800",
-      "what-is-the-internet"
-    ]
+    "slides": []
   }
 }
