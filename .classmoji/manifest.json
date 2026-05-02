@@ -13,6 +13,16 @@
           "slides": []
         }
       }
+    },
+    "mcp-test-module": {
+      "pages": [],
+      "slides": [],
+      "assignments": {
+        "mcp-test-assignment": {
+          "pages": [],
+          "slides": []
+        }
+      }
     }
   },
   "general": {
