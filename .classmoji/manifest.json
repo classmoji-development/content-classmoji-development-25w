@@ -1,24 +1,28 @@
 {
-  "modules": {
-    "44be6eab-4456-471b-85f4-7ef4b55fc44d": {
+  "repositories": {
+    "bc779d1e-ed3e-4118-bc32-e498951e911e": {
       "pages": [],
       "slides": [],
       "assignments": {
-        "6847c60f-955e-4ace-9364-3c507f57fc72": {
-          "pages": [],
-          "slides": []
-        },
-        "2bd64573-a3c4-44c3-99f3-065e871a69a9": {
+        "d9eea900-5333-430d-ae45-d4c93c04edb6": {
           "pages": [],
           "slides": []
         }
       }
     },
-    "mcp-test-module": {
+    "44be6eab-4456-471b-85f4-7ef4b55fc44d": {
       "pages": [],
       "slides": [],
       "assignments": {
-        "mcp-test-assignment": {
+        "2bd64573-a3c4-44c3-99f3-065e871a69a9": {
+          "pages": [],
+          "slides": []
+        },
+        "6847c60f-955e-4ace-9364-3c507f57fc72": {
+          "pages": [],
+          "slides": []
+        },
+        "5a5f679e-7665-40d5-96d7-0285688d8793": {
           "pages": [],
           "slides": []
         }
