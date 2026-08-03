@@ -9,20 +9,32 @@
   "slides": [
     {
       "id": "d0e84765",
-      "html": "<h1>MCP Live Test Deck</h1>"
+      "html": "<h1>MCP Live Test Deck TIM's save</h1>",
+      "attrs": {
+        "style": "top: 220.5px;"
+      }
     },
     {
       "id": "fefe898f",
       "html": "<h2>Edited Live via MCP 🎉</h2><p>This slide was rewritten by Claude through <code>deck_apply</code> — and because the deck is published, the change landed on a <em>preview branch</em>, not the live deck.</p><ul><li>Students still see the original</li><li>You're reviewing it right now</li><li>Accept or discard from the bar above</li></ul>",
-      "notes": "Speaker notes added in the same op — extracted into deck.json as a field, re-emitted as the aside on generation."
+      "notes": "Speaker notes added in the same op — extracted into deck.json as a field, re-emitted as the aside on generation.",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     },
     {
       "id": "9ca4f82f",
-      "html": "<h2>Code Example</h2>\n<pre><code class=\"language-javascript\">// Your code here\nfunction example() {\n  return \"Hello, World!\";\n}</code></pre>"
+      "html": "<h2>Code Example</h2>\n<pre><code class=\"language-javascript\">// Your code here\nfunction example() {\n  return \"Hello, World!\";\n}</code></pre>",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     },
     {
       "id": "bbfe2651",
-      "html": "<h2>Questions?</h2><p>…about the preview workflow? Ask the agent. 🤖</p>"
+      "html": "<h2>Questions?</h2><p>…about the preview workflow? Ask the agent. 🤖</p>",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     }
   ]
 }
