@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "slides": [
+    {
+      "id": "slide-01",
+      "html": "<h1>One</h1>",
+      "notes": "first unit"
+    },
+    {
+      "id": "slide-02",
+      "html": "<h1>Two</h1>",
+      "notes": "filler"
+    },
+    {
+      "id": "slide-03",
+      "html": "<h1>Three</h1>",
+      "notes": "filler"
+    },
+    {
+      "id": "slide-04",
+      "html": "<h1>Four</h1>",
+      "notes": "filler"
+    },
+    {
+      "id": "slide-05",
+      "html": "<h1>Five</h1>",
+      "notes": "filler"
+    },
+    {
+      "id": "slide-06",
+      "html": "<h1>Six</h1>",
+      "notes": "last unit"
+    }
+  ]
+}
