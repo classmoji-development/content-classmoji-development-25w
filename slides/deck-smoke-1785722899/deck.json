@@ -39,10 +39,11 @@
     },
     {
       "id": "91f8f6ac",
-      "html": "<h2>Slide 2</h2><p>FRESHNESS-MARKER-1785723172</p>",
+      "html": "<h2>Slide 2 — preview edit</h2><p>PREVIEW-EDIT-MARKER: this text rides the preview branch.</p>",
       "attrs": {
         "style": "top: 350px;"
-      }
+      },
+      "notes": "Speaker note added via deck_apply preview flow."
     },
     {
       "id": "2b3cd36c",
