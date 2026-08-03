@@ -1,8 +1,34 @@
 {
   "blocks": [
     {
+      "id": "21c8c3e3-a0a6-470b-9636-bfe348984cce",
+      "type": "heading",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left",
+        "level": 1,
+        "isToggleable": false
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "another heading",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "abd2a5c6-8d36-44ae-9443-6c3d54f6ff94",
       "type": "paragraph",
-      "content": []
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [],
+      "children": []
     }
   ],
   "coverImage": {
