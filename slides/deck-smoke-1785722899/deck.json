@@ -39,7 +39,7 @@
     },
     {
       "id": "91f8f6ac",
-      "html": "<h2>Out-of-band edit (light)</h2><p>Written directly via MCP while the editor was open.</p>",
+      "html": "<h2>Out-of-band edit (dark)</h2><p>Written directly via MCP while the editor was open.</p>",
       "attrs": {
         "style": "top: 350px;"
       },
