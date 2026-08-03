@@ -2,13 +2,72 @@
   "blocks": [
     {
       "id": "p1",
-      "type": "paragraph",
+      "type": "heading",
+      "props": {
+        "level": 2,
+        "textColor": "default",
+        "backgroundColor": "blue",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Edited via MCP",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "callout-1",
+      "type": "callout",
+      "props": {
+        "emoji": "🤖",
+        "textColor": "default",
+        "backgroundColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "This content was written by Claude through page_content_apply. Because the page is published, it landed on a preview branch — you're reviewing it, students see nothing yet.",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "list-1",
+      "type": "bulletListItem",
       "props": {
         "textColor": "default",
         "backgroundColor": "default",
         "textAlignment": "left"
       },
-      "content": [],
+      "content": [
+        {
+          "type": "text",
+          "text": "Accept from the bar above, or",
+          "styles": {}
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "list-2",
+      "type": "bulletListItem",
+      "props": {
+        "textColor": "default",
+        "backgroundColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Discard — and it never happened",
+          "styles": {}
+        }
+      ],
       "children": []
     }
   ]
