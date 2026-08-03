@@ -11,7 +11,7 @@
       "id": "d0e84765",
       "html": "<h1>MCP Live Test Deck TIM's save</h1>",
       "attrs": {
-        "style": "top: 220.5px;"
+        "style": "top: 350px;"
       }
     },
     {
@@ -33,7 +33,7 @@
       "id": "bbfe2651",
       "html": "<h2>Questions?</h2><p>…about the preview workflow? Ask the agent. 🤖</p>",
       "attrs": {
-        "style": "top: 350px;"
+        "style": "top: 262.5px;"
       }
     }
   ]
