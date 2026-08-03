@@ -8,20 +8,47 @@
   "customCss": "\n    .reveal h1, .reveal h2, .reveal h3 { color: #333; }\n    .reveal .slides section { text-align: left; }\n    .reveal pre { width: 100%; }\n    .reveal code { background: #f5f5f5; padding: 2px 6px; border-radius: 4px; }\n  ",
   "slides": [
     {
-      "id": "db85d6e7",
-      "html": "<h1>Lifecycle Deck lifecycle</h1>"
+      "id": "6c9e6a60",
+      "attrs": {
+        "style": "top: 0px;"
+      },
+      "children": [
+        {
+          "id": "db85d6e7",
+          "html": "<h1>Lifecycle Deck lifecycle</h1>",
+          "attrs": {
+            "style": "top: 350px;"
+          }
+        },
+        {
+          "id": "3e5d1fac",
+          "html": "<h2>New Slide</h2>\n<p>Persisted content lifecycleAdd your content here...</p>",
+          "attrs": {
+            "style": "top: 262.5px;"
+          }
+        }
+      ]
     },
     {
       "id": "d683ff39",
-      "html": "<h2>Slide 2</h2>\n<p>Add your content here...</p>"
+      "html": "<h2>Slide 2</h2>\n<p>Add your content here...</p>",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     },
     {
       "id": "48bb18be",
-      "html": "<h2>Code Example</h2>\n<pre><code class=\"language-javascript\">// Your code here\nfunction example() {\n  return \"Hello, World!\";\n}</code></pre>"
+      "html": "<h2>Code Example</h2>\n<pre><code class=\"language-javascript\">// Your code here\nfunction example() {\n  return \"Hello, World!\";\n}</code></pre>",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     },
     {
       "id": "4054c7d9",
-      "html": "<h2>Questions?</h2>"
+      "html": "<h2>Questions?</h2>",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     }
   ]
 }
