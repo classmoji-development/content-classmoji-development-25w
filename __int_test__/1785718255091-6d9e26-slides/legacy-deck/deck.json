@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "theme": "white",
+  "codeTheme": "github",
+  "slides": [
+    {
+      "id": "leg00001",
+      "html": "<h1>Legacy</h1>",
+      "notes": "legacy notes"
+    },
+    {
+      "id": "leg00002",
+      "html": "<h2>Still legacy</h2>"
+    }
+  ]
+}
