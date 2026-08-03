@@ -16,16 +16,16 @@
       "children": [
         {
           "id": "15b8e30b",
-          "html": "<h1>Deck Smoke 1785722899</h1>",
+          "html": "<h1>Persist3 1785723241881Deck Smoke 1785722899</h1>",
           "attrs": {
-            "style": "top: 350px;"
+            "style": "top: 157.5px;"
           }
         },
         {
           "id": "5ffec612",
           "html": "<h2>New Slide</h2>\n<p>Persisted content repro 1785723075045Add your content here...</p>",
           "attrs": {
-            "style": "top: 235px;"
+            "style": "top: 350px;"
           }
         },
         {
