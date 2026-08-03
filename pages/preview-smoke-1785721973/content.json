@@ -1,15 +1,29 @@
 {
   "blocks": [
     {
-      "id": "p1",
-      "type": "paragraph",
+      "type": "heading",
       "props": {
-        "textColor": "default",
-        "backgroundColor": "default",
-        "textAlignment": "left"
+        "level": 2
       },
-      "content": [],
-      "children": []
+      "content": [
+        {
+          "type": "text",
+          "text": "Draft direct write",
+          "styles": {}
+        }
+      ],
+      "id": "b74b211ae1d"
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Committed while draft — should default to direct (main).",
+          "styles": {}
+        }
+      ],
+      "id": "bc24c3f65bc"
     }
   ]
 }
