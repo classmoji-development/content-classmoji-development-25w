@@ -24,6 +24,17 @@
         }
       ],
       "id": "bc24c3f65bc"
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Preview-routed edit: pending until accepted.",
+          "styles": {}
+        }
+      ],
+      "id": "b4a3d7a06f0"
     }
   ]
 }
