@@ -1,27 +1,38 @@
 {
   "version": 1,
-  "theme": "white",
+  "theme": "beige",
   "codeTheme": "monokai",
   "config": {
     "center": false
   },
-  "customCss": "\n    .reveal h1, .reveal h2, .reveal h3 { color: #333; }\n    .reveal .slides section { text-align: left; }\n    .reveal pre { width: 100%; }\n    .reveal code { background: #f5f5f5; padding: 2px 6px; border-radius: 4px; }\n  ",
   "slides": [
     {
       "id": "c172e56a",
-      "html": "<h1>Theme Test 230396</h1>"
+      "html": "<h1>Theme Test 230396</h1>",
+      "attrs": {
+        "style": "top: 341.5px;"
+      }
     },
     {
       "id": "d71f8157",
-      "html": "<h2>Slide 2</h2>\n<p>Add your content here...</p>"
+      "html": "<h2>Slide 2</h2>\n<p>Add your content here...</p>",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     },
     {
       "id": "5bf586fa",
-      "html": "<h2>Code Example</h2>\n<pre><code class=\"language-javascript\">// Your code here\nfunction example() {\n  return \"Hello, World!\";\n}</code></pre>"
+      "html": "<h2>Code Example</h2>\n<pre><code class=\"language-javascript\">// Your code here\nfunction example() {\n  return \"Hello, World!\";\n}</code></pre>",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     },
     {
       "id": "b843db1a",
-      "html": "<h2>Questions?</h2>"
+      "html": "<h2>Questions?</h2>",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     }
   ]
 }
