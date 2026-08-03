@@ -9,19 +9,31 @@
   "slides": [
     {
       "id": "99e6950f",
-      "html": "<h1>Content Test 632129</h1>"
+      "html": "<h1>Persist Marker 632129Content Test 632129</h1>",
+      "attrs": {
+        "style": "top: 157.5px;"
+      }
     },
     {
       "id": "d6182341",
-      "html": "<h2>Slide 2</h2>\n<p>Add your content here...</p>"
+      "html": "<h2>Slide 2</h2>\n<p>Add your content here...</p>",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     },
     {
       "id": "527b22c6",
-      "html": "<h2>Code Example</h2>\n<pre><code class=\"language-javascript\">// Your code here\nfunction example() {\n  return \"Hello, World!\";\n}</code></pre>"
+      "html": "<h2>Code Example</h2>\n<pre><code class=\"language-javascript\">// Your code here\nfunction example() {\n  return \"Hello, World!\";\n}</code></pre>",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     },
     {
       "id": "f3eb87be",
-      "html": "<h2>Questions?</h2>"
+      "html": "<h2>Questions?</h2>",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     }
   ]
 }
