@@ -2,10 +2,6 @@
   "version": 1,
   "theme": "white",
   "codeTheme": "github",
-  "config": {
-    "center": false
-  },
-  "customCss": "\n    .reveal h1, .reveal h2, .reveal h3 { color: #333; }\n    .reveal .slides section { text-align: left; }\n    .reveal pre { width: 100%; }\n    .reveal code { background: #f5f5f5; padding: 2px 6px; border-radius: 4px; }\n  ",
   "slides": [
     {
       "id": "a6ce9686",
@@ -25,11 +21,9 @@
     },
     {
       "id": "bfc37f93",
-      "html": "<h2>Background: color</h2><p>This slide has data-background-color.</p>",
+      "html": "<h2>Background: color (agent-tweaked — will auto-merge)</h2><p>You won't touch slide 3, so this merges without asking.</p>",
       "attrs": {
-        "data-background-color": "#4a1b2a",
-        "style": "top: 350px;",
-        "class": "has-dark-background"
+        "data-background-color": "#1b2a4a"
       }
     },
     {
@@ -160,5 +154,9 @@
         }
       ]
     }
-  ]
+  ],
+  "config": {
+    "center": false
+  },
+  "customCss": "\n    .reveal h1, .reveal h2, .reveal h3 { color: #333; }\n    .reveal .slides section { text-align: left; }\n    .reveal pre { width: 100%; }\n    .reveal code { background: #f5f5f5; padding: 2px 6px; border-radius: 4px; }\n  "
 }
