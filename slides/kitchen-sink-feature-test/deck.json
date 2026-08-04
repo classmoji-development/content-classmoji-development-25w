@@ -9,7 +9,7 @@
   "slides": [
     {
       "id": "a6ce9686",
-      "html": "<h1 style=\"color:#e07b39\">👨‍🏫 LIVE VERSION 2</h1><p>Slide 1 as it stands on main — orange title, changed after the preview forked. The other side is the agent's.</p>",
+      "html": "<h1 style=\"color:#e07b39\">👨‍🏫 LIVE: original course title</h1><p>Main's slide 1, changed after the fork — conflict card #1's left side.</p>",
       "notes": "Top-level speaker notes test. **markdown bold** and a list:\n* item one\n* item two",
       "attrs": {
         "style": "top: 212.5px;"
@@ -52,7 +52,7 @@
     },
     {
       "id": "a6ef2463",
-      "html": "<h2>Fragments</h2><p class=\"fragment\" data-fragment-index=\"1\">First (appears on click)</p><p class=\"fragment\" data-fragment-index=\"2\">Second</p><p class=\"fragment highlight-red\" data-fragment-index=\"0\">Third — highlight-red, explicit index</p>",
+      "html": "<h2>Fragments — LIVE tweak 👨‍🏫</h2><p class=\"fragment\">Teacher adjusted the first reveal</p><p class=\"fragment highlight-red\">and kept the red highlight</p><p class=\"fragment\">conflict card #2's left side</p>",
       "notes": "Notes replaced discretely — the slide html was never sent.",
       "attrs": {
         "style": "top: 350px;"
