@@ -2,10 +2,14 @@
   "version": 1,
   "theme": "white",
   "codeTheme": "github",
+  "config": {
+    "center": false
+  },
+  "customCss": "\n    .reveal h1, .reveal h2, .reveal h3 { color: #333; }\n    .reveal .slides section { text-align: left; }\n    .reveal pre { width: 100%; }\n    .reveal code { background: #f5f5f5; padding: 2px 6px; border-radius: 4px; }\n  ",
   "slides": [
     {
       "id": "a6ce9686",
-      "html": "<h1>Kitchen Sink 10 🧪</h1><p>Every Reveal feature, one deck. Speaker notes are on this slide — press <code>S</code>.</p>",
+      "html": "<h1>Kitchen Sink 11 🧪</h1><p>Every Reveal feature, one deck. Speaker notes are on this slide — press <code>S</code>.</p>",
       "notes": "Top-level speaker notes test. **markdown bold** and a list:\n* item one\n* item two",
       "attrs": {
         "style": "top: 211.5px;"
@@ -23,7 +27,9 @@
       "id": "bfc37f93",
       "html": "<h2>Background: color (agent-tweaked — will auto-merge)</h2><p>You won't touch slide 3, so this merges without asking.</p>",
       "attrs": {
-        "data-background-color": "#1b2a4a"
+        "data-background-color": "#1b2a4a",
+        "style": "top: 350px;",
+        "class": "has-dark-background"
       }
     },
     {
@@ -154,9 +160,5 @@
         }
       ]
     }
-  ],
-  "config": {
-    "center": false
-  },
-  "customCss": "\n    .reveal h1, .reveal h2, .reveal h3 { color: #333; }\n    .reveal .slides section { text-align: left; }\n    .reveal pre { width: 100%; }\n    .reveal code { background: #f5f5f5; padding: 2px 6px; border-radius: 4px; }\n  "
+  ]
 }
