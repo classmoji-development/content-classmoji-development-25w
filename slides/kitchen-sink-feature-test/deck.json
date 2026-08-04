@@ -2,10 +2,6 @@
   "version": 1,
   "theme": "white",
   "codeTheme": "github",
-  "config": {
-    "center": false
-  },
-  "customCss": "\n    .reveal h1, .reveal h2, .reveal h3 { color: #333; }\n    .reveal .slides section { text-align: left; }\n    .reveal pre { width: 100%; }\n    .reveal code { background: #f5f5f5; padding: 2px 6px; border-radius: 4px; }\n  ",
   "slides": [
     {
       "id": "a6ce9686",
@@ -42,7 +38,7 @@
     },
     {
       "id": "99233cb7",
-      "html": "<h2>Background: image</h2><p>data-background-image + size cover.</p>",
+      "html": "<h2>Background: image (agent-tweaked — auto-merges)</h2><p>Nobody touched this on main; it merges silently.</p>",
       "attrs": {
         "data-background-image": "https://picsum.photos/1200/800",
         "data-background-size": "cover",
@@ -52,11 +48,10 @@
     },
     {
       "id": "a6ef2463",
-      "html": "<h2>Fragments — LIVE tweak 👨‍🏫</h2><p class=\"fragment\" data-fragment-index=\"0\">Teacher adjusted the first reveal</p><p class=\"fragment highlight-red\" data-fragment-index=\"1\">and kept the red highlight</p><p class=\"fragment\" data-fragment-index=\"2\">conflict card #2's left side</p>",
+      "html": "<h2>Fragments — PREVIEW rewrite 🤖</h2><p class=\"fragment\">Agent reordered the reveals</p><p class=\"fragment\">and rewrote the copy</p><p class=\"fragment highlight-blue\">conflict card #2</p>",
       "notes": "Notes replaced discretely — the slide html was never sent.",
       "attrs": {
-        "style": "top: 350px;",
-        "data-fragment": "-1"
+        "style": "top: 350px;"
       }
     },
     {
@@ -163,5 +158,9 @@
         }
       ]
     }
-  ]
+  ],
+  "config": {
+    "center": false
+  },
+  "customCss": "\n    .reveal h1, .reveal h2, .reveal h3 { color: #333; }\n    .reveal .slides section { text-align: left; }\n    .reveal pre { width: 100%; }\n    .reveal code { background: #f5f5f5; padding: 2px 6px; border-radius: 4px; }\n  "
 }
