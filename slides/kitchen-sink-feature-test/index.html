@@ -17,26 +17,28 @@
 <body>
   <div class="reveal" data-theme="white" data-code-theme="monokai">
     <div class="slides">
-<section data-cm-id="a6ce9686"><h1>Kitchen Sink 🧪</h1><p>Every Reveal feature, one deck. Speaker notes are on this slide — press <code>S</code>.</p><aside class="notes">Top-level speaker notes test. **markdown bold** and a list:
+<section data-cm-id="a6ce9686" style="top: 211.5px;"><h1>Kitchen Sink 🧪</h1><p>Every Reveal feature, one deck. Speaker notes are on this slide — press <code>S</code>.</p><aside class="notes">Top-level speaker notes test. **markdown bold** and a list:
 * item one
 * item two</aside></section>
-<section data-cm-id="bfc37f93" data-background-color="#1b2a4a"><h2>Background: color</h2><p>This slide has data-background-color.</p></section>
-<section data-cm-id="07f56a75" data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)"><h2>Background: gradient</h2><p>data-background-gradient.</p></section>
-<section data-cm-id="99233cb7" data-background-image="https://picsum.photos/1200/800" data-background-size="cover" data-background-opacity="0.4"><h2>Background: image</h2><p>data-background-image + size cover.</p></section>
-<section data-cm-id="a6ef2463"><h2>Fragments</h2><p class="fragment">First (appears on click)</p><p class="fragment">Second</p><p class="fragment highlight-red" data-fragment-index="3">Third — highlight-red, explicit index</p><aside class="notes">Advance three times — fragments must step, not all-appear.</aside></section>
-<section data-cm-id="304ffe0c" data-auto-animate=""><h2 data-id="aa-title">Auto-Animate</h2><p>Advance to see this title glide.</p></section>
-<section data-cm-id="f2732a4f" data-auto-animate=""><h2 data-id="aa-title" style="color: #17b2c3; font-size: 2.5em;">Auto-Animate</h2><p>Same element, new size/color — should animate smoothly.</p></section>
-<section data-cm-id="fe6c43c0" data-transition="zoom"><h2>Transition: zoom</h2><p>This slide zooms in (data-transition).</p></section>
-<section data-cm-id="7ee389f5"><h2>Code escaping</h2><pre><code class="language-javascript">// generics &amp; entities must survive round-trips
+<section data-cm-id="bfc37f93" data-background-color="#1b2a4a" style="top: 350px;" class="has-dark-background"><h2>Background: color</h2><p>This slide has data-background-color.</p></section>
+<section data-cm-id="07f56a75" data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)" style="top: 350px;"><h2>Background: gradient</h2><p>data-background-gradient.</p></section>
+<section data-cm-id="99233cb7" data-background-image="https://picsum.photos/1200/800" data-background-size="cover" data-background-opacity="0.4" style="top: 350px;"><h2>Background: image</h2><p>data-background-image + size cover.</p></section>
+<section data-cm-id="a6ef2463" style="top: 350px;"><h2>Fragments</h2><p class="fragment" data-fragment-index="1">First (appears on click)</p><p class="fragment" data-fragment-index="2">Second</p><p class="fragment highlight-red" data-fragment-index="0">Third — highlight-red, explicit index</p><aside class="notes">Advance three times — fragments must step, not all-appear.</aside></section>
+<section data-cm-id="304ffe0c" data-auto-animate="" style="top: 350px;"><h2 data-id="aa-title">Auto-Animate</h2><p>Advance to see this title glide.</p></section>
+<section data-cm-id="f2732a4f" data-auto-animate="" style="top: 350px;"><h2 data-id="aa-title" style="color: #17b2c3; font-size: 2.5em;">Auto-Animate</h2><p>Same element, new size/color — should animate smoothly.</p></section>
+<section data-cm-id="fe6c43c0" data-transition="zoom" style="top: 350px;"><h2>Transition: zoom</h2><p>This slide zooms in (data-transition).</p></section>
+<section data-cm-id="7ee389f5" style="top: 350px;"><h2>Code escaping</h2><pre><code class="language-javascript">// generics &amp; entities must survive round-trips
 function pair(a: T, b: T): Array {
   return a &lt; b ? [a, b] : [b, a];
 }
 console.log('a &amp;&amp; b', 1 &lt; 2);</code></pre><aside class="notes">The &lt; &gt; &amp; characters in code are the escaping stress test.</aside></section>
-<section data-cm-id="31ccc837"><h2>Positioned image block</h2><div class="sl-block" data-block-type="image" style="width: 420px; height: 280px; left: 270px; top: 220px;"><div class="sl-block-content"><img src="https://picsum.photos/seed/classmoji/420/280" alt="random" style="width: 100%; height: 100%;"></div></div><aside class="notes">sl-block absolute positioning must hold.</aside></section>
-<section data-cm-id="c29beb42"><h2>Iframe embed</h2><div class="sl-block" data-block-type="iframe" style="width: 700px; height: 400px; left: 130px; top: 200px;"><div class="sl-block-content"><iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" allow="fullscreen" style="width: 100%; height: 100%;"></iframe></div></div></section>
-<section data-cm-id="0c20546f" data-hidden="true"><h2>Hidden slide</h2><p>You should NOT see this in the presentation flow — only in the editor/overview.</p></section>
-<section data-cm-id="42d75994"><h2>Stack formation test</h2><p>In the editor overview, drag this slide onto the next one to form a vertical stack — then save and tell Claude to re-verify.</p></section>
-<section data-cm-id="754c5b2f"><h2>Stack target</h2><p>Drag the previous slide onto me. After save, we verify container ids/attrs survived.</p><aside class="notes">Post-drag, this becomes a stack child — notes must survive the transition.</aside></section>
+<section data-cm-id="31ccc837" style="top: 350px;"><h2>Positioned image block</h2><div class="sl-block" data-block-type="image" style="width: 420px; height: 280px; left: 270px; top: 220px;"><div class="sl-block-content"><img src="https://picsum.photos/seed/classmoji/420/280" alt="random" style="width: 100%; height: 100%;"></div></div><aside class="notes">sl-block absolute positioning must hold.</aside></section>
+<section data-cm-id="c29beb42" style="top: 350px;"><h2>Iframe embed</h2><div class="sl-block" data-block-type="iframe" style="width: 700px; height: 400px; left: 130px; top: 200px;"><div class="sl-block-content"><iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" allow="fullscreen" style="width: 100%; height: 100%;"></iframe></div></div></section>
+<section data-cm-id="0c20546f" data-hidden="true" style="top: 350px;"><h2>Hidden slide</h2><p>You should NOT see this in the presentation flow — only in the editor/overview.</p></section>
+<section data-cm-id="0b81fee5" style="top: 350px;">
+<section data-cm-id="754c5b2f" style="top: 350px;"><h2>Stack target</h2><p>Drag the previous slide onto me. After save, we verify container ids/attrs survived.</p><aside class="notes">Post-drag, this becomes a stack child — notes must survive the transition.</aside></section>
+<section data-cm-id="42d75994" style="top: 350px;"><h2>Stack formation test</h2><p>In the editor overview, drag this slide onto the next one to form a vertical stack — then save and tell Claude to re-verify.</p></section>
+</section>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>

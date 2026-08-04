@@ -10,20 +10,26 @@
     {
       "id": "a6ce9686",
       "html": "<h1>Kitchen Sink 🧪</h1><p>Every Reveal feature, one deck. Speaker notes are on this slide — press <code>S</code>.</p>",
-      "notes": "Top-level speaker notes test. **markdown bold** and a list:\n* item one\n* item two"
+      "notes": "Top-level speaker notes test. **markdown bold** and a list:\n* item one\n* item two",
+      "attrs": {
+        "style": "top: 211.5px;"
+      }
     },
     {
       "id": "bfc37f93",
       "html": "<h2>Background: color</h2><p>This slide has data-background-color.</p>",
       "attrs": {
-        "data-background-color": "#1b2a4a"
+        "data-background-color": "#1b2a4a",
+        "style": "top: 350px;",
+        "class": "has-dark-background"
       }
     },
     {
       "id": "07f56a75",
       "html": "<h2>Background: gradient</h2><p>data-background-gradient.</p>",
       "attrs": {
-        "data-background-gradient": "linear-gradient(to bottom, #283b95, #17b2c3)"
+        "data-background-gradient": "linear-gradient(to bottom, #283b95, #17b2c3)",
+        "style": "top: 350px;"
       }
     },
     {
@@ -32,62 +38,95 @@
       "attrs": {
         "data-background-image": "https://picsum.photos/1200/800",
         "data-background-size": "cover",
-        "data-background-opacity": "0.4"
+        "data-background-opacity": "0.4",
+        "style": "top: 350px;"
       }
     },
     {
       "id": "a6ef2463",
-      "html": "<h2>Fragments</h2><p class=\"fragment\">First (appears on click)</p><p class=\"fragment\">Second</p><p class=\"fragment highlight-red\" data-fragment-index=\"3\">Third — highlight-red, explicit index</p>",
-      "notes": "Advance three times — fragments must step, not all-appear."
+      "html": "<h2>Fragments</h2><p class=\"fragment\" data-fragment-index=\"1\">First (appears on click)</p><p class=\"fragment\" data-fragment-index=\"2\">Second</p><p class=\"fragment highlight-red\" data-fragment-index=\"0\">Third — highlight-red, explicit index</p>",
+      "notes": "Advance three times — fragments must step, not all-appear.",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     },
     {
       "id": "304ffe0c",
       "html": "<h2 data-id=\"aa-title\">Auto-Animate</h2><p>Advance to see this title glide.</p>",
       "attrs": {
-        "data-auto-animate": ""
+        "data-auto-animate": "",
+        "style": "top: 350px;"
       }
     },
     {
       "id": "f2732a4f",
       "html": "<h2 data-id=\"aa-title\" style=\"color: #17b2c3; font-size: 2.5em;\">Auto-Animate</h2><p>Same element, new size/color — should animate smoothly.</p>",
       "attrs": {
-        "data-auto-animate": ""
+        "data-auto-animate": "",
+        "style": "top: 350px;"
       }
     },
     {
       "id": "fe6c43c0",
       "html": "<h2>Transition: zoom</h2><p>This slide zooms in (data-transition).</p>",
       "attrs": {
-        "data-transition": "zoom"
+        "data-transition": "zoom",
+        "style": "top: 350px;"
       }
     },
     {
       "id": "7ee389f5",
       "html": "<h2>Code escaping</h2><pre><code class=\"language-javascript\">// generics &amp; entities must survive round-trips\nfunction pair(a: T, b: T): Array {\n  return a &lt; b ? [a, b] : [b, a];\n}\nconsole.log('a &amp;&amp; b', 1 &lt; 2);</code></pre>",
-      "notes": "The &lt; &gt; &amp; characters in code are the escaping stress test."
+      "notes": "The &lt; &gt; &amp; characters in code are the escaping stress test.",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     },
     {
       "id": "31ccc837",
       "html": "<h2>Positioned image block</h2><div class=\"sl-block\" data-block-type=\"image\" style=\"width: 420px; height: 280px; left: 270px; top: 220px;\"><div class=\"sl-block-content\"><img src=\"https://picsum.photos/seed/classmoji/420/280\" alt=\"random\" style=\"width: 100%; height: 100%;\"></div></div>",
-      "notes": "sl-block absolute positioning must hold."
+      "notes": "sl-block absolute positioning must hold.",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     },
     {
       "id": "c29beb42",
-      "html": "<h2>Iframe embed</h2><div class=\"sl-block\" data-block-type=\"iframe\" style=\"width: 700px; height: 400px; left: 130px; top: 200px;\"><div class=\"sl-block-content\"><iframe src=\"https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ\" allow=\"fullscreen\" style=\"width: 100%; height: 100%;\"></iframe></div></div>"
+      "html": "<h2>Iframe embed</h2><div class=\"sl-block\" data-block-type=\"iframe\" style=\"width: 700px; height: 400px; left: 130px; top: 200px;\"><div class=\"sl-block-content\"><iframe src=\"https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ\" allow=\"fullscreen\" style=\"width: 100%; height: 100%;\"></iframe></div></div>",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     },
     {
       "id": "0c20546f",
       "html": "<h2>Hidden slide</h2><p>You should NOT see this in the presentation flow — only in the editor/overview.</p>",
-      "hidden": true
+      "hidden": true,
+      "attrs": {
+        "style": "top: 350px;"
+      }
     },
     {
-      "id": "42d75994",
-      "html": "<h2>Stack formation test</h2><p>In the editor overview, drag this slide onto the next one to form a vertical stack — then save and tell Claude to re-verify.</p>"
-    },
-    {
-      "id": "754c5b2f",
-      "html": "<h2>Stack target</h2><p>Drag the previous slide onto me. After save, we verify container ids/attrs survived.</p>",
-      "notes": "Post-drag, this becomes a stack child — notes must survive the transition."
+      "id": "0b81fee5",
+      "attrs": {
+        "style": "top: 350px;"
+      },
+      "children": [
+        {
+          "id": "754c5b2f",
+          "html": "<h2>Stack target</h2><p>Drag the previous slide onto me. After save, we verify container ids/attrs survived.</p>",
+          "notes": "Post-drag, this becomes a stack child — notes must survive the transition.",
+          "attrs": {
+            "style": "top: 350px;"
+          }
+        },
+        {
+          "id": "42d75994",
+          "html": "<h2>Stack formation test</h2><p>In the editor overview, drag this slide onto the next one to form a vertical stack — then save and tell Claude to re-verify.</p>",
+          "attrs": {
+            "style": "top: 350px;"
+          }
+        }
+      ]
     }
   ]
 }
