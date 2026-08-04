@@ -2,10 +2,6 @@
   "version": 1,
   "theme": "white",
   "codeTheme": "github",
-  "config": {
-    "center": false
-  },
-  "customCss": "\n    .reveal h1, .reveal h2, .reveal h3 { color: #333; }\n    .reveal .slides section { text-align: left; }\n    .reveal pre { width: 100%; }\n    .reveal code { background: #f5f5f5; padding: 2px 6px; border-radius: 4px; }\n  ",
   "slides": [
     {
       "id": "a6ce9686",
@@ -34,10 +30,9 @@
     },
     {
       "id": "07f56a75",
-      "html": "<h2>Background: gradient</h2><p>data-background-gradient.</p>",
+      "html": "<h2>Background: gradient (agent-tweaked)</h2><p>Untouched on main — this will auto-merge silently.</p>",
       "attrs": {
-        "data-background-gradient": "linear-gradient(to bottom, #283b95, #17b2c3)",
-        "style": "top: 350px;"
+        "data-background-gradient": "linear-gradient(to bottom, #17b2c3, #283b95)"
       }
     },
     {
@@ -160,5 +155,9 @@
         }
       ]
     }
-  ]
+  ],
+  "config": {
+    "center": false
+  },
+  "customCss": "\n    .reveal h1, .reveal h2, .reveal h3 { color: #333; }\n    .reveal .slides section { text-align: left; }\n    .reveal pre { width: 100%; }\n    .reveal code { background: #f5f5f5; padding: 2px 6px; border-radius: 4px; }\n  "
 }
