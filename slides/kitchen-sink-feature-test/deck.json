@@ -9,10 +9,10 @@
   "slides": [
     {
       "id": "a6ce9686",
-      "html": "<h1 style=\"color:#e07b39\">👨‍🏫 LIVE: original course title</h1><p>Main's slide 1, changed after the fork — conflict card #1's left side.</p>",
+      "html": "<h1 style=\"color:#e07b39\">👨‍🏫 LIVE: my course title</h1><p>Main's slide 1, changed after the fork — conflict card #1's left side.</p>",
       "notes": "Top-level speaker notes test. **markdown bold** and a list:\n* item one\n* item two",
       "attrs": {
-        "style": "top: 212.5px;"
+        "style": "top: 149.5px;"
       }
     },
     {
@@ -52,10 +52,11 @@
     },
     {
       "id": "a6ef2463",
-      "html": "<h2>Fragments — LIVE tweak 👨‍🏫</h2><p class=\"fragment\">Teacher adjusted the first reveal</p><p class=\"fragment highlight-red\">and kept the red highlight</p><p class=\"fragment\">conflict card #2's left side</p>",
+      "html": "<h2>Fragments — LIVE tweak 👨‍🏫</h2><p class=\"fragment\" data-fragment-index=\"0\">Teacher adjusted the first reveal</p><p class=\"fragment highlight-red\" data-fragment-index=\"1\">and kept the red highlight</p><p class=\"fragment\" data-fragment-index=\"2\">conflict card #2's left side</p>",
       "notes": "Notes replaced discretely — the slide html was never sent.",
       "attrs": {
-        "style": "top: 350px;"
+        "style": "top: 350px;",
+        "data-fragment": "-1"
       }
     },
     {
@@ -117,7 +118,8 @@
       "attrs": {
         "data-background-color": "#0b3d2e",
         "style": "top: 350px;",
-        "class": "has-dark-background"
+        "class": "has-dark-background",
+        "data-previous-indexv": "0"
       },
       "children": [
         {
@@ -140,7 +142,8 @@
     {
       "id": "0b81fee5",
       "attrs": {
-        "style": "top: 350px;"
+        "style": "top: 350px;",
+        "data-previous-indexv": "0"
       },
       "children": [
         {
