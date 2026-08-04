@@ -9,10 +9,10 @@
   "slides": [
     {
       "id": "a6ce9686",
-      "html": "<h1 style=\"color:#e07b39\">👨‍🏫 LIVE VERSION</h1><p>Slide 1 as it stands on main — orange title, changed after the preview forked. The other side is the agent's.</p>",
+      "html": "<h1 style=\"color:#e07b39\">👨‍🏫 LIVE VERSION 2</h1><p>Slide 1 as it stands on main — orange title, changed after the preview forked. The other side is the agent's.</p>",
       "notes": "Top-level speaker notes test. **markdown bold** and a list:\n* item one\n* item two",
       "attrs": {
-        "style": "top: 211.5px;"
+        "style": "top: 212.5px;"
       }
     },
     {
