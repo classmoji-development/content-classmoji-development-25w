@@ -1,7 +1,7 @@
 {
   "version": 1,
   "theme": "white",
-  "codeTheme": "monokai",
+  "codeTheme": "github",
   "config": {
     "center": false
   },
@@ -16,12 +16,18 @@
       }
     },
     {
+      "id": "fe6c43c0",
+      "html": "<h2>Transition: zoom</h2><p>This slide zooms in (data-transition).</p>",
+      "attrs": {
+        "data-transition": "zoom",
+        "style": "top: 350px;"
+      }
+    },
+    {
       "id": "bfc37f93",
       "html": "<h2>Background: color</h2><p>This slide has data-background-color.</p>",
       "attrs": {
-        "data-background-color": "#1b2a4a",
-        "style": "top: 350px;",
-        "class": "has-dark-background"
+        "data-background-color": "#4a1b2a"
       }
     },
     {
@@ -45,7 +51,7 @@
     {
       "id": "a6ef2463",
       "html": "<h2>Fragments</h2><p class=\"fragment\" data-fragment-index=\"1\">First (appears on click)</p><p class=\"fragment\" data-fragment-index=\"2\">Second</p><p class=\"fragment highlight-red\" data-fragment-index=\"0\">Third — highlight-red, explicit index</p>",
-      "notes": "Advance three times — fragments must step, not all-appear.",
+      "notes": "Notes replaced discretely — the slide html was never sent.",
       "attrs": {
         "style": "top: 350px;"
       }
@@ -63,14 +69,6 @@
       "html": "<h2 data-id=\"aa-title\" style=\"color: #17b2c3; font-size: 2.5em;\">Auto-Animate</h2><p>Same element, new size/color — should animate smoothly.</p>",
       "attrs": {
         "data-auto-animate": "",
-        "style": "top: 350px;"
-      }
-    },
-    {
-      "id": "fe6c43c0",
-      "html": "<h2>Transition: zoom</h2><p>This slide zooms in (data-transition).</p>",
-      "attrs": {
-        "data-transition": "zoom",
         "style": "top: 350px;"
       }
     },
@@ -104,34 +102,10 @@
     },
     {
       "id": "0c20546f",
-      "html": "<h2>Hidden slide</h2><p>You should NOT see this in the presentation flow — only in the editor/overview.</p>",
-      "hidden": true,
+      "html": "<h2>Formerly hidden</h2><p>Unhidden AND reworded in one update op (hidden + html on the same target).</p>",
       "attrs": {
         "style": "top: 350px;"
       }
-    },
-    {
-      "id": "0b81fee5",
-      "attrs": {
-        "style": "top: 350px;"
-      },
-      "children": [
-        {
-          "id": "754c5b2f",
-          "html": "<h2>Stack target</h2><p>Drag the previous slide onto me. After save, we verify container ids/attrs survived.</p>",
-          "notes": "Post-drag, this becomes a stack child — notes must survive the transition.",
-          "attrs": {
-            "style": "top: 350px;"
-          }
-        },
-        {
-          "id": "42d75994",
-          "html": "<h2>Stack formation test</h2><p>In the editor overview, drag this slide onto the next one to form a vertical stack — then save and tell Claude to re-verify.</p>",
-          "attrs": {
-            "style": "top: 350px;"
-          }
-        }
-      ]
     },
     {
       "id": "705a3d06",
@@ -149,6 +123,29 @@
       "attrs": {
         "data-background-color": "#0b3d2e"
       }
+    },
+    {
+      "id": "0b81fee5",
+      "attrs": {
+        "style": "top: 350px;"
+      },
+      "children": [
+        {
+          "id": "754c5b2f",
+          "html": "<h2>Stack target ✏️</h2><p>Edited in place by targeting the CHILD id inside the stack — the sibling and container untouched.</p>",
+          "notes": "Post-drag, this becomes a stack child — notes must survive the transition.",
+          "attrs": {
+            "style": "top: 350px;"
+          }
+        },
+        {
+          "id": "42d75994",
+          "html": "<h2>Stack formation test</h2><p>In the editor overview, drag this slide onto the next one to form a vertical stack — then save and tell Claude to re-verify.</p>",
+          "attrs": {
+            "style": "top: 350px;"
+          }
+        }
+      ]
     }
   ]
 }
