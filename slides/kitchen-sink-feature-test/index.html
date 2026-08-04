@@ -17,11 +17,11 @@
 <body>
   <div class="reveal" data-theme="white" data-code-theme="github">
     <div class="slides">
-<section data-cm-id="a6ce9686" style="top: 211.5px;"><h1>Kitchen Sink 🧪</h1><p>Every Reveal feature, one deck. Speaker notes are on this slide — press <code>S</code>.</p><aside class="notes">Top-level speaker notes test. **markdown bold** and a list:
+<section data-cm-id="a6ce9686" style="top: 211.5px;"><h1>Kitchen Sink 2 🧪</h1><p>Every Reveal feature, one deck. Speaker notes are on this slide — press <code>S</code>.</p><aside class="notes">Top-level speaker notes test. **markdown bold** and a list:
 * item one
 * item two</aside></section>
 <section data-cm-id="fe6c43c0" data-transition="zoom" style="top: 350px;"><h2>Transition: zoom</h2><p>This slide zooms in (data-transition).</p></section>
-<section data-cm-id="bfc37f93" data-background-color="#4a1b2a"><h2>Background: color</h2><p>This slide has data-background-color.</p></section>
+<section data-cm-id="bfc37f93" data-background-color="#4a1b2a" style="top: 350px;" class="has-dark-background"><h2>Background: color</h2><p>This slide has data-background-color.</p></section>
 <section data-cm-id="07f56a75" data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)" style="top: 350px;"><h2>Background: gradient</h2><p>data-background-gradient.</p></section>
 <section data-cm-id="99233cb7" data-background-image="https://picsum.photos/1200/800" data-background-size="cover" data-background-opacity="0.4" style="top: 350px;"><h2>Background: image</h2><p>data-background-image + size cover.</p></section>
 <section data-cm-id="a6ef2463" style="top: 350px;"><h2>Fragments</h2><p class="fragment" data-fragment-index="1">First (appears on click)</p><p class="fragment" data-fragment-index="2">Second</p><p class="fragment highlight-red" data-fragment-index="0">Third — highlight-red, explicit index</p><aside class="notes">Notes replaced discretely — the slide html was never sent.</aside></section>
@@ -32,13 +32,18 @@ function pair(a: T, b: T): Array {
   return a &lt; b ? [a, b] : [b, a];
 }
 console.log('a &amp;&amp; b', 1 &lt; 2);</code></pre><aside class="notes">The &lt; &gt; &amp; characters in code are the escaping stress test.</aside></section>
-<section data-cm-id="189f492b"><h2>Sandpack playground</h2><div class="sl-block" data-block-type="sandpack" style="width: 800px; height: 440px; left: 80px; top: 180px;"><div class="sl-block-content"><div class="sandpack-embed" data-template="vanilla" data-theme="light" data-layout="preview-right" data-show-console="true"><script type="application/json" data-sandpack-files="">{"/index.html": "<h1>Sandpack in the sink</h1><button id=\"go\">click me</button>", "/styles.css": "h1 { color: #17b2c3; font-family: system-ui; }\nbutton { font-size: 1.4em; padding: 0.3em 2em; border-radius: 0.3em; }\n", "/index.js": "import './styles.css';\n\ndocument.getElementById('go').addEventListener('click', () => {\n  console.log('sandpack works in the kitchen sink 🎉');\n});\n"}</script></div></div></div><aside class="notes">Live editable sandpack with console — click the button, watch the log.</aside></section>
+<section data-cm-id="189f492b" style="top: 350px;"><h2>Sandpack playground</h2><div class="sl-block" data-block-type="sandpack" style="width: 800px; height: 440px; left: 80px; top: 180px;"><div class="sl-block-content"><div class="sandpack-embed" data-template="vanilla" data-theme="light" data-layout="preview-right" data-show-console="true"><script type="application/json" data-sandpack-files="">{
+  "/styles.css": "h1 { color: #17b2c3; font-family: system-ui; }\nbutton { font-size: 1.4em; padding: 0.3em 2em; border-radius: 0.3em; }\n",
+  "/index.js": "import './styles.css';\n\ndocument.getElementById('go').addEventListener('click', () => {\n  console.log('sandpack works in the kitchen sink 🎉');\n});\n",
+  "/index.html": "<h1>Sandpack in the sink</h1><button id=\"go\">click me</button>",
+  "/package.json": "{\n  \"dependencies\": {},\n  \"main\": \"/index.js\",\n  \"devDependencies\": {}\n}"
+}</script></div></div></div><aside class="notes">Live editable sandpack with console — click the button, watch the log.</aside></section>
 <section data-cm-id="31ccc837" style="top: 350px;"><h2>Positioned image block</h2><div class="sl-block" data-block-type="image" style="width: 420px; height: 280px; left: 270px; top: 220px;"><div class="sl-block-content"><img src="https://picsum.photos/seed/classmoji/420/280" alt="random" style="width: 100%; height: 100%;"></div></div><aside class="notes">sl-block absolute positioning must hold.</aside></section>
 <section data-cm-id="c29beb42" style="top: 350px;"><h2>Iframe embed</h2><div class="sl-block" data-block-type="iframe" style="width: 700px; height: 400px; left: 130px; top: 200px;"><div class="sl-block-content"><iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" allow="fullscreen" style="width: 100%; height: 100%;"></iframe></div></div></section>
 <section data-cm-id="0c20546f" style="top: 350px;"><h2>Formerly hidden</h2><p>Unhidden AND reworded in one update op (hidden + html on the same target).</p></section>
-<section data-cm-id="705a3d06" data-background-color="#0b3d2e">
-<section data-cm-id="d4e6fe54"><h2>Agent-made stack ⬇️</h2><p>This vertical stack was created by Claude via deck_apply insert with children — the feature you just asked for.</p><aside class="notes">Container + both children got server-minted ids in one op.</aside></section>
-<section data-cm-id="3a33431d"><h2>Child two</h2><p>Navigate down to reach me. The container carries the dark-green background attr.</p></section>
+<section data-cm-id="705a3d06" data-background-color="#0b3d2e" style="top: 350px;" class="has-dark-background">
+<section data-cm-id="d4e6fe54" style="top: 350px;"><h2>Agent-made stack ⬇️</h2><p>This vertical stack was created by Claude via deck_apply insert with children — the feature you just asked for.</p><aside class="notes">Container + both children got server-minted ids in one op.</aside></section>
+<section data-cm-id="3a33431d" style="top: 350px;"><h2>Child two</h2><p>Navigate down to reach me. The container carries the dark-green background attr.</p></section>
 </section>
 <section data-cm-id="0b81fee5" style="top: 350px;">
 <section data-cm-id="754c5b2f" style="top: 350px;"><h2>Stack target ✏️</h2><p>Edited in place by targeting the CHILD id inside the stack — the sibling and container untouched.</p><aside class="notes">Post-drag, this becomes a stack child — notes must survive the transition.</aside></section>

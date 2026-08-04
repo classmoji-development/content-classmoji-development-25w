@@ -9,7 +9,7 @@
   "slides": [
     {
       "id": "a6ce9686",
-      "html": "<h1>Kitchen Sink 🧪</h1><p>Every Reveal feature, one deck. Speaker notes are on this slide — press <code>S</code>.</p>",
+      "html": "<h1>Kitchen Sink 2 🧪</h1><p>Every Reveal feature, one deck. Speaker notes are on this slide — press <code>S</code>.</p>",
       "notes": "Top-level speaker notes test. **markdown bold** and a list:\n* item one\n* item two",
       "attrs": {
         "style": "top: 211.5px;"
@@ -27,7 +27,9 @@
       "id": "bfc37f93",
       "html": "<h2>Background: color</h2><p>This slide has data-background-color.</p>",
       "attrs": {
-        "data-background-color": "#4a1b2a"
+        "data-background-color": "#4a1b2a",
+        "style": "top: 350px;",
+        "class": "has-dark-background"
       }
     },
     {
@@ -82,8 +84,11 @@
     },
     {
       "id": "189f492b",
-      "html": "<h2>Sandpack playground</h2><div class=\"sl-block\" data-block-type=\"sandpack\" style=\"width: 800px; height: 440px; left: 80px; top: 180px;\"><div class=\"sl-block-content\"><div class=\"sandpack-embed\" data-template=\"vanilla\" data-theme=\"light\" data-layout=\"preview-right\" data-show-console=\"true\"><script type=\"application/json\" data-sandpack-files=\"\">{\"/index.html\": \"<h1>Sandpack in the sink</h1><button id=\\\"go\\\">click me</button>\", \"/styles.css\": \"h1 { color: #17b2c3; font-family: system-ui; }\\nbutton { font-size: 1.4em; padding: 0.3em 2em; border-radius: 0.3em; }\\n\", \"/index.js\": \"import './styles.css';\\n\\ndocument.getElementById('go').addEventListener('click', () => {\\n  console.log('sandpack works in the kitchen sink 🎉');\\n});\\n\"}</script></div></div></div>",
-      "notes": "Live editable sandpack with console — click the button, watch the log."
+      "html": "<h2>Sandpack playground</h2><div class=\"sl-block\" data-block-type=\"sandpack\" style=\"width: 800px; height: 440px; left: 80px; top: 180px;\"><div class=\"sl-block-content\"><div class=\"sandpack-embed\" data-template=\"vanilla\" data-theme=\"light\" data-layout=\"preview-right\" data-show-console=\"true\"><script type=\"application/json\" data-sandpack-files=\"\">{\n  \"/styles.css\": \"h1 { color: #17b2c3; font-family: system-ui; }\\nbutton { font-size: 1.4em; padding: 0.3em 2em; border-radius: 0.3em; }\\n\",\n  \"/index.js\": \"import './styles.css';\\n\\ndocument.getElementById('go').addEventListener('click', () => {\\n  console.log('sandpack works in the kitchen sink 🎉');\\n});\\n\",\n  \"/index.html\": \"<h1>Sandpack in the sink</h1><button id=\\\"go\\\">click me</button>\",\n  \"/package.json\": \"{\\n  \\\"dependencies\\\": {},\\n  \\\"main\\\": \\\"/index.js\\\",\\n  \\\"devDependencies\\\": {}\\n}\"\n}</script></div></div></div>",
+      "notes": "Live editable sandpack with console — click the button, watch the log.",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     },
     {
       "id": "31ccc837",
@@ -109,20 +114,28 @@
     },
     {
       "id": "705a3d06",
+      "attrs": {
+        "data-background-color": "#0b3d2e",
+        "style": "top: 350px;",
+        "class": "has-dark-background"
+      },
       "children": [
         {
           "id": "d4e6fe54",
           "html": "<h2>Agent-made stack ⬇️</h2><p>This vertical stack was created by Claude via deck_apply insert with children — the feature you just asked for.</p>",
-          "notes": "Container + both children got server-minted ids in one op."
+          "notes": "Container + both children got server-minted ids in one op.",
+          "attrs": {
+            "style": "top: 350px;"
+          }
         },
         {
           "id": "3a33431d",
-          "html": "<h2>Child two</h2><p>Navigate down to reach me. The container carries the dark-green background attr.</p>"
+          "html": "<h2>Child two</h2><p>Navigate down to reach me. The container carries the dark-green background attr.</p>",
+          "attrs": {
+            "style": "top: 350px;"
+          }
         }
-      ],
-      "attrs": {
-        "data-background-color": "#0b3d2e"
-      }
+      ]
     },
     {
       "id": "0b81fee5",
