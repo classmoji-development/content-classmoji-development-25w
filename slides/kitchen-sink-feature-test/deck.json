@@ -12,6 +12,14 @@
       }
     },
     {
+      "id": "7ee389f5",
+      "html": "<h2>Code escaping</h2><pre><code class=\"language-javascript\">// generics &amp; entities must survive round-trips\nfunction pair(a: T, b: T): Array {\n  return a &lt; b ? [a, b] : [b, a];\n}\nconsole.log('a &amp;&amp; b', 1 &lt; 2);</code></pre>",
+      "notes": "The &lt; &gt; &amp; characters in code are the escaping stress test.",
+      "attrs": {
+        "style": "top: 350px;"
+      }
+    },
+    {
       "id": "fe6c43c0",
       "html": "<h2>Transition: zoom (agent-tweaked)</h2><p>This edit should AUTO-merge on accept — you won't have touched slide 2.</p>",
       "attrs": {
@@ -68,14 +76,6 @@
       "html": "<h2 data-id=\"aa-title\" style=\"color: #17b2c3; font-size: 2.5em;\" data-auto-animate-target=\"\">Auto-Animate</h2><p>Same element, new size/color — should animate smoothly.</p>",
       "attrs": {
         "data-auto-animate": "pending",
-        "style": "top: 350px;"
-      }
-    },
-    {
-      "id": "7ee389f5",
-      "html": "<h2>Code escaping</h2><pre><code class=\"language-javascript\">// generics &amp; entities must survive round-trips\nfunction pair(a: T, b: T): Array {\n  return a &lt; b ? [a, b] : [b, a];\n}\nconsole.log('a &amp;&amp; b', 1 &lt; 2);</code></pre>",
-      "notes": "The &lt; &gt; &amp; characters in code are the escaping stress test.",
-      "attrs": {
         "style": "top: 350px;"
       }
     },
