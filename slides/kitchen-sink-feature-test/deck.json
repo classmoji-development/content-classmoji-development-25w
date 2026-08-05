@@ -119,16 +119,16 @@
       },
       "children": [
         {
-          "id": "d4e6fe54",
-          "html": "<h2>Agent-made stack ⬇️</h2><p>This vertical stack was created by Claude via deck_apply insert with children — the feature you just asked for.</p>",
-          "notes": "Container + both children got server-minted ids in one op.",
+          "id": "3a33431d",
+          "html": "<h2>Child two</h2><p>Navigate down to reach me. The container carries the dark-green background attr.</p>",
           "attrs": {
             "style": "top: 350px;"
           }
         },
         {
-          "id": "3a33431d",
-          "html": "<h2>Child two</h2><p>Navigate down to reach me. The container carries the dark-green background attr.</p>",
+          "id": "d4e6fe54",
+          "html": "<h2>Agent-made stack ⬇️</h2><p>This vertical stack was created by Claude via deck_apply insert with children — the feature you just asked for.</p>",
+          "notes": "Container + both children got server-minted ids in one op.",
           "attrs": {
             "style": "top: 350px;"
           }
