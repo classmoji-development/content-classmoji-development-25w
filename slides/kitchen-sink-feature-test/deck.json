@@ -5,7 +5,7 @@
   "slides": [
     {
       "id": "a6ce9686",
-      "html": "<h1 style=\"color:#e07b39\">👨‍🏫 LIVE: my course title14</h1><p>Main's slide 1, changed after the fork — conflict card #1's left side.</p>",
+      "html": "<h1 style=\"color:#e07b39\">👨‍🏫 LIVE: my course title15</h1><p>Main's slide 1, changed after the fork — conflict card #1's left side.</p>",
       "notes": "Top-level speaker notes test. **markdown bold** and a list:\n* item one\n* item two",
       "attrs": {
         "style": "top: 149.5px;"
