@@ -12,6 +12,15 @@
       }
     },
     {
+      "id": "a6ef2463",
+      "html": "<h2>Fragments — PREVIEW rewrite 🤖</h2><p class=\"fragment\" data-fragment-index=\"0\">Agent reordered the reveals</p><p class=\"fragment\" data-fragment-index=\"1\">and rewrote the copy</p><p class=\"fragment highlight-blue\" data-fragment-index=\"2\">conflict card #2</p>",
+      "notes": "Notes replaced discretely — the slide html was never sent.",
+      "attrs": {
+        "style": "top: 147.5px;",
+        "data-fragment": "1"
+      }
+    },
+    {
       "id": "7ee389f5",
       "html": "<h2>Code escaping</h2><pre><code class=\"language-javascript\">// generics &amp; entities must survive round-trips\nfunction pair(a: T, b: T): Array {\n  return a &lt; b ? [a, b] : [b, a];\n}\nconsole.log('a &amp;&amp; b', 1 &lt; 2);</code></pre>",
       "notes": "The &lt; &gt; &amp; characters in code are the escaping stress test.",
@@ -52,15 +61,6 @@
         "data-background-size": "cover",
         "data-background-opacity": "0.4",
         "style": "top: 350px;"
-      }
-    },
-    {
-      "id": "a6ef2463",
-      "html": "<h2>Fragments — PREVIEW rewrite 🤖</h2><p class=\"fragment\" data-fragment-index=\"0\">Agent reordered the reveals</p><p class=\"fragment\" data-fragment-index=\"1\">and rewrote the copy</p><p class=\"fragment highlight-blue\" data-fragment-index=\"2\">conflict card #2</p>",
-      "notes": "Notes replaced discretely — the slide html was never sent.",
-      "attrs": {
-        "style": "top: 147.5px;",
-        "data-fragment": "1"
       }
     },
     {
