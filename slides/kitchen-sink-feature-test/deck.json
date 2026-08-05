@@ -8,7 +8,7 @@
       "html": "<h1 style=\"color:#e07b39\">👨‍🏫 LIVE: my course title15</h1><p>Main's slide 1, changed after the fork — conflict card #1's left side.</p>",
       "notes": "Top-level speaker notes test. **markdown bold** and a list:\n* item one\n* item two",
       "attrs": {
-        "style": "top: 149.5px;"
+        "style": "top: 350px;"
       }
     },
     {
@@ -51,22 +51,23 @@
       "html": "<h2>Fragments — PREVIEW rewrite 🤖</h2><p class=\"fragment\" data-fragment-index=\"0\">Agent reordered the reveals</p><p class=\"fragment\" data-fragment-index=\"1\">and rewrote the copy</p><p class=\"fragment highlight-blue\" data-fragment-index=\"2\">conflict card #2</p>",
       "notes": "Notes replaced discretely — the slide html was never sent.",
       "attrs": {
-        "style": "top: 350px;"
+        "style": "top: 147.5px;",
+        "data-fragment": "1"
       }
     },
     {
       "id": "304ffe0c",
-      "html": "<h2 data-id=\"aa-title\">Auto-Animate</h2><p>Advance to see this title glide.</p>",
+      "html": "<h2 data-id=\"aa-title\" data-auto-animate-target=\"3\">Auto-Animate</h2><p data-auto-animate-target=\"unmatched\">Advance to see this title glide.</p>",
       "attrs": {
-        "data-auto-animate": "",
+        "data-auto-animate": "running",
         "style": "top: 350px;"
       }
     },
     {
       "id": "f2732a4f",
-      "html": "<h2 data-id=\"aa-title\" style=\"color: #17b2c3; font-size: 2.5em;\">Auto-Animate</h2><p>Same element, new size/color — should animate smoothly.</p>",
+      "html": "<h2 data-id=\"aa-title\" style=\"color: #17b2c3; font-size: 2.5em;\" data-auto-animate-target=\"\">Auto-Animate</h2><p>Same element, new size/color — should animate smoothly.</p>",
       "attrs": {
-        "data-auto-animate": "",
+        "data-auto-animate": "pending",
         "style": "top: 350px;"
       }
     },
@@ -112,7 +113,7 @@
       "id": "705a3d06",
       "attrs": {
         "data-background-color": "#0b3d2e",
-        "style": "top: 350px;",
+        "style": "top: 0px;",
         "class": "has-dark-background",
         "data-previous-indexv": "0"
       },
@@ -137,7 +138,7 @@
     {
       "id": "0b81fee5",
       "attrs": {
-        "style": "top: 350px;",
+        "style": "top: 0px;",
         "data-previous-indexv": "0"
       },
       "children": [
