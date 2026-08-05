@@ -127,15 +127,15 @@
           }
         },
         {
+          "id": "4bd6ca94",
+          "html": "<h2>Child three 🆕</h2><p>Added to the agent-made stack so its children can be reordered two different ways — a 2-child stack can only swap, which both sides would do identically.</p>"
+        },
+        {
           "id": "3a33431d",
           "html": "<h2>Child two</h2><p>Navigate down to reach me. The container carries the dark-green background attr.</p>",
           "attrs": {
             "style": "top: 350px;"
           }
-        },
-        {
-          "id": "4bd6ca94",
-          "html": "<h2>Child three 🆕</h2><p>Added to the agent-made stack so its children can be reordered two different ways — a 2-child stack can only swap, which both sides would do identically.</p>"
         }
       ]
     },
