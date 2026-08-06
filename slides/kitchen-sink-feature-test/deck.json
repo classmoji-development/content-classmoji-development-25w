@@ -36,7 +36,7 @@
     },
     {
       "id": "fe6c43c0",
-      "html": "<h2>Transition: zoom (agent-tweaked)</h2><p>This edit should AUTO-merge on accept — you won't have touched slide 2.</p>",
+      "html": "<h2>Transition: zoom — PREVIEW version 🤖</h2><p>The agent rewrote this slide on the preview branch while it was <em>also</em> edited on the live deck. This is the per-slide content-collision card.</p>",
       "attrs": {
         "data-transition": "zoom",
         "style": "top: 350px;"
@@ -53,7 +53,7 @@
     },
     {
       "id": "07f56a75",
-      "html": "<h2>Background: gradient (agent-tweaked)</h2><p>Untouched on main — this will auto-merge silently.</p>",
+      "html": "<h2>Background: gradient (preview-only edit)</h2><p>Only the preview touched this slide after the fork — it auto-merges silently and just increments the auto-merged counter in the chooser subtitle.</p>",
       "attrs": {
         "data-background-gradient": "linear-gradient(to bottom, #17b2c3, #283b95)",
         "style": "top: 350px;"
@@ -91,14 +91,6 @@
       "html": "<h2 data-id=\"aa-title\" style=\"color: #17b2c3; font-size: 2.5em;\" data-auto-animate-target=\"\">Auto-Animate</h2><p>Same element, new size/color — should animate smoothly.</p>",
       "attrs": {
         "data-auto-animate": "pending",
-        "style": "top: 350px;"
-      }
-    },
-    {
-      "id": "31ccc837",
-      "html": "<h2>Positioned image block</h2><div class=\"sl-block\" data-block-type=\"image\" style=\"width: 420px; height: 280px; left: 270px; top: 220px;\"><div class=\"sl-block-content\"><img src=\"https://picsum.photos/seed/classmoji/420/280\" alt=\"random\" style=\"width: 100%; height: 100%;\"></div></div>",
-      "notes": "sl-block absolute positioning must hold.",
-      "attrs": {
         "style": "top: 350px;"
       }
     },
@@ -162,6 +154,14 @@
           }
         }
       ]
+    },
+    {
+      "id": "31ccc837",
+      "html": "<h2>Positioned image block</h2><div class=\"sl-block\" data-block-type=\"image\" style=\"width: 420px; height: 280px; left: 270px; top: 220px;\"><div class=\"sl-block-content\"><img src=\"https://picsum.photos/seed/classmoji/420/280\" alt=\"random\" style=\"width: 100%; height: 100%;\"></div></div>",
+      "notes": "sl-block absolute positioning must hold.",
+      "attrs": {
+        "style": "top: 350px;"
+      }
     }
   ],
   "config": {
