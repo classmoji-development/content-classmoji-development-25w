@@ -1,74 +1,98 @@
 {
   "blocks": [
     {
-      "id": "p1",
+      "id": "title-1",
       "type": "heading",
       "props": {
-        "level": 2,
-        "textColor": "default",
-        "backgroundColor": "blue",
-        "textAlignment": "left"
+        "level": 1
       },
       "content": [
         {
           "type": "text",
-          "text": "Edited via MCP",
+          "text": "Merge Conflict Demo Page",
           "styles": {}
         }
-      ],
-      "children": []
+      ]
+    },
+    {
+      "id": "intro-1",
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "This page demonstrates the pages-side conflict chooser: the base document before either branch diverges.",
+          "styles": {}
+        }
+      ]
+    },
+    {
+      "id": "step-1",
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Step one: install the dependencies.",
+          "styles": {}
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Step two: configure your environment.",
+          "styles": {}
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Step three: run the dev server.",
+          "styles": {}
+        }
+      ]
     },
     {
       "id": "callout-1",
       "type": "callout",
       "props": {
-        "emoji": "🤖",
-        "textColor": "default",
-        "backgroundColor": "default",
-        "textAlignment": "left"
+        "type": "info"
       },
       "content": [
         {
           "type": "text",
-          "text": "This content was written by Claude through page_content_apply. Because the page is published, it landed on a preview branch — you're reviewing it, students see nothing yet.",
+          "text": "Base version of this callout — both branches will rewrite it differently, producing the content-collision card.",
           "styles": {}
         }
-      ],
-      "children": []
+      ]
     },
     {
-      "id": "list-1",
-      "type": "bulletListItem",
-      "props": {
-        "textColor": "default",
-        "backgroundColor": "default",
-        "textAlignment": "left"
-      },
+      "id": "quote-1",
+      "type": "quote",
       "content": [
         {
           "type": "text",
-          "text": "Accept from the bar above, or",
+          "text": "Base quote — only the preview will touch this, so it auto-merges.",
           "styles": {}
         }
-      ],
-      "children": []
+      ]
     },
     {
-      "id": "list-2",
-      "type": "bulletListItem",
-      "props": {
-        "textColor": "default",
-        "backgroundColor": "default",
-        "textAlignment": "left"
-      },
+      "id": "outro-1",
+      "type": "paragraph",
       "content": [
         {
           "type": "text",
-          "text": "Discard — and it never happened",
+          "text": "Closing paragraph. Only the live side will touch this, so it also auto-merges.",
           "styles": {}
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }
