@@ -15,23 +15,23 @@
       ]
     },
     {
-      "id": "intro-1",
-      "type": "paragraph",
-      "content": [
-        {
-          "type": "text",
-          "text": "This page demonstrates the pages-side conflict chooser: the base document before either branch diverges.",
-          "styles": {}
-        }
-      ]
-    },
-    {
       "id": "step-1",
       "type": "paragraph",
       "content": [
         {
           "type": "text",
           "text": "Step one: install the dependencies.",
+          "styles": {}
+        }
+      ]
+    },
+    {
+      "id": "intro-1",
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "This page demonstrates the pages-side conflict chooser: the base document before either branch diverges.",
           "styles": {}
         }
       ]
@@ -62,12 +62,12 @@
       "id": "callout-1",
       "type": "callout",
       "props": {
-        "type": "info"
+        "type": "warning"
       },
       "content": [
         {
           "type": "text",
-          "text": "Base version of this callout — both branches will rewrite it differently, producing the content-collision card.",
+          "text": "LIVE version ✏️ — edited on the live page while the agent also rewrote it on the preview branch.",
           "styles": {}
         }
       ]
@@ -89,7 +89,7 @@
       "content": [
         {
           "type": "text",
-          "text": "Closing paragraph. Only the live side will touch this, so it also auto-merges.",
+          "text": "Closing paragraph — LIVE-only tweak that auto-merges into the final page without a card.",
           "styles": {}
         }
       ]
