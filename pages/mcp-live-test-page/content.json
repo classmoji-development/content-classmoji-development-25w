@@ -26,17 +26,6 @@
       ]
     },
     {
-      "id": "step-1",
-      "type": "paragraph",
-      "content": [
-        {
-          "type": "text",
-          "text": "Step one: install the dependencies.",
-          "styles": {}
-        }
-      ]
-    },
-    {
       "id": "step-2",
       "type": "paragraph",
       "content": [
@@ -62,12 +51,12 @@
       "id": "callout-1",
       "type": "callout",
       "props": {
-        "type": "info"
+        "type": "success"
       },
       "content": [
         {
           "type": "text",
-          "text": "Base version of this callout — both branches will rewrite it differently, producing the content-collision card.",
+          "text": "PREVIEW version 🤖 — the agent rewrote this callout on the preview branch while it was also edited on the live page.",
           "styles": {}
         }
       ]
@@ -78,7 +67,7 @@
       "content": [
         {
           "type": "text",
-          "text": "Base quote — only the preview will touch this, so it auto-merges.",
+          "text": "Preview-only edit — nobody touched this on the live page, so it auto-merges silently.",
           "styles": {}
         }
       ]
@@ -90,6 +79,17 @@
         {
           "type": "text",
           "text": "Closing paragraph. Only the live side will touch this, so it also auto-merges.",
+          "styles": {}
+        }
+      ]
+    },
+    {
+      "id": "step-1",
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Step one: install the dependencies.",
           "styles": {}
         }
       ]
