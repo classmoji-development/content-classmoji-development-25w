@@ -1,9 +1,7 @@
 {
   "repositories": {
     "bc779d1e-ed3e-4118-bc32-e498951e911e": {
-      "pages": [
-        "asdasdf"
-      ],
+      "pages": [],
       "slides": [],
       "assignments": {
         "d9eea900-5333-430d-ae45-d4c93c04edb6": {
@@ -49,8 +47,9 @@
       "ui-design-mockups",
       "foobar",
       "mcp-live-test-page",
-      "dartmouth-cs52",
       "asdfasdfasdf",
+      "dartmouth-cs52",
+      "asdasdf",
       "logistics",
       "projects",
       "zz-navgrid-scratch-1787273969785",
