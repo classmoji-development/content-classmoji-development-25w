@@ -1,0 +1,24 @@
+{
+  "blocks": [
+    {
+      "id": "f47676f0-9c80-4642-b8fa-ac38509b415c",
+      "type": "navGrid",
+      "props": {
+        "entries": "[{\"kind\":\"page\",\"pageId\":\"0d5d242f-edb1-4fd9-a969-eb03679a914d\",\"title\":\"ZZ NavGrid Scratch 1787273969785\"},{\"kind\":\"external\",\"url\":\"https://piazza.com/cs52\",\"label\":\"Piazza\",\"emoji\":\"💬\"}]",
+        "columns": 2
+      },
+      "children": []
+    },
+    {
+      "id": "b0caf95d-67a7-4c1f-8bae-10f757eab837",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [],
+      "children": []
+    }
+  ]
+}
