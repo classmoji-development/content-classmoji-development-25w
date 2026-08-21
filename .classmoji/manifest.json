@@ -1,7 +1,9 @@
 {
   "repositories": {
     "bc779d1e-ed3e-4118-bc32-e498951e911e": {
-      "pages": [],
+      "pages": [
+        "asdasdf"
+      ],
       "slides": [],
       "assignments": {
         "d9eea900-5333-430d-ae45-d4c93c04edb6": {
@@ -29,13 +31,11 @@
     "pages": [
       "asdfasdf",
       "block-type-kitchen-sink",
-      "dartmouth-cs52",
       "dartmouth-cs98",
       "hack-a-thing-1",
       "jaune",
       "lab-1-part-2-build-a-landing-page-css",
       "logistics-2",
-      "logistics",
       "new-page-for-manifest-test",
       "pape-page",
       "playground",
@@ -49,8 +49,10 @@
       "ui-design-mockups",
       "foobar",
       "mcp-live-test-page",
-      "asdasdf",
+      "dartmouth-cs52",
       "asdfasdfasdf",
+      "logistics",
+      "projects",
       "zz-navgrid-scratch-1787273969785",
       "zz-navgrid-scratch-1787274124617",
       "zz-navgrid-scratch-1787274182445",
