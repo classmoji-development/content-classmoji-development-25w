@@ -1,0 +1,24 @@
+{
+  "blocks": [
+    {
+      "id": "24bdd07f-ff2c-4bae-871e-3134a66577f8",
+      "type": "navGrid",
+      "props": {
+        "entries": "[{\"kind\":\"page\",\"pageId\":\"8fa4ee2d-f497-4613-9575-5d3640683117\",\"title\":\"MCP Live Test Page\"},{\"kind\":\"external\",\"url\":\"https://piazza.com/cs52\",\"label\":\"Piazza\",\"emoji\":\"💬\"}]",
+        "columns": 2
+      },
+      "children": []
+    },
+    {
+      "id": "48f099d2-d3a9-4689-8747-0b5604377531",
+      "type": "paragraph",
+      "props": {
+        "backgroundColor": "default",
+        "textColor": "default",
+        "textAlignment": "left"
+      },
+      "content": [],
+      "children": []
+    }
+  ]
+}
