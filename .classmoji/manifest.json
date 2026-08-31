@@ -1,7 +1,9 @@
 {
   "repositories": {
     "bc779d1e-ed3e-4118-bc32-e498951e911e": {
-      "pages": [],
+      "pages": [
+        "asdasdf"
+      ],
       "slides": [],
       "assignments": {
         "d9eea900-5333-430d-ae45-d4c93c04edb6": {
@@ -28,7 +30,6 @@
   "general": {
     "pages": [
       "asdfasdf",
-      "asdfasdfasdf",
       "block-type-kitchen-sink",
       "dartmouth-cs52",
       "dartmouth-cs98",
@@ -49,8 +50,8 @@
       "test-page-for-linking",
       "ui-design-mockups",
       "foobar",
-      "asdasdf",
-      "mcp-live-test-page"
+      "mcp-live-test-page",
+      "asdfasdfasdf"
     ],
     "slides": [
       "52-welcome-1767636204936",
