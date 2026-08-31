@@ -23,17 +23,30 @@
           "slides": []
         }
       }
+    },
+    "qa-add-item-repo": {
+      "pages": [],
+      "slides": [],
+      "assignments": {
+        "qa-add-item-repo-part-1": {
+          "pages": [],
+          "slides": []
+        }
+      }
     }
   },
   "general": {
     "pages": [
       "asdfasdf",
+      "asdfasdfasdf",
       "block-type-kitchen-sink",
+      "dartmouth-cs52",
       "dartmouth-cs98",
       "hack-a-thing-1",
       "jaune",
       "lab-1-part-2-build-a-landing-page-css",
       "logistics-2",
+      "logistics",
       "new-page-for-manifest-test",
       "pape-page",
       "playground",
@@ -46,16 +59,8 @@
       "test-page-for-linking",
       "ui-design-mockups",
       "foobar",
-      "mcp-live-test-page",
-      "asdfasdfasdf",
-      "dartmouth-cs52",
       "asdasdf",
-      "logistics",
-      "projects",
-      "zz-navgrid-scratch-1787273969785",
-      "zz-navgrid-scratch-1787274124617",
-      "zz-navgrid-scratch-1787274182445",
-      "zz-navgrid-scratch-1787274586614"
+      "mcp-live-test-page"
     ],
     "slides": [
       "52-welcome-1767636204936",
