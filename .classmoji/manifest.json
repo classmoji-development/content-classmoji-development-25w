@@ -17,10 +17,6 @@
         "6847c60f-955e-4ace-9364-3c507f57fc72": {
           "pages": [],
           "slides": []
-        },
-        "2bd64573-a3c4-44c3-99f3-065e871a69a9": {
-          "pages": [],
-          "slides": []
         }
       }
     }
@@ -28,6 +24,7 @@
   "general": {
     "pages": [
       "asdfasdf",
+      "asdfasdfasdf",
       "block-type-kitchen-sink",
       "dartmouth-cs52",
       "dartmouth-cs98",
@@ -48,9 +45,8 @@
       "test-page-for-linking",
       "ui-design-mockups",
       "foobar",
-      "mcp-live-test-page",
       "asdasdf",
-      "asdfasdfasdf"
+      "mcp-live-test-page"
     ],
     "slides": [
       "52-welcome-1767636204936",
