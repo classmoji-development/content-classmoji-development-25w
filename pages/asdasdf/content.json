@@ -29,19 +29,6 @@
       },
       "content": [],
       "children": []
-    },
-    {
-      "id": "e2e-cd-3somuyek",
-      "type": "image",
-      "props": {
-        "url": "pages/asdasdf/assets/1788565941959-e2e-cd-doomed-1788565941673.png",
-        "caption": "E2E CD doomed",
-        "previewWidth": 512,
-        "backgroundColor": "default",
-        "textAlignment": "left",
-        "name": ""
-      },
-      "children": []
     }
   ],
   "coverImage": {
