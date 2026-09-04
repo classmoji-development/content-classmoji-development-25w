@@ -29,6 +29,19 @@
       },
       "content": [],
       "children": []
+    },
+    {
+      "id": "e2e-cd-nrmycam6",
+      "type": "image",
+      "props": {
+        "url": "pages/asdasdf/assets/1788566308357-e2e-cd-public-1788566308065.png",
+        "caption": "E2E CD public",
+        "previewWidth": 512,
+        "backgroundColor": "default",
+        "textAlignment": "left",
+        "name": ""
+      },
+      "children": []
     }
   ],
   "coverImage": {
