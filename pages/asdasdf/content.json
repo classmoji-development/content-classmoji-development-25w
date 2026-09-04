@@ -68,6 +68,19 @@
         "name": ""
       },
       "children": []
+    },
+    {
+      "id": "e2e-cd-lzt9b9e0",
+      "type": "image",
+      "props": {
+        "url": "pages/asdasdf/assets/1788565963206-e2e-cd-worker-1788565962951.png",
+        "caption": "E2E CD worker",
+        "previewWidth": 512,
+        "backgroundColor": "default",
+        "textAlignment": "left",
+        "name": ""
+      },
+      "children": []
     }
   ],
   "coverImage": {
