@@ -55,6 +55,19 @@
         "name": ""
       },
       "children": []
+    },
+    {
+      "id": "e2e-cd-j0requg8",
+      "type": "image",
+      "props": {
+        "url": "pages/asdasdf/assets/1788565893016-e2e-cd-removed-1788565892784.png",
+        "caption": "E2E CD removable",
+        "previewWidth": 512,
+        "backgroundColor": "default",
+        "textAlignment": "left",
+        "name": ""
+      },
+      "children": []
     }
   ],
   "coverImage": {
