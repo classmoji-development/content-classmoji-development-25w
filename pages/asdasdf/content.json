@@ -55,19 +55,6 @@
         "name": ""
       },
       "children": []
-    },
-    {
-      "id": "e2e-cd-14pgmvyx",
-      "type": "image",
-      "props": {
-        "url": "pages/asdasdf/assets/1788565956888-e2e-cd-version-1788565956649.png",
-        "caption": "E2E CD version",
-        "previewWidth": 512,
-        "backgroundColor": "default",
-        "textAlignment": "left",
-        "name": ""
-      },
-      "children": []
     }
   ],
   "coverImage": {
