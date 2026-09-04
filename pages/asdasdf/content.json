@@ -29,6 +29,19 @@
       },
       "content": [],
       "children": []
+    },
+    {
+      "id": "e2e-cd-voalpkfe",
+      "type": "image",
+      "props": {
+        "url": "pages/asdasdf/assets/1788565524171-e2e-cd-public-1788565523895.png",
+        "caption": "E2E CD public",
+        "previewWidth": 512,
+        "backgroundColor": "default",
+        "textAlignment": "left",
+        "name": ""
+      },
+      "children": []
     }
   ],
   "coverImage": {
