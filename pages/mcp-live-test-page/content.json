@@ -93,6 +93,19 @@
           "styles": {}
         }
       ]
+    },
+    {
+      "id": "e2e-cd-qbbmfeuv",
+      "type": "image",
+      "props": {
+        "url": "pages/mcp-live-test-page/assets/1788566149249-e2e-cd-enrolled-1788566148997.png",
+        "caption": "E2E CD enrolled",
+        "previewWidth": 512,
+        "backgroundColor": "default",
+        "textAlignment": "left",
+        "name": ""
+      },
+      "children": []
     }
   ]
 }
