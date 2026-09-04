@@ -29,6 +29,19 @@
       },
       "content": [],
       "children": []
+    },
+    {
+      "id": "e2e-cd-hniovbb1",
+      "type": "image",
+      "props": {
+        "url": "pages/asdasdf/assets/1788565149239-e2e-cd-editor-1788565148905.png",
+        "caption": "E2E CD fixture",
+        "previewWidth": 512,
+        "backgroundColor": "default",
+        "textAlignment": "left",
+        "name": ""
+      },
+      "children": []
     }
   ],
   "coverImage": {
