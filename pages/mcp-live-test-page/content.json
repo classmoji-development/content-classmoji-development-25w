@@ -93,19 +93,6 @@
           "styles": {}
         }
       ]
-    },
-    {
-      "id": "e2e-cd-rzww63ry",
-      "type": "image",
-      "props": {
-        "url": "pages/mcp-live-test-page/assets/1788566069799-e2e-cd-probe-1788566069405.png",
-        "caption": "E2E CD probe",
-        "previewWidth": 512,
-        "backgroundColor": "default",
-        "textAlignment": "left",
-        "name": ""
-      },
-      "children": []
     }
   ]
 }
