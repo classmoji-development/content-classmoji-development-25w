@@ -55,19 +55,6 @@
         "name": ""
       },
       "children": []
-    },
-    {
-      "id": "e2e-cd-qe1vti62",
-      "type": "image",
-      "props": {
-        "url": "pages/asdasdf/assets/1788567547623-e2e-cd-public-1788567547358.png",
-        "caption": "E2E CD public",
-        "previewWidth": 512,
-        "backgroundColor": "default",
-        "textAlignment": "left",
-        "name": ""
-      },
-      "children": []
     }
   ],
   "coverImage": {
