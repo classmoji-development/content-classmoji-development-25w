@@ -55,6 +55,19 @@
         "name": ""
       },
       "children": []
+    },
+    {
+      "id": "e2e-cd-kowgg2wo",
+      "type": "image",
+      "props": {
+        "url": "pages/asdasdf/assets/1788567946483-e2e-cd-public-1788567946217.png",
+        "caption": "E2E CD public",
+        "previewWidth": 512,
+        "backgroundColor": "default",
+        "textAlignment": "left",
+        "name": ""
+      },
+      "children": []
     }
   ],
   "coverImage": {
