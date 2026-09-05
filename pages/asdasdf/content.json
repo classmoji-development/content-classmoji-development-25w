@@ -29,19 +29,6 @@
       },
       "content": [],
       "children": []
-    },
-    {
-      "id": "e2e-cd-th7mgs0g",
-      "type": "image",
-      "props": {
-        "url": "pages/asdasdf/assets/1788566470805-e2e-cd-editor-1788566470448.png",
-        "caption": "E2E CD fixture",
-        "previewWidth": 512,
-        "backgroundColor": "default",
-        "textAlignment": "left",
-        "name": ""
-      },
-      "children": []
     }
   ],
   "coverImage": {
