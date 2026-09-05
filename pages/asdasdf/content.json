@@ -94,19 +94,6 @@
         "name": ""
       },
       "children": []
-    },
-    {
-      "id": "e2e-cd-9atl0sgb",
-      "type": "image",
-      "props": {
-        "url": "pages/asdasdf/assets/1788568027038-e2e-cd-version-1788568026646.png",
-        "caption": "E2E CD version",
-        "previewWidth": 512,
-        "backgroundColor": "default",
-        "textAlignment": "left",
-        "name": ""
-      },
-      "children": []
     }
   ],
   "coverImage": {
