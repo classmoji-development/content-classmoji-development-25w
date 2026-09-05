@@ -107,19 +107,6 @@
         "name": ""
       },
       "children": []
-    },
-    {
-      "id": "e2e-cd-22fc90sx",
-      "type": "image",
-      "props": {
-        "url": "pages/asdasdf/assets/1788570533199-e2e-cd-worker-1788570532974.png",
-        "caption": "E2E CD worker",
-        "previewWidth": 512,
-        "backgroundColor": "default",
-        "textAlignment": "left",
-        "name": ""
-      },
-      "children": []
     }
   ],
   "coverImage": {
