@@ -42,6 +42,19 @@
         "name": ""
       },
       "children": []
+    },
+    {
+      "id": "e2e-cd-aqnu6upx",
+      "type": "image",
+      "props": {
+        "url": "pages/asdasdf/assets/1788567929017-e2e-cd-stored-1788567928698.png",
+        "caption": "E2E CD stored",
+        "previewWidth": 512,
+        "backgroundColor": "default",
+        "textAlignment": "left",
+        "name": ""
+      },
+      "children": []
     }
   ],
   "coverImage": {
