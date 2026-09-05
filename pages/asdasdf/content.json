@@ -55,6 +55,19 @@
         "name": ""
       },
       "children": []
+    },
+    {
+      "id": "e2e-cd-7ssa3q18",
+      "type": "image",
+      "props": {
+        "url": "pages/asdasdf/assets/1788568289179-e2e-cd-removed-1788568288845.png",
+        "caption": "E2E CD removable",
+        "previewWidth": 512,
+        "backgroundColor": "default",
+        "textAlignment": "left",
+        "name": ""
+      },
+      "children": []
     }
   ],
   "coverImage": {
