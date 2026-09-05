@@ -94,6 +94,19 @@
         "name": ""
       },
       "children": []
+    },
+    {
+      "id": "e2e-cd-ri20d6au",
+      "type": "image",
+      "props": {
+        "url": "pages/asdasdf/assets/1788570527173-e2e-cd-version-1788570526925.png",
+        "caption": "E2E CD version",
+        "previewWidth": 512,
+        "backgroundColor": "default",
+        "textAlignment": "left",
+        "name": ""
+      },
+      "children": []
     }
   ],
   "coverImage": {
