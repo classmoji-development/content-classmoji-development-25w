@@ -29,6 +29,19 @@
       },
       "content": [],
       "children": []
+    },
+    {
+      "id": "e2e-cd-s2umxppt",
+      "type": "image",
+      "props": {
+        "url": "pages/asdasdf/assets/1788567921856-e2e-cd-editor-1788567921595.png",
+        "caption": "E2E CD fixture",
+        "previewWidth": 512,
+        "backgroundColor": "default",
+        "textAlignment": "left",
+        "name": ""
+      },
+      "children": []
     }
   ],
   "coverImage": {
