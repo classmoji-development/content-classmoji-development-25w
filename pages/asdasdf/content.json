@@ -55,19 +55,6 @@
         "name": ""
       },
       "children": []
-    },
-    {
-      "id": "e2e-cd-t25xvia0",
-      "type": "image",
-      "props": {
-        "url": "pages/asdasdf/assets/1788567535206-e2e-cd-removed-1788567534985.png",
-        "caption": "E2E CD removable",
-        "previewWidth": 512,
-        "backgroundColor": "default",
-        "textAlignment": "left",
-        "name": ""
-      },
-      "children": []
     }
   ],
   "coverImage": {
