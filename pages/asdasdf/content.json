@@ -55,19 +55,6 @@
         "name": ""
       },
       "children": []
-    },
-    {
-      "id": "e2e-cd-kgs7ma4x",
-      "type": "image",
-      "props": {
-        "url": "pages/asdasdf/assets/1788570089427-e2e-cd-public-1788570089176.png",
-        "caption": "E2E CD public",
-        "previewWidth": 512,
-        "backgroundColor": "default",
-        "textAlignment": "left",
-        "name": ""
-      },
-      "children": []
     }
   ],
   "coverImage": {
