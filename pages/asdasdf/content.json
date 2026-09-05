@@ -81,6 +81,19 @@
         "name": ""
       },
       "children": []
+    },
+    {
+      "id": "e2e-cd-2r23e2u0",
+      "type": "image",
+      "props": {
+        "url": "pages/asdasdf/assets/1788570519640-e2e-cd-gate-1788570519388.png",
+        "caption": "E2E CD gate",
+        "previewWidth": 512,
+        "backgroundColor": "default",
+        "textAlignment": "left",
+        "name": ""
+      },
+      "children": []
     }
   ],
   "coverImage": {
