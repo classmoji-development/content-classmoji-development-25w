@@ -68,6 +68,19 @@
         "name": ""
       },
       "children": []
+    },
+    {
+      "id": "e2e-cd-6h8rfy3x",
+      "type": "image",
+      "props": {
+        "url": "pages/asdasdf/assets/1788570512929-e2e-cd-doomed-1788570512673.png",
+        "caption": "E2E CD doomed",
+        "previewWidth": 512,
+        "backgroundColor": "default",
+        "textAlignment": "left",
+        "name": ""
+      },
+      "children": []
     }
   ],
   "coverImage": {
