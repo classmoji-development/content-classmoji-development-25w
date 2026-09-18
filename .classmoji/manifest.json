@@ -1,24 +1,24 @@
 {
   "repositories": {
-    "0b57ca72-0549-4d50-8a24-b44e4c3ae8ab": {
+    "bc779d1e-ed3e-4118-bc32-e498951e911e": {
       "pages": [],
       "slides": [],
       "assignments": {
-        "463d846d-8588-4a9a-9764-a761ea2bcb06": {
+        "d9eea900-5333-430d-ae45-d4c93c04edb6": {
           "pages": [],
           "slides": []
         }
       }
     },
-    "297c03f8-5326-4616-9b13-92c503230030": {
+    "44be6eab-4456-471b-85f4-7ef4b55fc44d": {
       "pages": [],
       "slides": [],
       "assignments": {
-        "7803d38d-e8e3-41eb-8f63-df198443fd01": {
+        "6847c60f-955e-4ace-9364-3c507f57fc72": {
           "pages": [],
           "slides": []
         },
-        "ec708c40-6f92-4e69-9b83-fdd1659605d9": {
+        "2bd64573-a3c4-44c3-99f3-065e871a69a9": {
           "pages": [],
           "slides": []
         }
@@ -27,19 +27,16 @@
   },
   "general": {
     "pages": [
-      "asdasdf",
       "asdfasdf",
       "asdfasdfasdf",
       "block-type-kitchen-sink",
       "dartmouth-cs52",
       "dartmouth-cs98",
-      "foobar",
       "hack-a-thing-1",
       "jaune",
       "lab-1-part-2-build-a-landing-page-css",
-      "logistics",
       "logistics-2",
-      "mcp-live-test-page",
+      "logistics",
       "new-page-for-manifest-test",
       "pape-page",
       "playground",
@@ -50,13 +47,34 @@
       "state-of-the-art-research",
       "term-demos-and-testing",
       "test-page-for-linking",
-      "ui-design-mockups"
+      "ui-design-mockups",
+      "foobar",
+      "asdasdf",
+      "mcp-live-test-page",
+      "course-schedule",
+      "midterm-solutions"
     ],
     "slides": [
-      "e2e-cd-deck-1788566638027",
-      "e2e-cd-deck-1788570346205",
-      "e2e-cd-storage-1788570370244",
-      "e2e-cd-gate-1788570390867"
+      "52-welcome-1767636204936",
+      "hidden-slide-test",
+      "html-1767790229859",
+      "module-linked-slide",
+      "more-slides-copy-1768313468912-copy-1768313844482",
+      "more-slides-copy-1768313468912",
+      "pape-slide",
+      "sessions-and-auth-copy-1768313410601",
+      "sessions-and-auth-copy-1768313625800",
+      "test-slide-for-linking",
+      "test-slide-for-manifest",
+      "testsssss-1767606986723",
+      "teststst",
+      "unlinked-general-slide",
+      "welcome-1768068748449",
+      "what-is-the-internet-1768239553430",
+      "claude-test-link-slide",
+      "testing-intro-web-frameworks",
+      "kitchen-sink-feature-test",
+      "mcp-live-test-deck"
     ]
   }
 }
