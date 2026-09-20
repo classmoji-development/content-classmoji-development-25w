@@ -27,7 +27,6 @@
   },
   "general": {
     "pages": [
-      "asdfasdf",
       "asdfasdfasdf",
       "block-type-kitchen-sink",
       "dartmouth-cs52",
@@ -52,7 +51,8 @@
       "asdasdf",
       "mcp-live-test-page",
       "course-schedule",
-      "midterm-solutions"
+      "midterm-solutions",
+      "asdfasdf"
     ],
     "slides": [
       "52-welcome-1767636204936",
@@ -71,9 +71,9 @@
       "unlinked-general-slide",
       "welcome-1768068748449",
       "what-is-the-internet-1768239553430",
+      "testing",
       "claude-test-link-slide",
       "claude-test-file-slide",
-      "testing",
       "testing-intro-web-frameworks",
       "kitchen-sink-feature-test",
       "mcp-live-test-deck"
