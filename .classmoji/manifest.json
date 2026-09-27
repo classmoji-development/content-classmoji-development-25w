@@ -74,9 +74,10 @@
       "testing",
       "claude-test-link-slide",
       "claude-test-file-slide",
-      "testing-intro-web-frameworks",
       "kitchen-sink-feature-test",
-      "mcp-live-test-deck"
+      "mcp-live-test-deck",
+      "testing-intro-web-frameworks",
+      "media-test-big-handout"
     ]
   }
 }
