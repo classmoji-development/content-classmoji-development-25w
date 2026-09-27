@@ -20,7 +20,16 @@
       "children": []
     },
     {
-      "id": "abd2a5c6-8d36-44ae-9443-6c3d54f6ff94",
+      "id": "721c7031-54df-4da4-a0f0-51d133f722bb",
+      "type": "video",
+      "props": {
+        "url": "media://882fb983-8bda-465a-9b39-90f6249310d7",
+        "caption": ""
+      },
+      "children": []
+    },
+    {
+      "id": "517e6ed7-e7fe-44fb-a924-45f4c2487cdd",
       "type": "paragraph",
       "props": {
         "backgroundColor": "default",
